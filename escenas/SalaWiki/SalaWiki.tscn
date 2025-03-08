@@ -1,0 +1,199 @@
+[gd_scene load_steps=24 format=3 uid="uid://dr7c2ri77fwtc"]
+
+[ext_resource type="Texture2D" uid="uid://cyv1arxiocty" path="res://recursos/fondos/wiki1.webp" id="1_f1d3e"]
+[ext_resource type="Script" uid="uid://b182diflic1w8" path="res://escenas/SalaWiki/escenarioWiki.gd" id="2_yicir"]
+[ext_resource type="Script" uid="uid://digpc0fks3lks" path="res://escenas/SalaWiki/JFWiki.gd" id="3_2322k"]
+[ext_resource type="Texture2D" uid="uid://0tdb7jhdl4we" path="res://recursos/personajes/jhuman.webp" id="3_qi84c"]
+[ext_resource type="Texture2D" uid="uid://6dedwqt872qu" path="res://recursos/personajes/jwl.webp" id="4_e5p6i"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="4_lh0kg"]
+[ext_resource type="Script" uid="uid://ck2mxwnm5xg6l" path="res://escenas/SalaWiki/w_npc_1.gd" id="5_hi02n"]
+[ext_resource type="Script" uid="uid://qun8hl17dqxh" path="res://escenas/SalaWiki/w_npc_2.gd" id="6_ol0kg"]
+[ext_resource type="Texture2D" uid="uid://d2e620k736aks" path="res://recursos/personajes/jdl.webp" id="7_du05m"]
+[ext_resource type="Script" uid="uid://bldetv7du0vqm" path="res://escenas/SalaWiki/Jwl_wiki.gd" id="7_j2ttu"]
+[ext_resource type="Script" uid="uid://bdtknh0ajee5q" path="res://escenas/SalaWiki/Salida_wiki.gd" id="7_wrw4d"]
+[ext_resource type="Texture2D" uid="uid://dmt12jp4m3nfv" path="res://recursos/personajes/esclavo9.webp" id="9_j6lw5"]
+[ext_resource type="Texture2D" uid="uid://dwj6mylo1gq1g" path="res://recursos/personajes/jredes.webp" id="11_np1na"]
+[ext_resource type="Texture2D" uid="uid://clkdthbcj5udd" path="res://recursos/personajes/esclavo10.webp" id="13_jxvsi"]
+[ext_resource type="Script" uid="uid://b0nsefr8b85iy" path="res://escenas/SalaWiki/Jdl_WIKI.gd" id="13_uoy88"]
+[ext_resource type="Texture2D" uid="uid://bddqouslqxtgw" path="res://recursos/personajes/jw.webp" id="15_nyusg"]
+[ext_resource type="Script" uid="uid://dvkdkar7ljvwh" path="res://escenas/SalaWiki/Jfhuman_wiki.gd" id="15_rstpp"]
+[ext_resource type="Script" uid="uid://cbyxa750jbw3b" path="res://escenas/SalaWiki/Redes_wiki.gd" id="17_btl4q"]
+[ext_resource type="Texture2D" uid="uid://cdu8wu1kap3j7" path="res://recursos/fondos/escritorioWiki1.webp" id="17_frtvp"]
+[ext_resource type="Texture2D" uid="uid://bs67swk3cerpa" path="res://recursos/fondos/escritorioWiki2.webp" id="18_j50ft"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="19_6vmno"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="22_c6ag8"]
+[ext_resource type="Script" uid="uid://bxsc3gcnakv2m" path="res://escenas/SalaWiki/musicaWiki.gd" id="22_rquy3"]
+
+[node name="Escena_5" type="Node2D"]
+
+[node name="Escenario" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_f1d3e")
+script = ExtResource("2_yicir")
+
+[node name="Jfhuman" type="Sprite2D" parent="."]
+position = Vector2(497, 376)
+texture = ExtResource("3_qi84c")
+script = ExtResource("15_rstpp")
+
+[node name="Control" type="Control" parent="Jfhuman"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.5
+offset_top = -99.0
+offset_right = -80.5
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Jwl" type="Sprite2D" parent="."]
+position = Vector2(734, 320)
+scale = Vector2(0.7, 0.699)
+texture = ExtResource("4_e5p6i")
+script = ExtResource("7_j2ttu")
+
+[node name="Control" type="Control" parent="Jwl"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -168.5
+offset_top = -215.0
+offset_right = -168.5
+offset_bottom = -215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Jdl" type="Sprite2D" parent="."]
+position = Vector2(322, 407)
+texture = ExtResource("7_du05m")
+script = ExtResource("13_uoy88")
+
+[node name="Control" type="Control" parent="Jdl"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = -71.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc1" type="Sprite2D" parent="."]
+position = Vector2(366, 465)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("9_j6lw5")
+flip_h = true
+script = ExtResource("5_hi02n")
+
+[node name="Control" type="Control" parent="npc1"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Redes" type="Sprite2D" parent="."]
+position = Vector2(824, 398)
+texture = ExtResource("11_np1na")
+flip_h = true
+script = ExtResource("17_btl4q")
+
+[node name="Control" type="Control" parent="Redes"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -111.0
+offset_right = -76.0
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc2" type="Sprite2D" parent="."]
+position = Vector2(759, 477)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("13_jxvsi")
+script = ExtResource("6_ol0kg")
+
+[node name="Control" type="Control" parent="npc2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Jw" type="Sprite2D" parent="."]
+position = Vector2(567, 475)
+texture = ExtResource("15_nyusg")
+script = ExtResource("3_2322k")
+
+[node name="Control" type="Control" parent="Jw"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.5
+offset_top = -108.5
+offset_right = -69.5
+offset_bottom = -108.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="EscritorioWiki1" type="Sprite2D" parent="."]
+position = Vector2(165, 310)
+texture = ExtResource("17_frtvp")
+
+[node name="EscritorioWiki2" type="Sprite2D" parent="."]
+position = Vector2(972, 310)
+texture = ExtResource("18_j50ft")
+
+[node name="Salida" type="Sprite2D" parent="."]
+position = Vector2(117, 107)
+texture = ExtResource("19_6vmno")
+script = ExtResource("7_wrw4d")
+
+[node name="Control" type="Control" parent="Salida"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.5
+offset_top = -83.0
+offset_right = -83.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Cuadro" parent="." instance=ExtResource("4_lh0kg")]
+visible = false
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_c6ag8")
+volume_db = -18.0
+autoplay = true
+parameters/looping = true
+script = ExtResource("22_rquy3")

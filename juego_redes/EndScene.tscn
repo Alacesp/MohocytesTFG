@@ -1,0 +1,108 @@
+[gd_scene load_steps=10 format=3 uid="uid://ds1c3ncyoiwde"]
+
+[ext_resource type="Script" uid="uid://he26jhkmt6vp" path="res://juego_redes/EndScene.gd" id="1_1u68p"]
+[ext_resource type="Texture2D" uid="uid://dhe6du6rnd7lu" path="res://juego_redes/Fondo.webp" id="2_jrape"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_cguln"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_pubyb"]
+[ext_resource type="Script" uid="uid://3yq78w8u4vr2" path="res://juego_redes/salir.gd" id="5_r83il"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qs08t"]
+font = ExtResource("3_cguln")
+font_size = 70
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ihk85"]
+font = ExtResource("3_cguln")
+font_size = 38
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oyvcx"]
+font = ExtResource("3_cguln")
+font_size = 42
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_smvtm"]
+default_font = ExtResource("3_cguln")
+default_font_size = 40
+
+[node name="EndScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1u68p")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_jrape")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="FinDelJuego" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "FDJ"
+label_settings = SubResource("LabelSettings_qs08t")
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="Puntuacion" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/HBoxContainer"]
+layout_mode = 2
+text = "PTS"
+label_settings = SubResource("LabelSettings_ihk85")
+horizontal_alignment = 1
+
+[node name="Puntos" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/HBoxContainer"]
+layout_mode = 2
+text = "200"
+label_settings = SubResource("LabelSettings_oyvcx")
+horizontal_alignment = 1
+
+[node name="Salir" type="Sprite2D" parent="."]
+position = Vector2(575, 483)
+scale = Vector2(1.4, 1)
+texture = ExtResource("4_pubyb")
+
+[node name="Button" type="Button" parent="Salir"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_smvtm")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_TER"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_r83il")
+
+[connection signal="mouse_entered" from="Salir/Button" to="Salir/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Salir/Button" to="Salir/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Salir/Button" to="Salir/Button" method="_on_pressed"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://vf5g75r7vt0d"]
+
+[ext_resource type="Script" uid="uid://c8ax2nmmk5g1o" path="res://juego_redes/Objeto.gd" id="1_j5x7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncr4k"]
+size = Vector2(128, 128)
+
+[node name="Objeto" type="Node2D"]
+script = ExtResource("1_j5x7s")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Colision" type="CollisionShape2D" parent="Area"]
+shape = SubResource("RectangleShape2D_ncr4k")
+
+[connection signal="mouse_entered" from="Area" to="." method="_on_area_mouse_entered"]
+[connection signal="mouse_exited" from="Area" to="." method="_on_area_mouse_exited"]

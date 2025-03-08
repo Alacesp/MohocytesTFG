@@ -1,0 +1,160 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyxkpm6y1ghgv"]
+
+[ext_resource type="Script" uid="uid://d0qw5m2fgbgts" path="res://juego_wiki/GameScene.gd" id="1_3erae"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_iwnew"]
+[ext_resource type="Texture2D" uid="uid://cqdbj0keatwr5" path="res://juego_wiki/Fotos/0.jpg" id="2_s0xvv"]
+[ext_resource type="LabelSettings" uid="uid://b41h43eg0ncfv" path="res://juego_wiki/Guia.tres" id="3_utg0x"]
+[ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="5_6i12d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mir12"]
+bg_color = Color(0.637131, 0.380937, 0.746412, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6rtwi"]
+font = ExtResource("2_iwnew")
+font_size = 50
+
+[node name="GameScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3erae")
+
+[node name="Fondo" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mir12")
+
+[node name="Tiempo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 986.0
+offset_top = 81.0
+offset_right = 1027.0
+offset_bottom = 132.0
+text = "0s"
+label_settings = SubResource("LabelSettings_6rtwi")
+
+[node name="Intr" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 723.0
+offset_top = 72.0
+offset_right = 764.0
+offset_bottom = 122.0
+
+[node name="Img" type="HBoxContainer" parent="Intr"]
+layout_mode = 2
+
+[node name="Img" type="Label" parent="Intr/Img"]
+layout_mode = 2
+text = "JWI"
+label_settings = ExtResource("3_utg0x")
+
+[node name="Texto" type="Label" parent="Intr/Img"]
+layout_mode = 2
+text = "x"
+label_settings = ExtResource("3_utg0x")
+
+[node name="Font" type="HBoxContainer" parent="Intr"]
+layout_mode = 2
+
+[node name="Font" type="Label" parent="Intr/Font"]
+layout_mode = 2
+text = "JWF"
+label_settings = ExtResource("3_utg0x")
+
+[node name="Texto" type="Label" parent="Intr/Font"]
+layout_mode = 2
+text = "c"
+label_settings = ExtResource("3_utg0x")
+
+[node name="Imagen" type="Sprite2D" parent="."]
+position = Vector2(406, 121)
+scale = Vector2(0.315884, 0.315884)
+texture = ExtResource("2_s0xvv")
+
+[node name="Bot" type="Button" parent="Imagen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -463.5
+offset_top = -309.5
+offset_right = -463.5
+offset_bottom = -309.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Img" type="Label" parent="Imagen/Bot"]
+layout_mode = 0
+text = "JWI"
+
+[node name="Textos" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 245.0
+offset_right = 1089.0
+offset_bottom = 607.0
+
+[node name="Texto1" type="Button" parent="Textos"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+
+[node name="Label" type="Label" parent="Textos/Texto1"]
+layout_mode = 2
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1015.0
+offset_bottom = 81.0
+autowrap_mode = 3
+
+[node name="Texto2" type="Button" parent="Textos"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+
+[node name="Label" type="Label" parent="Textos/Texto2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1015.0
+offset_bottom = 81.0
+autowrap_mode = 3
+
+[node name="Texto3" type="Button" parent="Textos"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Label" type="Label" parent="Textos/Texto3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1015.0
+offset_bottom = 81.0
+autowrap_mode = 3
+
+[node name="Texto4" type="Button" parent="Textos"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Label" type="Label" parent="Textos/Texto4"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1015.0
+offset_bottom = 81.0
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_6i12d")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true

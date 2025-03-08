@@ -1,0 +1,124 @@
+[gd_scene load_steps=16 format=3 uid="uid://bshe6637hi1oy"]
+
+[ext_resource type="Script" uid="uid://dj3sel0pkiddr" path="res://escenas/Cuadro_Texto.gd" id="1_rg32t"]
+[ext_resource type="Texture2D" uid="uid://8s13vepbcqv" path="res://recursos/personajes/retratoPj.webp" id="2_usmwi"]
+[ext_resource type="Texture2D" uid="uid://dtcfam4cxm17i" path="res://recursos/personajes/nada.webp" id="3_li6yr"]
+[ext_resource type="Texture2D" uid="uid://cxgcw8nko4g7p" path="res://recursos/dialogo.png" id="4_te1qw"]
+[ext_resource type="Texture2D" uid="uid://dwasv1f5tlu1g" path="res://recursos/dialogo_off.png" id="5_btl66"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="6_rv53i"]
+[ext_resource type="FontFile" uid="uid://bbenh1a5s55kc" path="res://recursos/Luminous_Free.ttf" id="7_qr1np"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="8_xv5ld"]
+[ext_resource type="AudioStream" uid="uid://ds2g34hsviuxd" path="res://recursos/audios/voz_p.ogg" id="9_7y3w3"]
+[ext_resource type="Texture2D" uid="uid://rge84wf32l6h" path="res://recursos/img_conv/ESP1.webp" id="9_p1s36"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbnie"]
+bg_color = Color(0.6, 0.6, 0.6, 0.72549)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lf3m6"]
+font = ExtResource("6_rv53i")
+font_size = 38
+font_color = Color(0.201527, 0.201527, 0.201527, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vey52"]
+font = ExtResource("7_qr1np")
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oavvt"]
+font = ExtResource("6_rv53i")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_prmu8"]
+font = ExtResource("6_rv53i")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[node name="CuadroTexto" type="CanvasLayer"]
+script = ExtResource("1_rg32t")
+
+[node name="Difuminado" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qbnie")
+
+[node name="SpriteIzq" type="Sprite2D" parent="."]
+position = Vector2(258, 327)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_usmwi")
+flip_h = true
+
+[node name="SpriteDer" type="Sprite2D" parent="."]
+position = Vector2(909, 332)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_li6yr")
+
+[node name="Bocadillo" type="Sprite2D" parent="."]
+position = Vector2(571, 491)
+texture = ExtResource("4_te1qw")
+flip_h = true
+
+[node name="BocadilloOff" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(571, 492)
+texture = ExtResource("5_btl66")
+
+[node name="Texto" type="Label" parent="."]
+custom_minimum_size = Vector2(1, 1)
+offset_left = 95.0
+offset_top = 456.0
+offset_right = 1019.0
+offset_bottom = 586.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Texto de ejemplo"
+label_settings = SubResource("LabelSettings_lf3m6")
+autowrap_mode = 2
+clip_text = true
+
+[node name="Next" type="Label" parent="."]
+offset_left = 1035.0
+offset_top = 578.0
+offset_right = 1049.0
+offset_bottom = 610.0
+size_flags_vertical = 8
+text = "^"
+label_settings = SubResource("LabelSettings_vey52")
+
+[node name="Opcion_1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(581, 120)
+texture = ExtResource("8_xv5ld")
+
+[node name="Label" type="Label" parent="Opcion_1"]
+offset_left = -22.0
+offset_top = -30.0
+offset_right = 19.0
+offset_bottom = 34.0
+text = "Sí"
+label_settings = SubResource("LabelSettings_oavvt")
+
+[node name="Opcion_2" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.462291, 0.462291, 0.462291, 1)
+position = Vector2(581, 304)
+texture = ExtResource("8_xv5ld")
+
+[node name="Label" type="Label" parent="Opcion_2"]
+offset_left = -25.0
+offset_top = -27.0
+offset_right = 29.0
+offset_bottom = 37.0
+text = "No"
+label_settings = SubResource("LabelSettings_prmu8")
+
+[node name="Esquema" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 324)
+texture = ExtResource("9_p1s36")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(576, 324)
+stream = ExtResource("9_7y3w3")
+volume_db = -16.965
+max_distance = 9000.0

@@ -1,0 +1,105 @@
+[gd_scene load_steps=13 format=3 uid="uid://dcqxwmtpn5sf1"]
+
+[ext_resource type="Texture2D" uid="uid://c4xtqgfi4e7c7" path="res://recursos/fondos/wetLab.webp" id="1_5gm46"]
+[ext_resource type="Texture2D" uid="uid://6dedwqt872qu" path="res://recursos/personajes/jwl.webp" id="1_8g5hp"]
+[ext_resource type="Script" uid="uid://ik26o8abr8qd" path="res://escenas/SalaWetLab/JFWetLab.gd" id="3_ejjcx"]
+[ext_resource type="Texture2D" uid="uid://c7fdytpwalmh0" path="res://recursos/fondos/mesaWet.webp" id="4_1bisv"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="4_vdjtn"]
+[ext_resource type="Texture2D" uid="uid://b6iwmea75db5c" path="res://recursos/personajes/esclavo5.webp" id="5_dry14"]
+[ext_resource type="Script" uid="uid://dewlnawdfdgcp" path="res://escenas/SalaWetLab/wl_npc_1.gd" id="5_l74ok"]
+[ext_resource type="Script" uid="uid://cixq1aiugiwf1" path="res://escenas/SalaWetLab/wl_npc_2.gd" id="6_r2187"]
+[ext_resource type="Texture2D" uid="uid://dl7yrf3dwyukw" path="res://recursos/personajes/esclavo6.webp" id="7_s5bmw"]
+[ext_resource type="Script" uid="uid://upm1phvo7gpa" path="res://escenas/SalaWetLab/Salida_wl.gd" id="8_r45v6"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="9_gwael"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="12_qc6ff"]
+
+[node name="Escena_3" type="Node2D"]
+
+[node name="Escenario" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_5gm46")
+
+[node name="Jwl" type="Sprite2D" parent="."]
+position = Vector2(552, 277)
+texture = ExtResource("1_8g5hp")
+script = ExtResource("3_ejjcx")
+
+[node name="Control" type="Control" parent="Jwl"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -168.5
+offset_top = -215.0
+offset_right = -168.5
+offset_bottom = -215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="MesaWet" type="Sprite2D" parent="."]
+position = Vector2(559, 409)
+texture = ExtResource("4_1bisv")
+
+[node name="npc1" type="Sprite2D" parent="."]
+position = Vector2(183, 460)
+texture = ExtResource("5_dry14")
+script = ExtResource("5_l74ok")
+
+[node name="Control" type="Control" parent="npc1"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc2" type="Sprite2D" parent="."]
+position = Vector2(917, 436)
+texture = ExtResource("7_s5bmw")
+flip_h = true
+script = ExtResource("6_r2187")
+
+[node name="Control" type="Control" parent="npc2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Salida" type="Sprite2D" parent="."]
+position = Vector2(119, 114)
+texture = ExtResource("9_gwael")
+script = ExtResource("8_r45v6")
+
+[node name="Control" type="Control" parent="Salida"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.5
+offset_top = -83.0
+offset_right = -83.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Cuadro" parent="." instance=ExtResource("4_vdjtn")]
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_qc6ff")
+volume_db = -18.0
+autoplay = true
+parameters/looping = true

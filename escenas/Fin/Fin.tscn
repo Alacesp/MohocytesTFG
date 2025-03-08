@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3 uid="uid://ck3y3k4b4xlg4"]
+
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="1_eb3lx"]
+[ext_resource type="Script" uid="uid://py7g065e054a" path="res://escenas/Fin/fin.gd" id="1_fra6l"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_sxtl4"]
+[ext_resource type="Script" uid="uid://b5addet3yjixq" path="res://escenas/Fin/button.gd" id="3_qv5bb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_73ug7"]
+bg_color = Color(0.637131, 0.380937, 0.746412, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kc06t"]
+font = ExtResource("2_sxtl4")
+font_size = 42
+
+[sub_resource type="LabelSettings" id="LabelSettings_cqh3r"]
+font = ExtResource("2_sxtl4")
+font_size = 80
+
+[sub_resource type="Theme" id="Theme_bcxhc"]
+default_font = ExtResource("2_sxtl4")
+default_font_size = 40
+
+[node name="Fin" type="Node2D"]
+script = ExtResource("1_fra6l")
+
+[node name="Fondo" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_73ug7")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_left = 13.0
+offset_top = 38.0
+offset_right = 1138.0
+offset_bottom = 374.0
+
+[node name="Puntos" type="HBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Puntos"]
+layout_mode = 2
+text = "PTST"
+label_settings = SubResource("LabelSettings_kc06t")
+
+[node name="Puntos" type="Label" parent="CenterContainer/Puntos"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Iniciar" type="Sprite2D" parent="."]
+position = Vector2(589, 525)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("1_eb3lx")
+
+[node name="Button" type="Button" parent="Iniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_bcxhc")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_TER"
+flat = true
+autowrap_mode = 2
+script = ExtResource("3_qv5bb")
+
+[connection signal="mouse_entered" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Iniciar/Button" to="Iniciar/Button" method="_on_button_down"]

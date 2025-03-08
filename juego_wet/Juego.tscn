@@ -1,0 +1,126 @@
+[gd_scene load_steps=21 format=3 uid="uid://ddb178x7wjyud"]
+
+[ext_resource type="Script" uid="uid://cn6padf8ipk6j" path="res://juego_wet/juego.gd" id="1_30kms"]
+[ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="2_mlb5i"]
+[ext_resource type="Texture2D" uid="uid://bhuo0oab04bw4" path="res://juego_wet/bocadillo.webp" id="3_2aytp"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="4_ptsco"]
+[ext_resource type="Texture2D" uid="uid://x0c2qbcdmwph" path="res://juego_wet/Objetos/hieloConEppendorfs.webp" id="5_fs4ta"]
+[ext_resource type="Texture2D" uid="uid://bjwdanckfd1vc" path="res://juego_wet/Objetos/pipetaRoja.webp" id="6_gplst"]
+[ext_resource type="Texture2D" uid="uid://bnw8nr4ftdcqa" path="res://juego_wet/Objetos/pipetaAmarilla.webp" id="7_2fsbx"]
+[ext_resource type="Texture2D" uid="uid://co0lwbfkmh3yt" path="res://juego_wet/Objetos/pipetaAzul.webp" id="8_rpk46"]
+[ext_resource type="Texture2D" uid="uid://bqi4dfxy0x7bj" path="res://juego_wet/Objetos/microcentrifugaCerrada.webp" id="9_35ijd"]
+[ext_resource type="Texture2D" uid="uid://buphnkwkqsunb" path="res://juego_wet/Objetos/gradillaConEppendorfs.webp" id="10_4njit"]
+[ext_resource type="Texture2D" uid="uid://qcn1qch35gyk" path="res://juego_wet/Objetos/termobloque.webp" id="11_tqwtx"]
+[ext_resource type="Texture2D" uid="uid://cxgjrk7u8fpug" path="res://juego_wet/Objetos/mecheroApagado.webp" id="12_5kn8x"]
+[ext_resource type="Texture2D" uid="uid://d0tkobslv1740" path="res://juego_wet/Objetos/tarro2YTCerrado.webp" id="13_dlvk7"]
+[ext_resource type="Texture2D" uid="uid://coo0c5wbnfmh1" path="res://juego_wet/Objetos/tarroLimpioCerrado.webp" id="14_wcvab"]
+[ext_resource type="Texture2D" uid="uid://bvelsobsyn05s" path="res://juego_wet/Objetos/tarroSucioCerrado.webp" id="15_4jlip"]
+[ext_resource type="Texture2D" uid="uid://dj3s42oxla6d" path="res://juego_wet/Objetos/petriAbierta.webp" id="16_vjk1q"]
+[ext_resource type="Texture2D" uid="uid://bljufrnpbd0r6" path="res://juego_wet/Objetos/eppendorfGrande2.webp" id="17_q6yua"]
+[ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="18_wdrlj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sx8ul"]
+font = ExtResource("4_ptsco")
+font_size = 19
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dyptc"]
+font = ExtResource("4_ptsco")
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[node name="Juego" type="Node2D"]
+position = Vector2(576, 324)
+script = ExtResource("1_30kms")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(-0.000610352, 0)
+scale = Vector2(0.333333, 1)
+texture = ExtResource("2_mlb5i")
+
+[node name="Bocadillo" type="Sprite2D" parent="."]
+position = Vector2(-18.5006, -248)
+scale = Vector2(1.14721, 1)
+texture = ExtResource("3_2aytp")
+
+[node name="Comentario" type="Label" parent="."]
+custom_minimum_size = Vector2(10, 10)
+offset_left = -521.001
+offset_top = -275.0
+offset_right = 493.999
+offset_bottom = -196.0
+text = "¡Ya veo que te has colocado frente al banco de trabajo! Vamos a comenzar entonces a hacer una digestión para cortar los fragmentos de ADN. ¿Ves todos esos tubos en la caja de hielo? Pues tienes que colocarlos en la gradilla, para que sea cómodo trabajar. Esos tubos contienen el ADN del plásmido y de los constructos que han diseñado los de Dry Lab, y también las enzimas de restricción necesarias para digerir este ADN en sitios específicos y el tampón para que funcione todo."
+label_settings = SubResource("LabelSettings_sx8ul")
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Reloj" type="Label" parent="."]
+offset_left = -530.001
+offset_top = 208.0
+offset_right = -438.001
+offset_bottom = 287.0
+label_settings = SubResource("LabelSettings_dyptc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Hielo" type="Sprite2D" parent="."]
+position = Vector2(-404.001, 52)
+texture = ExtResource("5_fs4ta")
+
+[node name="PipetaRoja" type="Sprite2D" parent="."]
+position = Vector2(-178.001, -62)
+texture = ExtResource("6_gplst")
+
+[node name="PipetaAmarilla" type="Sprite2D" parent="."]
+position = Vector2(-114.001, -64)
+texture = ExtResource("7_2fsbx")
+
+[node name="PipetaAzul" type="Sprite2D" parent="."]
+position = Vector2(-47.0006, -63)
+texture = ExtResource("8_rpk46")
+
+[node name="Microcentrifuga" type="Sprite2D" parent="."]
+position = Vector2(-318, 219)
+texture = ExtResource("9_35ijd")
+
+[node name="Gradilla" type="Sprite2D" parent="."]
+position = Vector2(-39.0006, 154)
+texture = ExtResource("10_4njit")
+
+[node name="Termobloque" type="Sprite2D" parent="."]
+position = Vector2(257.651, 64.75)
+scale = Vector2(0.868159, 0.868159)
+texture = ExtResource("11_tqwtx")
+
+[node name="Mechero" type="Sprite2D" parent="."]
+position = Vector2(476.999, 66)
+texture = ExtResource("12_5kn8x")
+
+[node name="Tarro2yt" type="Sprite2D" parent="."]
+position = Vector2(176.999, 236)
+texture = ExtResource("13_dlvk7")
+
+[node name="TarroLimpio" type="Sprite2D" parent="."]
+position = Vector2(267.999, 200)
+texture = ExtResource("14_wcvab")
+
+[node name="TarroSucio" type="Sprite2D" parent="."]
+position = Vector2(344.999, 241)
+texture = ExtResource("15_4jlip")
+
+[node name="PlacaPetri" type="Sprite2D" parent="."]
+position = Vector2(485.999, 255)
+texture = ExtResource("16_vjk1q")
+
+[node name="Eppendorf" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(20, 29)
+texture = ExtResource("17_q6yua")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_wdrlj")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,105 @@
+[gd_scene load_steps=13 format=3 uid="uid://dl0sho4mggnq3"]
+
+[ext_resource type="Texture2D" uid="uid://bajpwpvtmf51o" path="res://recursos/fondos/f_dl.webp" id="1_6e3xa"]
+[ext_resource type="Script" uid="uid://dq5h3w72v6lth" path="res://escenas/SalaDryLab/JFDryLab.gd" id="2_0uj7h"]
+[ext_resource type="Texture2D" uid="uid://d2e620k736aks" path="res://recursos/personajes/jdl.webp" id="2_qt1xv"]
+[ext_resource type="Script" uid="uid://d3ow6yocpfamg" path="res://escenas/SalaDryLab/dl_npc_1.gd" id="3_0ruut"]
+[ext_resource type="Texture2D" uid="uid://deymmnvwuxuo5" path="res://recursos/personajes/esclavo3.webp" id="4_dvy0h"]
+[ext_resource type="Script" uid="uid://duq307gptsx7w" path="res://escenas/SalaDryLab/dl_npc_2.gd" id="4_n6l3x"]
+[ext_resource type="Script" uid="uid://btl8b02vg81yv" path="res://escenas/SalaDryLab/Salida_dl.gd" id="6_ng835"]
+[ext_resource type="Texture2D" uid="uid://dqorglok03vki" path="res://recursos/fondos/escritorioDryLab.webp" id="6_r50du"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="7_ojidu"]
+[ext_resource type="Texture2D" uid="uid://bv43qrkjag8fa" path="res://recursos/personajes/esclavo4.webp" id="7_v8kb8"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_kwwit"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="12_5bujw"]
+
+[node name="Escena_2" type="Node2D"]
+
+[node name="Escenario" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_6e3xa")
+
+[node name="JFDryLab" type="Sprite2D" parent="."]
+position = Vector2(838, 302)
+texture = ExtResource("2_qt1xv")
+script = ExtResource("2_0uj7h")
+
+[node name="Control" type="Control" parent="JFDryLab"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = -71.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc1" type="Sprite2D" parent="."]
+position = Vector2(422, 212)
+scale = Vector2(0.729, 0.7)
+texture = ExtResource("4_dvy0h")
+script = ExtResource("3_0ruut")
+
+[node name="Control" type="Control" parent="npc1"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="EscritorioDryLab" type="Sprite2D" parent="."]
+position = Vector2(612, 285)
+texture = ExtResource("6_r50du")
+
+[node name="npc2" type="Sprite2D" parent="."]
+position = Vector2(284, 467)
+texture = ExtResource("7_v8kb8")
+script = ExtResource("4_n6l3x")
+
+[node name="Control" type="Control" parent="npc2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Salida" type="Sprite2D" parent="."]
+position = Vector2(119, 111)
+texture = ExtResource("10_kwwit")
+script = ExtResource("6_ng835")
+
+[node name="Control" type="Control" parent="Salida"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.5
+offset_top = -83.0
+offset_right = -83.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Cuadro" parent="." instance=ExtResource("7_ojidu")]
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_5bujw")
+volume_db = -18.0
+autoplay = true
+parameters/looping = true

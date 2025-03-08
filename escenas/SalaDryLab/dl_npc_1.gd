@@ -1,0 +1,131 @@
+extends Sprite2D
+
+@onready var texto: CanvasLayer = get_node("../Cuadro")
+
+var soyPrimer = false
+var soyPrimer2 = false
+func _input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if get_rect().has_point(to_local(event.position)) and !texto.estar_activo():
+			texto.encolar(">SD:retratoEsclavo3")
+			if Global.dl == 0:
+				texto.encolar("DL39")
+				texto.encolar("DL40")
+				texto.encolar(">CH")
+				texto.encolar("DL41")
+				texto.encolar(">CH")
+				texto.encolar("DL42")
+				texto.encolar(">CH")
+				texto.encolar("DL43")
+				texto.encolar(">CH")
+				texto.encolar("DL44")
+				texto.encolar("DL45")
+				texto.encolar(">CH")
+				texto.encolar("DL46")
+				texto.encolar(">CH")
+				texto.encolar("DL47")
+				texto.encolar("DL48")
+				texto.encolar(tr("ESQ1"))
+				texto.encolar("DL49")
+				texto.encolar("DL50")
+				texto.encolar("DL51")
+				texto.encolar("DL52")
+				texto.encolar("DL53")
+				texto.encolar(">CH")
+				texto.encolar("DL54")
+				texto.encolar("DL55")
+				texto.encolar(">CH")
+				texto.encolar("DL56")
+				Global.dl += 1
+				soyPrimer = true
+			elif Global.dl == 1 and soyPrimer == true:
+				texto.encolar("DL57")
+				texto.encolar("DL58")
+			elif Global.dl == 1 and soyPrimer == false:
+				texto.encolar(">CH")
+				texto.encolar("DL59")
+				texto.encolar(">CH")
+				texto.encolar("DL60")
+				texto.encolar(">VO")
+				texto.encolar("DL61")
+				texto.encolar(">VN")
+				texto.encolar(">CH")
+				texto.encolar("DL62")
+				texto.encolar(">CH")
+				texto.encolar("DL63")
+				texto.encolar(">CH")
+				texto.encolar("DL64")
+				texto.encolar(">CH")
+				texto.encolar("DL65")
+				texto.encolar("DL66")
+				texto.encolar("DL67")
+				texto.encolar("DL68")
+				texto.encolar("DL69")
+				texto.encolar("DL70")
+				texto.encolar(">CH")
+				texto.encolar("DL71")
+				texto.encolar(">CH")
+				texto.encolar("DL72")
+				texto.encolar("DL73")
+				texto.encolar("DL74")
+				texto.encolar("DL75")
+				texto.encolar("DL76")
+				texto.encolar("DL77")
+				texto.encolar("DL78")
+				texto.encolar(">CH")
+				texto.encolar("DL79")
+				texto.encolar(">CH")
+				texto.encolar("DL80")
+				texto.encolar(">VO")
+				texto.encolar("DL81")
+				texto.encolar(">VN")
+				texto.encolar(">CH")
+				texto.encolar("DL82")
+				Global.dl += 1
+			elif Global.dl == 2 and soyPrimer == true:
+				texto.encolar("DL83")
+			elif Global.dl == 2 and soyPrimer == false:
+				texto.encolar("DL84")
+				texto.encolar("DL85")
+				texto.encolar("DL86")
+			elif Global.dl == 3:
+				texto.encolar("DL87")
+				texto.encolar("DL88")
+				texto.encolar(">CH")
+				texto.encolar("DL89")
+				texto.encolar(">CH")
+				texto.encolar("DL90")
+				texto.encolar("DL91")
+				texto.encolar("DL92")
+				texto.encolar("DL93")
+				texto.encolar("DL94")
+				texto.encolar(tr("ESQ2"))
+				texto.encolar(">CH")
+				texto.encolar("DL95")
+				texto.encolar("DL96")
+				texto.encolar(">CH")
+				texto.encolar("DL97")
+				soyPrimer2 = true;
+				Global.dl += 1
+			elif Global.dl == 4 and soyPrimer2 == true:
+				texto.encolar("DL98")
+			elif Global.dl == 4 and soyPrimer2 == false:
+				texto.encolar("DL99")
+				texto.encolar("DL100")
+				texto.encolar("DL101")
+				texto.encolar(">CH")
+				texto.encolar("DL102")
+				texto.encolar(">CH")
+				texto.encolar("DL103")
+				Global.dl += 1
+			elif Global.dl == 5 and soyPrimer2 == false:
+				texto.encolar(">SI:nada")
+				texto.encolar("DL104")
+				texto.encolar(">SI:retratoPj")
+				texto.encolar(">VO")
+				texto.encolar("DL105")
+				texto.encolar("DL106")
+			elif Global.dl == 5 and soyPrimer2 == true:
+				texto.encolar("DL107")
+			elif Global.dl == 6:
+				texto.encolar("DL108")

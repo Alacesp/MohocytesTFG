@@ -1,0 +1,189 @@
+[gd_scene load_steps=21 format=3 uid="uid://xylfswprvx7b"]
+
+[ext_resource type="Texture2D" uid="uid://grcxv82y6yn7" path="res://recursos/fondos/pasillo.webp" id="1_lwg37"]
+[ext_resource type="PackedScene" uid="uid://dr701hcnwa2r5" path="res://escenas/Pasillo/Personaje.tscn" id="1_m0u72"]
+[ext_resource type="Script" uid="uid://1lqpey2ptmrp" path="res://escenas/Pasillo/Pasillo.gd" id="2_yb7d2"]
+[ext_resource type="Script" uid="uid://equkiwudtd42" path="res://escenas/Pasillo/Personaje.gd" id="3_ba7nf"]
+[ext_resource type="Script" uid="uid://diimvbqn7vl7u" path="res://escenas/Pasillo/PasilloI.gd" id="3_gndal"]
+[ext_resource type="Script" uid="uid://c5006oi42fka7" path="res://escenas/Pasillo/PasilloD.gd" id="4_kx2b5"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="4_o2i2b"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="7_ohswg"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="8_2am7d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5o8l"]
+size = Vector2(57, 662)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_au601"]
+size = Vector2(68, 652.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchfm"]
+size = Vector2(215, 289)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40dbc"]
+size = Vector2(58.2108, 96.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6ay5"]
+size = Vector2(101, 307)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3w7g"]
+size = Vector2(63, 365)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp4gy"]
+size = Vector2(123, 298)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpnkr"]
+size = Vector2(145, 341.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1x1d1"]
+size = Vector2(102, 292.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4bb4"]
+size = Vector2(96, 252.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbd33"]
+size = Vector2(83, 394.5)
+
+[node name="Pasillo" type="Node2D"]
+
+[node name="Pasillo" type="Sprite2D" parent="."]
+position = Vector2(2000, 324)
+texture = ExtResource("1_lwg37")
+script = ExtResource("2_yb7d2")
+
+[node name="PasilloI" type="Sprite2D" parent="."]
+position = Vector2(-2000, 324)
+texture = ExtResource("1_lwg37")
+script = ExtResource("3_gndal")
+
+[node name="PasilloD" type="Sprite2D" parent="."]
+position = Vector2(6000, 324)
+texture = ExtResource("1_lwg37")
+script = ExtResource("4_kx2b5")
+
+[node name="MuroIzq" type="Area2D" parent="." groups=["PortalIzq"]]
+position = Vector2(-980, 19)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroIzq"]
+position = Vector2(-1962, 310)
+shape = SubResource("RectangleShape2D_p5o8l")
+
+[node name="MuroDer" type="Area2D" parent="." groups=["PortalDer"]]
+position = Vector2(4447, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroDer"]
+position = Vector2(884, 324)
+shape = SubResource("RectangleShape2D_au601")
+
+[node name="Personaje" parent="." instance=ExtResource("1_m0u72")]
+position = Vector2(-37, 430)
+collision_mask = 2
+script = ExtResource("3_ba7nf")
+
+[node name="Cámara" type="Camera2D" parent="Personaje"]
+position = Vector2(1, -27)
+limit_top = 0
+limit_bottom = 648
+
+[node name="Muro" type="Area2D" parent="Personaje"]
+position = Vector2(-114, -3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje/Muro"]
+position = Vector2(114.5, 1.5)
+shape = SubResource("RectangleShape2D_vchfm")
+
+[node name="Entrar" type="Sprite2D" parent="Personaje"]
+position = Vector2(-5, -224)
+texture = ExtResource("7_ohswg")
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="Personaje"]
+position = Vector2(37, -430)
+stream = ExtResource("8_2am7d")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
+
+[node name="Suelo" type="StaticBody2D" parent="."]
+position = Vector2(-25, -75)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Colisión" type="CollisionShape2D" parent="Suelo"]
+position = Vector2(2008.5, 696.75)
+scale = Vector2(207.539, 1)
+shape = SubResource("RectangleShape2D_40dbc")
+
+[node name="Puerta1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta1"]
+position = Vector2(233.5, 344.5)
+shape = SubResource("RectangleShape2D_g6ay5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta1"]
+position = Vector2(4233.5, 314.5)
+shape = SubResource("RectangleShape2D_f3w7g")
+
+[node name="Puerta2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta2"]
+position = Vector2(905.5, 345)
+shape = SubResource("RectangleShape2D_fp4gy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta2"]
+position = Vector2(4898, 297)
+shape = SubResource("RectangleShape2D_fp4gy")
+
+[node name="Puerta3" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta3"]
+position = Vector2(1534.5, 327.875)
+shape = SubResource("RectangleShape2D_tpnkr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta3"]
+position = Vector2(-2469, 276)
+shape = SubResource("RectangleShape2D_tpnkr")
+
+[node name="Puerta4" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta4"]
+position = Vector2(2177, 362.375)
+shape = SubResource("RectangleShape2D_1x1d1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta4"]
+position = Vector2(-1816, 284)
+shape = SubResource("RectangleShape2D_1x1d1")
+
+[node name="Puerta5" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta5"]
+position = Vector2(2956, 376.25)
+shape = SubResource("RectangleShape2D_n4bb4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta5"]
+position = Vector2(-1051, 287)
+shape = SubResource("RectangleShape2D_n4bb4")
+
+[node name="Puerta6" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta6"]
+position = Vector2(3624.5, 303.25)
+shape = SubResource("RectangleShape2D_tbd33")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Puerta6"]
+position = Vector2(-382, 292)
+shape = SubResource("RectangleShape2D_tbd33")
+
+[node name="Cuadro" parent="." instance=ExtResource("4_o2i2b")]
+
+[connection signal="area_entered" from="Personaje/Muro" to="Personaje" method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Puerta1" to="Personaje" method="_on_puerta_1_body_entered"]
+[connection signal="body_exited" from="Puerta1" to="Personaje" method="_on_puerta_1_body_exited"]
+[connection signal="body_entered" from="Puerta2" to="Personaje" method="_on_puerta_2_body_entered"]
+[connection signal="body_exited" from="Puerta2" to="Personaje" method="_on_puerta_2_body_exited"]
+[connection signal="body_entered" from="Puerta3" to="Personaje" method="_on_puerta_3_body_entered"]
+[connection signal="body_exited" from="Puerta3" to="Personaje" method="_on_puerta_3_body_exited"]
+[connection signal="body_entered" from="Puerta4" to="Personaje" method="_on_puerta_4_body_entered"]
+[connection signal="body_exited" from="Puerta4" to="Personaje" method="_on_puerta_4_body_exited"]
+[connection signal="body_entered" from="Puerta5" to="Personaje" method="_on_puerta_5_body_entered"]
+[connection signal="body_exited" from="Puerta5" to="Personaje" method="_on_puerta_5_body_exited"]
+[connection signal="body_entered" from="Puerta6" to="Personaje" method="_on_puerta_6_body_entered"]
+[connection signal="body_exited" from="Puerta6" to="Personaje" method="_on_puerta_6_body_exited"]

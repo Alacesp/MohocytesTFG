@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr701hcnwa2r5"]
+
+[ext_resource type="Texture2D" uid="uid://ngx4xyhlby8u" path="res://recursos/personajes/pjWalk1.webp" id="1_g7mnp"]
+[ext_resource type="Texture2D" uid="uid://dac05uf587c0s" path="res://recursos/personajes/pjWalk2.webp" id="2_2udc3"]
+[ext_resource type="Texture2D" uid="uid://c5rpgeddy08au" path="res://recursos/personajes/pjIdle.webp" id="3_43ct6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tjb72"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g7mnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2udc3")
+}],
+"loop": true,
+"name": &"andar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_43ct6")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cy466"]
+size = Vector2(215, 289)
+
+[node name="Personaje" type="CharacterBody2D"]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tjb72")
+animation = &"andar"
+
+[node name="Colisión" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_cy466")

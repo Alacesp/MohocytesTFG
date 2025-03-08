@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bb4cxgxhertww"]
+
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_xv7us"]
+
+[resource]
+font = ExtResource("1_xv7us")
+font_size = 44
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)

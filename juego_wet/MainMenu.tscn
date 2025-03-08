@@ -1,0 +1,112 @@
+[gd_scene load_steps=9 format=3 uid="uid://b3878pwhqut36"]
+
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_ibh8i"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="2_fgmdo"]
+[ext_resource type="Script" uid="uid://bmevtfsu0eqmr" path="res://juego_wet/iniciarWet.gd" id="3_qaetm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggq51"]
+bg_color = Color(0.305405, 0.653398, 0.753873, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lysl"]
+font = ExtResource("1_ibh8i")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_rdwu6"]
+default_font = ExtResource("1_ibh8i")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_vq1xp"]
+default_font = ExtResource("1_ibh8i")
+default_font_size = 32
+
+[sub_resource type="Theme" id="Theme_5mnpv"]
+default_font = ExtResource("1_ibh8i")
+default_font_size = 32
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ggq51")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -555.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "WLKWL"
+label_settings = SubResource("LabelSettings_1lysl")
+
+[node name="Iniciar" type="Sprite2D" parent="."]
+position = Vector2(581, 542)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("2_fgmdo")
+
+[node name="Button" type="Button" parent="Iniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_rdwu6")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_JUG"
+flat = true
+autowrap_mode = 2
+script = ExtResource("3_qaetm")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 123.0
+offset_right = 1052.0
+offset_bottom = 319.0
+theme = SubResource("Theme_vq1xp")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJWL1"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 296.0
+offset_right = 1059.0
+offset_bottom = 472.0
+theme = SubResource("Theme_5mnpv")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJWL2"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="mouse_entered" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Iniciar/Button" to="Iniciar/Button" method="_on_pressed"]

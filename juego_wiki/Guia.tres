@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b41h43eg0ncfv"]
+
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_snxjs"]
+
+[resource]
+font = ExtResource("1_snxjs")
+font_size = 34

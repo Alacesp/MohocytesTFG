@@ -1,0 +1,136 @@
+[gd_scene load_steps=17 format=3 uid="uid://d1n27shfj842o"]
+
+[ext_resource type="Script" uid="uid://b11sxc5pgbxvn" path="res://juego_dry/GameScene.gd" id="1_0ei83"]
+[ext_resource type="Script" uid="uid://df8ivwrj1f3ys" path="res://juego_dry/Marcador.gd" id="2_8j0hc"]
+[ext_resource type="Texture2D" uid="uid://cxecwunyos61e" path="res://juego_dry/Marcadores/Marcador0.webp" id="2_aaymg"]
+[ext_resource type="Script" uid="uid://djcvjwkt8lba0" path="res://juego_dry/Puntuacion.gd" id="3_1ak1f"]
+[ext_resource type="Script" uid="uid://b7onas8pm0ei7" path="res://juego_dry/CharacterBody2D.gd" id="4_6hlbl"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="4_tijym"]
+[ext_resource type="Script" uid="uid://b1ms52hac860h" path="res://juego_dry/Carro.gd" id="6_u8c78"]
+[ext_resource type="Texture2D" uid="uid://cgk7d0bpimtve" path="res://juego_dry/Carro/Carro0.webp" id="7_12ybd"]
+[ext_resource type="Script" uid="uid://dr6jkqqykagxn" path="res://juego_dry/StopwatchLabel.gd" id="7_v8oqc"]
+[ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="10_3j3b1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpiu5"]
+bg_color = Color(0.416442, 0.665148, 0.514312, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ii7gm"]
+font = ExtResource("4_tijym")
+font_size = 37
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jpuxx"]
+font = ExtResource("4_tijym")
+font_size = 49
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjhsy"]
+size = Vector2(93.2732, 100.526)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wwv0u"]
+font = ExtResource("4_tijym")
+font_size = 37
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y8fju"]
+font = ExtResource("4_tijym")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0ei83")
+
+[node name="Fondo" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cpiu5")
+
+[node name="Suelo" type="Panel" parent="Fondo"]
+layout_mode = 0
+offset_top = 570.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Marcador" type="Sprite2D" parent="."]
+position = Vector2(588, 65)
+scale = Vector2(0.075, 0.068)
+texture = ExtResource("2_aaymg")
+script = ExtResource("2_8j0hc")
+
+[node name="Puntuacion" type="Label" parent="."]
+z_index = 1
+offset_left = 30.0
+offset_top = 36.0
+offset_right = 227.0
+offset_bottom = 78.0
+text = "Puntos:"
+label_settings = SubResource("LabelSettings_ii7gm")
+
+[node name="Label" type="Label" parent="Puntuacion"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = -7.0
+offset_right = 141.0
+offset_bottom = 43.0
+text = "10"
+label_settings = SubResource("LabelSettings_jpuxx")
+script = ExtResource("3_1ak1f")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("4_6hlbl")
+
+[node name="Carro" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(567, 532)
+scale = Vector2(0.907687, 0.884119)
+texture = ExtResource("7_12ybd")
+script = ExtResource("6_u8c78")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(567, 531.5)
+rotation = -3.14159
+scale = Vector2(1.24366, 1.12408)
+shape = SubResource("RectangleShape2D_qjhsy")
+
+[node name="Stopwatch" type="Timer" parent="."]
+autostart = true
+
+[node name="StopwatchLabel" type="Label" parent="."]
+z_index = 1
+offset_left = 862.0
+offset_top = 24.0
+offset_right = 1108.0
+offset_bottom = 111.0
+text = "Tiempo restante:"
+label_settings = SubResource("LabelSettings_wwv0u")
+horizontal_alignment = 2
+
+[node name="Label" type="Label" parent="StopwatchLabel"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 39.0
+offset_right = 213.0
+offset_bottom = 90.0
+text = "1:00"
+label_settings = SubResource("LabelSettings_y8fju")
+script = ExtResource("7_v8oqc")
+
+[node name="Generate" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.8
+autostart = true
+
+[node name="Generate" type="Timer" parent="Generate"]
+process_callback = 0
+wait_time = 0.8
+one_shot = true
+autostart = true
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_3j3b1")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true
+
+[connection signal="timeout" from="Stopwatch" to="." method="_on_stopwatch_timeout"]
+[connection signal="timeout" from="Generate" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Generate/Generate" to="." method="_on_timer_timeout"]

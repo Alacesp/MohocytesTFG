@@ -1,0 +1,118 @@
+[gd_scene load_steps=14 format=3 uid="uid://bsj1ex7252esb"]
+
+[ext_resource type="Texture2D" uid="uid://ctxnun45sqk56" path="res://recursos/fondos/f_human.webp" id="1_d1y8l"]
+[ext_resource type="Script" uid="uid://bdexdkpncic08" path="res://escenas/SalaHuman/JFHuman.gd" id="2_am0wi"]
+[ext_resource type="Texture2D" uid="uid://0tdb7jhdl4we" path="res://recursos/personajes/jhuman.webp" id="2_lowt6"]
+[ext_resource type="Script" uid="uid://bv38vy7d3mxh0" path="res://escenas/SalaHuman/h_npc_1.gd" id="3_nlkf0"]
+[ext_resource type="Script" uid="uid://drcp26modf7mv" path="res://escenas/SalaHuman/h_npc2.gd" id="4_4i0qn"]
+[ext_resource type="Texture2D" uid="uid://dxw0aqi5166ha" path="res://recursos/fondos/escritorioHuman.webp" id="4_bjv45"]
+[ext_resource type="Script" uid="uid://ctyxq074nfcd1" path="res://escenas/SalaHuman/salida.gd" id="5_4jcum"]
+[ext_resource type="Texture2D" uid="uid://ci7bjb8wovmit" path="res://recursos/personajes/esclavo.webp" id="5_pa231"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="6_pkn5r"]
+[ext_resource type="Texture2D" uid="uid://b3r2kqo7y554w" path="res://recursos/fondos/mesaHuman.webp" id="7_3hpep"]
+[ext_resource type="Texture2D" uid="uid://cmhao25esff10" path="res://recursos/personajes/esclavo2.webp" id="8_yugfn"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_ejc7f"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="13_b86yr"]
+
+[node name="Escena_1" type="Node2D"]
+
+[node name="Escenario" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_d1y8l")
+
+[node name="JFHuman" type="Sprite2D" parent="."]
+position = Vector2(593, 301)
+scale = Vector2(0.833851, 0.833851)
+texture = ExtResource("2_lowt6")
+script = ExtResource("2_am0wi")
+
+[node name="Control" type="Control" parent="JFHuman"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.5
+offset_top = -99.0
+offset_right = -80.5
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Escritorio" type="Sprite2D" parent="."]
+position = Vector2(591, 418)
+texture = ExtResource("4_bjv45")
+
+[node name="npc1" type="Sprite2D" parent="."]
+position = Vector2(217, 429)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_pa231")
+script = ExtResource("3_nlkf0")
+
+[node name="Control" type="Control" parent="npc1"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="MesaI" type="Sprite2D" parent="."]
+position = Vector2(314, 487)
+texture = ExtResource("7_3hpep")
+
+[node name="npc2" type="Sprite2D" parent="."]
+position = Vector2(938, 417)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_yugfn")
+flip_h = true
+script = ExtResource("4_4i0qn")
+
+[node name="Control" type="Control" parent="npc2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="MesaD" type="Sprite2D" parent="."]
+position = Vector2(846, 488)
+texture = ExtResource("7_3hpep")
+flip_h = true
+
+[node name="Salida" type="Sprite2D" parent="."]
+position = Vector2(118, 107)
+texture = ExtResource("10_ejc7f")
+script = ExtResource("5_4jcum")
+
+[node name="Control" type="Control" parent="Salida"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.5
+offset_top = -83.0
+offset_right = -83.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Cuadro" parent="." instance=ExtResource("6_pkn5r")]
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_b86yr")
+volume_db = -18.0
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,200 @@
+[gd_scene load_steps=23 format=3 uid="uid://b10131iwwftth"]
+
+[ext_resource type="Script" uid="uid://rthkgd7k7etq" path="res://escenas/Inicio/inicio.gd" id="1_0t75p"]
+[ext_resource type="Texture2D" uid="uid://crbknns3p26u8" path="res://recursos/fondos/fondo.webp" id="1_vek24"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_y30rq"]
+[ext_resource type="Script" uid="uid://bavqy52bdt7jl" path="res://escenas/Inicio/bot_iniciar.gd" id="2_233f6"]
+[ext_resource type="Script" uid="uid://cnrwnu7w1u8mi" path="res://escenas/Inicio/bot_salir.gd" id="2_hgb1a"]
+[ext_resource type="Texture2D" uid="uid://b81tr68gvim5x" path="res://recursos/opcionesMenu.png" id="3_2tyqq"]
+[ext_resource type="Texture2D" uid="uid://bddqouslqxtgw" path="res://recursos/personajes/jw.webp" id="7_bngpp"]
+[ext_resource type="Texture2D" uid="uid://dmt12jp4m3nfv" path="res://recursos/personajes/esclavo9.webp" id="7_njayh"]
+[ext_resource type="FontFile" uid="uid://0en7jsx52dgl" path="res://recursos/Chalk-Regular.ttf" id="7_pfdx0"]
+[ext_resource type="Texture2D" uid="uid://dwj6mylo1gq1g" path="res://recursos/personajes/jredes.webp" id="8_cuhw3"]
+[ext_resource type="FontFile" uid="uid://cxkpxy5n0pqf" path="res://recursos/Nanicha.ttf" id="8_owu7j"]
+[ext_resource type="Texture2D" uid="uid://0tdb7jhdl4we" path="res://recursos/personajes/jhuman.webp" id="9_uitru"]
+[ext_resource type="Texture2D" uid="uid://6dedwqt872qu" path="res://recursos/personajes/jwl.webp" id="10_yjwxf"]
+[ext_resource type="Texture2D" uid="uid://d2e620k736aks" path="res://recursos/personajes/jdl.webp" id="11_4m15l"]
+[ext_resource type="Texture2D" uid="uid://c5rpgeddy08au" path="res://recursos/personajes/pjIdle.webp" id="13_bmljj"]
+[ext_resource type="Texture2D" uid="uid://c2peipj5uathm" path="res://recursos/idioma1.webp" id="15_nsr4l"]
+[ext_resource type="Script" uid="uid://cnvxgjwnpfyf2" path="res://escenas/Inicio/cambiar_idioma.gd" id="16_pydyc"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="16_rev5w"]
+
+[sub_resource type="Theme" id="Theme_l1ncq"]
+default_font = ExtResource("1_y30rq")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_6ibpb"]
+default_font = ExtResource("1_y30rq")
+default_font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_bqaxc"]
+font = ExtResource("7_pfdx0")
+font_size = 80
+
+[sub_resource type="LabelSettings" id="LabelSettings_umbvr"]
+font = ExtResource("8_owu7j")
+font_size = 24
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0t75p")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_vek24")
+
+[node name="Iniciar" type="Sprite2D" parent="."]
+position = Vector2(577, 341)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("3_2tyqq")
+
+[node name="BotIniciar" type="Button" parent="Iniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_l1ncq")
+text = "BOT_JUG"
+flat = true
+autowrap_mode = 2
+script = ExtResource("2_233f6")
+
+[node name="Salir" type="Sprite2D" parent="."]
+position = Vector2(578, 494)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("3_2tyqq")
+
+[node name="BotSalir" type="Button" parent="Salir"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_l1ncq")
+text = "BOT_SAL"
+flat = true
+autowrap_mode = 2
+icon_alignment = 1
+script = ExtResource("2_hgb1a")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 35.0
+offset_right = 952.0
+offset_bottom = 202.0
+
+[node name="Titulo" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme = SubResource("Theme_6ibpb")
+text = "TITULO"
+label_settings = SubResource("LabelSettings_bqaxc")
+horizontal_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 186.0
+offset_right = 904.0
+offset_bottom = 227.0
+
+[node name="Subtitulo" type="Label" parent="CenterContainer2"]
+layout_mode = 2
+text = "SUBTITULO"
+label_settings = SubResource("LabelSettings_umbvr")
+
+[node name="PayasoI" type="Sprite2D" parent="."]
+position = Vector2(-172, 365)
+scale = Vector2(0.722552, 0.722552)
+texture = ExtResource("7_njayh")
+
+[node name="PayasoD" type="Sprite2D" parent="."]
+position = Vector2(1290, 379)
+scale = Vector2(0.728571, 0.728571)
+texture = ExtResource("7_njayh")
+flip_h = true
+
+[node name="Wiki" type="Sprite2D" parent="."]
+position = Vector2(1302, 367)
+texture = ExtResource("7_bngpp")
+
+[node name="Redes" type="Sprite2D" parent="."]
+position = Vector2(-168, 357)
+texture = ExtResource("8_cuhw3")
+flip_h = true
+
+[node name="Human" type="Sprite2D" parent="."]
+position = Vector2(1293, 386)
+texture = ExtResource("9_uitru")
+
+[node name="WetLab" type="Sprite2D" parent="."]
+position = Vector2(-171, 340)
+scale = Vector2(0.666913, 0.666913)
+texture = ExtResource("10_yjwxf")
+flip_h = true
+
+[node name="DryLab" type="Sprite2D" parent="."]
+position = Vector2(-170, 356)
+texture = ExtResource("11_4m15l")
+flip_h = true
+
+[node name="Jugable" type="Sprite2D" parent="."]
+position = Vector2(1302, 376)
+scale = Vector2(0.702381, 0.702381)
+texture = ExtResource("13_bmljj")
+flip_h = true
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_rev5w")
+autoplay = true
+parameters/looping = true
+
+[node name="Idioma" type="Sprite2D" parent="."]
+position = Vector2(88, 83)
+scale = Vector2(0.555, 0.555)
+texture = ExtResource("15_nsr4l")
+
+[node name="BotIdioma" type="Button" parent="Idioma"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -100.0
+offset_right = -100.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+script = ExtResource("16_pydyc")
+
+[connection signal="button_down" from="Iniciar/BotIniciar" to="Iniciar/BotIniciar" method="_on_button_down"]
+[connection signal="button_up" from="Iniciar/BotIniciar" to="Iniciar/BotIniciar" method="_on_button_up"]
+[connection signal="mouse_entered" from="Iniciar/BotIniciar" to="Iniciar/BotIniciar" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Iniciar/BotIniciar" to="Iniciar/BotIniciar" method="_on_mouse_exited"]
+[connection signal="pressed" from="Iniciar/BotIniciar" to="Iniciar/BotIniciar" method="_on_pressed"]
+[connection signal="button_down" from="Salir/BotSalir" to="Salir/BotSalir" method="_on_button_down"]
+[connection signal="button_up" from="Salir/BotSalir" to="Salir/BotSalir" method="_on_button_up"]
+[connection signal="mouse_entered" from="Salir/BotSalir" to="Salir/BotSalir" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Salir/BotSalir" to="Salir/BotSalir" method="_on_mouse_exited"]
+[connection signal="pressed" from="Salir/BotSalir" to="Salir/BotSalir" method="_on_pressed"]
+[connection signal="button_down" from="Idioma/BotIdioma" to="Idioma/BotIdioma" method="_on_button_down"]
+[connection signal="button_up" from="Idioma/BotIdioma" to="Idioma/BotIdioma" method="_on_button_up"]
+[connection signal="mouse_entered" from="Idioma/BotIdioma" to="Idioma/BotIdioma" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Idioma/BotIdioma" to="Idioma/BotIdioma" method="_on_mouse_exited"]
+[connection signal="pressed" from="Idioma/BotIdioma" to="Idioma/BotIdioma" method="_on_pressed"]

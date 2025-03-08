@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhd0uoa6nxjqj"]
+
+[ext_resource type="Texture2D" uid="uid://dhe6du6rnd7lu" path="res://juego_redes/Fondo.webp" id="1_nxhxi"]
+[ext_resource type="Script" uid="uid://1y2uph8hrws8" path="res://juego_redes/GameScene.gd" id="2_v05aj"]
+[ext_resource type="Texture2D" uid="uid://b4ifxt8uo8jte" path="res://juego_redes/Interactuable/0.webp" id="3_12v6y"]
+[ext_resource type="Texture2D" uid="uid://nxjud635wvy4" path="res://juego_redes/Completas/0.webp" id="4_dkemj"]
+[ext_resource type="PackedScene" uid="uid://vf5g75r7vt0d" path="res://juego_redes/Objeto.tscn" id="5_jlfcm"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="6_odor5"]
+[ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="7_vog8t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ivfqk"]
+font = ExtResource("6_odor5")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[node name="Fondo" type="Sprite2D"]
+z_index = -2
+position = Vector2(576, 324)
+texture = ExtResource("1_nxhxi")
+script = ExtResource("2_v05aj")
+
+[node name="Interactuable" type="Sprite2D" parent="."]
+texture = ExtResource("3_12v6y")
+
+[node name="Completa" type="Sprite2D" parent="."]
+texture = ExtResource("4_dkemj")
+
+[node name="Objetos" type="Node2D" parent="."]
+
+[node name="0" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(-448, -194)
+
+[node name="1" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(-355, -11)
+
+[node name="2" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(-438, 192)
+
+[node name="3" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(356, -198)
+
+[node name="4" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(470, 4)
+
+[node name="5" parent="Objetos" instance=ExtResource("5_jlfcm")]
+position = Vector2(380, 208)
+
+[node name="Tiempo" type="Label" parent="."]
+offset_left = -73.0
+offset_top = 248.0
+offset_right = 88.0
+offset_bottom = 328.0
+text = "00:03"
+label_settings = SubResource("LabelSettings_ivfqk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Contenedor" type="CenterContainer" parent="."]
+offset_left = -254.0
+offset_top = -337.0
+offset_right = 244.0
+offset_bottom = -227.0
+
+[node name="Guia" type="Label" parent="Contenedor"]
+layout_mode = 2
+text = "Memoriza"
+label_settings = SubResource("LabelSettings_ivfqk")
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_vog8t")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=3 uid="uid://d3tva0n5uh1x7"]
+
+[ext_resource type="Texture2D" uid="uid://brrtm282guday" path="res://recursos/fondos/redes.webp" id="1_qwfqt"]
+[ext_resource type="Texture2D" uid="uid://dwj6mylo1gq1g" path="res://recursos/personajes/jredes.webp" id="2_q64oh"]
+[ext_resource type="Script" uid="uid://dkfc312qglren" path="res://escenas/SalaRedes/JFRedes.gd" id="4_bshyr"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="4_lk3qd"]
+[ext_resource type="Texture2D" uid="uid://txbckbpkqfj3" path="res://recursos/personajes/esclavo7.webp" id="4_mcb08"]
+[ext_resource type="Texture2D" uid="uid://6dedwqt872qu" path="res://recursos/personajes/jwl.webp" id="5_evdb4"]
+[ext_resource type="Texture2D" uid="uid://d3ffie25l56iu" path="res://recursos/personajes/esclavo8.webp" id="6_0p5cd"]
+[ext_resource type="Script" uid="uid://ceikhe8xpgtda" path="res://escenas/SalaRedes/r_npc_1.gd" id="6_ejqfw"]
+[ext_resource type="Script" uid="uid://dwsygv4k0r6r0" path="res://escenas/SalaRedes/r_npc_2.gd" id="7_jnuy0"]
+[ext_resource type="Script" uid="uid://be6wk5dv1xl88" path="res://escenas/SalaWetLab/Jwl.gd" id="9_5odkj"]
+[ext_resource type="Texture2D" uid="uid://cq34uw2fu4jte" path="res://recursos/fondos/camara.webp" id="10_5hxct"]
+[ext_resource type="Script" uid="uid://cnmc3u0a881xg" path="res://escenas/SalaRedes/Salida_redes.gd" id="10_ehryp"]
+[ext_resource type="Script" uid="uid://ejh2d2pyan5n" path="res://escenas/SalaRedes/camara.gd" id="11_miljc"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="12_iqow6"]
+[ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="15_5wg4l"]
+
+[node name="Escena_4" type="Node2D"]
+
+[node name="Escenario" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_qwfqt")
+
+[node name="Redes" type="Sprite2D" parent="."]
+position = Vector2(240, 469)
+texture = ExtResource("2_q64oh")
+script = ExtResource("4_bshyr")
+
+[node name="Control" type="Control" parent="Redes"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -111.0
+offset_right = -76.0
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc1" type="Sprite2D" parent="."]
+position = Vector2(791, 419)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_mcb08")
+flip_h = true
+script = ExtResource("6_ejqfw")
+
+[node name="Control" type="Control" parent="npc1"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="npc2" type="Sprite2D" parent="."]
+position = Vector2(688, 540)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_0p5cd")
+script = ExtResource("7_jnuy0")
+
+[node name="Control" type="Control" parent="npc2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -146.0
+offset_right = -105.0
+offset_bottom = -146.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Jwl" type="Sprite2D" parent="."]
+position = Vector2(482, 404)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_evdb4")
+script = ExtResource("9_5odkj")
+
+[node name="Control" type="Control" parent="Jwl"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -168.5
+offset_top = -215.0
+offset_right = -168.5
+offset_bottom = -215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Camara" type="Sprite2D" parent="."]
+position = Vector2(423, 566)
+texture = ExtResource("10_5hxct")
+script = ExtResource("11_miljc")
+
+[node name="Salida" type="Sprite2D" parent="."]
+position = Vector2(120, 154)
+texture = ExtResource("12_iqow6")
+script = ExtResource("10_ehryp")
+
+[node name="Control" type="Control" parent="Salida"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.5
+offset_top = -83.0
+offset_right = -83.5
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Cuadro" parent="." instance=ExtResource("4_lk3qd")]
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_5wg4l")
+volume_db = -18.0
+parameters/looping = true

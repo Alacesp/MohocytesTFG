@@ -1,0 +1,150 @@
+[gd_scene load_steps=11 format=3 uid="uid://bsk20vlg82np1"]
+
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_mw5xp"]
+[ext_resource type="Script" uid="uid://djcvjwkt8lba0" path="res://juego_dry/Puntuacion.gd" id="1_xhh6k"]
+[ext_resource type="Script" uid="uid://bwm76rqw3dy36" path="res://juego_dry/reiniciar.gd" id="2_c5mw4"]
+[ext_resource type="Script" uid="uid://bw2ss8qomivd2" path="res://juego_dry/salir.gd" id="2_odcdk"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="5_anv3l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lyaxi"]
+bg_color = Color(0.416442, 0.665148, 0.514312, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8y71i"]
+font = ExtResource("1_mw5xp")
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1svqq"]
+font = ExtResource("1_mw5xp")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7u4cx"]
+font = ExtResource("1_mw5xp")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_ekbyo"]
+default_font = ExtResource("1_mw5xp")
+default_font_size = 40
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lyaxi")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "FDJ"
+label_settings = SubResource("LabelSettings_8y71i")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "PTS"
+label_settings = SubResource("LabelSettings_1svqq")
+
+[node name="Puntuacion" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "15"
+label_settings = SubResource("LabelSettings_7u4cx")
+horizontal_alignment = 1
+script = ExtResource("1_xhh6k")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Reiniciar" type="Sprite2D" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+position = Vector2(-91, 128)
+scale = Vector2(1.4, 1)
+texture = ExtResource("5_anv3l")
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_ekbyo")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_VAJ"
+flat = true
+autowrap_mode = 2
+script = ExtResource("2_c5mw4")
+
+[node name="Salir" type="Sprite2D" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+position = Vector2(345, 128)
+scale = Vector2(1.4, 1)
+texture = ExtResource("5_anv3l")
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2/Salir"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_ekbyo")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_TER"
+flat = true
+autowrap_mode = 2
+script = ExtResource("2_odcdk")
+
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Reiniciar/Button" method="_on_button_down"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" to="CenterContainer/VBoxContainer/HBoxContainer2/Salir/Button" method="_on_button_down"]

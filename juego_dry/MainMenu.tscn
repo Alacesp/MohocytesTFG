@@ -1,0 +1,152 @@
+[gd_scene load_steps=10 format=3 uid="uid://cl2doug6d6yjv"]
+
+[ext_resource type="Script" uid="uid://br03tci6wbhai" path="res://juego_dry/iniciar.gd" id="1_2yhue"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="1_afu4c"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_ej0eo"]
+[ext_resource type="Texture2D" uid="uid://bqmvosa1cpqqi" path="res://juego_dry/inst.webp" id="4_pks6k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggq51"]
+bg_color = Color(0.416442, 0.665148, 0.514312, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lysl"]
+font = ExtResource("2_ej0eo")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_rdwu6"]
+default_font = ExtResource("2_ej0eo")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_vq1xp"]
+default_font = ExtResource("2_ej0eo")
+default_font_size = 32
+
+[sub_resource type="Theme" id="Theme_5mnpv"]
+default_font = ExtResource("2_ej0eo")
+default_font_size = 32
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ggq51")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -555.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "WLKDL"
+label_settings = SubResource("LabelSettings_1lysl")
+
+[node name="Iniciar" type="Sprite2D" parent="."]
+position = Vector2(976, 542)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("1_afu4c")
+
+[node name="Button" type="Button" parent="Iniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_rdwu6")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "BOT_JUG"
+flat = true
+autowrap_mode = 2
+script = ExtResource("1_2yhue")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 123.0
+offset_right = 1090.0
+offset_bottom = 319.0
+theme = SubResource("Theme_vq1xp")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJDL1"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 437.0
+offset_right = 815.0
+offset_bottom = 613.0
+theme = SubResource("Theme_5mnpv")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJDL2"
+
+[node name="Inst" type="Sprite2D" parent="."]
+position = Vector2(526, 356)
+scale = Vector2(0.222973, 0.222973)
+texture = ExtResource("4_pks6k")
+
+[node name="Label1" type="Label" parent="Inst"]
+offset_left = -928.364
+offset_top = 130.061
+offset_right = -716.364
+offset_bottom = 247.061
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "IDLPM"
+
+[node name="Label2" type="Label" parent="Inst"]
+offset_left = -390.182
+offset_top = 130.061
+offset_right = -224.182
+offset_bottom = 247.061
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "2. RBS"
+
+[node name="Label3" type="Label" parent="Inst"]
+offset_left = 71.7577
+offset_top = 130.061
+offset_right = 272.758
+offset_bottom = 247.061
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "3. CDS"
+
+[node name="Label4" type="Label" parent="Inst"]
+offset_left = 493.334
+offset_top = 130.061
+offset_right = 783.334
+offset_bottom = 247.061
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "IDLTERM"
+
+[connection signal="mouse_entered" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Iniciar/Button" to="Iniciar/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Iniciar/Button" to="Iniciar/Button" method="_on_button_down"]

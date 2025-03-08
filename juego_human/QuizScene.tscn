@@ -1,0 +1,274 @@
+[gd_scene load_steps=17 format=3 uid="uid://tu1n4y7opo63"]
+
+[ext_resource type="Script" uid="uid://cvhjp7liasn0d" path="res://juego_human/QuizScene.gd" id="1_omqk1"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="3_2oq0x"]
+[ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="3_wcdp5"]
+[ext_resource type="Script" uid="uid://cfemhl88d5pvj" path="res://juego_human/bot_opc.gd" id="5_kuv5u"]
+[ext_resource type="Texture2D" uid="uid://cbwciheo2bcrw" path="res://juego_human/pizarra.webp" id="6_y5tnw"]
+[ext_resource type="Texture2D" uid="uid://bx8sn2kabkgrt" path="res://juego_human/img_pr/1.webp" id="7_cr8kx"]
+[ext_resource type="Texture2D" uid="uid://dwasv1f5tlu1g" path="res://recursos/dialogo_off.png" id="7_s8k8d"]
+[ext_resource type="Texture2D" uid="uid://b0v4xjlqwk1ka" path="res://juego_human/monigote1.webp" id="8_bysx2"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="8_f6bvp"]
+[ext_resource type="Texture2D" uid="uid://32sprkt2ak0o" path="res://juego_human/monigote2.webp" id="8_hepg5"]
+[ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="11_8gg05"]
+
+[sub_resource type="Theme" id="Theme_dp5w8"]
+default_font = ExtResource("8_f6bvp")
+default_font_size = 28
+
+[sub_resource type="Animation" id="Animation_gt4dv"]
+resource_name = "Animacion_Personaje"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Personaje:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_bysx2"), ExtResource("8_hepg5")]
+}
+
+[sub_resource type="Animation" id="Animation_823ex"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Personaje:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qqvvv"]
+_data = {
+&"Animacion_Personaje": SubResource("Animation_gt4dv"),
+&"RESET": SubResource("Animation_823ex")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_lbqqr"]
+font = ExtResource("8_f6bvp")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_omqk1")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(576, 324)
+scale = Vector2(1.024, 1.0237)
+texture = ExtResource("3_wcdp5")
+
+[node name="Preguntas" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -149.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBC" type="HBoxContainer" parent="Preguntas"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Boton1" type="Sprite2D" parent="Preguntas/HBC"]
+position = Vector2(-401, 8)
+scale = Vector2(1.25, 1)
+texture = ExtResource("3_2oq0x")
+
+[node name="Button" type="Button" parent="Preguntas/HBC/Boton1"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_dp5w8")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "Empieza el test"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_kuv5u")
+
+[node name="Boton2" type="Sprite2D" parent="Preguntas/HBC"]
+position = Vector2(-129, 8)
+scale = Vector2(1.25, 1)
+texture = ExtResource("3_2oq0x")
+
+[node name="Button" type="Button" parent="Preguntas/HBC/Boton2"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_dp5w8")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "Empieza el test"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_kuv5u")
+
+[node name="Boton3" type="Sprite2D" parent="Preguntas/HBC"]
+position = Vector2(144, 8)
+scale = Vector2(1.25, 1)
+texture = ExtResource("3_2oq0x")
+
+[node name="Button" type="Button" parent="Preguntas/HBC/Boton3"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_dp5w8")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "Empieza el test"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_kuv5u")
+
+[node name="Boton4" type="Sprite2D" parent="Preguntas/HBC"]
+position = Vector2(413, 8)
+scale = Vector2(1.25, 1)
+texture = ExtResource("3_2oq0x")
+
+[node name="Button" type="Button" parent="Preguntas/HBC/Boton4"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_dp5w8")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "Empieza el test"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_kuv5u")
+
+[node name="Pizarra" type="Sprite2D" parent="."]
+position = Vector2(672, 205)
+scale = Vector2(0.921412, 1.1309)
+texture = ExtResource("6_y5tnw")
+
+[node name="Diapositiva" type="Sprite2D" parent="Pizarra"]
+z_index = 1
+position = Vector2(0.542647, 3.09488)
+scale = Vector2(0.963196, 0.95057)
+texture = ExtResource("7_cr8kx")
+
+[node name="Personaje" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(365, 222)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personaje"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_qqvvv")
+}
+
+[node name="Dialogo" type="Sprite2D" parent="."]
+position = Vector2(582.5, 402)
+scale = Vector2(1.03714, 0.832168)
+texture = ExtResource("7_s8k8d")
+
+[node name="CenterContainer" type="CenterContainer" parent="Dialogo"]
+offset_left = -481.612
+offset_top = -36.0504
+offset_right = 484.388
+offset_bottom = 99.9496
+
+[node name="Label" type="Label" parent="Dialogo/CenterContainer"]
+custom_minimum_size = Vector2(966, 136)
+layout_mode = 2
+text = "Pregunta
+"
+label_settings = SubResource("LabelSettings_lbqqr")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_8gg05")
+volume_db = -12.0
+autoplay = true
+parameters/looping = true
+
+[connection signal="mouse_entered" from="Preguntas/HBC/Boton1/Button" to="Preguntas/HBC/Boton1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Preguntas/HBC/Boton1/Button" to="Preguntas/HBC/Boton1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Preguntas/HBC/Boton1/Button" to="." method="_on_press_Button1"]
+[connection signal="mouse_entered" from="Preguntas/HBC/Boton2/Button" to="Preguntas/HBC/Boton2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Preguntas/HBC/Boton2/Button" to="Preguntas/HBC/Boton2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Preguntas/HBC/Boton2/Button" to="." method="_on_press_Button2"]
+[connection signal="mouse_entered" from="Preguntas/HBC/Boton3/Button" to="Preguntas/HBC/Boton3/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Preguntas/HBC/Boton3/Button" to="Preguntas/HBC/Boton3/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Preguntas/HBC/Boton3/Button" to="." method="_on_press_Button3"]
+[connection signal="mouse_entered" from="Preguntas/HBC/Boton4/Button" to="Preguntas/HBC/Boton4/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Preguntas/HBC/Boton4/Button" to="Preguntas/HBC/Boton4/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Preguntas/HBC/Boton4/Button" to="." method="_on_press_Button4"]

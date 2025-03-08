@@ -1,0 +1,107 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvwror6m654hx"]
+
+[ext_resource type="Texture2D" uid="uid://dhe6du6rnd7lu" path="res://juego_redes/Fondo.webp" id="1_cnlo8"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="1_ljh1a"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="2_kwq5q"]
+[ext_resource type="Script" uid="uid://o82hlityvgx1" path="res://juego_redes/iniciar.gd" id="4_pdk0m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lysl"]
+font = ExtResource("1_ljh1a")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_vq1xp"]
+default_font = ExtResource("1_ljh1a")
+default_font_size = 32
+
+[sub_resource type="Theme" id="Theme_5mnpv"]
+default_font = ExtResource("1_ljh1a")
+default_font_size = 32
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_cnlo8")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -555.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "WLKR"
+label_settings = SubResource("LabelSettings_1lysl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 123.0
+offset_right = 1041.0
+offset_bottom = 319.0
+theme = SubResource("Theme_vq1xp")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJR1"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 314.0
+offset_right = 1012.0
+offset_bottom = 490.0
+theme = SubResource("Theme_5mnpv")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJR2"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 408.0
+offset_right = 1030.0
+offset_bottom = 584.0
+theme = SubResource("Theme_5mnpv")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "IMJR2"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Iniciar" type="Sprite2D" parent="."]
+position = Vector2(589, 549)
+scale = Vector2(1.42439, 1)
+texture = ExtResource("2_kwq5q")
+
+[node name="Coño" type="Button" parent="Iniciar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ljh1a")
+theme_override_font_sizes/font_size = 40
+text = "BOT_JUG"
+flat = true
+script = ExtResource("4_pdk0m")
+
+[connection signal="mouse_entered" from="Iniciar/Coño" to="Iniciar/Coño" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Iniciar/Coño" to="Iniciar/Coño" method="_on_mouse_exited"]
+[connection signal="pressed" from="Iniciar/Coño" to="Iniciar/Coño" method="_on_pressed"]
