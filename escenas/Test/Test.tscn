@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6giuyag8qti5"]
+[gd_scene load_steps=7 format=3 uid="uid://c6giuyag8qti5"]
 
 [ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_42tqk"]
+[ext_resource type="Texture2D" uid="uid://dwasv1f5tlu1g" path="res://recursos/dialogo_off.png" id="2_ul48e"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_ffljt"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_77io2"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="5_w3ggu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tsupa"]
+font = ExtResource("3_ffljt")
+font_size = 37
 
 [node name="Test" type="Node2D"]
 
@@ -8,3 +16,80 @@
 position = Vector2(576, 324)
 scale = Vector2(1.024, 1.0237)
 texture = ExtResource("1_42tqk")
+
+[node name="Pregunta" type="Sprite2D" parent="."]
+position = Vector2(581, 92)
+texture = ExtResource("2_ul48e")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_tsupa")
+
+[node name="RespuestasFormato1" type="CenterContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RespuestasFormato1"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(319, 277)
+texture = ExtResource("4_77io2")
+
+[node name="Button" type="Button" parent="RespuestasFormato1/HBoxContainer/Opcion1"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Opcion2" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(798, 282)
+texture = ExtResource("4_77io2")
+
+[node name="Button" type="Button" parent="RespuestasFormato1/HBoxContainer/Opcion2"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Opcion3" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(319, 423)
+texture = ExtResource("4_77io2")
+
+[node name="Button" type="Button" parent="RespuestasFormato1/HBoxContainer/Opcion3"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Opcion4" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(803, 427)
+texture = ExtResource("4_77io2")
+
+[node name="Button" type="Button" parent="RespuestasFormato1/HBoxContainer/Opcion4"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Opcion5" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(560, 540)
+scale = Vector2(0.425238, 0.576923)
+texture = ExtResource("2_ul48e")
+
+[node name="TextEdit" type="TextEdit" parent="RespuestasFormato1/HBoxContainer/Opcion5"]
+offset_left = -468.0
+offset_top = -42.0
+offset_right = 463.0
+offset_bottom = 106.0
+placeholder_text = "Otro..."
+
+[node name="Next" type="Sprite2D" parent="RespuestasFormato1/HBoxContainer"]
+position = Vector2(1042, 557)
+rotation = 1.55509
+scale = Vector2(0.964912, 0.963918)
+texture = ExtResource("5_w3ggu")
+
+[node name="Button" type="Button" parent="RespuestasFormato1/HBoxContainer/Next"]
+offset_right = 8.0
+offset_bottom = 8.0
