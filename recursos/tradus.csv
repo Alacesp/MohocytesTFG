@@ -591,3 +591,41 @@ CR_QA,QA: iGEM UMA Team,QA: iGEM UMA Team
 ESQ1,>ES:ESP1,>ES:ENG1
 ESQ2,>ES:ESP2,>ES:ENG2
 ESQ3,>ES:ESP3,>ES:ENG3
+PREP1,¿En qué curso estás?,What grade are you on?
+PREP1R1,3º de la ESO,3rd of ESO
+PREP1R2,4º de la ESO,4th of ESO
+PREP1R3,1º de Bachillerato,1st of Bachillerato
+PREP1R4,2º de Bachillerato,2nd of Bachillerato
+PREP2,¿Estás en el itinerario de ciencias?,Are you in the science itinerary?
+PREP2R1,Sí,Yes
+PREP2R2,No,No
+PREP3,¿Sabes qué es la biología sintética?,Do you know what synthetic biology is?
+PREP3R1,Sí,Yes
+PREP3R2,No,No
+PREP4,Marca a qué se dedica cada área,Select what purpose does each area serve
+PREP4R1,Experimentos de laboratorio que nos sirven para comprobar que las construcciones genéticas,Laboratory experiments to test the genetic constructions
+PREP4R2,Difundir el trabajo que hacemos en el equipo y divulgar sobre muchos tópicos científicos de interés,To spread awareness about our team's work and to divulge about many interesting cientific topics
+PREP4R3,Diseño de construcciones genéticas,Genetic construction design
+PREP4R4,Recoger la información sobre todo el proyecto y plasmarla en Internet,To collect information about our project and present it in the Internet
+PREP4R5,Conocer cómo el problema que tratamos afecta a las personas, animándolas a que nos aporten ideas que servirán para luego modificar o complementar el trabajo que realizamos,To understand how to problem we are working with affects the people, cheering them to lend us ideas that will later modify or compliment our work
+PREP4R6,Dry Lab,Dry Lab
+PREP4R7,Wet Lab, Wet Lab
+PREP4R8,Human Practices,Human Practices
+PREP4R9,Redes Sociales,Social Media
+PREP4R10,Wiki,Wiki
+PREP5,Las regiones del ADN que contienen la información para la producción de proteínas se llaman:,The regions in the DNA which contain the information for the protein production are called:
+PREP5R1,Secuencias codificantes (CDS),Coding sequences (CDS)
+PREP5R2,Promotores,Promoters
+PREP5R3,Terminadores,Terminators
+PREP5R4,Sitio de unión al ribosoma (RBS),Ribosome binding site (RBS)
+PREP6,¿Sabes lo que son las enzimas de restricción?,Do you know what restriction enzymes are?
+PREP6R1,Sí,Yes
+PREP6R2,No,No
+PREP7,¿Sabes lo que es el quorum sensing?,Do you know what quorum sensing is?
+PREP7R1,Sí,Yes
+PREP7R2,No,No
+PREP8,Ordena los procesos según el orden en el que se deben realizar,Arrange the processes depending on the order in which they should be done
+PREP8R1,Transformación,Transformation
+PREP8R2,Digestión,Digestion
+PREP8R3,Ligación,Ligation
+PREP9,¿Hay algo que quieras añadir?,Is there something you may want to add?
