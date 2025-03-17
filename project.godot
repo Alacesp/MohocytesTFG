@@ -21,6 +21,7 @@ Global="*res://escenas/Global.gd"
 ScoreSingleton="*res://juego_human/ScoreSingleton.gd"
 GameGlobal="*res://juego_redes/GameGlobal.gd"
 Score="*res://juego_dry/Score.gd"
+GlobalDragAndDrop="*res://escenas/Test/globalDragAndDrop.gd"
 
 [debug]
 
