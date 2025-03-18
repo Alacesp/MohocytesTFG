@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://c6giuyag8qti5"]
+[gd_scene load_steps=36 format=3 uid="uid://c6giuyag8qti5"]
 
 [ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_42tqk"]
 [ext_resource type="Script" uid="uid://cg3omifbtby30" path="res://escenas/Test/Preguntas.gd" id="1_w3ggu"]
@@ -67,6 +67,10 @@ size = Vector2(126, 127)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iuvb"]
 size = Vector2(113, 92.5)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1iuvb"]
+font = ExtResource("3_ffljt")
+font_size = 25
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rgjt"]
 
@@ -410,6 +414,7 @@ script = ExtResource("6_77io2")
 metadata/_edit_use_anchors_ = true
 
 [node name="RespuestasFormato6" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -609,7 +614,64 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_1iuvb")
 
+[node name="Label1" type="Label" parent="RespuestasFormato6"]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 234.0
+offset_right = 251.0
+offset_bottom = 339.0
+text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="RespuestasFormato6"]
+offset_left = 336.0
+offset_top = 239.0
+offset_right = 461.0
+offset_bottom = 342.0
+text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="RespuestasFormato6"]
+offset_left = 529.0
+offset_top = 240.0
+offset_right = 654.0
+offset_bottom = 339.0
+text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="RespuestasFormato6"]
+offset_left = 705.0
+offset_top = 241.0
+offset_right = 825.0
+offset_bottom = 348.0
+text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="RespuestasFormato6"]
+offset_left = 894.0
+offset_top = 240.0
+offset_right = 1014.0
+offset_bottom = 346.0
+text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="Previous" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(86.0001, 568)
 rotation = 1.55509
 scale = Vector2(0.964912, 0.963918)

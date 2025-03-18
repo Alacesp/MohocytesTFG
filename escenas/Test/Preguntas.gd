@@ -1,5 +1,5 @@
 extends Control
-var resp_ind = [0, 1, 2, 3]
+var resp_ind = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 var preguntas = [
 	{
 		"enun": "PREP1",
@@ -58,6 +58,18 @@ func mostrar_pregunta():
 		$RespuestasFormato2.visible= true
 		$RespuestasFormato2/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
 		$RespuestasFormato2/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
+	elif pr_actual==3:
+		$RespuestasFormato6.visible= true
+		$RespuestasFormato6/Label1.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato6/Label2.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato6/Label3.text = tr(opciones[resp_ind[2]])
+		$RespuestasFormato6/Label4.text = tr(opciones[resp_ind[3]])
+		$RespuestasFormato6/Label5.text = tr(opciones[resp_ind[4]])
+		$RespuestasFormato6/objeto1/Sprite2D/Label.text = tr(opciones[resp_ind[5]])
+		$RespuestasFormato6/objeto2/Sprite2D/Label.text = tr(opciones[resp_ind[6]])
+		$RespuestasFormato6/objeto3/Sprite2D/Label.text = tr(opciones[resp_ind[7]])
+		$RespuestasFormato6/objeto4/Sprite2D/Label.text = tr(opciones[resp_ind[8]])
+		$RespuestasFormato6/objeto5/Sprite2D/Label.text = tr(opciones[resp_ind[9]])
 	elif pr_actual==4:
 		$RespuestasFormato3.visible= true
 		$RespuestasFormato3/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
