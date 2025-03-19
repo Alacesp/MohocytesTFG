@@ -3,11 +3,13 @@
 importer="csv_translation"
 type="Translation"
 uid="uid://b0dyhsgelrx7j"
-valid=false
 
 [deps]
 
+files=["res://recursos/tradus.es.translation", "res://recursos/tradus.en.translation"]
+
 source_file="res://recursos/tradus.csv"
+dest_files=["res://recursos/tradus.es.translation", "res://recursos/tradus.en.translation"]
 
 [params]
 
