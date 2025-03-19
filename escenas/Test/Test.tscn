@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://c6giuyag8qti5"]
+[gd_scene load_steps=35 format=3 uid="uid://c6giuyag8qti5"]
 
 [ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_42tqk"]
 [ext_resource type="Script" uid="uid://cg3omifbtby30" path="res://escenas/Test/Preguntas.gd" id="1_w3ggu"]
@@ -61,6 +61,11 @@ default_font_size = 65
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4cwve"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gur57"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ptm8b"]
+font = ExtResource("3_ffljt")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1iuvb"]
 font = ExtResource("3_ffljt")
@@ -431,17 +436,72 @@ position = Vector2(949, 458)
 [node name="Objeto" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(186, 581)
 
+[node name="Label" type="Label" parent="RespuestasFormato6/Objeto"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="Objeto2" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(388, 583)
+
+[node name="Label" type="Label" parent="RespuestasFormato6/Objeto2"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Objeto3" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(591, 587)
 
+[node name="Label" type="Label" parent="RespuestasFormato6/Objeto3"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="Objeto4" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(769, 586)
 
+[node name="Label" type="Label" parent="RespuestasFormato6/Objeto4"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="Objeto5" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(942, 588)
+
+[node name="Label" type="Label" parent="RespuestasFormato6/Objeto5"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Label1" type="Label" parent="RespuestasFormato6"]
 layout_mode = 0
@@ -498,6 +558,100 @@ offset_top = 240.0
 offset_right = 1014.0
 offset_bottom = 346.0
 text = "Texto"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasFormato7" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Plataforma" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
+position = Vector2(385, 455)
+
+[node name="Plataforma2" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
+position = Vector2(590, 456)
+
+[node name="Plataforma3" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
+position = Vector2(791, 455)
+
+[node name="Objeto" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+position = Vector2(386, 578)
+
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Objeto2" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+position = Vector2(588, 580)
+
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto2"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Objeto3" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+position = Vector2(791, 584)
+
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto3"]
+offset_left = -42.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_ptm8b")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label1" type="Label" parent="RespuestasFormato7"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 231.0
+offset_right = 451.0
+offset_bottom = 336.0
+text = "1"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="RespuestasFormato7"]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 236.0
+offset_right = 661.0
+offset_bottom = 339.0
+text = "2"
+label_settings = SubResource("LabelSettings_1iuvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="RespuestasFormato7"]
+layout_mode = 0
+offset_left = 729.0
+offset_top = 237.0
+offset_right = 854.0
+offset_bottom = 336.0
+text = "3"
 label_settings = SubResource("LabelSettings_1iuvb")
 horizontal_alignment = 1
 vertical_alignment = 1

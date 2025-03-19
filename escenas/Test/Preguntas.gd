@@ -60,16 +60,16 @@ func mostrar_pregunta():
 		$RespuestasFormato2/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
 	elif pr_actual==3:
 		$RespuestasFormato6.visible= true
-		#$RespuestasFormato6/Label1.text = tr(opciones[resp_ind[0]])
-		#$RespuestasFormato6/Label2.text = tr(opciones[resp_ind[1]])
-		#$RespuestasFormato6/Label3.text = tr(opciones[resp_ind[2]])
-		#$RespuestasFormato6/Label4.text = tr(opciones[resp_ind[3]])
-		#$RespuestasFormato6/Label5.text = tr(opciones[resp_ind[4]])
-		#$RespuestasFormato6/objeto1/Sprite2D/Label.text = tr(opciones[resp_ind[5]])
-		#$RespuestasFormato6/objeto2/Sprite2D/Label.text = tr(opciones[resp_ind[6]])
-		#$RespuestasFormato6/objeto3/Sprite2D/Label.text = tr(opciones[resp_ind[7]])
-		#$RespuestasFormato6/objeto4/Sprite2D/Label.text = tr(opciones[resp_ind[8]])
-		#$RespuestasFormato6/objeto5/Sprite2D/Label.text = tr(opciones[resp_ind[9]])
+		$RespuestasFormato6/Label1.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato6/Label2.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato6/Label3.text = tr(opciones[resp_ind[2]])
+		$RespuestasFormato6/Label4.text = tr(opciones[resp_ind[3]])
+		$RespuestasFormato6/Label5.text = tr(opciones[resp_ind[4]])
+		$RespuestasFormato6/Objeto/Label.text = tr(opciones[resp_ind[5]])
+		$RespuestasFormato6/Objeto2/Label.text = tr(opciones[resp_ind[6]])
+		$RespuestasFormato6/Objeto3/Label.text = tr(opciones[resp_ind[7]])
+		$RespuestasFormato6/Objeto4/Label.text = tr(opciones[resp_ind[8]])
+		$RespuestasFormato6/Objeto5/Label.text = tr(opciones[resp_ind[9]])
 	elif pr_actual==4:
 		$RespuestasFormato3.visible= true
 		$RespuestasFormato3/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
@@ -80,6 +80,11 @@ func mostrar_pregunta():
 		$RespuestasFormato4.visible= true
 		$RespuestasFormato4/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
 		$RespuestasFormato4/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
+	elif pr_actual==7:
+		$RespuestasFormato7.visible= true
+		$RespuestasFormato7/Objeto/Label.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato7/Objeto2/Label.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato7/Objeto3/Label.text = tr(opciones[resp_ind[2]])
 	elif pr_actual==8:
 		$RespuestasFormato5.visible= true
 		$Next.visible=false
@@ -92,6 +97,8 @@ func _on_button_6_pressed() -> void:
 		$RespuestasFormato2.visible= false
 		$RespuestasFormato3.visible= false
 		$RespuestasFormato4.visible= false
+		$RespuestasFormato6.visible= false
+		$RespuestasFormato7.visible= false
 		$Previous.visible = true
 		pr_actual += 1
 		mostrar_pregunta()
@@ -104,5 +111,7 @@ func _on_button_7_pressed() -> void:
 	$RespuestasFormato3.visible= false
 	$RespuestasFormato4.visible= false
 	$RespuestasFormato5.visible= false
+	$RespuestasFormato6.visible= false
+	$RespuestasFormato7.visible= false
 	pr_actual -= 1
 	mostrar_pregunta()		
