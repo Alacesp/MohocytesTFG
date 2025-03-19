@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://c6giuyag8qti5"]
+[gd_scene load_steps=34 format=3 uid="uid://c6giuyag8qti5"]
 
 [ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_42tqk"]
 [ext_resource type="Script" uid="uid://cg3omifbtby30" path="res://escenas/Test/Preguntas.gd" id="1_w3ggu"]
@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="5_w3ggu"]
 [ext_resource type="Script" uid="uid://u7rt44h21k1p" path="res://escenas/Test/text_edit.gd" id="6_77io2"]
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="9_tsupa"]
-[ext_resource type="Script" uid="uid://c1d0l35ikqvoo" path="res://escenas/Test/plataforma.gd" id="10_c2osk"]
-[ext_resource type="Script" uid="uid://dgsh2c4dkfict" path="res://escenas/Test/objeto.gd" id="11_1iuvb"]
+[ext_resource type="PackedScene" uid="uid://2x1k71eq3rte" path="res://escenas/Test/objeto.tscn" id="11_dngti"]
+[ext_resource type="PackedScene" uid="uid://bgid6vgr4kgxe" path="res://escenas/Test/plataforma.tscn" id="12_vuyjj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tsupa"]
 font = ExtResource("3_ffljt")
@@ -61,12 +61,6 @@ default_font_size = 65
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4cwve"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gur57"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptm8b"]
-size = Vector2(126, 127)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1iuvb"]
-size = Vector2(113, 92.5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1iuvb"]
 font = ExtResource("3_ffljt")
@@ -419,200 +413,35 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="plataforma1" type="StaticBody2D" parent="RespuestasFormato6" groups=["dropable"]]
-position = Vector2(190, 421)
-script = ExtResource("10_c2osk")
+[node name="Plataforma" parent="RespuestasFormato6" instance=ExtResource("12_vuyjj")]
+position = Vector2(185, 458)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/plataforma1"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_ptm8b")
+[node name="Plataforma2" parent="RespuestasFormato6" instance=ExtResource("12_vuyjj")]
+position = Vector2(390, 459)
 
-[node name="ColorRect" type="ColorRect" parent="RespuestasFormato6/plataforma1"]
-offset_left = -64.0
-offset_top = -65.0
-offset_right = 64.0
-offset_bottom = 63.0
-metadata/_edit_use_anchors_ = true
+[node name="Plataforma3" parent="RespuestasFormato6" instance=ExtResource("12_vuyjj")]
+position = Vector2(591, 458)
 
-[node name="plataforma2" type="StaticBody2D" parent="RespuestasFormato6" groups=["dropable"]]
-position = Vector2(402, 422)
-script = ExtResource("10_c2osk")
+[node name="Plataforma4" parent="RespuestasFormato6" instance=ExtResource("12_vuyjj")]
+position = Vector2(772, 458)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/plataforma2"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_ptm8b")
+[node name="Plataforma5" parent="RespuestasFormato6" instance=ExtResource("12_vuyjj")]
+position = Vector2(949, 458)
 
-[node name="ColorRect" type="ColorRect" parent="RespuestasFormato6/plataforma2"]
-offset_left = -64.0
-offset_top = -65.0
-offset_right = 64.0
-offset_bottom = 63.0
-metadata/_edit_use_anchors_ = true
+[node name="Objeto" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
+position = Vector2(186, 581)
 
-[node name="plataforma3" type="StaticBody2D" parent="RespuestasFormato6" groups=["dropable"]]
-position = Vector2(591, 420)
-script = ExtResource("10_c2osk")
+[node name="Objeto2" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
+position = Vector2(388, 583)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/plataforma3"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_ptm8b")
+[node name="Objeto3" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
+position = Vector2(591, 587)
 
-[node name="ColorRect" type="ColorRect" parent="RespuestasFormato6/plataforma3"]
-offset_left = -64.0
-offset_top = -65.0
-offset_right = 64.0
-offset_bottom = 63.0
-metadata/_edit_use_anchors_ = true
+[node name="Objeto4" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
+position = Vector2(769, 586)
 
-[node name="plataforma4" type="StaticBody2D" parent="RespuestasFormato6" groups=["dropable"]]
-position = Vector2(764, 426)
-script = ExtResource("10_c2osk")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/plataforma4"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_ptm8b")
-
-[node name="ColorRect" type="ColorRect" parent="RespuestasFormato6/plataforma4"]
-offset_left = -64.0
-offset_top = -65.0
-offset_right = 64.0
-offset_bottom = 63.0
-metadata/_edit_use_anchors_ = true
-
-[node name="plataforma5" type="StaticBody2D" parent="RespuestasFormato6" groups=["dropable"]]
-position = Vector2(956, 429)
-script = ExtResource("10_c2osk")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/plataforma5"]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_ptm8b")
-
-[node name="ColorRect" type="ColorRect" parent="RespuestasFormato6/plataforma5"]
-offset_left = -64.0
-offset_top = -65.0
-offset_right = 64.0
-offset_bottom = 63.0
-metadata/_edit_use_anchors_ = true
-
-[node name="objeto1" type="Node2D" parent="RespuestasFormato6"]
-position = Vector2(191, 565)
-script = ExtResource("11_1iuvb")
-
-[node name="Sprite2D" type="Sprite2D" parent="RespuestasFormato6/objeto1"]
-texture = ExtResource("5_w3ggu")
-
-[node name="Label" type="Label" parent="RespuestasFormato6/objeto1/Sprite2D"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 30.0
-offset_bottom = 8.0
-text = "Objeto"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="RespuestasFormato6/objeto1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/objeto1/Area2D"]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_1iuvb")
-
-[node name="objeto2" type="Node2D" parent="RespuestasFormato6"]
-position = Vector2(402, 566)
-script = ExtResource("11_1iuvb")
-
-[node name="Sprite2D" type="Sprite2D" parent="RespuestasFormato6/objeto2"]
-texture = ExtResource("5_w3ggu")
-
-[node name="Label" type="Label" parent="RespuestasFormato6/objeto2/Sprite2D"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 30.0
-offset_bottom = 8.0
-text = "Objeto"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="RespuestasFormato6/objeto2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/objeto2/Area2D"]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_1iuvb")
-
-[node name="objeto3" type="Node2D" parent="RespuestasFormato6"]
-position = Vector2(589, 566)
-script = ExtResource("11_1iuvb")
-
-[node name="Sprite2D" type="Sprite2D" parent="RespuestasFormato6/objeto3"]
-texture = ExtResource("5_w3ggu")
-
-[node name="Label" type="Label" parent="RespuestasFormato6/objeto3/Sprite2D"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 30.0
-offset_bottom = 8.0
-text = "Objeto"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="RespuestasFormato6/objeto3"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/objeto3/Area2D"]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_1iuvb")
-
-[node name="objeto4" type="Node2D" parent="RespuestasFormato6"]
-position = Vector2(764, 565)
-script = ExtResource("11_1iuvb")
-
-[node name="Sprite2D" type="Sprite2D" parent="RespuestasFormato6/objeto4"]
-texture = ExtResource("5_w3ggu")
-
-[node name="Label" type="Label" parent="RespuestasFormato6/objeto4/Sprite2D"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 30.0
-offset_bottom = 8.0
-text = "Objeto"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="RespuestasFormato6/objeto4"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/objeto4/Area2D"]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_1iuvb")
-
-[node name="objeto5" type="Node2D" parent="RespuestasFormato6"]
-position = Vector2(956, 572)
-script = ExtResource("11_1iuvb")
-
-[node name="Sprite2D" type="Sprite2D" parent="RespuestasFormato6/objeto5"]
-texture = ExtResource("5_w3ggu")
-
-[node name="Label" type="Label" parent="RespuestasFormato6/objeto5/Sprite2D"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 30.0
-offset_bottom = 8.0
-text = "Objeto"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Area2D" type="Area2D" parent="RespuestasFormato6/objeto5"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RespuestasFormato6/objeto5/Area2D"]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_1iuvb")
+[node name="Objeto5" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
+position = Vector2(942, 588)
 
 [node name="Label1" type="Label" parent="RespuestasFormato6"]
 layout_mode = 0
@@ -627,6 +456,7 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="RespuestasFormato6"]
+layout_mode = 0
 offset_left = 336.0
 offset_top = 239.0
 offset_right = 461.0
@@ -638,6 +468,7 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Label3" type="Label" parent="RespuestasFormato6"]
+layout_mode = 0
 offset_left = 529.0
 offset_top = 240.0
 offset_right = 654.0
@@ -649,6 +480,7 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Label4" type="Label" parent="RespuestasFormato6"]
+layout_mode = 0
 offset_left = 705.0
 offset_top = 241.0
 offset_right = 825.0
@@ -660,6 +492,7 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Label5" type="Label" parent="RespuestasFormato6"]
+layout_mode = 0
 offset_left = 894.0
 offset_top = 240.0
 offset_right = 1014.0
@@ -746,25 +579,5 @@ flat = true
 [connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" to="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" method="_on_focus_exited"]
 [connection signal="focus_entered" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" method="_on_focus_exited"]
-[connection signal="body_entered" from="RespuestasFormato6/objeto1/Area2D" to="RespuestasFormato6/objeto1" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="RespuestasFormato6/objeto1/Area2D" to="RespuestasFormato6/objeto1" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="RespuestasFormato6/objeto1/Area2D" to="RespuestasFormato6/objeto1" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="RespuestasFormato6/objeto1/Area2D" to="RespuestasFormato6/objeto1" method="_on_area_2d_mouse_exited"]
-[connection signal="body_entered" from="RespuestasFormato6/objeto2/Area2D" to="RespuestasFormato6/objeto2" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="RespuestasFormato6/objeto2/Area2D" to="RespuestasFormato6/objeto2" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="RespuestasFormato6/objeto2/Area2D" to="RespuestasFormato6/objeto2" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="RespuestasFormato6/objeto2/Area2D" to="RespuestasFormato6/objeto2" method="_on_area_2d_mouse_exited"]
-[connection signal="body_entered" from="RespuestasFormato6/objeto3/Area2D" to="RespuestasFormato6/objeto3" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="RespuestasFormato6/objeto3/Area2D" to="RespuestasFormato6/objeto3" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="RespuestasFormato6/objeto3/Area2D" to="RespuestasFormato6/objeto3" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="RespuestasFormato6/objeto3/Area2D" to="RespuestasFormato6/objeto3" method="_on_area_2d_mouse_exited"]
-[connection signal="body_entered" from="RespuestasFormato6/objeto4/Area2D" to="RespuestasFormato6/objeto4" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="RespuestasFormato6/objeto4/Area2D" to="RespuestasFormato6/objeto4" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="RespuestasFormato6/objeto4/Area2D" to="RespuestasFormato6/objeto4" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="RespuestasFormato6/objeto4/Area2D" to="RespuestasFormato6/objeto4" method="_on_area_2d_mouse_exited"]
-[connection signal="body_entered" from="RespuestasFormato6/objeto5/Area2D" to="RespuestasFormato6/objeto5" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="RespuestasFormato6/objeto5/Area2D" to="RespuestasFormato6/objeto5" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="RespuestasFormato6/objeto5/Area2D" to="RespuestasFormato6/objeto5" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="RespuestasFormato6/objeto5/Area2D" to="RespuestasFormato6/objeto5" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="Previous/Button7" to="." method="_on_button_7_pressed"]
 [connection signal="pressed" from="Next/Button6" to="." method="_on_button_6_pressed"]

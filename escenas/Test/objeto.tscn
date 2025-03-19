@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://2x1k71eq3rte"]
+
+[ext_resource type="Script" uid="uid://dgsh2c4dkfict" path="res://escenas/Test/objeto.gd" id="1_fwxc8"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_7slqe"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_7slqe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7slqe"]
+size = Vector2(107, 92)
+
+[sub_resource type="LabelSettings" id="LabelSettings_d5hef"]
+font = ExtResource("3_7slqe")
+font_size = 33
+font_color = Color(0, 0, 0, 1)
+
+[node name="Objeto" type="Node2D"]
+script = ExtResource("1_fwxc8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7slqe")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.5, 1)
+shape = SubResource("RectangleShape2D_7slqe")
+
+[node name="Label" type="Label" parent="Area2D"]
+offset_left = -37.0
+offset_top = -26.0
+offset_right = 39.0
+offset_bottom = 15.0
+text = "Objeto"
+label_settings = SubResource("LabelSettings_d5hef")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
