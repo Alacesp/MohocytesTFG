@@ -1,4 +1,5 @@
 extends Control
+var respuestas =[]
 var resp_ind = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 var preguntas = [
 	{
@@ -42,6 +43,7 @@ var pr_actual = 0
 
 func _ready():
 	mostrar_pregunta()
+	respuestas.resize(10)
 
 func mostrar_pregunta():
 	var pregunta = preguntas[pr_actual]
@@ -56,8 +58,8 @@ func mostrar_pregunta():
 		$RespuestasFormato1/HBoxContainer/Opcion4/Button4.text = tr(opciones[resp_ind[3]])
 	elif pr_actual==1 or pr_actual==2:
 		$RespuestasFormato2.visible= true
-		$RespuestasFormato2/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
-		$RespuestasFormato2/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato2/HBoxContainer/Opcion1/Button8.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato2/HBoxContainer/Opcion2/Button9.text = tr(opciones[resp_ind[1]])
 	elif pr_actual==3:
 		$RespuestasFormato6.visible= true
 		$RespuestasFormato6/Label1.text = tr(opciones[resp_ind[0]])
@@ -72,14 +74,14 @@ func mostrar_pregunta():
 		$RespuestasFormato6/Objeto5/Label.text = tr(opciones[resp_ind[9]])
 	elif pr_actual==4:
 		$RespuestasFormato3.visible= true
-		$RespuestasFormato3/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
-		$RespuestasFormato3/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
-		$RespuestasFormato3/HBoxContainer/Opcion3/Button3.text = tr(opciones[resp_ind[2]])
-		$RespuestasFormato3/HBoxContainer/Opcion4/Button4.text = tr(opciones[resp_ind[3]])
+		$RespuestasFormato3/HBoxContainer/Opcion1/Button10.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato3/HBoxContainer/Opcion2/Button11.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato3/HBoxContainer/Opcion3/Button12.text = tr(opciones[resp_ind[2]])
+		$RespuestasFormato3/HBoxContainer/Opcion4/Button13.text = tr(opciones[resp_ind[3]])
 	elif pr_actual==5 or pr_actual==6:
 		$RespuestasFormato4.visible= true
-		$RespuestasFormato4/HBoxContainer/Opcion1/Button1.text = tr(opciones[resp_ind[0]])
-		$RespuestasFormato4/HBoxContainer/Opcion2/Button2.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato4/HBoxContainer/Opcion1/Button15.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato4/HBoxContainer/Opcion2/Button16.text = tr(opciones[resp_ind[1]])
 	elif pr_actual==7:
 		$RespuestasFormato7.visible= true
 		$RespuestasFormato7/Objeto/Label.text = tr(opciones[resp_ind[0]])
@@ -102,6 +104,7 @@ func _on_button_6_pressed() -> void:
 		$Previous.visible = true
 		pr_actual += 1
 		mostrar_pregunta()
+		print(respuestas)
 
 
 func _on_button_7_pressed() -> void:
@@ -115,3 +118,74 @@ func _on_button_7_pressed() -> void:
 	$RespuestasFormato7.visible= false
 	pr_actual -= 1
 	mostrar_pregunta()		
+
+#Formato 1
+func _on_button_1_pressed() -> void:
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[0] = tr(opciones[resp_ind[0]])
+
+
+func _on_button_2_pressed() -> void:
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[0] = tr(opciones[resp_ind[1]])
+
+
+func _on_button_3_pressed() -> void:
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[0] = tr(opciones[resp_ind[2]])
+
+
+func _on_button_4_pressed() -> void:
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[0] = tr(opciones[resp_ind[3]])
+
+
+func _on_text_edit_op_5_focus_entered() -> void:
+	respuestas[0] = $RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5.text
+
+#Formato 2
+
+func _on_button_8_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_9_pressed() -> void:
+	pass # Replace with function body.
+
+#Formato 3
+
+func _on_button_10_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_11_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_12_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_13_pressed() -> void:
+	pass # Replace with function body.
+
+#Formato 4
+
+func _on_button_15_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_button_16_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_text_edit_op_3_focus_entered() -> void:
+	pass # Replace with function body.
+
+#Formato 5
+
+func _on_text_edit_text_changed() -> void:
+	pass # Replace with function body.
+
+#Formato 6
+#Formato 7

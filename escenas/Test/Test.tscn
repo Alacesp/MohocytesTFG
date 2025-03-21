@@ -210,7 +210,7 @@ layout_mode = 2
 position = Vector2(556.5, 296)
 texture = ExtResource("4_77io2")
 
-[node name="Button1" type="Button" parent="RespuestasFormato2/HBoxContainer/Opcion1"]
+[node name="Button8" type="Button" parent="RespuestasFormato2/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -63.0
@@ -227,7 +227,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(560.5, 484)
 texture = ExtResource("4_77io2")
 
-[node name="Button2" type="Button" parent="RespuestasFormato2/HBoxContainer/Opcion2"]
+[node name="Button9" type="Button" parent="RespuestasFormato2/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -68.0
@@ -253,7 +253,7 @@ layout_mode = 2
 position = Vector2(329.5, 312)
 texture = ExtResource("4_77io2")
 
-[node name="Button1" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion1"]
+[node name="Button10" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -64.0
@@ -271,7 +271,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(808.5, 317)
 texture = ExtResource("4_77io2")
 
-[node name="Button2" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion2"]
+[node name="Button11" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -65.0
@@ -289,7 +289,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(329.5, 458)
 texture = ExtResource("4_77io2")
 
-[node name="Button3" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion3"]
+[node name="Button12" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion3"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -101.0
 offset_top = -64.0
@@ -307,7 +307,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(813.5, 462)
 texture = ExtResource("4_77io2")
 
-[node name="Button4" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion4"]
+[node name="Button13" type="Button" parent="RespuestasFormato3/HBoxContainer/Opcion4"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -63.0
@@ -337,7 +337,7 @@ layout_mode = 2
 position = Vector2(561, 278)
 texture = ExtResource("4_77io2")
 
-[node name="Button1" type="Button" parent="RespuestasFormato4/HBoxContainer/Opcion1"]
+[node name="Button15" type="Button" parent="RespuestasFormato4/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -64.0
@@ -354,7 +354,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(564, 418)
 texture = ExtResource("4_77io2")
 
-[node name="Button2" type="Button" parent="RespuestasFormato4/HBoxContainer/Opcion2"]
+[node name="Button16" type="Button" parent="RespuestasFormato4/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -65.0
@@ -704,34 +704,49 @@ flat = true
 
 [connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion1/Button1" to="RespuestasFormato1/HBoxContainer/Opcion1/Button1" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato1/HBoxContainer/Opcion1/Button1" to="RespuestasFormato1/HBoxContainer/Opcion1/Button1" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato1/HBoxContainer/Opcion1/Button1" to="." method="_on_button_1_pressed"]
 [connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion2/Button2" to="RespuestasFormato1/HBoxContainer/Opcion2/Button2" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato1/HBoxContainer/Opcion2/Button2" to="RespuestasFormato1/HBoxContainer/Opcion2/Button2" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato1/HBoxContainer/Opcion2/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion3/Button3" to="RespuestasFormato1/HBoxContainer/Opcion3/Button3" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato1/HBoxContainer/Opcion3/Button3" to="RespuestasFormato1/HBoxContainer/Opcion3/Button3" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato1/HBoxContainer/Opcion3/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion4/Button4" to="RespuestasFormato1/HBoxContainer/Opcion4/Button4" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato1/HBoxContainer/Opcion4/Button4" to="RespuestasFormato1/HBoxContainer/Opcion4/Button4" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato1/HBoxContainer/Opcion4/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" to="." method="_on_text_edit_op_5_focus_entered"]
 [connection signal="focus_entered" from="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" to="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" to="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" method="_on_focus_exited"]
 [connection signal="text_changed" from="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" to="RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5" method="_on_text_changed"]
-[connection signal="focus_entered" from="RespuestasFormato2/HBoxContainer/Opcion1/Button1" to="RespuestasFormato2/HBoxContainer/Opcion1/Button1" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato2/HBoxContainer/Opcion1/Button1" to="RespuestasFormato2/HBoxContainer/Opcion1/Button1" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato2/HBoxContainer/Opcion2/Button2" to="RespuestasFormato2/HBoxContainer/Opcion2/Button2" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato2/HBoxContainer/Opcion2/Button2" to="RespuestasFormato2/HBoxContainer/Opcion2/Button2" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion1/Button1" to="RespuestasFormato3/HBoxContainer/Opcion1/Button1" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion1/Button1" to="RespuestasFormato3/HBoxContainer/Opcion1/Button1" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion2/Button2" to="RespuestasFormato3/HBoxContainer/Opcion2/Button2" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion2/Button2" to="RespuestasFormato3/HBoxContainer/Opcion2/Button2" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion3/Button3" to="RespuestasFormato3/HBoxContainer/Opcion3/Button3" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion3/Button3" to="RespuestasFormato3/HBoxContainer/Opcion3/Button3" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion4/Button4" to="RespuestasFormato3/HBoxContainer/Opcion4/Button4" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion4/Button4" to="RespuestasFormato3/HBoxContainer/Opcion4/Button4" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion1/Button1" to="RespuestasFormato4/HBoxContainer/Opcion1/Button1" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion1/Button1" to="RespuestasFormato4/HBoxContainer/Opcion1/Button1" method="_on_focus_exited"]
-[connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion2/Button2" to="RespuestasFormato4/HBoxContainer/Opcion2/Button2" method="_on_focus_entered"]
-[connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion2/Button2" to="RespuestasFormato4/HBoxContainer/Opcion2/Button2" method="_on_focus_exited"]
+[connection signal="focus_entered" from="RespuestasFormato2/HBoxContainer/Opcion1/Button8" to="RespuestasFormato2/HBoxContainer/Opcion1/Button8" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato2/HBoxContainer/Opcion1/Button8" to="RespuestasFormato2/HBoxContainer/Opcion1/Button8" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato2/HBoxContainer/Opcion1/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato2/HBoxContainer/Opcion2/Button9" to="RespuestasFormato2/HBoxContainer/Opcion2/Button9" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato2/HBoxContainer/Opcion2/Button9" to="RespuestasFormato2/HBoxContainer/Opcion2/Button9" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato2/HBoxContainer/Opcion2/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion1/Button10" to="RespuestasFormato3/HBoxContainer/Opcion1/Button10" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion1/Button10" to="RespuestasFormato3/HBoxContainer/Opcion1/Button10" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato3/HBoxContainer/Opcion1/Button10" to="." method="_on_button_10_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion2/Button11" to="RespuestasFormato3/HBoxContainer/Opcion2/Button11" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion2/Button11" to="RespuestasFormato3/HBoxContainer/Opcion2/Button11" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato3/HBoxContainer/Opcion2/Button11" to="." method="_on_button_11_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion3/Button12" to="RespuestasFormato3/HBoxContainer/Opcion3/Button12" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion3/Button12" to="RespuestasFormato3/HBoxContainer/Opcion3/Button12" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato3/HBoxContainer/Opcion3/Button12" to="." method="_on_button_12_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato3/HBoxContainer/Opcion4/Button13" to="RespuestasFormato3/HBoxContainer/Opcion4/Button13" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato3/HBoxContainer/Opcion4/Button13" to="RespuestasFormato3/HBoxContainer/Opcion4/Button13" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato3/HBoxContainer/Opcion4/Button13" to="." method="_on_button_13_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion1/Button15" to="RespuestasFormato4/HBoxContainer/Opcion1/Button15" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion1/Button15" to="RespuestasFormato4/HBoxContainer/Opcion1/Button15" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato4/HBoxContainer/Opcion1/Button15" to="." method="_on_button_15_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion2/Button16" to="RespuestasFormato4/HBoxContainer/Opcion2/Button16" method="_on_focus_entered"]
+[connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion2/Button16" to="RespuestasFormato4/HBoxContainer/Opcion2/Button16" method="_on_focus_exited"]
+[connection signal="pressed" from="RespuestasFormato4/HBoxContainer/Opcion2/Button16" to="." method="_on_button_16_pressed"]
+[connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" to="." method="_on_text_edit_op_3_focus_entered"]
 [connection signal="focus_entered" from="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" to="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" to="RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3" method="_on_focus_exited"]
 [connection signal="focus_entered" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" method="_on_focus_entered"]
 [connection signal="focus_exited" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" method="_on_focus_exited"]
+[connection signal="text_changed" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="." method="_on_text_edit_text_changed"]
 [connection signal="pressed" from="Previous/Button7" to="." method="_on_button_7_pressed"]
 [connection signal="pressed" from="Next/Button6" to="." method="_on_button_6_pressed"]
