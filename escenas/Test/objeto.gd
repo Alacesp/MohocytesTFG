@@ -19,7 +19,18 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
-				#sacar que plataforma es aqui
+				match self.name:
+					"Objeto":
+						GlobalDragAndDrop.respuestasPreguntaFormato6[0] = body_ref.name
+					"Objeto2":
+						GlobalDragAndDrop.respuestasPreguntaFormato6[1] = body_ref.name
+					"Objeto3":
+						GlobalDragAndDrop.respuestasPreguntaFormato6[2] = body_ref.name
+					"Objeto4":
+						GlobalDragAndDrop.respuestasPreguntaFormato6[3] = body_ref.name
+					"Objeto5":
+						GlobalDragAndDrop.respuestasPreguntaFormato6[4] = body_ref.name
+				print(GlobalDragAndDrop.respuestasPreguntaFormato6)
 			else:
 				tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 
