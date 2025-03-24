@@ -22,10 +22,15 @@ ScoreSingleton="*res://juego_human/ScoreSingleton.gd"
 GameGlobal="*res://juego_redes/GameGlobal.gd"
 Score="*res://juego_dry/Score.gd"
 GlobalDragAndDrop="*res://escenas/Test/globalDragAndDrop.gd"
+Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
 
 [debug]
 
 gdscript/warnings/integer_division=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg")
 
 [input]
 

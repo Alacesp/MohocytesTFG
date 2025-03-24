@@ -1,6 +1,9 @@
 extends Control
+var COLLECTION_ID = "PreTest"
 var respuestas =[]
 var resp_ind = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+var auth: FirebaseAuth
+var rng = RandomNumberGenerator.new()
 var preguntas = [
 	{
 		"enun": "PREP1",
@@ -43,7 +46,10 @@ var pr_actual = 0
 
 func _ready():
 	mostrar_pregunta()
-	respuestas.resize(10)
+	respuestas.resize(9)
+	auth = Firebase.Auth
+	auth.login_anonymous()
+	
 
 func mostrar_pregunta():
 	var pregunta = preguntas[pr_actual]
@@ -122,61 +128,69 @@ func _on_button_7_pressed() -> void:
 #Formato 1
 func _on_button_1_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
-	respuestas[0] = tr(opciones[resp_ind[0]])
+	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
 
 
 func _on_button_2_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
-	respuestas[0] = tr(opciones[resp_ind[1]])
+	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
 
 
 func _on_button_3_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
-	respuestas[0] = tr(opciones[resp_ind[2]])
+	respuestas[pr_actual] = tr(opciones[resp_ind[2]])
 
 
 func _on_button_4_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
-	respuestas[0] = tr(opciones[resp_ind[3]])
+	respuestas[pr_actual] = tr(opciones[resp_ind[3]])
 
 
 func _on_text_edit_op_5_focus_entered() -> void:
-	respuestas[0] = $RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5.text
+	respuestas[pr_actual] = $RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5.text
 
 #Formato 2
 
 func _on_button_8_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
 
 
 func _on_button_9_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
 
 #Formato 3
 
 func _on_button_10_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
 
 
 func _on_button_11_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
 
 
 func _on_button_12_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[2]])
 
 
 func _on_button_13_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[3]])
 
 #Formato 4
 
 func _on_button_15_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
 
 
 func _on_button_16_pressed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
 
 
 func _on_text_edit_op_3_focus_entered() -> void:
@@ -185,7 +199,25 @@ func _on_text_edit_op_3_focus_entered() -> void:
 #Formato 5
 
 func _on_text_edit_text_changed() -> void:
-	pass # Replace with function body.
+	var opciones = preguntas[pr_actual]["opcs"]
+	respuestas[pr_actual] = $RespuestasFormato5/HBoxContainer/Opcion1/TextEdit.text
 
 #Formato 6
 #Formato 7
+
+
+func _on_button_pressed() -> void:
+	var collection: FirestoreCollection = Firebase.Firestore.collection(COLLECTION_ID)
+	var data: Dictionary = {
+		"Pregunta 1": respuestas[0],
+		"Pregunta 2": respuestas[1],
+		"Pregunta 3": respuestas[2],
+		"Pregunta 4": respuestas[3],
+		"Pregunta 5": respuestas[4],
+		"Pregunta 6": respuestas[5],
+		"Pregunta 7": respuestas[6],
+		"Pregunta 8": respuestas[7],
+		"Pregunta 9": respuestas[8]
+	}
+	var my_random_number = rng.randf_range(0, 100000.0)
+	var task: FirestoreDocument = await collection.add(str(my_random_number), data)

@@ -750,3 +750,4 @@ flat = true
 [connection signal="text_changed" from="RespuestasFormato5/HBoxContainer/Opcion1/TextEdit" to="." method="_on_text_edit_text_changed"]
 [connection signal="pressed" from="Previous/Button7" to="." method="_on_button_7_pressed"]
 [connection signal="pressed" from="Next/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Finish/Button" to="." method="_on_button_pressed"]
