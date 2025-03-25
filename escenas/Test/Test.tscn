@@ -446,6 +446,7 @@ label_settings = SubResource("LabelSettings_ptm8b")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Objeto2" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(388, 583)
@@ -474,6 +475,7 @@ label_settings = SubResource("LabelSettings_ptm8b")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Objeto4" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(769, 586)
@@ -488,6 +490,7 @@ label_settings = SubResource("LabelSettings_ptm8b")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Objeto5" parent="RespuestasFormato6" instance=ExtResource("11_dngti")]
 position = Vector2(942, 588)
@@ -502,6 +505,7 @@ label_settings = SubResource("LabelSettings_ptm8b")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Label1" type="Label" parent="RespuestasFormato6"]
 layout_mode = 0
@@ -571,18 +575,18 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Plataforma" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
-position = Vector2(385, 455)
+position = Vector2(156, 450)
 
 [node name="Plataforma2" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
 position = Vector2(590, 456)
 
 [node name="Plataforma3" parent="RespuestasFormato7" instance=ExtResource("12_vuyjj")]
-position = Vector2(791, 455)
+position = Vector2(979, 437)
 
-[node name="Objeto" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+[node name="Objeto6" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
 position = Vector2(386, 578)
 
-[node name="Label" type="Label" parent="RespuestasFormato7/Objeto"]
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto6"]
 offset_left = -42.0
 offset_top = -24.0
 offset_right = 46.0
@@ -593,10 +597,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Objeto2" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+[node name="Objeto7" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
 position = Vector2(588, 580)
 
-[node name="Label" type="Label" parent="RespuestasFormato7/Objeto2"]
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto7"]
 offset_left = -42.0
 offset_top = -24.0
 offset_right = 46.0
@@ -607,10 +611,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Objeto3" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
+[node name="Objeto8" parent="RespuestasFormato7" instance=ExtResource("11_dngti")]
 position = Vector2(791, 584)
 
-[node name="Label" type="Label" parent="RespuestasFormato7/Objeto3"]
+[node name="Label" type="Label" parent="RespuestasFormato7/Objeto8"]
 offset_left = -42.0
 offset_top = -24.0
 offset_right = 46.0
@@ -623,10 +627,10 @@ autowrap_mode = 2
 
 [node name="Label1" type="Label" parent="RespuestasFormato7"]
 layout_mode = 0
-offset_left = 331.0
-offset_top = 231.0
-offset_right = 451.0
-offset_bottom = 336.0
+offset_left = 94.0
+offset_top = 260.0
+offset_right = 214.0
+offset_bottom = 365.0
 text = "1"
 label_settings = SubResource("LabelSettings_1iuvb")
 horizontal_alignment = 1
@@ -647,10 +651,10 @@ autowrap_mode = 2
 
 [node name="Label3" type="Label" parent="RespuestasFormato7"]
 layout_mode = 0
-offset_left = 729.0
-offset_top = 237.0
-offset_right = 854.0
-offset_bottom = 336.0
+offset_left = 903.0
+offset_top = 261.0
+offset_right = 1028.0
+offset_bottom = 360.0
 text = "3"
 label_settings = SubResource("LabelSettings_1iuvb")
 horizontal_alignment = 1

@@ -22,15 +22,29 @@ func _process(delta):
 				match self.name:
 					"Objeto":
 						GlobalDragAndDrop.respuestasPreguntaFormato6[0] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato6)
 					"Objeto2":
 						GlobalDragAndDrop.respuestasPreguntaFormato6[1] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato6)
 					"Objeto3":
 						GlobalDragAndDrop.respuestasPreguntaFormato6[2] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato6)
 					"Objeto4":
 						GlobalDragAndDrop.respuestasPreguntaFormato6[3] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato6)
 					"Objeto5":
 						GlobalDragAndDrop.respuestasPreguntaFormato6[4] = body_ref.name
-				print(GlobalDragAndDrop.respuestasPreguntaFormato6)
+						print(GlobalDragAndDrop.respuestasPreguntaFormato6)
+					"Objeto6":
+						GlobalDragAndDrop.respuestasPreguntaFormato7[0] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato7)
+					"Objeto7":
+						GlobalDragAndDrop.respuestasPreguntaFormato7[1] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato7)
+					"Objeto8":
+						GlobalDragAndDrop.respuestasPreguntaFormato7[2] = body_ref.name
+						print(GlobalDragAndDrop.respuestasPreguntaFormato7)
+				
 			else:
 				tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 

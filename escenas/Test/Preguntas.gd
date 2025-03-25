@@ -2,7 +2,9 @@ extends Control
 var COLLECTION_ID = "PreTest"
 var respuestas =[]
 var resp_ind = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-var auth: FirebaseAuth
+var textFocus = false
+var textFocus1 = false
+var textFocus2 = false
 var rng = RandomNumberGenerator.new()
 var preguntas = [
 	{
@@ -47,8 +49,6 @@ var pr_actual = 0
 func _ready():
 	mostrar_pregunta()
 	respuestas.resize(9)
-	auth = Firebase.Auth
-	auth.login_anonymous()
 	
 
 func mostrar_pregunta():
@@ -90,9 +90,9 @@ func mostrar_pregunta():
 		$RespuestasFormato4/HBoxContainer/Opcion2/Button16.text = tr(opciones[resp_ind[1]])
 	elif pr_actual==7:
 		$RespuestasFormato7.visible= true
-		$RespuestasFormato7/Objeto/Label.text = tr(opciones[resp_ind[0]])
-		$RespuestasFormato7/Objeto2/Label.text = tr(opciones[resp_ind[1]])
-		$RespuestasFormato7/Objeto3/Label.text = tr(opciones[resp_ind[2]])
+		$RespuestasFormato7/Objeto6/Label.text = tr(opciones[resp_ind[0]])
+		$RespuestasFormato7/Objeto7/Label.text = tr(opciones[resp_ind[1]])
+		$RespuestasFormato7/Objeto8/Label.text = tr(opciones[resp_ind[2]])
 	elif pr_actual==8:
 		$RespuestasFormato5.visible= true
 		$Next.visible=false
@@ -108,6 +108,36 @@ func _on_button_6_pressed() -> void:
 		$RespuestasFormato6.visible= false
 		$RespuestasFormato7.visible= false
 		$Previous.visible = true
+		var aciertos = 0
+		if pr_actual==0:
+			if textFocus:
+				respuestas[pr_actual] = $RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5.text
+		elif pr_actual==5:
+			if textFocus1:
+				respuestas[pr_actual] = $RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3.text
+		elif pr_actual==6:
+			if textFocus2:
+				respuestas[pr_actual] = $RespuestasFormato4/HBoxContainer/Opcion3/TextEdit_op3.text
+		elif pr_actual == 3:
+			if(GlobalDragAndDrop.respuestasPreguntaFormato6[0] == "Plataforma3"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato6[1] == "Plataforma"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato6[2] == "Plataforma5"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato6[3] == "Plataforma2"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato6[4] == "Plataforma4"):
+				aciertos += 1
+			respuestas[pr_actual]=aciertos
+		elif pr_actual == 7:
+			if(GlobalDragAndDrop.respuestasPreguntaFormato7[0] == "Plataforma3"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato7[1] == "Plataforma"):
+				aciertos += 1
+			if(GlobalDragAndDrop.respuestasPreguntaFormato7[2] == "Plataforma2"):
+				aciertos += 1
+			respuestas[pr_actual]=aciertos
 		pr_actual += 1
 		mostrar_pregunta()
 		print(respuestas)
@@ -129,25 +159,30 @@ func _on_button_7_pressed() -> void:
 func _on_button_1_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
+	textFocus = false
 
 
 func _on_button_2_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
+	textFocus = false
 
 
 func _on_button_3_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[2]])
+	textFocus = false
 
 
 func _on_button_4_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[3]])
+	textFocus = false
 
 
 func _on_text_edit_op_5_focus_entered() -> void:
-	respuestas[pr_actual] = $RespuestasFormato1/HBoxContainer/Opcion5/TextEdit_op5.text
+	textFocus = true
+	
 
 #Formato 2
 
@@ -186,27 +221,34 @@ func _on_button_13_pressed() -> void:
 func _on_button_15_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[0]])
+	if pr_actual==5:
+		textFocus1 = false
+	else:
+		textFocus2 = false
 
 
 func _on_button_16_pressed() -> void:
 	var opciones = preguntas[pr_actual]["opcs"]
 	respuestas[pr_actual] = tr(opciones[resp_ind[1]])
+	if pr_actual==5:
+		textFocus1 = false
+	else:
+		textFocus2 = false
 
 
 func _on_text_edit_op_3_focus_entered() -> void:
-	pass # Replace with function body.
+	if pr_actual==5:
+		textFocus1 = true
+	else:
+		textFocus2 = true
 
 #Formato 5
-
-func _on_text_edit_text_changed() -> void:
-	var opciones = preguntas[pr_actual]["opcs"]
-	respuestas[pr_actual] = $RespuestasFormato5/HBoxContainer/Opcion1/TextEdit.text
-
 #Formato 6
 #Formato 7
 
 
 func _on_button_pressed() -> void:
+	respuestas[8]=$RespuestasFormato5/HBoxContainer/Opcion1/TextEdit.text
 	var collection: FirestoreCollection = Firebase.Firestore.collection(COLLECTION_ID)
 	var data: Dictionary = {
 		"Pregunta 1": respuestas[0],
