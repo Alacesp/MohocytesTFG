@@ -1,3 +1,229 @@
-[gd_scene format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=17 format=3 uid="uid://cwwkv8x3i6jqq"]
+
+[ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_c1jlx"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_w666j"]
+[ext_resource type="Script" uid="uid://d01okbo2qmkmo" path="res://escenas/juegoWetLabSegundo/movimiento.gd" id="3_miokp"]
+[ext_resource type="Texture2D" uid="uid://dosidtl35ot4j" path="res://recursos/probeta.png" id="4_8oigj"]
+[ext_resource type="Texture2D" uid="uid://corb7y4lkit7f" path="res://recursos/ice.png" id="5_3wela"]
+[ext_resource type="Texture2D" uid="uid://6l6p7nme8lth" path="res://recursos/fire.png" id="6_ljjqv"]
+[ext_resource type="Texture2D" uid="uid://qg8s74lnfekm" path="res://recursos/centrifugaAbierta.png" id="7_ky42u"]
+[ext_resource type="Texture2D" uid="uid://dsv3adrnw361u" path="res://recursos/liquido3.png" id="8_fvu15"]
+[ext_resource type="Texture2D" uid="uid://b1xqr3ggreonw" path="res://recursos/liquido2.png" id="9_c1jlx"]
+[ext_resource type="Texture2D" uid="uid://b0jyey7hof46s" path="res://recursos/liquido1.png" id="10_ygk6k"]
+[ext_resource type="Texture2D" uid="uid://cns8ns0w4tflh" path="res://recursos/liquido6.png" id="11_vmmhc"]
+[ext_resource type="Texture2D" uid="uid://dwaedjdoqs5bf" path="res://recursos/liquido5.png" id="12_v31oj"]
+[ext_resource type="Texture2D" uid="uid://0p7ws7jwi20q" path="res://recursos/liquido4.png" id="13_q1bm0"]
+
+[sub_resource type="Theme" id="Theme_ygk6k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vmmhc"]
+font = ExtResource("2_c1jlx")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
 
 [node name="Minijuego" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(2304, 324)
+scale = Vector2(1.33304, 1)
+texture = ExtResource("1_2jyj3")
+
+[node name="boton1" type="Sprite2D" parent="."]
+position = Vector2(1055, 384)
+rotation = 1.5708
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="Boton1" type="Button" parent="boton1"]
+offset_left = -60.0
+offset_top = -55.0
+offset_right = 58.0
+offset_bottom = 52.0
+
+[node name="boton2" type="Sprite2D" parent="."]
+position = Vector2(1245, 384)
+rotation = 4.71239
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton2" type="Button" parent="boton2"]
+offset_left = -58.0
+offset_top = -49.0
+offset_right = 58.0
+offset_bottom = 51.0
+
+[node name="boton3" type="Sprite2D" parent="."]
+position = Vector2(2210, 384)
+rotation = 1.5708
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton3" type="Button" parent="boton3"]
+offset_left = -56.0
+offset_top = -51.0
+offset_right = 59.0
+offset_bottom = 48.0
+
+[node name="boton4" type="Sprite2D" parent="."]
+position = Vector2(2390, 384)
+rotation = 4.71239
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton4" type="Button" parent="boton4"]
+offset_left = -55.0
+offset_top = -52.0
+offset_right = 59.0
+offset_bottom = 52.0
+
+[node name="boton5" type="Sprite2D" parent="."]
+position = Vector2(3365, 384)
+rotation = 1.5708
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton5" type="Button" parent="boton5"]
+offset_left = -57.0
+offset_top = -50.0
+offset_right = 55.0
+offset_bottom = 49.0
+
+[node name="boton6" type="Sprite2D" parent="."]
+position = Vector2(3587, 384)
+rotation = 4.71239
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton6" type="Button" parent="boton6"]
+offset_left = -58.0
+offset_top = -52.0
+offset_right = 59.0
+offset_bottom = 54.0
+
+[node name="Probeta" type="Sprite2D" parent="."]
+position = Vector2(1705, 348)
+texture = ExtResource("4_8oigj")
+
+[node name="probeta" type="Button" parent="Probeta"]
+offset_left = -108.0
+offset_top = -129.0
+offset_right = 106.0
+offset_bottom = 131.0
+
+[node name="Ice" type="Sprite2D" parent="."]
+position = Vector2(2634, 371)
+texture = ExtResource("5_3wela")
+
+[node name="ice" type="Button" parent="Ice"]
+offset_left = -126.0
+offset_top = -114.0
+offset_right = 127.0
+offset_bottom = 113.0
+
+[node name="Fire" type="Sprite2D" parent="."]
+position = Vector2(3067, 389)
+texture = ExtResource("6_ljjqv")
+
+[node name="fire" type="Button" parent="Fire"]
+offset_left = -126.0
+offset_top = -111.0
+offset_right = 124.0
+offset_bottom = 113.0
+
+[node name="CentrifugaAbierta" type="Sprite2D" parent="."]
+position = Vector2(4068, 368)
+texture = ExtResource("7_ky42u")
+
+[node name="centrifugadoraEntera" type="Button" parent="CentrifugaAbierta"]
+offset_left = -277.0
+offset_top = -165.0
+offset_right = 265.0
+offset_bottom = 166.0
+
+[node name="botonCentrifugadora" type="Button" parent="CentrifugaAbierta"]
+offset_left = -180.0
+offset_top = 56.0
+offset_right = 136.0
+offset_bottom = 124.0
+
+[node name="Liquido3" type="Sprite2D" parent="."]
+position = Vector2(1383, 379)
+texture = ExtResource("8_fvu15")
+
+[node name="liquido3" type="Button" parent="Liquido3"]
+offset_left = -70.0
+offset_top = -92.0
+offset_right = 66.0
+offset_bottom = 67.0
+
+[node name="Liquido2" type="Sprite2D" parent="."]
+position = Vector2(1479, 384)
+texture = ExtResource("9_c1jlx")
+
+[node name="liquido2" type="Button" parent="Liquido2"]
+offset_left = -67.0
+offset_top = -91.0
+offset_right = 69.0
+offset_bottom = 89.0
+
+[node name="Liquido1" type="Sprite2D" parent="."]
+position = Vector2(1385, 495)
+texture = ExtResource("10_ygk6k")
+
+[node name="liquido1" type="Button" parent="Liquido1"]
+offset_left = -69.0
+offset_top = -92.0
+offset_right = 71.0
+offset_bottom = 93.0
+
+[node name="Liquido6" type="Sprite2D" parent="."]
+position = Vector2(1920, 376)
+texture = ExtResource("11_vmmhc")
+
+[node name="liquido6" type="Button" parent="Liquido6"]
+offset_left = -69.0
+offset_top = -92.0
+offset_right = 69.0
+offset_bottom = 87.0
+
+[node name="Liquido5" type="Sprite2D" parent="."]
+position = Vector2(2028, 415)
+texture = ExtResource("12_v31oj")
+
+[node name="liquido5" type="Button" parent="Liquido5"]
+offset_left = -69.0
+offset_top = -89.0
+offset_right = 68.0
+offset_bottom = 91.0
+
+[node name="Liquido4" type="Sprite2D" parent="."]
+position = Vector2(1945, 503)
+texture = ExtResource("13_q1bm0")
+
+[node name="liquido4" type="Button" parent="Liquido4"]
+offset_left = -67.0
+offset_top = -89.0
+offset_right = 65.0
+offset_bottom = 90.0
+
+[node name="camara" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Label" type="Label" parent="camara"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 385.0
+offset_top = -291.0
+offset_right = 508.0
+offset_bottom = -245.0
+theme = SubResource("Theme_ygk6k")
+text = "Holaaa"
+label_settings = SubResource("LabelSettings_vmmhc")
+
+[connection signal="pressed" from="boton1/Boton1" to="boton1" method="_on_boton_1_pressed"]
+[connection signal="pressed" from="boton2/boton2" to="boton1" method="_on_boton_2_pressed"]
+[connection signal="pressed" from="boton3/boton3" to="boton1" method="_on_boton_3_pressed"]
+[connection signal="pressed" from="boton4/boton4" to="boton4" method="_on_boton_4_pressed"]
+[connection signal="pressed" from="boton5/boton5" to="boton5" method="_on_boton_5_pressed"]
+[connection signal="pressed" from="boton6/boton6" to="boton6" method="_on_boton_6_pressed"]
