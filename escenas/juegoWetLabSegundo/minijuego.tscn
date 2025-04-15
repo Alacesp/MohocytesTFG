@@ -26,7 +26,7 @@ font_color = Color(0, 0, 0, 1)
 [node name="Minijuego" type="Node2D"]
 
 [node name="Fondo" type="Sprite2D" parent="."]
-position = Vector2(2304, 324)
+position = Vector2(2288, 324)
 scale = Vector2(1.33304, 1)
 texture = ExtResource("1_2jyj3")
 
