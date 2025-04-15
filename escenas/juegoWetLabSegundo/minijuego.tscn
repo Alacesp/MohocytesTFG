@@ -105,23 +105,23 @@ offset_bottom = 54.0
 [node name="Probeta" type="Node2D" parent="."]
 position = Vector2(1705, 348)
 
-[node name="Probeta4" type="Sprite2D" parent="Probeta"]
+[node name="Probeta1" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, 55)
 texture = ExtResource("4_8oigj")
 
-[node name="Probeta3" type="Sprite2D" parent="Probeta"]
+[node name="Probeta2" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, 21)
 texture = ExtResource("4_8oigj")
 region_enabled = true
 region_rect = Rect2(0, 0, 213, 195)
 
-[node name="Probeta2" type="Sprite2D" parent="Probeta"]
+[node name="Probeta3" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, -11)
 texture = ExtResource("4_8oigj")
 region_enabled = true
 region_rect = Rect2(0, 0, 213, 130)
 
-[node name="Probeta1" type="Sprite2D" parent="Probeta"]
+[node name="Probeta4" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, -44)
 texture = ExtResource("4_8oigj")
 region_enabled = true
