@@ -25,20 +25,24 @@ func actualizarSelected():
 			Color(GlobalWetGame.selected[i])
 
 func _on_probeta_1_pressed() -> void:
+	$camara/Seleccionado/ProbetaSeleccionada.visible = true
 	GlobalWetGame.selected = GlobalWetGame.probetas[0]
 	actualizarSelected()
 
 
 func _on_probeta_2_pressed() -> void:
+	$camara/Seleccionado/ProbetaSeleccionada.visible = true
 	GlobalWetGame.selected = GlobalWetGame.probetas[1]
 	actualizarSelected()
 
 
 func _on_probeta_3_pressed() -> void:
+	$camara/Seleccionado/ProbetaSeleccionada.visible = true
 	GlobalWetGame.selected = GlobalWetGame.probetas[2]
 	actualizarSelected()
 
 
 func _on_probeta_4_pressed() -> void:
+	$camara/Seleccionado/ProbetaSeleccionada.visible = true
 	GlobalWetGame.selected = GlobalWetGame.probetas[3]
 	actualizarSelected()
