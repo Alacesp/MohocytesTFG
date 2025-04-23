@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=26 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_7c5td"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dsv3adrnw361u" path="res://recursos/liquido3.png" id="8_fvu15"]
 [ext_resource type="Script" uid="uid://bnanng024g0d8" path="res://escenas/juegoWetLabSegundo/fregadero.gd" id="8_q1bm0"]
 [ext_resource type="Texture2D" uid="uid://b1xqr3ggreonw" path="res://recursos/liquido2.png" id="9_c1jlx"]
+[ext_resource type="Script" uid="uid://ktpyslos1v7x" path="res://escenas/juegoWetLabSegundo/fire.gd" id="9_q8giw"]
 [ext_resource type="Script" uid="uid://dv363aabwdbeu" path="res://escenas/juegoWetLabSegundo/liquidos.gd" id="9_ygk6k"]
 [ext_resource type="Texture2D" uid="uid://b0jyey7hof46s" path="res://recursos/liquido1.png" id="10_ygk6k"]
 [ext_resource type="Texture2D" uid="uid://cns8ns0w4tflh" path="res://recursos/liquido6.png" id="11_vmmhc"]
@@ -159,6 +160,7 @@ offset_bottom = 113.0
 [node name="Fire" type="Sprite2D" parent="."]
 position = Vector2(3067, 389)
 texture = ExtResource("6_ljjqv")
+script = ExtResource("9_q8giw")
 
 [node name="fire" type="Button" parent="Fire"]
 offset_left = -126.0
@@ -486,6 +488,7 @@ region_rect = Rect2(0, 0, 213, 65)
 [connection signal="pressed" from="boton6/boton6" to="boton6" method="_on_boton_6_pressed"]
 [connection signal="pressed" from="Probeta/probeta" to="Liquido3" method="_on_probeta_pressed"]
 [connection signal="pressed" from="Ice/ice" to="Ice" method="_on_ice_pressed"]
+[connection signal="pressed" from="Fire/fire" to="Fire" method="_on_fire_pressed"]
 [connection signal="pressed" from="Fregadero/Button" to="Fregadero" method="_on_button_pressed"]
 [connection signal="pressed" from="Liquido3/liquido3" to="Liquido3" method="_on_liquido_3_pressed"]
 [connection signal="pressed" from="Liquido2/liquido2" to="Liquido2" method="_on_liquido_2_pressed"]

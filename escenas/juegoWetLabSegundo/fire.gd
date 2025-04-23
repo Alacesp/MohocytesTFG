@@ -4,20 +4,20 @@ var borrar= $"../Fregadero"
 @onready
 var actualizar= $"/root/Minijuego"
 
-func _on_ice_pressed() -> void:
-	if (GlobalWetGame.ice != null):
+func _on_fire_pressed() -> void:
+	if (GlobalWetGame.fire != null):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
-		GlobalWetGame.selected = GlobalWetGame.ice
+		GlobalWetGame.selected = GlobalWetGame.fire
 		GlobalWetGame.probetas.append(GlobalWetGame.selected.duplicate())
 		actualizar.actualizarSelected()
 		actualizar.actualizarInventario()
-		GlobalWetGame.ice = null
-		print(GlobalWetGame.ice)
+		GlobalWetGame.fire = null
+		print(GlobalWetGame.fire)
 		print(GlobalWetGame.selected)
 	else:
-		GlobalWetGame.ice = GlobalWetGame.selected.duplicate()
+		GlobalWetGame.fire = GlobalWetGame.selected.duplicate()
 		borrar.borrarDeInventario()
 		actualizar.actualizarSelected()
 		actualizar.actualizarInventario()
-		print(GlobalWetGame.ice)
+		print(GlobalWetGame.fire)
 		print(GlobalWetGame.selected)
