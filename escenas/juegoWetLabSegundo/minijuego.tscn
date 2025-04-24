@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=27 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_7c5td"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b0jyey7hof46s" path="res://recursos/liquido1.png" id="10_ygk6k"]
 [ext_resource type="Texture2D" uid="uid://cns8ns0w4tflh" path="res://recursos/liquido6.png" id="11_vmmhc"]
 [ext_resource type="Texture2D" uid="uid://dwaedjdoqs5bf" path="res://recursos/liquido5.png" id="12_v31oj"]
+[ext_resource type="Script" uid="uid://bmjb001y3rali" path="res://escenas/juegoWetLabSegundo/centrifuga.gd" id="13_jp6cw"]
 [ext_resource type="Texture2D" uid="uid://0p7ws7jwi20q" path="res://recursos/liquido4.png" id="13_q1bm0"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="15_vmmhc"]
 [ext_resource type="Script" uid="uid://b6b1sgnp70ypu" path="res://escenas/juegoWetLabSegundo/botoninventario.gd" id="19_2sue4"]
@@ -105,11 +106,35 @@ offset_bottom = 49.0
 
 [node name="boton6" type="Sprite2D" parent="."]
 position = Vector2(3587, 384)
-rotation = 4.71239
+rotation = -1.5708
 texture = ExtResource("2_w666j")
 script = ExtResource("3_miokp")
 
 [node name="boton6" type="Button" parent="boton6"]
+offset_left = -58.0
+offset_top = -52.0
+offset_right = 59.0
+offset_bottom = 54.0
+
+[node name="boton7" type="Sprite2D" parent="."]
+position = Vector2(4518, 392)
+rotation = -4.71406
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton7" type="Button" parent="boton7"]
+offset_left = -58.0
+offset_top = -52.0
+offset_right = 59.0
+offset_bottom = 54.0
+
+[node name="boton8" type="Sprite2D" parent="."]
+position = Vector2(72, 392)
+rotation = 4.71368
+texture = ExtResource("2_w666j")
+script = ExtResource("3_miokp")
+
+[node name="boton8" type="Button" parent="boton8"]
 offset_left = -58.0
 offset_top = -52.0
 offset_right = 59.0
@@ -157,6 +182,14 @@ offset_top = -114.0
 offset_right = 127.0
 offset_bottom = 113.0
 
+[node name="ProgressBar" type="ProgressBar" parent="Ice"]
+offset_left = -125.0
+offset_top = -163.0
+offset_right = 123.0
+offset_bottom = -136.0
+
+[node name="Timer" type="Timer" parent="Ice"]
+
 [node name="Fire" type="Sprite2D" parent="."]
 position = Vector2(3067, 389)
 texture = ExtResource("6_ljjqv")
@@ -167,6 +200,12 @@ offset_left = -126.0
 offset_top = -111.0
 offset_right = 124.0
 offset_bottom = 113.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Fire"]
+offset_left = -128.0
+offset_top = -161.0
+offset_right = 120.0
+offset_bottom = -134.0
 
 [node name="Fregadero" type="Sprite2D" parent="."]
 position = Vector2(2835, 517)
@@ -180,21 +219,22 @@ offset_top = -76.0
 offset_right = 81.0
 offset_bottom = 78.0
 
-[node name="CentrifugaAbierta" type="Sprite2D" parent="."]
+[node name="Centrifuga" type="Sprite2D" parent="."]
 position = Vector2(4068, 368)
 texture = ExtResource("7_ky42u")
+script = ExtResource("13_jp6cw")
 
-[node name="centrifugadoraEntera" type="Button" parent="CentrifugaAbierta"]
+[node name="centrifugadora" type="Button" parent="Centrifuga"]
 offset_left = -277.0
 offset_top = -165.0
 offset_right = 265.0
 offset_bottom = 166.0
 
-[node name="botonCentrifugadora" type="Button" parent="CentrifugaAbierta"]
-offset_left = -180.0
-offset_top = 56.0
-offset_right = 136.0
-offset_bottom = 124.0
+[node name="ProgressBar" type="ProgressBar" parent="Centrifuga"]
+offset_left = -280.0
+offset_top = -221.0
+offset_right = 283.0
+offset_bottom = -194.0
 
 [node name="Liquido3" type="Sprite2D" parent="."]
 position = Vector2(1383, 379)
@@ -486,10 +526,13 @@ region_rect = Rect2(0, 0, 213, 65)
 [connection signal="pressed" from="boton4/boton4" to="boton4" method="_on_boton_4_pressed"]
 [connection signal="pressed" from="boton5/boton5" to="boton5" method="_on_boton_5_pressed"]
 [connection signal="pressed" from="boton6/boton6" to="boton6" method="_on_boton_6_pressed"]
+[connection signal="pressed" from="boton7/boton7" to="boton7" method="_on_boton_7_pressed"]
+[connection signal="pressed" from="boton8/boton8" to="boton8" method="_on_boton_8_pressed"]
 [connection signal="pressed" from="Probeta/probeta" to="Liquido3" method="_on_probeta_pressed"]
 [connection signal="pressed" from="Ice/ice" to="Ice" method="_on_ice_pressed"]
 [connection signal="pressed" from="Fire/fire" to="Fire" method="_on_fire_pressed"]
 [connection signal="pressed" from="Fregadero/Button" to="Fregadero" method="_on_button_pressed"]
+[connection signal="pressed" from="Centrifuga/centrifugadora" to="Centrifuga" method="_on_centrifugadora_pressed"]
 [connection signal="pressed" from="Liquido3/liquido3" to="Liquido3" method="_on_liquido_3_pressed"]
 [connection signal="pressed" from="Liquido2/liquido2" to="Liquido2" method="_on_liquido_2_pressed"]
 [connection signal="pressed" from="Liquido1/liquido1" to="Liquido1" method="_on_liquido_1_pressed"]

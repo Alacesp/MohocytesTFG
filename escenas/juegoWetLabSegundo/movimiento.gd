@@ -27,4 +27,8 @@ func _on_boton_5_pressed() -> void:
 func _on_boton_6_pressed() -> void:
 	camara.position.x = 2880
 
+func _on_boton_7_pressed() -> void:
+	camara.position.x = 576
 	
+func _on_boton_8_pressed() -> void:
+	camara.position.x = 4032

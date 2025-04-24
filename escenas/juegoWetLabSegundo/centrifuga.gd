@@ -1,0 +1,25 @@
+extends Sprite2D
+@onready
+var borrar= $"../Fregadero"
+@onready
+var actualizar= $"/root/Minijuego"
+
+func _on_centrifugadora_pressed() -> void:
+	if (GlobalWetGame.centrifuga != null):
+		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
+		GlobalWetGame.selected = GlobalWetGame.centrifuga
+		GlobalWetGame.probetas.append(GlobalWetGame.selected.duplicate())
+		actualizar.actualizarSelected()
+		actualizar.actualizarInventario()
+		GlobalWetGame.centrifuga = null
+		self.texture = preload("res://recursos/centrifugaAbierta.png")
+		print(GlobalWetGame.centrifuga)
+		print(GlobalWetGame.selected)
+	else:
+		GlobalWetGame.centrifuga = GlobalWetGame.selected.duplicate()
+		borrar.borrarDeInventario()
+		actualizar.actualizarSelected()
+		actualizar.actualizarInventario()
+		self.texture = preload("res://recursos/centrifugaCerrada.png")
+		print(GlobalWetGame.centrifuga)
+		print(GlobalWetGame.selected)
