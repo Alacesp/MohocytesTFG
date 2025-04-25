@@ -6,3 +6,4 @@ var selected
 var ice
 var fire
 var centrifuga
+var dificulty = "Tutorial"
