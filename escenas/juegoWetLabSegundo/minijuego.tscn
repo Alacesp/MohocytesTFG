@@ -1,7 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=33 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
-[ext_resource type="Script" uid="uid://b7hl0ohk33oei" path="res://escenas/juegoWetLabSegundo/ManejadorDeClientes.gd" id="1_kqs8n"]
+[ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_c1jlx"]
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_w666j"]
 [ext_resource type="Script" uid="uid://d01okbo2qmkmo" path="res://escenas/juegoWetLabSegundo/movimiento.gd" id="3_miokp"]
@@ -24,9 +24,13 @@
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="15_vmmhc"]
 [ext_resource type="Script" uid="uid://b6b1sgnp70ypu" path="res://escenas/juegoWetLabSegundo/botoninventario.gd" id="19_2sue4"]
 [ext_resource type="Texture2D" uid="uid://ducx20rh4fwx4" path="res://recursos/Bocadillo1.png" id="21_8kwkj"]
+[ext_resource type="Script" uid="uid://b7hl0ohk33oei" path="res://escenas/juegoWetLabSegundo/ManejadorDeClientes.gd" id="21_e2ryf"]
 [ext_resource type="Texture2D" uid="uid://brqvw3tdmbybb" path="res://recursos/Bocadillo2.png" id="22_e2ryf"]
 [ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="23_h466c"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h466c"]
+size = Vector2(144, 149)
 
 [sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
 font = ExtResource("2_c1jlx")
@@ -306,6 +310,7 @@ offset_right = 65.0
 offset_bottom = 90.0
 
 [node name="Clientes" type="Node2D" parent="."]
+script = ExtResource("21_e2ryf")
 
 [node name="Bocadillo1" type="Sprite2D" parent="Clientes"]
 visible = false
@@ -319,12 +324,18 @@ position = Vector2(578, 132)
 scale = Vector2(1.85916, 1.90244)
 texture = ExtResource("22_e2ryf")
 
-[node name="Cliente1" type="Sprite2D" parent="Clientes"]
+[node name="Cliente1" type="Area2D" parent="Clientes"]
 position = Vector2(229, 336)
-texture = ExtResource("23_h466c")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer" type="Timer" parent="Clientes/Cliente1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente1"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_h466c")
+
+[node name="Cliente1" type="Sprite2D" parent="Clientes/Cliente1"]
+texture = ExtResource("23_h466c")
 
 [node name="Cliente2" type="Sprite2D" parent="Clientes"]
 position = Vector2(437, 334)
@@ -587,6 +598,7 @@ region_rect = Rect2(0, 0, 213, 65)
 [connection signal="pressed" from="Liquidos/Liquido6/liquido6" to="Liquidos" method="_on_liquido_6_pressed"]
 [connection signal="pressed" from="Liquidos/Liquido5/liquido5" to="Liquidos" method="_on_liquido_5_pressed"]
 [connection signal="pressed" from="Liquidos/Liquido4/liquido4" to="Liquidos" method="_on_liquido_4_pressed"]
+[connection signal="mouse_entered" from="Clientes/Cliente1" to="Clientes/Cliente1" method="_on_mouse_entered"]
 [connection signal="pressed" from="camara/Inventario/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
