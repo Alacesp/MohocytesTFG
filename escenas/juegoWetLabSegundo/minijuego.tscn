@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=36 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -29,8 +29,17 @@
 [ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="23_h466c"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
+size = Vector2(144, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2ryf"]
+size = Vector2(149, 151)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h466c"]
-size = Vector2(144, 149)
+size = Vector2(146, 149)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhyxh"]
+size = Vector2(139, 151)
 
 [sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
 font = ExtResource("2_c1jlx")
@@ -324,39 +333,82 @@ position = Vector2(578, 132)
 scale = Vector2(1.85916, 1.90244)
 texture = ExtResource("22_e2ryf")
 
-[node name="Cliente1" type="Area2D" parent="Clientes"]
+[node name="Cliente1" type="Sprite2D" parent="Clientes"]
 position = Vector2(229, 336)
+texture = ExtResource("23_h466c")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer" type="Timer" parent="Clientes/Cliente1"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente1"]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_h466c")
+[node name="Area2D" type="Area2D" parent="Clientes/Cliente1"]
 
-[node name="Cliente1" type="Sprite2D" parent="Clientes/Cliente1"]
-texture = ExtResource("23_h466c")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente1/Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_8kwkj")
 
 [node name="Cliente2" type="Sprite2D" parent="Clientes"]
+visible = false
 position = Vector2(437, 334)
 texture = ExtResource("23_h466c")
 script = ExtResource("24_hhyxh")
 
-[node name="Timer" type="Timer" parent="Clientes/Cliente2"]
+[node name="Timer2" type="Timer" parent="Clientes/Cliente2"]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[node name="Area2D2" type="Area2D" parent="Clientes/Cliente2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente2/Area2D2"]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_e2ryf")
 
 [node name="Cliente3" type="Sprite2D" parent="Clientes"]
+visible = false
 position = Vector2(700, 333)
 texture = ExtResource("23_h466c")
 script = ExtResource("24_hhyxh")
 
-[node name="Timer" type="Timer" parent="Clientes/Cliente3"]
+[node name="Timer3" type="Timer" parent="Clientes/Cliente3"]
+wait_time = 25.0
+one_shot = true
+autostart = true
+
+[node name="Area2D3" type="Area2D" parent="Clientes/Cliente3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente3/Area2D3"]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_h466c")
 
 [node name="Cliente4" type="Sprite2D" parent="Clientes"]
+visible = false
 position = Vector2(917, 330)
 texture = ExtResource("23_h466c")
 script = ExtResource("24_hhyxh")
 
-[node name="Timer" type="Timer" parent="Clientes/Cliente4"]
+[node name="Timer4" type="Timer" parent="Clientes/Cliente4"]
+wait_time = 30.0
+one_shot = true
+autostart = true
+
+[node name="Area2D4" type="Area2D" parent="Clientes/Cliente4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente4/Area2D4"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_hhyxh")
+
+[node name="Pedido" type="Node2D" parent="Clientes"]
+visible = false
+
+[node name="Pedido1" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(327, 105)
+scale = Vector2(0.492537, 0.44382)
+texture = ExtResource("13_q1bm0")
+
+[node name="Pedido2" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(407, 110)
+scale = Vector2(0.492537, 0.426966)
+texture = ExtResource("12_v31oj")
 
 [node name="camara" type="Camera2D" parent="."]
 position = Vector2(576, 324)
@@ -598,7 +650,18 @@ region_rect = Rect2(0, 0, 213, 65)
 [connection signal="pressed" from="Liquidos/Liquido6/liquido6" to="Liquidos" method="_on_liquido_6_pressed"]
 [connection signal="pressed" from="Liquidos/Liquido5/liquido5" to="Liquidos" method="_on_liquido_5_pressed"]
 [connection signal="pressed" from="Liquidos/Liquido4/liquido4" to="Liquidos" method="_on_liquido_4_pressed"]
-[connection signal="mouse_entered" from="Clientes/Cliente1" to="Clientes/Cliente1" method="_on_mouse_entered"]
+[connection signal="timeout" from="Clientes/Cliente1/Timer" to="Clientes" method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_mouse_exited"]
+[connection signal="timeout" from="Clientes/Cliente2/Timer2" to="Clientes" method="_on_timer_2_timeout"]
+[connection signal="mouse_entered" from="Clientes/Cliente2/Area2D2" to="Clientes/Cliente2" method="_on_area_2d_2_mouse_entered"]
+[connection signal="mouse_exited" from="Clientes/Cliente2/Area2D2" to="Clientes/Cliente2" method="_on_area_2d_2_mouse_exited"]
+[connection signal="timeout" from="Clientes/Cliente3/Timer3" to="Clientes" method="_on_timer_3_timeout"]
+[connection signal="mouse_entered" from="Clientes/Cliente3/Area2D3" to="Clientes/Cliente3" method="_on_area_2d_3_mouse_entered"]
+[connection signal="mouse_exited" from="Clientes/Cliente3/Area2D3" to="Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
+[connection signal="timeout" from="Clientes/Cliente4/Timer4" to="Clientes" method="_on_timer_4_timeout"]
+[connection signal="mouse_entered" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
+[connection signal="mouse_exited" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]

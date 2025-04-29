@@ -22,7 +22,7 @@ func _on_centrifugadora_pressed() -> void:
 		$ProgressBar.value = 0
 		print(GlobalWetGame.centrifuga)
 		print(GlobalWetGame.selected)
-	else:
+	elif(GlobalWetGame.centrifuga == null):
 		GlobalWetGame.centrifuga = GlobalWetGame.selected.duplicate()
 		borrar.borrarDeInventario()
 		actualizar.actualizarSelected()

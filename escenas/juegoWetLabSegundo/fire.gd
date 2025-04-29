@@ -21,7 +21,7 @@ func _on_fire_pressed() -> void:
 		$ProgressBar.value = 0
 		print(GlobalWetGame.fire)
 		print(GlobalWetGame.selected)
-	else:
+	elif(GlobalWetGame.fire == null):
 		GlobalWetGame.fire = GlobalWetGame.selected.duplicate()
 		borrar.borrarDeInventario()
 		actualizar.actualizarSelected()
