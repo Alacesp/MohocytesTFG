@@ -13,6 +13,7 @@ func _process(delta):
 func _on_fire_pressed() -> void:
 	if (GlobalWetGame.fire != null && completed == true):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
+		GlobalWetGame.fire.append("Fire")
 		GlobalWetGame.selected = GlobalWetGame.fire
 		GlobalWetGame.probetas.append(GlobalWetGame.selected.duplicate())
 		actualizar.actualizarSelected()

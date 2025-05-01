@@ -1,6 +1,9 @@
 extends Node
 @onready
 var actualizar= $"/root/Minijuego"
+@onready
+var borrar= $"../Fregadero"
+var old = false
 
 func _process(delta):	
 	if GlobalWetGame.nivelProbeta >=5:
@@ -88,6 +91,8 @@ func _on_probeta_pressed() -> void:
 		actualizar.actualizarSelected()
 		for i in range(1,5):
 			get_node("../Probeta/Probeta" + str(i)).modulate = Color(1,1,1,1)
+			get_node("../Probeta/ice/ice" + str(i)).visible = false
+			get_node("../Probeta/fire/fire" + str(i)).visible = false
 		GlobalWetGame.nivelProbeta = 0
 		GlobalWetGame.liquidos.clear()
 		actualizar.actualizarInventario()
@@ -95,3 +100,17 @@ func _on_probeta_pressed() -> void:
 		print(GlobalWetGame.selected)
 		print("PROBETAS")
 		print(GlobalWetGame.probetas)
+	elif(GlobalWetGame.nivelProbeta==0 and GlobalWetGame.selected!=null and GlobalWetGame.selected[GlobalWetGame.selected.size()-1]!="Centrifuga"):
+		var nivel = 0
+		for i in range(GlobalWetGame.selected.size()):
+			if(GlobalWetGame.selected[i]!="Ice" and GlobalWetGame.selected[i]!="Fire" and GlobalWetGame.selected[i]!="Centrifuga"):
+				get_node("../Probeta/Probeta"+str(nivel+1)).modulate = \
+					Color(GlobalWetGame.selected[i])
+				nivel += 1
+			elif(GlobalWetGame.selected[i]=="Ice"):
+				get_node("../Probeta/ice/ice"+str(nivel)).visible = true
+			elif(GlobalWetGame.selected[i]=="Fire"):
+				get_node("../Probeta/fire/fire"+str(nivel)).visible = true
+		GlobalWetGame.liquidos=GlobalWetGame.selected.duplicate()
+		GlobalWetGame.nivelProbeta= nivel
+		borrar.borrarDeInventario()

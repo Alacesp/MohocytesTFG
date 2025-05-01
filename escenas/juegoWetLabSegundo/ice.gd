@@ -13,6 +13,7 @@ func _process(delta):
 func _on_ice_pressed() -> void:
 	if (GlobalWetGame.ice != null && completed == true):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
+		GlobalWetGame.ice.append("Ice")
 		GlobalWetGame.selected = GlobalWetGame.ice
 		GlobalWetGame.probetas.append(GlobalWetGame.selected.duplicate())
 		actualizar.actualizarSelected()
