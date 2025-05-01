@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=38 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -28,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://brqvw3tdmbybb" path="res://recursos/Bocadillo2.png" id="22_e2ryf"]
 [ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="23_h466c"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
+[ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(144, 152)
@@ -627,6 +629,58 @@ scale = Vector2(0.459765, 0.231069)
 texture = ExtResource("4_8oigj")
 region_enabled = true
 region_rect = Rect2(0, 0, 213, 65)
+
+[node name="ice" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+
+[node name="ice1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+
+[node name="fire1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
 
 [connection signal="pressed" from="Botones/boton1/Boton1" to="Botones" method="_on_boton_1_pressed"]
 [connection signal="pressed" from="Botones/boton2/boton2" to="Botones" method="_on_boton_2_pressed"]

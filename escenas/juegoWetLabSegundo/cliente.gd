@@ -4,9 +4,7 @@ var rng = RandomNumberGenerator.new()
 
 func _ready():
 	var rnd1 = rng.randi_range(1,3)
-	var rnd2 = rnd1
-	while (rnd2 == rnd1):
-		rnd2 = rng.randi_range(1,3)
+	var rnd2 = rng.randi_range(1,3)
 	match GlobalWetGame.dificulty:
 		"Tutorial":
 			match rnd1:
