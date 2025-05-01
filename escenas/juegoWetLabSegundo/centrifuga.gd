@@ -13,6 +13,7 @@ func _process(delta):
 func _on_centrifugadora_pressed() -> void:
 	if (GlobalWetGame.centrifuga != null && completed == true ):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
+		GlobalWetGame.centrifuga.append("Centrifuga")
 		GlobalWetGame.selected = GlobalWetGame.centrifuga
 		GlobalWetGame.probetas.append(GlobalWetGame.selected.duplicate())
 		actualizar.actualizarSelected()
@@ -25,6 +26,7 @@ func _on_centrifugadora_pressed() -> void:
 	elif(GlobalWetGame.centrifuga == null):
 		GlobalWetGame.centrifuga = GlobalWetGame.selected.duplicate()
 		borrar.borrarDeInventario()
+		print("se deberia borrar")
 		actualizar.actualizarSelected()
 		actualizar.actualizarInventario()
 		self.texture = preload("res://recursos/centrifugaCerrada.png")

@@ -6,6 +6,7 @@ func borrarDeInventario():
 	var found = false
 	var i = 0
 	$"../camara/Seleccionado/ProbetaSeleccionada".visible = false
+	$"../camara/Seleccionado/Placa".visible = false
 	while (i < GlobalWetGame.probetas.size() && !found):
 		if GlobalWetGame.probetas[i] == GlobalWetGame.selected:
 			GlobalWetGame.probetas.remove_at(i)

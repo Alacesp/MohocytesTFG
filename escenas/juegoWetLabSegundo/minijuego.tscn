@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=39 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -30,6 +30,7 @@
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(144, 152)
@@ -864,6 +865,54 @@ offset_top = -46.0
 offset_right = 62.0
 offset_bottom = 46.0
 
+[node name="Placa1" type="Sprite2D" parent="camara/Inventario"]
+visible = false
+position = Vector2(-42.7113, -27.9445)
+scale = Vector2(0.218447, 0.104868)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa1" type="Button" parent="camara/Inventario/Placa1"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa2" type="Sprite2D" parent="camara/Inventario"]
+visible = false
+position = Vector2(41.3904, -28.2499)
+scale = Vector2(0.218447, 0.104868)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa2" type="Button" parent="camara/Inventario/Placa2"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa3" type="Sprite2D" parent="camara/Inventario"]
+visible = false
+position = Vector2(-45.3533, 10.8418)
+scale = Vector2(0.218447, 0.104868)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa3" type="Button" parent="camara/Inventario/Placa3"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa4" type="Sprite2D" parent="camara/Inventario"]
+visible = false
+position = Vector2(40.95, 10.231)
+scale = Vector2(0.218447, 0.104868)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa4" type="Button" parent="camara/Inventario/Placa4"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
 [node name="Seleccionado" type="Sprite2D" parent="camara"]
 position = Vector2(-440.25, -202)
 scale = Vector2(1.03659, 1.56061)
@@ -951,6 +1000,12 @@ position = Vector2(-13.5076, -46.7766)
 scale = Vector2(0.0398496, 0.0270964)
 texture = ExtResource("30_hhyxh")
 
+[node name="Placa" type="Sprite2D" parent="camara/Seleccionado"]
+visible = false
+position = Vector2(-3.61764, -1.28155)
+scale = Vector2(0.355745, 0.372616)
+texture = ExtResource("31_hhyxh")
+
 [node name="Label" type="Label" parent="camara"]
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
@@ -1001,3 +1056,7 @@ label_settings = SubResource("LabelSettings_vmmhc")
 [connection signal="pressed" from="camara/Inventario/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta4/probeta4" to="." method="_on_probeta_4_pressed"]
 [connection signal="pressed" from="camara/Inventario/Botoninventario/Button" to="camara/Inventario/Botoninventario" method="_on_button_pressed"]
+[connection signal="pressed" from="camara/Inventario/Placa1/Placa1" to="." method="_on_placa_1_pressed"]
+[connection signal="pressed" from="camara/Inventario/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
+[connection signal="pressed" from="camara/Inventario/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
+[connection signal="pressed" from="camara/Inventario/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
