@@ -20,9 +20,13 @@ func actualizarInventario():
 	#Controlo las que son visibles
 	for i in range(1,5):
 		if(i<=GlobalWetGame.probetas.size()):
-			get_node("camara/Inventario/Probeta" + str(i)).visible = true
+			if(!esPlaca(GlobalWetGame.probetas[i-1])):
+				get_node("camara/Inventario/Probeta" + str(i)).visible = true
+			else:
+				get_node("camara/Inventario/Placa" + str(i)).visible = true
 		else:
 			get_node("camara/Inventario/Probeta" + str(i)).visible = false
+			get_node("camara/Inventario/Placa" + str(i)).visible = false
 			
 	#Controlo la aparencia
 	var nivel
