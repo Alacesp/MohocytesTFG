@@ -14,6 +14,7 @@ func borrarDeInventario():
 		else:
 			i += 1
 	actualizar.actualizarInventario()
+	GlobalWetGame.selected = null
 	print("i:" + str(i))
 	print(GlobalWetGame.probetas)
 

@@ -11,6 +11,8 @@ func _process(delta):
 		GlobalWetGame.liquidos.clear()
 		for i in range(1,5):
 			get_node("../Probeta/Probeta" + str(i)).modulate = Color(1,1,1,1)
+			get_node("../Probeta/ice/ice"+str(i)).visible = false
+			get_node("../Probeta/fire/fire"+str(i)).visible = false
 
 
 
@@ -100,7 +102,7 @@ func _on_probeta_pressed() -> void:
 		print(GlobalWetGame.selected)
 		print("PROBETAS")
 		print(GlobalWetGame.probetas)
-	elif(GlobalWetGame.nivelProbeta==0 and GlobalWetGame.selected!=null and GlobalWetGame.selected[GlobalWetGame.selected.size()-1]!="Centrifuga"):
+	elif(GlobalWetGame.nivelProbeta==0 and GlobalWetGame.selected!=null and GlobalWetGame.selected[GlobalWetGame.selected.size()-1]!="Centrifuga" ):
 		var nivel = 0
 		for i in range(GlobalWetGame.selected.size()):
 			if(GlobalWetGame.selected[i]!="Ice" and GlobalWetGame.selected[i]!="Fire" and GlobalWetGame.selected[i]!="Centrifuga"):

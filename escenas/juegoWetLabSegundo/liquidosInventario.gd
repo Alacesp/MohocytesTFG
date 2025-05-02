@@ -60,7 +60,10 @@ func actualizarInventario():
 			get_node("camara/Inventario/Placa" + str(i+1)).visible = true
 func actualizarSelected():
 	var nivel = 0
-	if(!esPlaca(GlobalWetGame.selected)):
+	if(GlobalWetGame.selected==null):
+		$"camara/Seleccionado/Placa".visible=false
+		$"camara/Seleccionado/ProbetaSeleccionada".visible=false
+	elif(!esPlaca(GlobalWetGame.selected)):
 		$"camara/Seleccionado/Placa".visible=false
 		for i in range(1,5):
 			#$"camara/Seleccionado/ProbetaSeleccionada".visible=true
