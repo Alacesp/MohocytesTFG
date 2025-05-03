@@ -7,13 +7,25 @@ var estado2 = "Happy"
 var estado3 = "Happy"
 var estado4 = "Happy"
 
+
+
+func _process(delta: float) -> void:
+	if( $Cliente1.satisfied == true ):
+		$Cliente1.satisfied = false
+		$Cliente1.reroll = true
+		estado1 = "Happy"
+		$"Cliente1/Timer".start(5)
+		print("Timer deberia ponerse")
+		
+
 func _on_timer_timeout() -> void:
 	match estado1:
 		"Happy":
+			print("llega")
 			$"Cliente1".visible=true
 			estado1 = "Serious"
 			$"Cliente1".texture = preload("res://recursos/amazingMan.png")
-			$"Cliente1/Timer".start(20)
+			$"Cliente1/Timer".start(5)
 		"Serious":
 			print("aaaaaaaaaanmjnsajnfcsa")
 			estado1 = "Sad"
@@ -51,7 +63,6 @@ func _on_timer_2_timeout() -> void:
 			estado2 = "Happy"
 			$"Cliente2".texture = preload("res://recursos/angryMan.png")
 
-
 func _on_timer_3_timeout() -> void:
 	match estado3:
 		"Happy":
@@ -73,7 +84,6 @@ func _on_timer_3_timeout() -> void:
 			print("aaangry")
 			estado3 = "Happy"
 			$"Cliente3".texture = preload("res://recursos/angryMan.png")
-
 
 func _on_timer_4_timeout() -> void:
 	match estado4:

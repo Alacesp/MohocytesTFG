@@ -1,35 +1,77 @@
 extends Sprite2D
 var pedido = ["a","a"]
 var rng = RandomNumberGenerator.new()
+var satisfied = false
+var reroll=false
+@onready
+var borrar= $"../../Fregadero"
+@onready
+var actualizar= $"/root/Minijuego"
 
 func _ready():
+	crearPedido()
+
+func _process(delta: float) -> void:
+	if(reroll):
+		reroll = false
+		crearPedido()
+
+func crearPedido():
 	var rnd1 = rng.randi_range(1,3)
 	var rnd2 = rng.randi_range(1,3)
 	match GlobalWetGame.dificulty:
 		"Tutorial":
 			match rnd1:
 				1:
-					pedido[0]="Red"
+					pedido[0]="RED"
 				2:
-					pedido[0]="Yellow"
+					pedido[0]="YELLOW"
 				3:
-					pedido[0]="Pink"
+					pedido[0]="PINK"
 			match rnd2:
 				1:
-					pedido[1]="Red"
+					pedido[1]="RED"
 				2:
-					pedido[1]="Yellow"
+					pedido[1]="YELLOW"
 				3:
-					pedido[1]="Pink"
+					pedido[1]="PINK"
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if get_rect().has_point(to_local(event.position)) and GlobalWetGame.selected!=null:
+			print("Aciertos:")
+			print(compararPedido())
+			satisfied = true
+			self.visible=false
+			borrar.borrarDeInventario()
+			actualizar.actualizarSelected()
+			actualizar.actualizarInventario()
+
+func compararPedido():
+	print("Entra a comparar")
+	var size
+	var aciertos=0
+	if (GlobalWetGame.selected.size()<pedido.size()):
+		size = GlobalWetGame.selected.size()
+	else:
+		size = GlobalWetGame.selected.size()
+	
+	for i in size:
+		print(GlobalWetGame.selected[i])
+		print(pedido[i])
+		if (GlobalWetGame.selected[i]==pedido[i]):
+			aciertos += 1
+			print("acierto")
+	return aciertos
 
 func mostrarPedido():
 	for i in pedido.size():
 		match pedido[i]:
-			"Yellow":
+			"YELLOW":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido2.png")
-			"Red":
+			"RED":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido1.png")
-			"Pink":
+			"PINK":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido3.png")
 
 func _on_area_2d_mouse_entered() -> void:
