@@ -15,8 +15,21 @@ func _process(delta: float) -> void:
 		$Cliente1.reroll = true
 		estado1 = "Happy"
 		$"Cliente1/Timer".start(5)
-		print("Timer deberia ponerse")
-		
+	if( $Cliente2.satisfied == true ):
+		$Cliente2.satisfied = false
+		$Cliente2.reroll = true
+		estado2 = "Happy"
+		$"Cliente2/Timer2".start(5)
+	if( $Cliente3.satisfied == true ):
+		$Cliente3.satisfied = false
+		$Cliente3.reroll = true
+		estado3 = "Happy"
+		$"Cliente3/Timer3".start(5)
+	if( $Cliente4.satisfied == true ):
+		$Cliente4.satisfied = false
+		$Cliente4.reroll = true
+		estado4 = "Happy"
+		$"Cliente4/Timer4".start(5)
 
 func _on_timer_timeout() -> void:
 	match estado1:

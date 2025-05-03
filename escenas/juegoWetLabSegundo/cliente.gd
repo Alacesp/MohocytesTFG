@@ -54,8 +54,9 @@ func compararPedido():
 	if (GlobalWetGame.selected.size()<pedido.size()):
 		size = GlobalWetGame.selected.size()
 	else:
-		size = GlobalWetGame.selected.size()
-	
+		size = pedido.size()
+		print("size")
+	print(size)
 	for i in size:
 		print(GlobalWetGame.selected[i])
 		print(pedido[i])
