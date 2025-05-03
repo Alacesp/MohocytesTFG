@@ -16,6 +16,9 @@ func _process(delta: float) -> void:
 		reroll = false
 		crearPedido()
 
+func getPedido():
+	return pedido
+
 func crearPedido():
 	var rnd1 = rng.randi_range(1,3)
 	var rnd2 = rng.randi_range(1,3)
@@ -44,6 +47,8 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			print(compararPedido())
 			satisfied = true
 			self.visible=false
+			get_node("../../camara/Clientes/" + self.name).visible = false
+			print(self.name)
 			borrar.borrarDeInventario()
 			actualizar.actualizarSelected()
 			actualizar.actualizarInventario()
