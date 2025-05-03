@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=40 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://brqvw3tdmbybb" path="res://recursos/Bocadillo2.png" id="22_e2ryf"]
 [ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="23_h466c"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://ve8bc17avcj1" path="res://recursos/centrifugaSymbol.png" id="28_hpue7"]
 [ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
@@ -471,6 +472,11 @@ texture = ExtResource("13_q1bm0")
 position = Vector2(407, 110)
 scale = Vector2(0.492537, 0.426966)
 texture = ExtResource("12_v31oj")
+
+[node name="Centrifuga" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(822, 114)
+scale = Vector2(0.307163, 0.328859)
+texture = ExtResource("28_hpue7")
 
 [node name="camara" type="Camera2D" parent="."]
 position = Vector2(576, 324)
@@ -1043,15 +1049,19 @@ label_settings = SubResource("LabelSettings_vmmhc")
 [connection signal="pressed" from="Liquidos/Liquido5/liquido5" to="Liquidos" method="_on_liquido_5_pressed"]
 [connection signal="pressed" from="Liquidos/Liquido4/liquido4" to="Liquidos" method="_on_liquido_4_pressed"]
 [connection signal="timeout" from="Clientes/Cliente1/Timer" to="Clientes" method="_on_timer_timeout"]
+[connection signal="input_event" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_mouse_exited"]
 [connection signal="timeout" from="Clientes/Cliente2/Timer2" to="Clientes" method="_on_timer_2_timeout"]
+[connection signal="input_event" from="Clientes/Cliente2/Area2D2" to="Clientes/Cliente2" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Clientes/Cliente2/Area2D2" to="Clientes/Cliente2" method="_on_area_2d_2_mouse_entered"]
 [connection signal="mouse_exited" from="Clientes/Cliente2/Area2D2" to="Clientes/Cliente2" method="_on_area_2d_2_mouse_exited"]
 [connection signal="timeout" from="Clientes/Cliente3/Timer3" to="Clientes" method="_on_timer_3_timeout"]
+[connection signal="input_event" from="Clientes/Cliente3/Area2D3" to="Clientes/Cliente3" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Clientes/Cliente3/Area2D3" to="Clientes/Cliente3" method="_on_area_2d_3_mouse_entered"]
 [connection signal="mouse_exited" from="Clientes/Cliente3/Area2D3" to="Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
 [connection signal="timeout" from="Clientes/Cliente4/Timer4" to="Clientes" method="_on_timer_4_timeout"]
+[connection signal="input_event" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
 [connection signal="mouse_exited" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]

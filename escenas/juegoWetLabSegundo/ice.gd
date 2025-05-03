@@ -22,7 +22,7 @@ func _on_ice_pressed() -> void:
 		$ProgressBar.value = 0
 		print(GlobalWetGame.ice)
 		print(GlobalWetGame.selected)
-	elif(GlobalWetGame.ice == null and GlobalWetGame.selected != null):
+	elif(GlobalWetGame.ice == null and GlobalWetGame.selected != null and GlobalWetGame.selected.back()!="Centrifuga"):
 		GlobalWetGame.ice = GlobalWetGame.selected.duplicate()
 		borrar.borrarDeInventario()
 		actualizar.actualizarSelected()

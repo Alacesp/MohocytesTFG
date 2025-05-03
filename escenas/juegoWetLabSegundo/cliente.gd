@@ -1,5 +1,5 @@
 extends Sprite2D
-var pedido = ["a","a"]
+var pedido = ["a","a","a"]
 var rng = RandomNumberGenerator.new()
 var satisfied = false
 var reroll=false
@@ -35,8 +35,9 @@ func crearPedido():
 					pedido[1]="YELLOW"
 				3:
 					pedido[1]="PINK"
+			pedido[2]="Centrifuga"
 
-func _input(event):
+func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if get_rect().has_point(to_local(event.position)) and GlobalWetGame.selected!=null:
 			print("Aciertos:")
