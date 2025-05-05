@@ -8,6 +8,8 @@ extends Node2D
 		#else:
 			#get_node("camara/Inventario/Probeta" + str(i)).visible = false
 
+func _process(delta: float) -> void:
+	$"camara/Label".text = str(GlobalWetGame.puntuacion)
 
 func esPlaca(probeta):
 	if(probeta.back()=="Centrifuga"):

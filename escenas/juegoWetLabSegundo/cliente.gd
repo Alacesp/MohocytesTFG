@@ -44,7 +44,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if get_rect().has_point(to_local(event.position)) and GlobalWetGame.selected!=null:
 			print("Aciertos:")
-			print(compararPedido())
+			GlobalWetGame.puntuacion += (compararPedido() * 100)
 			satisfied = true
 			self.visible=false
 			get_node("../../camara/Clientes/" + self.name).visible = false

@@ -13,6 +13,15 @@ func _process(delta: float) -> void:
 	if( $Cliente1.satisfied == true ):
 		$Cliente1.satisfied = false
 		$Cliente1.reroll = true
+		match estado1:
+			"Happy":
+				GlobalWetGame.puntuacion += 50
+			"Serious":
+				GlobalWetGame.puntuacion += 0
+			"Sad":
+				GlobalWetGame.puntuacion -= 100
+			"Angry":
+				GlobalWetGame.puntuacion -= 300
 		estado1 = "Happy"
 		$"Cliente1/Timer".start(5)
 	if( $Cliente2.satisfied == true ):

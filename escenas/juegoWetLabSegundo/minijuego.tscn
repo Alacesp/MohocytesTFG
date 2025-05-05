@@ -1044,7 +1044,6 @@ script = ExtResource("34_efd47")
 [node name="Area2D" type="Area2D" parent="camara/Clientes/Cliente1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente1/Area2D"]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente2" type="Sprite2D" parent="camara/Clientes"]
@@ -1057,7 +1056,6 @@ script = ExtResource("34_efd47")
 [node name="Area2D2" type="Area2D" parent="camara/Clientes/Cliente2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente2/Area2D2"]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente3" type="Sprite2D" parent="camara/Clientes"]
@@ -1070,7 +1068,6 @@ script = ExtResource("34_efd47")
 [node name="Area2D3" type="Area2D" parent="camara/Clientes/Cliente3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente3/Area2D3"]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente4" type="Sprite2D" parent="camara/Clientes"]
@@ -1083,7 +1080,6 @@ script = ExtResource("34_efd47")
 [node name="Area2D4" type="Area2D" parent="camara/Clientes/Cliente4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente4/Area2D4"]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Bocadillo3" type="Sprite2D" parent="camara/Clientes"]
