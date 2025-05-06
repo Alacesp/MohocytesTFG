@@ -11,7 +11,7 @@ func _process(delta):
 		$Timer.stop()
 
 func _on_ice_pressed() -> void:
-	if (GlobalWetGame.ice != null && completed == true):
+	if (GlobalWetGame.ice != null && completed == true && GlobalWetGame.probetas.size()<4):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
 		GlobalWetGame.ice.append("Ice")
 		GlobalWetGame.selected = GlobalWetGame.ice

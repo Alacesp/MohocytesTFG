@@ -11,7 +11,7 @@ func _process(delta):
 		$Timer.stop()
 
 func _on_fire_pressed() -> void:
-	if (GlobalWetGame.fire != null && completed == true):
+	if (GlobalWetGame.fire != null && completed == true && GlobalWetGame.probetas.size()<4):
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
 		GlobalWetGame.fire.append("Fire")
 		GlobalWetGame.selected = GlobalWetGame.fire

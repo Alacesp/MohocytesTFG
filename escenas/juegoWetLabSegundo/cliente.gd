@@ -68,7 +68,7 @@ func compararPedido():
 		print(pedido[i])
 		if (GlobalWetGame.selected[i]==pedido[i]):
 			aciertos += 1
-			print("acierto")
+			print("acierto: +100")
 	return aciertos
 
 func mostrarPedido():

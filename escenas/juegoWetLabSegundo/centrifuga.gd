@@ -12,7 +12,7 @@ func _process(delta):
 
 func _on_centrifugadora_pressed() -> void:
 	print("centrifuga pulsada")
-	if (GlobalWetGame.centrifuga != null && completed == true ):
+	if (GlobalWetGame.centrifuga != null && completed == true && GlobalWetGame.probetas.size()<4):
 		print("eioeoeo")
 		$"../camara/Seleccionado/ProbetaSeleccionada".visible = true
 		GlobalWetGame.centrifuga.append("Centrifuga")
