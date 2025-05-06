@@ -1,5 +1,5 @@
 extends Sprite2D
-var pedido = ["a","a","a"]
+var pedido = []
 var rng = RandomNumberGenerator.new()
 var satisfied = false
 var reroll=false
@@ -20,25 +20,48 @@ func getPedido():
 	return pedido
 
 func crearPedido():
+	pedido.clear()
 	var rnd1 = rng.randi_range(1,3)
 	var rnd2 = rng.randi_range(1,3)
+	var rnd3 = rng.randi_range(1,2)
 	match GlobalWetGame.dificulty:
-		"Tutorial":
+		"Inicio":
 			match rnd1:
 				1:
-					pedido[0]="RED"
+					pedido.append("RED")
 				2:
-					pedido[0]="YELLOW"
+					pedido.append("YELLOW")
 				3:
-					pedido[0]="PINK"
+					pedido.append("PINK")
 			match rnd2:
 				1:
-					pedido[1]="RED"
+					pedido.append("RED")
 				2:
-					pedido[1]="YELLOW"
+					pedido.append("YELLOW")
 				3:
-					pedido[1]="PINK"
-			pedido[2]="Centrifuga"
+					pedido.append("PINK")
+		"Medio":
+			match rnd1:
+				1:
+					pedido.append("RED")
+				2:
+					pedido.append("YELLOW")
+				3:
+					pedido.append("PINK")
+			match rnd2:
+				1:
+					pedido.append("RED")
+				2:
+					pedido.append("YELLOW")
+				3:
+					pedido.append("PINK")
+			match rnd3:
+				1:
+					pedido.append("Ice")
+				2:
+					pedido.append("Fire")
+	pedido.append("Centrifuga")
+	print(pedido)
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -80,6 +103,10 @@ func mostrarPedido():
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido1.png")
 			"PINK":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido3.png")
+			"Ice":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/copoDeNieve.png")
+			"Fire":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/fuego.png")
 
 func _on_area_2d_mouse_entered() -> void:
 	mostrarPedido()

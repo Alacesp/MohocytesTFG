@@ -473,12 +473,14 @@ visible = false
 [node name="Pedido1" type="Sprite2D" parent="Clientes/Pedido"]
 position = Vector2(327, 105)
 scale = Vector2(0.492537, 0.44382)
-texture = ExtResource("13_q1bm0")
 
 [node name="Pedido2" type="Sprite2D" parent="Clientes/Pedido"]
 position = Vector2(407, 110)
 scale = Vector2(0.492537, 0.426966)
-texture = ExtResource("12_v31oj")
+
+[node name="Pedido3" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(509, 114)
+scale = Vector2(0.239474, 0.252066)
 
 [node name="Centrifuga" type="Sprite2D" parent="Clientes/Pedido"]
 position = Vector2(822, 114)
@@ -1099,12 +1101,14 @@ position = Vector2(-531, -253)
 [node name="Pedido1" type="Sprite2D" parent="camara/Clientes/Pedido"]
 position = Vector2(327, 105)
 scale = Vector2(0.492537, 0.44382)
-texture = ExtResource("13_q1bm0")
 
 [node name="Pedido2" type="Sprite2D" parent="camara/Clientes/Pedido"]
 position = Vector2(407, 110)
 scale = Vector2(0.492537, 0.426966)
-texture = ExtResource("12_v31oj")
+
+[node name="Pedido3" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(502, 113)
+scale = Vector2(0.253397, 0.254124)
 
 [node name="Centrifuga" type="Sprite2D" parent="camara/Clientes/Pedido"]
 position = Vector2(822, 114)
