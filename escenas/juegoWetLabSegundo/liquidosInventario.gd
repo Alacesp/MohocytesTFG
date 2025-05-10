@@ -1,12 +1,13 @@
 extends Node2D
+@onready var texto: CanvasLayer = get_node("CuadroTexto")
 
-#func _process(delta):
-	#
-	#for i in range(1,5):
-		#if(i<=GlobalWetGame.probetas.size()):
-			#get_node("camara/Inventario/Probeta" + str(i)).visible = true
-		#else:
-			#get_node("camara/Inventario/Probeta" + str(i)).visible = false
+#func _ready() -> void:
+	#texto.encolar(">SI:nada")
+	#texto.encolar(">SD:1retratoJwlConfiada")
+	#texto.encolar("¡Vamos a comenzar!")
+	#texto.encolar(">SD:1retratoJwl")
+	#texto.encolar("Dejame que te explique como ayudarnos.")
+	
 
 func _process(delta: float) -> void:
 	$"camara/Label".text = str(GlobalWetGame.puntuacion)

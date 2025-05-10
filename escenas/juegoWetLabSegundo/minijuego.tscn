@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=48 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -30,12 +30,14 @@
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://ve8bc17avcj1" path="res://recursos/centrifugaSymbol.png" id="28_hpue7"]
 [ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
+[ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="29_s27qq"]
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://bxrcen0t0bk6h" path="res://recursos/happySymbol.png" id="33_dgc8e"]
 [ext_resource type="Script" uid="uid://cfxnwdp1bkgap" path="res://escenas/juegoWetLabSegundo/clientePreview.gd" id="34_efd47"]
 [ext_resource type="Texture2D" uid="uid://b0tydd5qssyya" path="res://recursos/Bocadillo3.png" id="35_s27qq"]
 [ext_resource type="Texture2D" uid="uid://ckms84rdjnws8" path="res://recursos/Bocadillo4.png" id="36_rkgp2"]
+[ext_resource type="Script" uid="uid://bvsl5722tyysk" path="res://escenas/juegoWetLabSegundo/countdown.gd" id="38_rkgp2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(144, 152)
@@ -63,6 +65,11 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3b7c1"]
 size = Vector2(148.157, 142)
+
+[sub_resource type="LabelSettings" id="LabelSettings_slht7"]
+font = ExtResource("2_c1jlx")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
 
 [node name="Minijuego" type="Node2D"]
 script = ExtResource("1_kqs8n")
@@ -482,10 +489,21 @@ scale = Vector2(0.492537, 0.426966)
 position = Vector2(509, 114)
 scale = Vector2(0.239474, 0.252066)
 
+[node name="Pedido4" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(593, 113)
+scale = Vector2(0.492537, 0.44382)
+
 [node name="Centrifuga" type="Sprite2D" parent="Clientes/Pedido"]
 position = Vector2(822, 114)
 scale = Vector2(0.307163, 0.328859)
 texture = ExtResource("28_hpue7")
+
+[node name="Pedido5" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(686, 111)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="CuadroTexto" parent="." instance=ExtResource("29_s27qq")]
+visible = false
 
 [node name="camara" type="Camera2D" parent="."]
 position = Vector2(576, 324)
@@ -1114,6 +1132,27 @@ scale = Vector2(0.253397, 0.254124)
 position = Vector2(822, 114)
 scale = Vector2(0.307163, 0.328859)
 texture = ExtResource("28_hpue7")
+
+[node name="Pedido4" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(611, 108)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="Pedido5" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(705, 106)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="Label2" type="Label" parent="camara"]
+offset_left = 380.0
+offset_top = -248.0
+offset_right = 473.0
+offset_bottom = -200.0
+text = "Buenass"
+label_settings = SubResource("LabelSettings_slht7")
+script = ExtResource("38_rkgp2")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 180.0
+one_shot = true
 
 [connection signal="pressed" from="Botones/boton1/Boton1" to="Botones" method="_on_boton_1_pressed"]
 [connection signal="pressed" from="Botones/boton2/boton2" to="Botones" method="_on_boton_2_pressed"]

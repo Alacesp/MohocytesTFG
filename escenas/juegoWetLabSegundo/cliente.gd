@@ -24,42 +24,46 @@ func crearPedido():
 	var rnd1 = rng.randi_range(1,3)
 	var rnd2 = rng.randi_range(1,3)
 	var rnd3 = rng.randi_range(1,2)
-	match GlobalWetGame.dificulty:
-		"Inicio":
-			match rnd1:
-				1:
-					pedido.append("RED")
-				2:
-					pedido.append("YELLOW")
-				3:
-					pedido.append("PINK")
-			match rnd2:
-				1:
-					pedido.append("RED")
-				2:
-					pedido.append("YELLOW")
-				3:
-					pedido.append("PINK")
-		"Medio":
-			match rnd1:
-				1:
-					pedido.append("RED")
-				2:
-					pedido.append("YELLOW")
-				3:
-					pedido.append("PINK")
-			match rnd2:
-				1:
-					pedido.append("RED")
-				2:
-					pedido.append("YELLOW")
-				3:
-					pedido.append("PINK")
-			match rnd3:
-				1:
-					pedido.append("Ice")
-				2:
-					pedido.append("Fire")
+	var rnd4 = rng.randi_range(1,3)
+	var rnd5 = rng.randi_range(1,3)
+	
+					
+	if(GlobalWetGame.dificulty >= 1):
+		match rnd1:
+			1:
+				pedido.append("RED")
+			2:
+				pedido.append("YELLOW")
+			3:
+				pedido.append("PINK")
+		match rnd2:
+			1:
+				pedido.append("RED")
+			2:
+				pedido.append("YELLOW")
+			3:
+				pedido.append("PINK")
+	if(GlobalWetGame.dificulty >= 2):
+		match rnd3:
+			1:
+				pedido.append("Ice")
+			2:
+				pedido.append("Fire")
+	if(GlobalWetGame.dificulty >= 3):
+		match rnd1:
+			1:
+				pedido.append("GREEN")
+			2:
+				pedido.append("PURPLE")
+			3:
+				pedido.append("BLUE")
+		match rnd2:
+			1:
+				pedido.append("GREEN")
+			2:
+				pedido.append("PURPLE")
+			3:
+				pedido.append("BLUE")
 	pedido.append("Centrifuga")
 	print(pedido)
 
@@ -107,6 +111,12 @@ func mostrarPedido():
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/copoDeNieve.png")
 			"Fire":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/fuego.png")
+			"PURPLE":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido5.png")
+			"BLUE":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido4.png")
+			"GREEN":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido6.png")
 
 func _on_area_2d_mouse_entered() -> void:
 	mostrarPedido()

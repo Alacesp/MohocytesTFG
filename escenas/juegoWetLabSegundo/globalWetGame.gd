@@ -6,5 +6,5 @@ var selected
 var ice
 var fire
 var centrifuga
-var dificulty = "Inicio"
+var dificulty = 3
 var puntuacion = 0

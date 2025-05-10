@@ -16,6 +16,12 @@ func mostrarPedido():
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/copoDeNieve.png")
 			"Fire":
 				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/fuego.png")
+			"PURPLE":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido5.png")
+			"BLUE":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido4.png")
+			"GREEN":
+				get_node("../Pedido/Pedido" + str(i+1)).texture = preload("res://recursos/liquido6.png")
 
 func _on_area_2d_mouse_entered() -> void:
 	mostrarPedido()
