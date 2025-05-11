@@ -1,0 +1,903 @@
+[gd_scene load_steps=43 format=3 uid="uid://dwe3h2okceru1"]
+
+[ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_jpqr4"]
+[ext_resource type="Script" uid="uid://5e41iwohbg0x" path="res://escenas/Formulario/formulario.gd" id="1_s2ufo"]
+[ext_resource type="Texture2D" uid="uid://dwasv1f5tlu1g" path="res://recursos/dialogo_off.png" id="2_s2ufo"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_3ipyj"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_hin7w"]
+[ext_resource type="Script" uid="uid://drokm752xlkpn" path="res://escenas/Formulario/camaraFormulario.gd" id="5_55exj"]
+[ext_resource type="Script" uid="uid://1glouovi0kct" path="res://escenas/Formulario/button.gd" id="6_3ipyj"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="6_l1rek"]
+[ext_resource type="Script" uid="uid://c3h1uax8hk1d8" path="res://escenas/Formulario/text_edit.gd" id="7_hin7w"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_55exj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_loxm8"]
+font = ExtResource("3_3ipyj")
+font_size = 37
+
+[sub_resource type="Theme" id="Theme_bmy3h"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ddler"]
+
+[sub_resource type="Theme" id="Theme_vrhwy"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y0qy6"]
+
+[sub_resource type="Theme" id="Theme_exlj0"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glvnh"]
+
+[sub_resource type="Theme" id="Theme_temv4"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ves55"]
+
+[sub_resource type="Theme" id="Theme_sy0dn"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 65
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_upbka"]
+
+[sub_resource type="Theme" id="Theme_qumqv"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1oham"]
+
+[sub_resource type="Theme" id="Theme_vtdnq"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5p4pd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_55exj"]
+font = ExtResource("3_3ipyj")
+font_size = 28
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_asemn"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nf1un"]
+
+[sub_resource type="Theme" id="Theme_y72qd"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gpnw"]
+
+[sub_resource type="Theme" id="Theme_tb2nu"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trjhe"]
+
+[sub_resource type="Theme" id="Theme_ip0dh"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ipuks"]
+
+[sub_resource type="Theme" id="Theme_af31l"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vu4ar"]
+
+[sub_resource type="Theme" id="Theme_5s57x"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovfjj"]
+
+[sub_resource type="Theme" id="Theme_0mqer"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 65
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dsel1"]
+
+[sub_resource type="Theme" id="Theme_bxfgf"]
+default_font = ExtResource("3_3ipyj")
+default_font_size = 65
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yskxl"]
+
+[node name="Formulario" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_s2ufo")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+scale = Vector2(1.024, 1.0237)
+texture = ExtResource("1_jpqr4")
+centered = false
+
+[node name="Pregunta1" type="Node2D" parent="."]
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta1"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta1/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta1/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta1" type="CenterContainer" parent="Pregunta1"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta1/RespuestasPregunta1"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
+position = Vector2(319, 277)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -64.0
+offset_right = 105.0
+offset_bottom = 66.0
+theme = SubResource("Theme_bmy3h")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ddler")
+toggle_mode = true
+text = "Opcion 1"
+flat = true
+script = ExtResource("6_3ipyj")
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
+position = Vector2(798, 282)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -65.0
+offset_right = 101.0
+offset_bottom = 66.0
+theme = SubResource("Theme_vrhwy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y0qy6")
+text = "Opcion 2"
+flat = true
+script = ExtResource("6_3ipyj")
+
+[node name="Opcion3" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
+position = Vector2(319, 423)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -101.0
+offset_top = -64.0
+offset_right = 100.0
+offset_bottom = 64.0
+theme = SubResource("Theme_exlj0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_glvnh")
+text = "Opcion 3"
+flat = true
+script = ExtResource("6_3ipyj")
+
+[node name="Opcion4" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
+position = Vector2(803, 427)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -63.0
+offset_right = 105.0
+offset_bottom = 63.0
+theme = SubResource("Theme_temv4")
+theme_override_fonts/font = ExtResource("3_3ipyj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ves55")
+text = "Opcion 4"
+flat = true
+script = ExtResource("6_3ipyj")
+
+[node name="Opcion5" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
+position = Vector2(560, 540)
+scale = Vector2(0.425238, 0.576923)
+texture = ExtResource("2_s2ufo")
+
+[node name="TextEdit" type="TextEdit" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -468.0
+offset_top = -42.0
+offset_right = 463.0
+offset_bottom = 106.0
+theme = SubResource("Theme_sy0dn")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_upbka")
+placeholder_text = "Otro..."
+script = ExtResource("7_hin7w")
+
+[node name="Pregunta2" type="Node2D" parent="."]
+position = Vector2(1152, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta2"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta2/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta2/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta2" type="CenterContainer" parent="Pregunta2"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta2/RespuestasPregunta2"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta2/RespuestasPregunta2/HBoxContainer"]
+position = Vector2(556.5, 296)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -105.0
+offset_top = -63.0
+offset_right = 104.0
+offset_bottom = 67.0
+theme = SubResource("Theme_qumqv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1oham")
+text = "Opcion 1"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta2/RespuestasPregunta2/HBoxContainer"]
+position = Vector2(560.5, 484)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -105.0
+offset_top = -68.0
+offset_right = 100.0
+offset_bottom = 63.0
+theme = SubResource("Theme_vtdnq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5p4pd")
+text = "Opcion 2"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pregunta3" type="Node2D" parent="."]
+position = Vector2(2304, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta3"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta3/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta3/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta3" type="CenterContainer" parent="Pregunta3"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta3/RespuestasPregunta3"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta3/RespuestasPregunta3/HBoxContainer"]
+position = Vector2(556.5, 296)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -105.0
+offset_top = -63.0
+offset_right = 104.0
+offset_bottom = 67.0
+theme = SubResource("Theme_qumqv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1oham")
+text = "Opcion 1"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta3/RespuestasPregunta3/HBoxContainer"]
+position = Vector2(560.5, 484)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -105.0
+offset_top = -68.0
+offset_right = 100.0
+offset_bottom = 63.0
+theme = SubResource("Theme_vtdnq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5p4pd")
+text = "Opcion 2"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pregunta4" type="Node2D" parent="."]
+position = Vector2(3456, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta4"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta4/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta4/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OptionButton1" type="OptionButton" parent="Pregunta4"]
+offset_left = 199.0
+offset_top = 287.0
+offset_right = 231.0
+offset_bottom = 307.0
+
+[node name="OptionButton2" type="OptionButton" parent="Pregunta4"]
+offset_left = 199.0
+offset_top = 363.0
+offset_right = 231.0
+offset_bottom = 383.0
+
+[node name="OptionButton3" type="OptionButton" parent="Pregunta4"]
+offset_left = 199.0
+offset_top = 430.0
+offset_right = 231.0
+offset_bottom = 450.0
+
+[node name="OptionButton4" type="OptionButton" parent="Pregunta4"]
+offset_left = 199.0
+offset_top = 505.0
+offset_right = 231.0
+offset_bottom = 525.0
+metadata/_edit_use_anchors_ = true
+
+[node name="OptionButton5" type="OptionButton" parent="Pregunta4"]
+offset_left = 199.0
+offset_top = 586.0
+offset_right = 231.0
+offset_bottom = 606.0
+
+[node name="Label1" type="Label" parent="Pregunta4"]
+offset_left = 554.0
+offset_top = 242.0
+offset_right = 604.0
+offset_bottom = 270.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label2" type="Label" parent="Pregunta4"]
+offset_left = 554.0
+offset_top = 321.0
+offset_right = 604.0
+offset_bottom = 349.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label3" type="Label" parent="Pregunta4"]
+offset_left = 555.0
+offset_top = 392.0
+offset_right = 605.0
+offset_bottom = 420.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label4" type="Label" parent="Pregunta4"]
+offset_left = 557.0
+offset_top = 463.0
+offset_right = 607.0
+offset_bottom = 491.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label5" type="Label" parent="Pregunta4"]
+offset_left = 553.0
+offset_top = 545.0
+offset_right = 603.0
+offset_bottom = 573.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Pregunta5" type="Node2D" parent="."]
+position = Vector2(4608, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta5"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta5/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta5/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta5" type="CenterContainer" parent="Pregunta5"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta5/RespuestasPregunta5"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
+position = Vector2(329.5, 312)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -64.0
+offset_right = 105.0
+offset_bottom = 66.0
+theme = SubResource("Theme_asemn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nf1un")
+text = "Opcion 1"
+flat = true
+autowrap_mode = 2
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
+position = Vector2(808.5, 317)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -65.0
+offset_right = 101.0
+offset_bottom = 66.0
+theme = SubResource("Theme_y72qd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3gpnw")
+text = "Opcion 2"
+flat = true
+autowrap_mode = 2
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion3" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
+position = Vector2(329.5, 458)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -101.0
+offset_top = -64.0
+offset_right = 100.0
+offset_bottom = 64.0
+theme = SubResource("Theme_tb2nu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_trjhe")
+text = "Opcion 3"
+flat = true
+autowrap_mode = 2
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion4" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
+position = Vector2(813.5, 462)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -63.0
+offset_right = 105.0
+offset_bottom = 63.0
+theme = SubResource("Theme_ip0dh")
+theme_override_fonts/font = ExtResource("3_3ipyj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ipuks")
+text = "Opcion 4"
+flat = true
+autowrap_mode = 3
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pregunta6" type="Node2D" parent="."]
+position = Vector2(5760, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta6"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta6/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta6/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta6" type="CenterContainer" parent="Pregunta6"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta6/RespuestasPregunta6"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta6/RespuestasPregunta6/HBoxContainer"]
+position = Vector2(561, 278)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -64.0
+offset_right = 105.0
+offset_bottom = 66.0
+theme = SubResource("Theme_af31l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vu4ar")
+text = "Opcion 1"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta6/RespuestasPregunta6/HBoxContainer"]
+position = Vector2(564, 418)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -65.0
+offset_right = 101.0
+offset_bottom = 66.0
+theme = SubResource("Theme_5s57x")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ovfjj")
+text = "Opcion 2"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion3" type="Sprite2D" parent="Pregunta6/RespuestasPregunta6/HBoxContainer"]
+position = Vector2(560, 540)
+scale = Vector2(0.425238, 0.576923)
+texture = ExtResource("2_s2ufo")
+
+[node name="TextEdit" type="TextEdit" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -468.0
+offset_top = -42.0
+offset_right = 463.0
+offset_bottom = 106.0
+theme = SubResource("Theme_0mqer")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dsel1")
+placeholder_text = "Otro..."
+script = ExtResource("7_hin7w")
+
+[node name="Pregunta7" type="Node2D" parent="."]
+position = Vector2(6912, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta7"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta7/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta7/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta7" type="CenterContainer" parent="Pregunta7"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta7/RespuestasPregunta7"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta7/RespuestasPregunta7/HBoxContainer"]
+position = Vector2(561, 278)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -64.0
+offset_right = 105.0
+offset_bottom = 66.0
+theme = SubResource("Theme_af31l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vu4ar")
+text = "Opcion 1"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion2" type="Sprite2D" parent="Pregunta7/RespuestasPregunta7/HBoxContainer"]
+position = Vector2(564, 418)
+texture = ExtResource("4_hin7w")
+
+[node name="Button" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -104.0
+offset_top = -65.0
+offset_right = 101.0
+offset_bottom = 66.0
+theme = SubResource("Theme_5s57x")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ovfjj")
+text = "Opcion 2"
+flat = true
+script = ExtResource("6_3ipyj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion3" type="Sprite2D" parent="Pregunta7/RespuestasPregunta7/HBoxContainer"]
+position = Vector2(560, 540)
+scale = Vector2(0.425238, 0.576923)
+texture = ExtResource("2_s2ufo")
+
+[node name="TextEdit" type="TextEdit" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -468.0
+offset_top = -42.0
+offset_right = 463.0
+offset_bottom = 106.0
+theme = SubResource("Theme_0mqer")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dsel1")
+placeholder_text = "Otro..."
+script = ExtResource("7_hin7w")
+
+[node name="Pregunta8" type="Node2D" parent="."]
+position = Vector2(8064, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta8"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta8/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta8/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Pregunta9" type="Node2D" parent="."]
+position = Vector2(9216, 0)
+
+[node name="Pregunta" type="Sprite2D" parent="Pregunta9"]
+position = Vector2(581, 92)
+texture = ExtResource("2_s2ufo")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pregunta9/Pregunta"]
+offset_left = -487.0
+offset_top = -45.0
+offset_right = 485.0
+offset_bottom = 109.0
+
+[node name="Label" type="Label" parent="Pregunta9/Pregunta/CenterContainer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(800, 100)
+layout_mode = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_loxm8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RespuestasPregunta9" type="CenterContainer" parent="Pregunta9"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta9/RespuestasPregunta9"]
+layout_mode = 2
+
+[node name="Opcion1" type="Sprite2D" parent="Pregunta9/RespuestasPregunta9/HBoxContainer"]
+position = Vector2(574, 349)
+scale = Vector2(0.425238, 1.24476)
+texture = ExtResource("2_s2ufo")
+
+[node name="TextEdit" type="TextEdit" parent="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_top = -0.0174825
+anchor_bottom = -0.0174825
+offset_left = -468.0
+offset_top = -42.0
+offset_right = 463.0
+offset_bottom = 106.0
+theme = SubResource("Theme_bxfgf")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yskxl")
+placeholder_text = "Otro..."
+script = ExtResource("7_hin7w")
+metadata/_edit_use_anchors_ = true
+
+[node name="Camara" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("5_55exj")
+
+[node name="Derecha" type="Sprite2D" parent="Camara"]
+position = Vector2(506, 256)
+rotation = 1.55865
+texture = ExtResource("6_l1rek")
+
+[node name="Button" type="Button" parent="Camara/Derecha"]
+offset_left = -56.0
+offset_top = -53.0
+offset_right = 56.0
+offset_bottom = 48.0
+
+[node name="Izquierda" type="Sprite2D" parent="Camara"]
+position = Vector2(-498, 253)
+rotation = 1.55865
+texture = ExtResource("6_l1rek")
+flip_v = true
+
+[node name="Button" type="Button" parent="Camara/Izquierda"]
+offset_left = -56.0
+offset_top = -53.0
+offset_right = 56.0
+offset_bottom = 48.0
+
+[node name="Acabar" type="Sprite2D" parent="."]
+position = Vector2(10131, 500)
+texture = ExtResource("10_55exj")
+
+[node name="Button" type="Button" parent="Acabar"]
+offset_left = -83.0
+offset_top = -83.0
+offset_right = 85.0
+offset_bottom = 85.0
+
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_pressed"]
+[connection signal="focus_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="focus_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="focus_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_exited"]
+[connection signal="focus_entered" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Camara/Derecha/Button" to="Camara" method="_on_button_pressed_Der"]
+[connection signal="pressed" from="Camara/Izquierda/Button" to="Camara" method="_on_button_pressed_Izq"]
+[connection signal="pressed" from="Acabar/Button" to="." method="_on_button_pressed_acabar"]

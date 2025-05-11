@@ -24,6 +24,7 @@ Score="*res://juego_dry/Score.gd"
 GlobalDragAndDrop="*res://escenas/Test/globalDragAndDrop.gd"
 Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
 GlobalWetGame="*res://escenas/juegoWetLabSegundo/globalWetGame.gd"
+DatabaseSingleton="*res://escenas/DatabaseSingleton.gd"
 
 [debug]
 

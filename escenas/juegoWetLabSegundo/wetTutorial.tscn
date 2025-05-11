@@ -69,6 +69,7 @@ autowrap_mode = 3
 
 [node name="Texto2" type="Label" parent="Tutorial"]
 visible = false
+layout_mode = 0
 offset_left = 116.0
 offset_top = 64.0
 offset_right = 948.0
