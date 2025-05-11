@@ -1,0 +1,162 @@
+[gd_scene load_steps=9 format=3 uid="uid://vjvxrsjx5hl4"]
+
+[ext_resource type="Script" uid="uid://bbp5guymiw6fh" path="res://escenas/juegoWetLabSegundo/wet_tutorial.gd" id="1_pd7e6"]
+[ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_ukj1p"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_go51q"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="3_pd7e6"]
+[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="6_a6ds3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vmjdd"]
+font = ExtResource("2_go51q")
+font_size = 49
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bjiyn"]
+font = ExtResource("2_go51q")
+font_size = 38
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_bjiyn"]
+default_font = ExtResource("2_go51q")
+default_font_size = 40
+
+[node name="WetTutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pd7e6")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(576, 324)
+scale = Vector2(1.024, 1.0237)
+texture = ExtResource("1_ukj1p")
+
+[node name="Pantalla" type="Sprite2D" parent="."]
+position = Vector2(577.5, 320)
+scale = Vector2(4.87317, 4.59091)
+texture = ExtResource("3_pd7e6")
+
+[node name="Tutorial" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 74.0
+offset_top = 347.0
+offset_right = 114.0
+offset_bottom = 387.0
+
+[node name="Titulo" type="Label" parent="Tutorial"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = -221.0
+offset_right = 754.0
+offset_bottom = -171.0
+text = "Titulo"
+label_settings = SubResource("LabelSettings_vmjdd")
+horizontal_alignment = 1
+
+[node name="Texto" type="Label" parent="Tutorial"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = -97.0
+offset_right = 862.0
+offset_bottom = 132.0
+text = "texto"
+label_settings = SubResource("LabelSettings_bjiyn")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Salir" type="Sprite2D" parent="."]
+position = Vector2(977, 559)
+scale = Vector2(1.42439, 1.04)
+texture = ExtResource("3_pd7e6")
+
+[node name="Button" type="Button" parent="Salir"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -66.0
+offset_right = -102.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_bjiyn")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "Comenzar"
+flat = true
+autowrap_mode = 2
+
+[node name="Derecha" type="Sprite2D" parent="."]
+position = Vector2(1077, 356)
+rotation = 1.57947
+scale = Vector2(1.42439, 1.04)
+texture = ExtResource("6_a6ds3")
+
+[node name="Button" type="Button" parent="Derecha"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -57.1747
+offset_top = -48.3613
+offset_right = -57.1747
+offset_bottom = -48.3613
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_bjiyn")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+flat = true
+autowrap_mode = 2
+
+[node name="Izquierda" type="Sprite2D" parent="."]
+position = Vector2(74, 347)
+rotation = -1.56657
+scale = Vector2(1.42439, 1.04)
+texture = ExtResource("6_a6ds3")
+
+[node name="Button2" type="Button" parent="Izquierda"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -54.911
+offset_top = -48.7213
+offset_right = -54.911
+offset_bottom = -48.7213
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_bjiyn")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+flat = true
+autowrap_mode = 2
+
+[connection signal="mouse_entered" from="Salir/Button" to="Salir/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Salir/Button" to="Salir/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Salir/Button" to="." method="_on_pressed"]
+[connection signal="pressed" from="Derecha/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Izquierda/Button2" to="." method="_on_button_2_pressed"]
