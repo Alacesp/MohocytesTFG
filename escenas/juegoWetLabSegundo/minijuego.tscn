@@ -1209,3 +1209,4 @@ one_shot = true
 [connection signal="mouse_exited" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
 [connection signal="mouse_entered" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
 [connection signal="mouse_exited" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
+[connection signal="timeout" from="Timer" to="camara/Label2" method="_on_timer_timeout"]

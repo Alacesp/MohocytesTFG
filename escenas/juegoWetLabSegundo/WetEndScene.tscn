@@ -1,39 +1,39 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctwei1n8fkgg4"]
+[gd_scene load_steps=8 format=3 uid="uid://b2b5w4pmyncof"]
 
-[ext_resource type="Script" uid="uid://cikvpmvll3jjd" path="res://juego_human/EndScene.gd" id="1_eh0iy"]
-[ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="2_wcw3q"]
-[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="3_533kq"]
-[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="4_01212"]
-[ext_resource type="Script" uid="uid://c74it7xkqy8fi" path="res://juego_human/iniciar.gd" id="5_nj3ai"]
+[ext_resource type="Script" uid="uid://q5515ve4m23h" path="res://escenas/juegoWetLabSegundo/EndScene.gd" id="1_neduu"]
+[ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="2_8axn0"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_ui8mw"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_6nl0a"]
+[ext_resource type="Script" uid="uid://c74it7xkqy8fi" path="res://juego_human/iniciar.gd" id="5_6nva0"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_pbm0b"]
-font = ExtResource("4_01212")
+[sub_resource type="LabelSettings" id="LabelSettings_dj6un"]
+font = ExtResource("3_ui8mw")
 font_size = 60
 
-[sub_resource type="Theme" id="Theme_hwdvs"]
-default_font = ExtResource("4_01212")
+[sub_resource type="Theme" id="Theme_ohdym"]
+default_font = ExtResource("3_ui8mw")
 default_font_size = 40
 
-[node name="Control" type="Control"]
+[node name="WetEndScene" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_eh0iy")
+anchors_preset = 0
+script = ExtResource("1_neduu")
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(576, 324)
 scale = Vector2(1.024, 1.0237)
-texture = ExtResource("2_wcw3q")
+texture = ExtResource("2_8axn0")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 477.0
+offset_top = 265.0
+offset_right = 682.0
+offset_bottom = 388.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -41,12 +41,12 @@ grow_vertical = 2
 layout_mode = 2
 text = "Texto final
 "
-label_settings = SubResource("LabelSettings_pbm0b")
+label_settings = SubResource("LabelSettings_dj6un")
 
 [node name="Salir" type="Sprite2D" parent="."]
 position = Vector2(578, 459)
 scale = Vector2(1.42439, 1.04)
-texture = ExtResource("3_533kq")
+texture = ExtResource("4_6nl0a")
 
 [node name="Button" type="Button" parent="Salir"]
 anchors_preset = 15
@@ -61,7 +61,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_default_cursor_shape = 2
-theme = SubResource("Theme_hwdvs")
+theme = SubResource("Theme_ohdym")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -72,7 +72,7 @@ theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 text = "Volver"
 flat = true
 autowrap_mode = 2
-script = ExtResource("5_nj3ai")
+script = ExtResource("5_6nva0")
 
 [connection signal="mouse_entered" from="Salir/Button" to="Salir/Button" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Salir/Button" to="Salir/Button" method="_on_mouse_exited"]

@@ -1,5 +1,6 @@
 extends Label
 @onready var timer = $"../../Timer"
+@onready var arb = get_tree()
 
 func _ready() -> void:
 	timer.start()
@@ -12,3 +13,11 @@ func time_left():
 
 func _process(delta: float) -> void: 
 	self.text = "%02d:%02d" % time_left()
+	if (timer.time_left <= 60):
+		GlobalWetGame.dificulty=3
+	elif(timer.time_left <= 120):
+		GlobalWetGame.dificulty = 2
+
+
+func _on_timer_timeout() -> void:
+	arb.change_scene_to_file("res://escenas/juegoWetLabSegundo/WetEndScene.tscn")
