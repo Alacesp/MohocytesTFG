@@ -78,7 +78,7 @@ func _input(event):
 					texto.encolar("WL26")
 					await texto.esperar()
 					Global.jugado_wl = true
-					get_tree().change_scene_to_file("res://juego_wet/MainMenu.tscn")
+					get_tree().change_scene_to_file("res://escenas/juegoWetLabSegundo/wetTutorial.tscn")
 				4:
 					texto.encolar(">SD:1retratoJwlContenta")
 					texto.encolar("WL27")

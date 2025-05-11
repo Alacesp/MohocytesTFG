@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://vjvxrsjx5hl4"]
+[gd_scene load_steps=10 format=3 uid="uid://vjvxrsjx5hl4"]
 
 [ext_resource type="Script" uid="uid://bbp5guymiw6fh" path="res://escenas/juegoWetLabSegundo/wet_tutorial.gd" id="1_pd7e6"]
 [ext_resource type="Texture2D" uid="uid://de2xxiyawaswr" path="res://juego_human/Fondo.jpeg" id="1_ukj1p"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_go51q"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="3_pd7e6"]
+[ext_resource type="Texture2D" uid="uid://7v85f8hxucdt" path="res://escenas/juegoWetLabSegundo/capturas/pedido.png" id="5_pd7e6"]
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="6_a6ds3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vmjdd"]
@@ -32,6 +33,7 @@ scale = Vector2(1.024, 1.0237)
 texture = ExtResource("1_ukj1p")
 
 [node name="Pantalla" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(577.5, 320)
 scale = Vector2(4.87317, 4.59091)
 texture = ExtResource("3_pd7e6")
@@ -46,10 +48,10 @@ offset_bottom = 387.0
 
 [node name="Titulo" type="Label" parent="Tutorial"]
 layout_mode = 0
-offset_left = 246.0
-offset_top = -221.0
-offset_right = 754.0
-offset_bottom = -171.0
+offset_left = 239.0
+offset_top = -317.0
+offset_right = 747.0
+offset_bottom = -267.0
 text = "Titulo"
 label_settings = SubResource("LabelSettings_vmjdd")
 horizontal_alignment = 1
@@ -64,6 +66,23 @@ text = "texto"
 label_settings = SubResource("LabelSettings_bjiyn")
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="Texto2" type="Label" parent="Tutorial"]
+visible = false
+offset_left = 116.0
+offset_top = 64.0
+offset_right = 948.0
+offset_bottom = 293.0
+text = "texto"
+label_settings = SubResource("LabelSettings_bjiyn")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Imagen" type="Sprite2D" parent="Tutorial"]
+visible = false
+position = Vector2(498, -99)
+scale = Vector2(0.634133, 0.669892)
+texture = ExtResource("5_pd7e6")
 
 [node name="Salir" type="Sprite2D" parent="."]
 position = Vector2(977, 559)

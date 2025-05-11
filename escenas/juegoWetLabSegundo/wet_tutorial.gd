@@ -20,20 +20,32 @@ func _process(delta: float) -> void:
 func loadPantalla():
 	match pantalla:
 		0:
+			$Tutorial/Imagen.visible = false
+			$Tutorial/Texto.visible = true
+			$Tutorial/Texto2.visible = false
 			$Tutorial/Titulo.text = "¡Ayudanos a crear las muestras!"
 			$Tutorial/Texto.text = "En WetLab vamos mal de tiempo, y vamos a necesitar
 			que nos ayudes a crear las placas que nos hacen falta."
 		1:
+			$Tutorial/Imagen.visible = true
+			$Tutorial/Texto.visible = false
+			$Tutorial/Texto2.visible = true
 			$Tutorial/Titulo.text = "Peticiones de los miembros"
-			$Tutorial/Texto.text = "Miembros del laboratorio vendrán a pedirte que les crees una muestra específica." + \
+			$Tutorial/Texto2.text = "Miembros del laboratorio vendrán a pedirte que les crees una muestra específica." + \
 			" Pasa el ratón por encima de ellos para que te digan que quieren. Puedes hacer lo mismo con " + \
 			"los iconos de sus caras en la parte de arriba de la pantalla."
 		2:
+			$Tutorial/Imagen.visible = true
+			$Tutorial/Texto.visible = false
+			$Tutorial/Texto2.visible = true
 			$Tutorial/Titulo.text = "Sigue los pasos que te indican"
-			$Tutorial/Texto.text = "Cada símbolo significa un paso. Selecciona los tarros correctos" +\
+			$Tutorial/Texto2.text = "Cada símbolo significa un paso. Selecciona los tarros correctos" +\
 			" y mete las probetas en los instrumentos indicados siguiendo cuidadosamente las instrucciones" +\
 			" de los miembros."
 		3:
+			$Tutorial/Imagen.visible = false
+			$Tutorial/Texto.visible = true
+			$Tutorial/Texto2.visible = false
 			$Tutorial/Titulo.text = "¡Hazlo lo antes posible!"
 			$Tutorial/Texto.text = "Los miembros del equipo son un poco impacientes, y se ponen " +\
 			"nerviosos si tardas demasiado en entregarle las muestras. ¡Cuanto antes les entregues " +\
