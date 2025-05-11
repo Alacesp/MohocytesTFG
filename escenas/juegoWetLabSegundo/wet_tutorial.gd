@@ -36,7 +36,7 @@ func loadPantalla():
 		3:
 			$Tutorial/Titulo.text = "¡Hazlo lo antes posible!"
 			$Tutorial/Texto.text = "Los miembros del equipo son un poco impacientes, y se ponen " +\
-			"nerviosos si tardas demasiado en entregarle las muestras. ¡Cuanto antes les entregues" +\
+			"nerviosos si tardas demasiado en entregarle las muestras. ¡Cuanto antes les entregues " +\
 			"lo que piden, mejor saldrá el experimento!"
 
 func _on_button_pressed() -> void:
