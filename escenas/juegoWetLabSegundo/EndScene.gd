@@ -5,7 +5,7 @@ extends Control
 func _ready():
 	var score = GlobalWetGame.puntuacion
 	Global.puntos_wetlab = score
-	$CenterContainer/Label.text = tr("JHFB") + " " + str(score) + " " + tr("JHFB2")
+	$CenterContainer/Label.text = "¡Conseguiste " + str(score) + " puntos!"
 	$Salir/Button.text = "Volver"
 	$Salir/Button.connect("pressed", volver)
 
