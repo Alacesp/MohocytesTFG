@@ -20,3 +20,14 @@ func cargarRespuestasCuestionario(COLLECTION_ID, respuestas):
 		"Pregunta 9": respuestas[8]
 	}
 	var task: FirestoreDocument = await collection.add(test_id, data)
+
+func cargarPuntuaciones():
+	var collection: FirestoreCollection = Firebase.Firestore.collection("Puntuaciones")
+	var data: Dictionary = {
+		"Drylab": Global.puntos_drylab,
+		"Wetlab": Global.puntos_wetlab,
+		"Human": Global.puntos_human,
+		"Redes": Global.puntos_redes,
+		"Wiki": Global.puntos_wiki
+	}
+	var task: FirestoreDocument = await collection.add(ranking_id, data)
