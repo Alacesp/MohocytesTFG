@@ -1,6 +1,6 @@
 extends Node
 #¿Se ha completado el Pretest?
-var preTest = false
+var preTest = true
 #Respuesta a pregunta del cuadro de texto
 var resp = true
 

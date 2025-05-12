@@ -41,6 +41,8 @@ var preguntas = [
 	}
 ]
 
+var result_8
+
 func _ready() -> void:
 	cargarPreguntas()
 	DatabaseSingleton.ranking_id = DatabaseSingleton.generate_simple_id()
@@ -63,11 +65,41 @@ func cargarPreguntas():
 					get_node("Pregunta"+ str(i+1) +"/OptionButton" + str(e+1)).add_item(tr(opciones[u]))
 			for e in range(5,10):
 				get_node("Pregunta"+ str(i+1) +"/Label" + str(e-4)).text = tr(opciones[e])
+		elif (i==7):
+			for e in range(0,3):
+				get_node("Pregunta"+ str(i+1) +"/Label" + str(e+1)).text = tr(opciones[e])
 
+
+func corregirDesplegables4():
+	var result_4 = 0
+	if(get_node("Pregunta4/OptionButton1").selected == 2):
+		result_4 +=1
+	if(get_node("Pregunta4/OptionButton2").selected == 0):
+		result_4 +=1
+	if(get_node("Pregunta4/OptionButton3").selected == 4):
+		result_4 +=1
+	if(get_node("Pregunta4/OptionButton4").selected == 1):
+		result_4 +=1
+	if(get_node("Pregunta4/OptionButton5").selected == 3):
+		result_4 +=1
+	return result_4
+	
+func corregirDesplegables8():
+	var result_8 = 0
+	if(get_node("Pregunta8/OptionButton1").selected == 2):
+		result_8 +=1
+	if(get_node("Pregunta8/OptionButton2").selected == 0):
+		result_8 +=1
+	if(get_node("Pregunta8/OptionButton3").selected == 1):
+		result_8 +=1
+		
+	return result_8
 
 func _on_button_pressed_acabar() -> void:
-	if(!Global.preTest):
+	respuestas[3] = corregirDesplegables4()
+	respuestas[7] = corregirDesplegables8()
+	if(Global.preTest):
 		DatabaseSingleton.cargarRespuestasCuestionario("PreTest", respuestas)
-		Global.preTest = true
+		Global.preTest = false
 	else:
 		DatabaseSingleton.cargarRespuestasCuestionario("PostTest", respuestas)

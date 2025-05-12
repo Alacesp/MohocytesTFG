@@ -747,6 +747,69 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="OptionButton1" type="OptionButton" parent="Pregunta8"]
+offset_left = 557.0
+offset_top = 282.0
+offset_right = 599.0
+offset_bottom = 313.0
+item_count = 3
+popup/item_0/text = "1"
+popup/item_0/id = 0
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
+
+[node name="OptionButton2" type="OptionButton" parent="Pregunta8"]
+offset_left = 557.0
+offset_top = 358.0
+offset_right = 599.0
+offset_bottom = 389.0
+item_count = 3
+popup/item_0/text = "1"
+popup/item_0/id = 0
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
+
+[node name="OptionButton3" type="OptionButton" parent="Pregunta8"]
+offset_left = 557.0
+offset_top = 425.0
+offset_right = 599.0
+offset_bottom = 456.0
+item_count = 3
+popup/item_0/text = "1"
+popup/item_0/id = 0
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
+
+[node name="Label1" type="Label" parent="Pregunta8"]
+offset_left = 554.0
+offset_top = 242.0
+offset_right = 604.0
+offset_bottom = 270.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label2" type="Label" parent="Pregunta8"]
+offset_left = 554.0
+offset_top = 321.0
+offset_right = 604.0
+offset_bottom = 349.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
+[node name="Label3" type="Label" parent="Pregunta8"]
+offset_left = 555.0
+offset_top = 392.0
+offset_right = 605.0
+offset_bottom = 420.0
+text = "Holaa"
+label_settings = SubResource("LabelSettings_55exj")
+
 [node name="Pregunta9" type="Node2D" parent="."]
 position = Vector2(9216, 0)
 
