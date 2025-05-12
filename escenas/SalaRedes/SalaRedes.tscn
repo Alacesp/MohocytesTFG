@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://d3tva0n5uh1x7"]
+[gd_scene load_steps=17 format=3 uid="uid://d3tva0n5uh1x7"]
 
 [ext_resource type="Texture2D" uid="uid://brrtm282guday" path="res://recursos/fondos/redes.webp" id="1_qwfqt"]
 [ext_resource type="Texture2D" uid="uid://dwj6mylo1gq1g" path="res://recursos/personajes/jredes.webp" id="2_q64oh"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://ejh2d2pyan5n" path="res://escenas/SalaRedes/camara.gd" id="11_miljc"]
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="12_iqow6"]
 [ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="15_5wg4l"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="16_5qrcp"]
 
 [node name="Escena_4" type="Node2D"]
 
@@ -127,3 +128,6 @@ mouse_default_cursor_shape = 2
 stream = ExtResource("15_5wg4l")
 volume_db = -18.0
 parameters/looping = true
+
+[node name="Pausa" parent="." instance=ExtResource("16_5qrcp")]
+visible = false

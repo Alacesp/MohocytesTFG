@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0s4ip4e5rsra"]
+
+[ext_resource type="Script" uid="uid://dr65eaeu3g6yc" path="res://escenas/pausa.gd" id="1_ft633"]
+[ext_resource type="Texture2D" uid="uid://b81tr68gvim5x" path="res://recursos/opcionesMenu.png" id="2_2prej"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_lhel8"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_7lwr8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvrwb"]
+bg_color = Color(0.6, 0.6, 0.6, 0.72549)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wsc7l"]
+font = ExtResource("3_lhel8")
+font_size = 40
+
+[sub_resource type="Theme" id="Theme_83lsx"]
+default_font = ExtResource("3_lhel8")
+default_font_size = 32
+
+[node name="Pausa" type="CanvasLayer"]
+script = ExtResource("1_ft633")
+
+[node name="Difuminado" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cvrwb")
+
+[node name="OpcionesMenu" type="Sprite2D" parent="."]
+position = Vector2(551.5, 317)
+scale = Vector2(2.82439, 2.69697)
+texture = ExtResource("2_2prej")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 459.0
+offset_top = 205.0
+offset_right = 653.0
+offset_bottom = 245.0
+text = "¿Ir a PostTest?"
+label_settings = SubResource("LabelSettings_wsc7l")
+
+[node name="Boton" type="Sprite2D" parent="."]
+position = Vector2(549, 358)
+texture = ExtResource("4_7lwr8")
+
+[node name="Button" type="Button" parent="Boton"]
+offset_left = -102.0
+offset_top = -64.0
+offset_right = 104.0
+offset_bottom = 63.0
+theme = SubResource("Theme_83lsx")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ir"
+flat = true
+
+[connection signal="pressed" from="Boton/Button" to="." method="_on_button_pressed"]

@@ -1,7 +1,8 @@
 extends Button
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://escenas/Pasillo/Pasillo.tscn")
+	#get_tree().change_scene_to_file("res://escenas/Pasillo/Pasillo.tscn")
+	get_tree().change_scene_to_file("res://escenas/Formulario/Formulario.tscn")
 
 func _on_mouse_entered():
 	get_parent().modulate.a = 0.85

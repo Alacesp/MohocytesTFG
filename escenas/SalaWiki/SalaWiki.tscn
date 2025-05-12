@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dr7c2ri77fwtc"]
+[gd_scene load_steps=25 format=3 uid="uid://dr7c2ri77fwtc"]
 
 [ext_resource type="Texture2D" uid="uid://cyv1arxiocty" path="res://recursos/fondos/wiki1.webp" id="1_f1d3e"]
 [ext_resource type="Script" uid="uid://b182diflic1w8" path="res://escenas/SalaWiki/escenarioWiki.gd" id="2_yicir"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="19_6vmno"]
 [ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="22_c6ag8"]
 [ext_resource type="Script" uid="uid://bxsc3gcnakv2m" path="res://escenas/SalaWiki/musicaWiki.gd" id="22_rquy3"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="24_8d04f"]
 
 [node name="Escena_5" type="Node2D"]
 
@@ -197,3 +198,6 @@ volume_db = -18.0
 autoplay = true
 parameters/looping = true
 script = ExtResource("22_rquy3")
+
+[node name="Pausa" parent="." instance=ExtResource("24_8d04f")]
+visible = false

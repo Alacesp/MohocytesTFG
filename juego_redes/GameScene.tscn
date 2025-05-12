@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhd0uoa6nxjqj"]
+[gd_scene load_steps=10 format=3 uid="uid://dhd0uoa6nxjqj"]
 
 [ext_resource type="Texture2D" uid="uid://dhe6du6rnd7lu" path="res://juego_redes/Fondo.webp" id="1_nxhxi"]
 [ext_resource type="Script" uid="uid://1y2uph8hrws8" path="res://juego_redes/GameScene.gd" id="2_v05aj"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://vf5g75r7vt0d" path="res://juego_redes/Objeto.tscn" id="5_jlfcm"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="6_odor5"]
 [ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="7_vog8t"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="8_sqdq4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ivfqk"]
 font = ExtResource("6_odor5")
@@ -71,3 +72,6 @@ stream = ExtResource("7_vog8t")
 volume_db = -12.0
 autoplay = true
 parameters/looping = true
+
+[node name="Pausa" parent="." instance=ExtResource("8_sqdq4")]
+visible = false

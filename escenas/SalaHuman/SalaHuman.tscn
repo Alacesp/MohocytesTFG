@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bsj1ex7252esb"]
+[gd_scene load_steps=15 format=3 uid="uid://bsj1ex7252esb"]
 
 [ext_resource type="Texture2D" uid="uid://ctxnun45sqk56" path="res://recursos/fondos/f_human.webp" id="1_d1y8l"]
 [ext_resource type="Script" uid="uid://bdexdkpncic08" path="res://escenas/SalaHuman/JFHuman.gd" id="2_am0wi"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cmhao25esff10" path="res://recursos/personajes/esclavo2.webp" id="8_yugfn"]
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_ejc7f"]
 [ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="13_b86yr"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="14_jb4vm"]
 
 [node name="Escena_1" type="Node2D"]
 
@@ -116,3 +117,6 @@ stream = ExtResource("13_b86yr")
 volume_db = -18.0
 autoplay = true
 parameters/looping = true
+
+[node name="Pausa" parent="." instance=ExtResource("14_jb4vm")]
+visible = false

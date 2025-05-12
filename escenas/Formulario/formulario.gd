@@ -101,5 +101,7 @@ func _on_button_pressed_acabar() -> void:
 	if(Global.preTest):
 		DatabaseSingleton.cargarRespuestasCuestionario("PreTest", respuestas)
 		Global.preTest = false
+		get_tree().change_scene_to_file("res://escenas/Pasillo/Pasillo.tscn")
 	else:
 		DatabaseSingleton.cargarRespuestasCuestionario("PostTest", respuestas)
+		get_tree().change_scene_to_file("res://escenas/Fin/Creditos.tscn")

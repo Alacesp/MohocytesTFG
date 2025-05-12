@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://tu1n4y7opo63"]
+[gd_scene load_steps=18 format=3 uid="uid://tu1n4y7opo63"]
 
 [ext_resource type="Script" uid="uid://cvhjp7liasn0d" path="res://juego_human/QuizScene.gd" id="1_omqk1"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="3_2oq0x"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="8_f6bvp"]
 [ext_resource type="Texture2D" uid="uid://32sprkt2ak0o" path="res://juego_human/monigote2.webp" id="8_hepg5"]
 [ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="11_8gg05"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="12_c1c02"]
 
 [sub_resource type="Theme" id="Theme_dp5w8"]
 default_font = ExtResource("8_f6bvp")
@@ -259,6 +260,9 @@ stream = ExtResource("11_8gg05")
 volume_db = -12.0
 autoplay = true
 parameters/looping = true
+
+[node name="Pausa" parent="." instance=ExtResource("12_c1c02")]
+visible = false
 
 [connection signal="mouse_entered" from="Preguntas/HBC/Boton1/Button" to="Preguntas/HBC/Boton1/Button" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Preguntas/HBC/Boton1/Button" to="Preguntas/HBC/Boton1/Button" method="_on_mouse_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d1n27shfj842o"]
+[gd_scene load_steps=18 format=3 uid="uid://d1n27shfj842o"]
 
 [ext_resource type="Script" uid="uid://b11sxc5pgbxvn" path="res://juego_dry/GameScene.gd" id="1_0ei83"]
 [ext_resource type="Script" uid="uid://df8ivwrj1f3ys" path="res://juego_dry/Marcador.gd" id="2_8j0hc"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cgk7d0bpimtve" path="res://juego_dry/Carro/Carro0.webp" id="7_12ybd"]
 [ext_resource type="Script" uid="uid://dr6jkqqykagxn" path="res://juego_dry/StopwatchLabel.gd" id="7_v8oqc"]
 [ext_resource type="AudioStream" uid="uid://c4vrddoxg6fx6" path="res://recursos/audios/minigames-an_igem_uma_original_theme.ogg" id="10_3j3b1"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="11_twibe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpiu5"]
 bg_color = Color(0.416442, 0.665148, 0.514312, 1)
@@ -130,6 +131,9 @@ stream = ExtResource("10_3j3b1")
 volume_db = -12.0
 autoplay = true
 parameters/looping = true
+
+[node name="Pausa" parent="." instance=ExtResource("11_twibe")]
+visible = false
 
 [connection signal="timeout" from="Stopwatch" to="." method="_on_stopwatch_timeout"]
 [connection signal="timeout" from="Generate" to="." method="_on_timer_timeout"]

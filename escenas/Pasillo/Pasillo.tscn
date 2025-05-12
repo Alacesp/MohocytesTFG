@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://xylfswprvx7b"]
+[gd_scene load_steps=22 format=3 uid="uid://xylfswprvx7b"]
 
 [ext_resource type="Texture2D" uid="uid://grcxv82y6yn7" path="res://recursos/fondos/pasillo.webp" id="1_lwg37"]
 [ext_resource type="PackedScene" uid="uid://dr701hcnwa2r5" path="res://escenas/Pasillo/Personaje.tscn" id="1_m0u72"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="4_o2i2b"]
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="7_ohswg"]
 [ext_resource type="AudioStream" uid="uid://bpj6n42hybt4c" path="res://recursos/audios/inicio-an_igem_uma_original_theme.ogg" id="8_2am7d"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="10_r8k4g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5o8l"]
 size = Vector2(57, 662)
@@ -173,6 +174,9 @@ position = Vector2(-382, 292)
 shape = SubResource("RectangleShape2D_tbd33")
 
 [node name="Cuadro" parent="." instance=ExtResource("4_o2i2b")]
+
+[node name="Pausa" parent="." instance=ExtResource("10_r8k4g")]
+visible = false
 
 [connection signal="area_entered" from="Personaje/Muro" to="Personaje" method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Puerta1" to="Personaje" method="_on_puerta_1_body_entered"]

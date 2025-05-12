@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=49 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://b0tydd5qssyya" path="res://recursos/Bocadillo3.png" id="35_s27qq"]
 [ext_resource type="Texture2D" uid="uid://ckms84rdjnws8" path="res://recursos/Bocadillo4.png" id="36_rkgp2"]
 [ext_resource type="Script" uid="uid://bvsl5722tyysk" path="res://escenas/juegoWetLabSegundo/countdown.gd" id="38_rkgp2"]
+[ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="39_slht7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(144, 152)
@@ -1149,6 +1150,9 @@ offset_bottom = -200.0
 text = "Buenass"
 label_settings = SubResource("LabelSettings_slht7")
 script = ExtResource("38_rkgp2")
+
+[node name="Pausa" parent="camara" instance=ExtResource("39_slht7")]
+visible = false
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 180.0
