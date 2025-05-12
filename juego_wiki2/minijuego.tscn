@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://di5kxw6ai4p8m"]
+
+[ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
+[ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/imagenes.gd" id="2_2bt21"]
+[ext_resource type="Texture2D" uid="uid://6l6p7nme8lth" path="res://recursos/fire.png" id="2_rci71"]
+[ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="3_rci71"]
+[ext_resource type="Script" uid="uid://d1x5of2r6vcm7" path="res://juego_wiki2/preview.gd" id="5_rci71"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxnh"]
+bg_color = Color(0.527694, 0.354771, 0.982987, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7chvb"]
+bg_color = Color(0.905882, 0.901961, 0.909804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2s7da"]
+bg_color = Color(0.862745, 0.627451, 0, 1)
+
+[node name="Minijuego" type="Node2D"]
+script = ExtResource("1_1fb8j")
+
+[node name="Fondo" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3dxnh")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 214.0
+offset_top = 55.0
+offset_right = 1083.0
+offset_bottom = 588.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7chvb")
+
+[node name="Paginas" type="Node2D" parent="."]
+
+[node name="Pagina1" type="Node2D" parent="Paginas"]
+
+[node name="Huecos" type="Node2D" parent="Paginas/Pagina1"]
+
+[node name="preview1" type="Sprite2D" parent="Paginas/Pagina1/Huecos"]
+position = Vector2(697, 261)
+scale = Vector2(1.39592, 1.31278)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Button" type="Button" parent="Paginas/Pagina1/Huecos/preview1"]
+offset_right = 245.0
+offset_bottom = 230.0
+
+[node name="Soluciones" type="Node2D" parent="Paginas/Pagina1"]
+
+[node name="Objetos" type="Node2D" parent="."]
+
+[node name="Panel" type="Panel" parent="Objetos"]
+offset_left = 23.0
+offset_top = 46.0
+offset_right = 182.0
+offset_bottom = 591.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2s7da")
+
+[node name="preview1" type="Sprite2D" parent="Objetos"]
+position = Vector2(61, 88)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+script = ExtResource("5_rci71")
+
+[node name="Button" type="Button" parent="Objetos/preview1"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+
+[connection signal="pressed" from="Paginas/Pagina1/Huecos/preview1/Button" to="Paginas/Pagina1/Huecos/preview1" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/preview1/Button" to="Objetos/preview1" method="_on_button_pressed"]
