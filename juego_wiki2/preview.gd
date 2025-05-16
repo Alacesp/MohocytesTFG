@@ -3,3 +3,5 @@ extends Button
 
 func _on_button_pressed() -> void:
 	manager.selected = self.name
+	print(manager.selected)
+	print(self.name)
