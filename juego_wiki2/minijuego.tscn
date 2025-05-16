@@ -1,15 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://di5kxw6ai4p8m"]
+[gd_scene load_steps=17 format=3 uid="uid://di5kxw6ai4p8m"]
 
 [ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
 [ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/revelar.gd" id="2_2bt21"]
+[ext_resource type="Texture2D" uid="uid://bajpwpvtmf51o" path="res://recursos/fondos/f_dl.webp" id="2_2s7da"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="2_7chvb"]
 [ext_resource type="Texture2D" uid="uid://6l6p7nme8lth" path="res://recursos/fire.png" id="2_rci71"]
+[ext_resource type="PackedScene" uid="uid://cvwia7gq14ggh" path="res://juego_wiki2/prueba.tscn" id="3_mrw00"]
 [ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="3_rci71"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="5_3dxnh"]
 [ext_resource type="Script" uid="uid://d1x5of2r6vcm7" path="res://juego_wiki2/preview.gd" id="5_rci71"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxnh"]
-bg_color = Color(0.527694, 0.354771, 0.982987, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7chvb"]
 bg_color = Color(0.905882, 0.901961, 0.909804, 1)
@@ -19,6 +18,9 @@ size = Vector2(245, 224.684)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7chvb"]
 size = Vector2(245.716, 230.808)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s7da"]
+size = Vector2(245, 227)
 
 [sub_resource type="LabelSettings" id="LabelSettings_7chvb"]
 font = ExtResource("5_3dxnh")
@@ -36,12 +38,12 @@ font_color = Color(0, 0, 0, 1)
 [node name="Minijuego" type="Node2D"]
 script = ExtResource("1_1fb8j")
 
-[node name="Fondo" type="Panel" parent="."]
-offset_right = 1152.0
-offset_bottom = 648.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_3dxnh")
+[node name="Fondo" type="Sprite2D" parent="."]
+texture = ExtResource("2_2s7da")
+centered = false
 
 [node name="Panel" type="Panel" parent="."]
+visible = false
 offset_left = 214.0
 offset_top = 55.0
 offset_right = 1083.0
@@ -67,15 +69,16 @@ texture = ExtResource("2_rci71")
 centered = false
 script = ExtResource("2_2bt21")
 
-[node name="Button" type="Button" parent="Paginas/Pagina1/Huecos/asset2"]
-offset_right = 245.0
-offset_bottom = 230.0
-
 [node name="Area2D" type="Area2D" parent="Paginas/Pagina1/Huecos/asset2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina1/Huecos/asset2/Area2D"]
 position = Vector2(122.5, 114.658)
 shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="Button" type="Button" parent="Paginas/Pagina1/Huecos/asset2"]
+visible = false
+offset_right = 245.0
+offset_bottom = 230.0
 
 [node name="asset1" type="Sprite2D" parent="Paginas/Pagina1/Huecos"]
 position = Vector2(697, 261)
@@ -85,16 +88,26 @@ centered = false
 script = ExtResource("2_2bt21")
 
 [node name="Button" type="Button" parent="Paginas/Pagina1/Huecos/asset1"]
+visible = false
 offset_right = 245.0
 offset_bottom = 230.0
 
 [node name="Area2D" type="Area2D" parent="Paginas/Pagina1/Huecos/asset1"]
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina1/Huecos/asset1/Area2D"]
 position = Vector2(122.142, 114.642)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7chvb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Paginas/Pagina1/Huecos"]
+position = Vector2(814, 138)
+texture = ExtResource("2_rci71")
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina1/Huecos/Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina1/Huecos/Sprite2D/Area2D"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_2s7da")
 
 [node name="Soluciones" type="Node2D" parent="Paginas/Pagina1"]
 
@@ -119,6 +132,7 @@ autowrap_mode = 3
 [node name="Objetos" type="Node2D" parent="."]
 
 [node name="Panel" type="Panel" parent="Objetos"]
+visible = false
 offset_left = 23.0
 offset_top = 46.0
 offset_right = 182.0
@@ -158,11 +172,17 @@ label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Paginas/Pagina1/Huecos/asset2/Button" to="Paginas/Pagina1/Huecos/asset2" method="_on_button_pressed"]
+[node name="Prueba" parent="." instance=ExtResource("3_mrw00")]
+visible = false
+position = Vector2(428, 206)
+
 [connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/asset2/Area2D" to="Paginas/Pagina1/Huecos/asset2" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/asset2/Area2D" to="Paginas/Pagina1/Huecos/asset2" method="_on_area_2d_mouse_exited"]
+[connection signal="pressed" from="Paginas/Pagina1/Huecos/asset2/Button" to="Paginas/Pagina1/Huecos/asset2" method="_on_button_pressed"]
 [connection signal="pressed" from="Paginas/Pagina1/Huecos/asset1/Button" to="Paginas/Pagina1/Huecos/asset1" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/Sprite2D/Area2D" to="Paginas/Pagina1/Huecos/Sprite2D" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/Sprite2D/Area2D" to="Paginas/Pagina1/Huecos/Sprite2D" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="Objetos/asset1/asset1" to="Objetos/asset1/asset1" method="_on_button_pressed"]
 [connection signal="pressed" from="Objetos/asset2" to="Objetos/asset2" method="_on_button_pressed"]
