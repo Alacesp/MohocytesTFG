@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://di5kxw6ai4p8m"]
+[gd_scene load_steps=17 format=3 uid="uid://di5kxw6ai4p8m"]
 
 [ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
 [ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/revelar.gd" id="2_2bt21"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://d1x5of2r6vcm7" path="res://juego_wiki2/preview.gd" id="5_rci71"]
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="8_voljw"]
 [ext_resource type="Script" uid="uid://dv0423ia0eglp" path="res://juego_wiki2/movimiento.gd" id="9_eaw26"]
+[ext_resource type="Texture2D" uid="uid://bp4p6fdfdots4" path="res://juego_wiki2/imagenes/tick.png" id="11_eaw26"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mrw00"]
 font = ExtResource("5_3dxnh")
@@ -287,6 +288,109 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
+[node name="Pagina5" type="Node2D" parent="Paginas"]
+visible = false
+
+[node name="Label" type="Label" parent="Paginas/Pagina5"]
+offset_left = 510.0
+offset_top = 133.0
+offset_right = 830.0
+offset_bottom = 169.0
+text = "Comenzamos a trabajar"
+label_settings = SubResource("LabelSettings_mrw00")
+
+[node name="Huecos" type="Node2D" parent="Paginas/Pagina5"]
+
+[node name="asset9" type="Sprite2D" parent="Paginas/Pagina5/Huecos"]
+position = Vector2(311, 180)
+scale = Vector2(1.39592, 0.726872)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina5/Huecos/asset9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina5/Huecos/asset9/Area2D"]
+position = Vector2(122.142, 114.642)
+shape = SubResource("RectangleShape2D_7chvb")
+
+[node name="asset10" type="Sprite2D" parent="Paginas/Pagina5/Huecos"]
+position = Vector2(672, 211)
+scale = Vector2(1.39592, 0.431718)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina5/Huecos/asset10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina5/Huecos/asset10/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset11" type="Sprite2D" parent="Paginas/Pagina5/Huecos"]
+position = Vector2(312, 380)
+scale = Vector2(1.39592, 0.431718)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina5/Huecos/asset11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina5/Huecos/asset11/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset12" type="Sprite2D" parent="Paginas/Pagina5/Huecos"]
+position = Vector2(678, 344)
+scale = Vector2(1.39592, 0.792952)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina5/Huecos/asset12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina5/Huecos/asset12/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="Soluciones" type="Node2D" parent="Paginas/Pagina5"]
+
+[node name="asset9" type="Sprite2D" parent="Paginas/Pagina5/Soluciones"]
+visible = false
+position = Vector2(481, 262)
+scale = Vector2(2.42253, 1.14865)
+texture = ExtResource("3_rci71")
+
+[node name="asset10" type="Label" parent="Paginas/Pagina5/Soluciones"]
+visible = false
+offset_left = 671.0
+offset_top = 213.0
+offset_right = 1013.0
+offset_bottom = 307.0
+text = "Desde DryLab se planifica."
+label_settings = SubResource("LabelSettings_7chvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="asset11" type="Label" parent="Paginas/Pagina5/Soluciones"]
+visible = false
+offset_left = 312.0
+offset_top = 382.0
+offset_right = 654.0
+offset_bottom = 476.0
+text = "Desde WetLab se crea."
+label_settings = SubResource("LabelSettings_7chvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="asset12" type="Sprite2D" parent="Paginas/Pagina5/Soluciones"]
+visible = false
+position = Vector2(849.5, 435.5)
+scale = Vector2(2.40141, 1.22297)
+texture = ExtResource("3_rci71")
+
 [node name="Botones" type="Node2D" parent="Paginas"]
 script = ExtResource("9_eaw26")
 
@@ -320,19 +424,27 @@ position = Vector2(102, 321.5)
 scale = Vector2(1, 4.53788)
 texture = ExtResource("2_7chvb")
 
-[node name="asset1" type="Sprite2D" parent="Objetos"]
+[node name="Pagina1" type="Node2D" parent="Objetos"]
+
+[node name="asset1" type="Sprite2D" parent="Objetos/Pagina1"]
 position = Vector2(61, 88)
 scale = Vector2(0.352113, 0.337838)
 texture = ExtResource("3_rci71")
 
-[node name="asset1" type="Button" parent="Objetos/asset1"]
+[node name="asset1" type="Button" parent="Objetos/Pagina1/asset1"]
 offset_left = -74.0
 offset_top = -74.0
 offset_right = 74.0
 offset_bottom = 77.0
 script = ExtResource("5_rci71")
 
-[node name="asset2" type="Button" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset1/asset1"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset2" type="Button" parent="Objetos/Pagina1"]
 offset_left = 90.0
 offset_top = 76.0
 offset_right = 179.0
@@ -340,19 +452,31 @@ offset_bottom = 107.0
 text = "Necesidad"
 script = ExtResource("5_rci71")
 
-[node name="asset3" type="Sprite2D" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset2"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset3" type="Sprite2D" parent="Objetos/Pagina1"]
 position = Vector2(61, 153)
 scale = Vector2(0.352113, 0.337838)
 texture = ExtResource("3_rci71")
 
-[node name="asset3" type="Button" parent="Objetos/asset3"]
+[node name="asset3" type="Button" parent="Objetos/Pagina1/asset3"]
 offset_left = -74.0
 offset_top = -74.0
 offset_right = 74.0
 offset_bottom = 77.0
 script = ExtResource("5_rci71")
 
-[node name="asset4" type="Button" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset3/asset3"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset4" type="Button" parent="Objetos/Pagina1"]
 offset_left = 90.0
 offset_top = 139.0
 offset_right = 179.0
@@ -360,19 +484,31 @@ offset_bottom = 170.0
 text = "Problema"
 script = ExtResource("5_rci71")
 
-[node name="asset5" type="Sprite2D" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset4"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset5" type="Sprite2D" parent="Objetos/Pagina1"]
 position = Vector2(61, 221)
 scale = Vector2(0.352113, 0.337838)
 texture = ExtResource("3_rci71")
 
-[node name="asset5" type="Button" parent="Objetos/asset5"]
+[node name="asset5" type="Button" parent="Objetos/Pagina1/asset5"]
 offset_left = -74.0
 offset_top = -74.0
 offset_right = 74.0
 offset_bottom = 77.0
 script = ExtResource("5_rci71")
 
-[node name="asset6" type="Button" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset5/asset5"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset6" type="Button" parent="Objetos/Pagina1"]
 offset_left = 90.0
 offset_top = 209.0
 offset_right = 179.0
@@ -380,7 +516,13 @@ offset_bottom = 240.0
 text = "Multidisciplinar"
 script = ExtResource("5_rci71")
 
-[node name="asset7" type="Button" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset6"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset7" type="Button" parent="Objetos/Pagina1"]
 offset_left = 36.0
 offset_top = 266.0
 offset_right = 176.0
@@ -388,13 +530,91 @@ offset_bottom = 297.0
 text = "Biología sintética"
 script = ExtResource("5_rci71")
 
-[node name="asset8" type="Button" parent="Objetos"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset7"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset8" type="Button" parent="Objetos/Pagina1"]
 offset_left = 55.0
 offset_top = 314.0
 offset_right = 150.0
 offset_bottom = 345.0
 text = "Explicación"
 script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset8"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="Pagina2" type="Node2D" parent="Objetos"]
+
+[node name="asset9" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(59, 381)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset9" type="Button" parent="Objetos/Pagina2/asset9"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset9/asset9"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset10" type="Button" parent="Objetos/Pagina2"]
+offset_left = 97.0
+offset_top = 368.0
+offset_right = 192.0
+offset_bottom = 399.0
+text = "Planificar"
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset10"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset11" type="Button" parent="Objetos/Pagina2"]
+offset_left = 6.0
+offset_top = 429.0
+offset_right = 101.0
+offset_bottom = 460.0
+text = "Crear"
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset11"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset12" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(149, 443)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset12" type="Button" parent="Objetos/Pagina2/asset12"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset12/asset12"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
 
 [node name="Pistas" type="Node2D" parent="."]
 
@@ -492,6 +712,50 @@ label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="asset9" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "Parece que está diseñando algo."
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset10" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "¿De que se encarga DtyLab?"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset11" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "¿De qué se encarga WetLab?"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset12" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "Parece que está haciendo un experimento."
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="input_event" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_exited"]
@@ -516,13 +780,29 @@ vertical_alignment = 1
 [connection signal="input_event" from="Paginas/Pagina4/Huecos/asset8/Area2D" to="Paginas/Pagina4/Huecos/asset8" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Paginas/Pagina4/Huecos/asset8/Area2D" to="Paginas/Pagina4/Huecos/asset8" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina4/Huecos/asset8/Area2D" to="Paginas/Pagina4/Huecos/asset8" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina5/Huecos/asset9/Area2D" to="Paginas/Pagina5/Huecos/asset9" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina5/Huecos/asset9/Area2D" to="Paginas/Pagina5/Huecos/asset9" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina5/Huecos/asset9/Area2D" to="Paginas/Pagina5/Huecos/asset9" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina5/Huecos/asset10/Area2D" to="Paginas/Pagina5/Huecos/asset10" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina5/Huecos/asset10/Area2D" to="Paginas/Pagina5/Huecos/asset10" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina5/Huecos/asset10/Area2D" to="Paginas/Pagina5/Huecos/asset10" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina5/Huecos/asset11/Area2D" to="Paginas/Pagina5/Huecos/asset11" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina5/Huecos/asset11/Area2D" to="Paginas/Pagina5/Huecos/asset11" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina5/Huecos/asset11/Area2D" to="Paginas/Pagina5/Huecos/asset11" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="Paginas/Botones/Derecha/Button" to="Paginas/Botones" method="_on_pressed_der"]
 [connection signal="pressed" from="Paginas/Botones/Izquierda/Button" to="Paginas/Botones" method="_on_pressed_izq"]
-[connection signal="pressed" from="Objetos/asset1/asset1" to="Objetos/asset1/asset1" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset2" to="Objetos/asset2" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset3/asset3" to="Objetos/asset3/asset3" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset4" to="Objetos/asset4" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset5/asset5" to="Objetos/asset5/asset5" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset6" to="Objetos/asset6" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset7" to="Objetos/asset7" method="_on_button_pressed"]
-[connection signal="pressed" from="Objetos/asset8" to="Objetos/asset8" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset1/asset1" to="Objetos/Pagina1/asset1/asset1" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset2" to="Objetos/Pagina1/asset2" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset3/asset3" to="Objetos/Pagina1/asset3/asset3" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset4" to="Objetos/Pagina1/asset4" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset5/asset5" to="Objetos/Pagina1/asset5/asset5" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset6" to="Objetos/Pagina1/asset6" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset7" to="Objetos/Pagina1/asset7" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina1/asset8" to="Objetos/Pagina1/asset8" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset9/asset9" to="Objetos/Pagina2/asset9/asset9" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset10" to="Objetos/Pagina2/asset10" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset11" to="Objetos/Pagina2/asset11" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset12/asset12" to="Objetos/Pagina2/asset12/asset12" method="_on_button_pressed"]

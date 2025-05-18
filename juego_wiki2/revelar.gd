@@ -20,5 +20,4 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 			if manager.selected == self.name:
 				self.visible = false
 				get_node("../../Soluciones/" + self.name).visible = true
-				print(self.name)
-				print(manager.selected)
+				manager.tick(self.name)
