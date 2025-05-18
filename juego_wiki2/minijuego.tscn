@@ -391,6 +391,221 @@ position = Vector2(849.5, 435.5)
 scale = Vector2(2.40141, 1.22297)
 texture = ExtResource("3_rci71")
 
+[node name="Pagina6" type="Node2D" parent="Paginas"]
+visible = false
+
+[node name="Huecos" type="Node2D" parent="Paginas/Pagina6"]
+
+[node name="asset13" type="Sprite2D" parent="Paginas/Pagina6/Huecos"]
+position = Vector2(323, 113)
+scale = Vector2(1.17551, 2.02643)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina6/Huecos/asset13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina6/Huecos/asset13/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset14" type="Sprite2D" parent="Paginas/Pagina6/Huecos"]
+position = Vector2(709, 318)
+scale = Vector2(1.13061, 0.625555)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina6/Huecos/asset14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina6/Huecos/asset14/Area2D"]
+position = Vector2(122.142, 114.642)
+shape = SubResource("RectangleShape2D_7chvb")
+
+[node name="Label" type="Label" parent="Paginas/Pagina6"]
+offset_left = 652.0
+offset_top = 142.0
+offset_right = 991.0
+offset_bottom = 178.0
+text = "Nuestra herramienta principal"
+label_settings = SubResource("LabelSettings_mrw00")
+
+[node name="Soluciones" type="Node2D" parent="Paginas/Pagina6"]
+
+[node name="asset13" type="Sprite2D" parent="Paginas/Pagina6/Soluciones"]
+visible = false
+position = Vector2(467.5, 341.25)
+scale = Vector2(2.04929, 3.13176)
+texture = ExtResource("3_rci71")
+
+[node name="asset14" type="Label" parent="Paginas/Pagina6/Soluciones"]
+visible = false
+offset_left = 707.0
+offset_top = 317.0
+offset_right = 988.0
+offset_bottom = 463.0
+text = "TEXTO ADN"
+label_settings = SubResource("LabelSettings_7chvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Pagina7" type="Node2D" parent="Paginas"]
+visible = false
+
+[node name="Label" type="Label" parent="Paginas/Pagina7"]
+offset_left = 652.0
+offset_top = 142.0
+offset_right = 991.0
+offset_bottom = 178.0
+text = "La otra cara de la moneda"
+label_settings = SubResource("LabelSettings_mrw00")
+
+[node name="Huecos" type="Node2D" parent="Paginas/Pagina7"]
+
+[node name="asset15" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
+position = Vector2(309, 113)
+scale = Vector2(0.546939, 2.02643)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina7/Huecos/asset15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina7/Huecos/asset15/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset16" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
+position = Vector2(443, 113)
+scale = Vector2(0.546939, 2.02643)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina7/Huecos/asset16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina7/Huecos/asset16/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset17" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
+position = Vector2(577, 372)
+scale = Vector2(1.86531, 0.881057)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina7/Huecos/asset17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina7/Huecos/asset17/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset18" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
+position = Vector2(655, 208)
+scale = Vector2(1.13061, 0.625555)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina7/Huecos/asset18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina7/Huecos/asset18/Area2D"]
+position = Vector2(122.142, 114.642)
+shape = SubResource("RectangleShape2D_7chvb")
+
+[node name="Soluciones" type="Node2D" parent="Paginas/Pagina7"]
+
+[node name="asset15" type="Sprite2D" parent="Paginas/Pagina7/Soluciones"]
+visible = false
+position = Vector2(373.5, 346)
+scale = Vector2(0.992958, 3.12162)
+texture = ExtResource("3_rci71")
+
+[node name="asset16" type="Sprite2D" parent="Paginas/Pagina7/Soluciones"]
+visible = false
+position = Vector2(514, 345)
+scale = Vector2(0.992958, 3.12162)
+texture = ExtResource("3_rci71")
+
+[node name="asset17" type="Sprite2D" parent="Paginas/Pagina7/Soluciones"]
+visible = false
+position = Vector2(808.75, 475.5)
+scale = Vector2(3.17254, 1.37162)
+texture = ExtResource("3_rci71")
+
+[node name="asset18" type="Label" parent="Paginas/Pagina7/Soluciones"]
+visible = false
+offset_left = 657.0
+offset_top = 205.0
+offset_right = 934.0
+offset_bottom = 357.0
+text = "La divulgación nos permite acercar la ciencia a la gente que es afectada directa o indirectamente por el problema que tratamos."
+label_settings = SubResource("LabelSettings_7chvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Pagina8" type="Node2D" parent="Paginas"]
+visible = false
+
+[node name="Label" type="Label" parent="Paginas/Pagina8"]
+offset_left = 510.0
+offset_top = 133.0
+offset_right = 830.0
+offset_bottom = 169.0
+text = "¡Gracias por acompañarnos hasta el final!"
+label_settings = SubResource("LabelSettings_mrw00")
+
+[node name="Huecos" type="Node2D" parent="Paginas/Pagina8"]
+
+[node name="asset19" type="Sprite2D" parent="Paginas/Pagina8/Huecos"]
+position = Vector2(511, 219)
+scale = Vector2(1.39592, 0.431718)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina8/Huecos/asset19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina8/Huecos/asset19/Area2D"]
+position = Vector2(122.5, 114.658)
+shape = SubResource("RectangleShape2D_mrw00")
+
+[node name="asset20" type="Sprite2D" parent="Paginas/Pagina8/Huecos"]
+position = Vector2(307, 326)
+scale = Vector2(2.98776, 1.02644)
+texture = ExtResource("2_rci71")
+centered = false
+script = ExtResource("2_2bt21")
+
+[node name="Area2D" type="Area2D" parent="Paginas/Pagina8/Huecos/asset20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina8/Huecos/asset20/Area2D"]
+position = Vector2(122.142, 114.642)
+shape = SubResource("RectangleShape2D_7chvb")
+
+[node name="Soluciones" type="Node2D" parent="Paginas/Pagina8"]
+
+[node name="asset20" type="Sprite2D" parent="Paginas/Pagina8/Soluciones"]
+visible = false
+position = Vector2(672, 442.5)
+scale = Vector2(5.16901, 1.61486)
+texture = ExtResource("3_rci71")
+
+[node name="asset19" type="Label" parent="Paginas/Pagina8/Soluciones"]
+visible = false
+offset_left = 512.0
+offset_top = 221.0
+offset_right = 853.0
+offset_bottom = 315.0
+text = "Texto solucion final"
+label_settings = SubResource("LabelSettings_7chvb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
 [node name="Botones" type="Node2D" parent="Paginas"]
 script = ExtResource("9_eaw26")
 
@@ -425,6 +640,7 @@ scale = Vector2(1, 4.53788)
 texture = ExtResource("2_7chvb")
 
 [node name="Pagina1" type="Node2D" parent="Objetos"]
+position = Vector2(-18, 97)
 
 [node name="asset1" type="Sprite2D" parent="Objetos/Pagina1"]
 position = Vector2(61, 88)
@@ -551,6 +767,8 @@ scale = Vector2(0.44, 0.155)
 texture = ExtResource("11_eaw26")
 
 [node name="Pagina2" type="Node2D" parent="Objetos"]
+visible = false
+position = Vector2(-1, -258)
 
 [node name="asset9" type="Sprite2D" parent="Objetos/Pagina2"]
 position = Vector2(59, 381)
@@ -611,6 +829,138 @@ offset_bottom = 77.0
 script = ExtResource("5_rci71")
 
 [node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset12/asset12"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset13" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(49, 512)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset13" type="Button" parent="Objetos/Pagina2/asset13"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset13/asset13"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset14" type="Button" parent="Objetos/Pagina2"]
+offset_left = 92.0
+offset_top = 499.0
+offset_right = 187.0
+offset_bottom = 530.0
+text = "ADN"
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset14"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset15" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(51, 573)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset15" type="Button" parent="Objetos/Pagina2/asset15"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset15/asset15"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset16" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(126, 574)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset16" type="Button" parent="Objetos/Pagina2/asset16"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset16/asset16"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset17" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(53, 641)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset17" type="Button" parent="Objetos/Pagina2/asset17"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset17/asset17"]
+visible = false
+position = Vector2(74, 75.48)
+scale = Vector2(0.738399, 0.7548)
+texture = ExtResource("11_eaw26")
+
+[node name="asset18" type="Button" parent="Objetos/Pagina2"]
+offset_left = 88.0
+offset_top = 626.0
+offset_right = 185.0
+offset_bottom = 657.0
+text = "divulgación"
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset18"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset19" type="Button" parent="Objetos/Pagina2"]
+offset_left = 28.0
+offset_top = 683.0
+offset_right = 125.0
+offset_bottom = 714.0
+text = "solucion"
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset19"]
+visible = false
+position = Vector2(45, 15.5)
+scale = Vector2(0.44, 0.155)
+texture = ExtResource("11_eaw26")
+
+[node name="asset20" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(61, 752)
+scale = Vector2(0.352113, 0.337838)
+texture = ExtResource("3_rci71")
+
+[node name="asset20" type="Button" parent="Objetos/Pagina2/asset20"]
+offset_left = -74.0
+offset_top = -74.0
+offset_right = 74.0
+offset_bottom = 77.0
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset20/asset20"]
 visible = false
 position = Vector2(74, 75.48)
 scale = Vector2(0.738399, 0.7548)
@@ -756,6 +1106,94 @@ label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="asset13" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "¿Qué modificamos y usamos en nuestros laboratorios?"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset14" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "pista adn"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset15" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "La divulgación por redes sociales es muy efectiva"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset16" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "Es importante dar a conocer nuestros esfuerzos al público"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset17" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "Es esencial que se recoja todo el proyecto para que la gente lo pueda ver en internet"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset18" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "No solo es importante lo que ocurre en el laboratorio, debe darse a conocer lo que hacemos"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset19" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "pista solucion"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="asset20" type="Label" parent="Pistas"]
+visible = false
+offset_left = 440.0
+offset_top = 50.0
+offset_right = 825.0
+offset_bottom = 156.0
+text = "¡El problema se ha resuelto!"
+label_settings = SubResource("LabelSettings_2s7da")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="input_event" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_exited"]
@@ -792,6 +1230,30 @@ vertical_alignment = 1
 [connection signal="input_event" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina5/Huecos/asset12/Area2D" to="Paginas/Pagina5/Huecos/asset12" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina6/Huecos/asset13/Area2D" to="Paginas/Pagina6/Huecos/asset13" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina6/Huecos/asset13/Area2D" to="Paginas/Pagina6/Huecos/asset13" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina6/Huecos/asset13/Area2D" to="Paginas/Pagina6/Huecos/asset13" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina6/Huecos/asset14/Area2D" to="Paginas/Pagina6/Huecos/asset14" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina6/Huecos/asset14/Area2D" to="Paginas/Pagina6/Huecos/asset14" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina6/Huecos/asset14/Area2D" to="Paginas/Pagina6/Huecos/asset14" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina7/Huecos/asset15/Area2D" to="Paginas/Pagina7/Huecos/asset15" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina7/Huecos/asset15/Area2D" to="Paginas/Pagina7/Huecos/asset15" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina7/Huecos/asset15/Area2D" to="Paginas/Pagina7/Huecos/asset15" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina7/Huecos/asset16/Area2D" to="Paginas/Pagina7/Huecos/asset16" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina7/Huecos/asset16/Area2D" to="Paginas/Pagina7/Huecos/asset16" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina7/Huecos/asset16/Area2D" to="Paginas/Pagina7/Huecos/asset16" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina7/Huecos/asset17/Area2D" to="Paginas/Pagina7/Huecos/asset17" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina7/Huecos/asset17/Area2D" to="Paginas/Pagina7/Huecos/asset17" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina7/Huecos/asset17/Area2D" to="Paginas/Pagina7/Huecos/asset17" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina7/Huecos/asset18/Area2D" to="Paginas/Pagina7/Huecos/asset18" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina7/Huecos/asset18/Area2D" to="Paginas/Pagina7/Huecos/asset18" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina7/Huecos/asset18/Area2D" to="Paginas/Pagina7/Huecos/asset18" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina8/Huecos/asset19/Area2D" to="Paginas/Pagina8/Huecos/asset19" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina8/Huecos/asset19/Area2D" to="Paginas/Pagina8/Huecos/asset19" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina8/Huecos/asset19/Area2D" to="Paginas/Pagina8/Huecos/asset19" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Paginas/Pagina8/Huecos/asset20/Area2D" to="Paginas/Pagina8/Huecos/asset20" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Paginas/Pagina8/Huecos/asset20/Area2D" to="Paginas/Pagina8/Huecos/asset20" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Paginas/Pagina8/Huecos/asset20/Area2D" to="Paginas/Pagina8/Huecos/asset20" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="Paginas/Botones/Derecha/Button" to="Paginas/Botones" method="_on_pressed_der"]
 [connection signal="pressed" from="Paginas/Botones/Izquierda/Button" to="Paginas/Botones" method="_on_pressed_izq"]
 [connection signal="pressed" from="Objetos/Pagina1/asset1/asset1" to="Objetos/Pagina1/asset1/asset1" method="_on_button_pressed"]
@@ -806,3 +1268,11 @@ vertical_alignment = 1
 [connection signal="pressed" from="Objetos/Pagina2/asset10" to="Objetos/Pagina2/asset10" method="_on_button_pressed"]
 [connection signal="pressed" from="Objetos/Pagina2/asset11" to="Objetos/Pagina2/asset11" method="_on_button_pressed"]
 [connection signal="pressed" from="Objetos/Pagina2/asset12/asset12" to="Objetos/Pagina2/asset12/asset12" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset13/asset13" to="Objetos/Pagina2/asset13/asset13" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset14" to="Objetos/Pagina2/asset14" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset15/asset15" to="Objetos/Pagina2/asset15/asset15" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset16/asset16" to="Objetos/Pagina2/asset16/asset16" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset17/asset17" to="Objetos/Pagina2/asset17/asset17" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset18" to="Objetos/Pagina2/asset18" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset19" to="Objetos/Pagina2/asset19" method="_on_button_pressed"]
+[connection signal="pressed" from="Objetos/Pagina2/asset20/asset20" to="Objetos/Pagina2/asset20/asset20" method="_on_button_pressed"]
