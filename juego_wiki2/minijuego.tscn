@@ -48,6 +48,7 @@ scale = Vector2(4.30488, 4.5303)
 texture = ExtResource("2_7chvb")
 
 [node name="Pagina1" type="Node2D" parent="Paginas"]
+visible = false
 
 [node name="Label" type="Label" parent="Paginas/Pagina1"]
 offset_left = 510.0
@@ -451,7 +452,6 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Pagina7" type="Node2D" parent="Paginas"]
-visible = false
 
 [node name="Label" type="Label" parent="Paginas/Pagina7"]
 offset_left = 652.0
@@ -465,7 +465,7 @@ label_settings = SubResource("LabelSettings_mrw00")
 
 [node name="asset15" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
 position = Vector2(309, 113)
-scale = Vector2(0.546939, 2.02643)
+scale = Vector2(0.444898, 2.02643)
 texture = ExtResource("2_rci71")
 centered = false
 script = ExtResource("2_2bt21")
@@ -474,11 +474,12 @@ script = ExtResource("2_2bt21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina7/Huecos/asset15/Area2D"]
 position = Vector2(122.5, 114.658)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_mrw00")
 
 [node name="asset16" type="Sprite2D" parent="Paginas/Pagina7/Huecos"]
 position = Vector2(443, 113)
-scale = Vector2(0.546939, 2.02643)
+scale = Vector2(0.469388, 2.02643)
 texture = ExtResource("2_rci71")
 centered = false
 script = ExtResource("2_2bt21")
