@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=52 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -26,12 +26,15 @@
 [ext_resource type="Texture2D" uid="uid://ducx20rh4fwx4" path="res://recursos/Bocadillo1.png" id="21_8kwkj"]
 [ext_resource type="Script" uid="uid://b7hl0ohk33oei" path="res://escenas/juegoWetLabSegundo/ManejadorDeClientes.gd" id="21_e2ryf"]
 [ext_resource type="Texture2D" uid="uid://brqvw3tdmbybb" path="res://recursos/Bocadillo2.png" id="22_e2ryf"]
-[ext_resource type="Texture2D" uid="uid://chdcnven15ep3" path="res://recursos/amazingMan.png" id="23_h466c"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://ca78yy8lysllb" path="res://escenas/juegoWetLabSegundo/sprites/jwlContenta.png" id="26_ugl4q"]
+[ext_resource type="Texture2D" uid="uid://kkdu1g4v7on1" path="res://escenas/juegoWetLabSegundo/sprites/e1Contento.png" id="28_1bnyh"]
 [ext_resource type="Texture2D" uid="uid://ve8bc17avcj1" path="res://recursos/centrifugaSymbol.png" id="28_hpue7"]
 [ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
 [ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="29_s27qq"]
+[ext_resource type="Texture2D" uid="uid://c4t2pncb1354k" path="res://escenas/juegoWetLabSegundo/sprites/e2Contento.png" id="29_x7dpr"]
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://cjptoohj1lu7m" path="res://escenas/juegoWetLabSegundo/sprites/e3Contento.png" id="30_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://bxrcen0t0bk6h" path="res://recursos/happySymbol.png" id="33_dgc8e"]
 [ext_resource type="Script" uid="uid://cfxnwdp1bkgap" path="res://escenas/juegoWetLabSegundo/clientePreview.gd" id="34_efd47"]
@@ -41,16 +44,16 @@
 [ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="39_slht7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
-size = Vector2(144, 152)
+size = Vector2(1045, 1070)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2ryf"]
-size = Vector2(149, 151)
+size = Vector2(1000, 976.471)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h466c"]
-size = Vector2(146, 149)
+size = Vector2(976.47, 970.588)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhyxh"]
-size = Vector2(139, 151)
+size = Vector2(988.235, 964.706)
 
 [sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
 font = ExtResource("2_c1jlx")
@@ -409,8 +412,9 @@ scale = Vector2(1.85916, 1.90244)
 texture = ExtResource("22_e2ryf")
 
 [node name="Cliente1" type="Sprite2D" parent="Clientes"]
-position = Vector2(229, 336)
-texture = ExtResource("23_h466c")
+position = Vector2(266, 290.8)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("26_ugl4q")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer" type="Timer" parent="Clientes/Cliente1"]
@@ -421,13 +425,14 @@ autostart = true
 [node name="Area2D" type="Area2D" parent="Clientes/Cliente1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente1/Area2D"]
-position = Vector2(0, -1)
+position = Vector2(-2.5, 0)
 shape = SubResource("RectangleShape2D_8kwkj")
 
 [node name="Cliente2" type="Sprite2D" parent="Clientes"]
 visible = false
-position = Vector2(437, 334)
-texture = ExtResource("23_h466c")
+position = Vector2(490.15, 305.73)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("28_1bnyh")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer2" type="Timer" parent="Clientes/Cliente2"]
@@ -438,13 +443,15 @@ autostart = true
 [node name="Area2D2" type="Area2D" parent="Clientes/Cliente2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente2/Area2D2"]
-position = Vector2(-0.5, -0.5)
+position = Vector2(0.000732422, 41.1764)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_e2ryf")
 
 [node name="Cliente3" type="Sprite2D" parent="Clientes"]
 visible = false
-position = Vector2(700, 333)
-texture = ExtResource("23_h466c")
+position = Vector2(707.15, 305.73)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("29_x7dpr")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer3" type="Timer" parent="Clientes/Cliente3"]
@@ -455,13 +462,15 @@ autostart = true
 [node name="Area2D3" type="Area2D" parent="Clientes/Cliente3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente3/Area2D3"]
-position = Vector2(-1, -0.5)
+position = Vector2(0, 44.1174)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_h466c")
 
 [node name="Cliente4" type="Sprite2D" parent="Clientes"]
 visible = false
-position = Vector2(917, 330)
-texture = ExtResource("23_h466c")
+position = Vector2(894.15, 305.73)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("30_pfmvf")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer4" type="Timer" parent="Clientes/Cliente4"]
@@ -472,7 +481,8 @@ autostart = true
 [node name="Area2D4" type="Area2D" parent="Clientes/Cliente4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente4/Area2D4"]
-position = Vector2(0.5, -0.5)
+position = Vector2(0, 47.0586)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hhyxh")
 
 [node name="Pedido" type="Node2D" parent="Clientes"]
