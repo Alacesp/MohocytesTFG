@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=55 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -23,10 +23,10 @@
 [ext_resource type="Texture2D" uid="uid://0p7ws7jwi20q" path="res://recursos/liquido4.png" id="13_q1bm0"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="15_vmmhc"]
 [ext_resource type="Script" uid="uid://b6b1sgnp70ypu" path="res://escenas/juegoWetLabSegundo/botoninventario.gd" id="19_2sue4"]
-[ext_resource type="Texture2D" uid="uid://ducx20rh4fwx4" path="res://recursos/Bocadillo1.png" id="21_8kwkj"]
 [ext_resource type="Script" uid="uid://b7hl0ohk33oei" path="res://escenas/juegoWetLabSegundo/ManejadorDeClientes.gd" id="21_e2ryf"]
-[ext_resource type="Texture2D" uid="uid://brqvw3tdmbybb" path="res://recursos/Bocadillo2.png" id="22_e2ryf"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://b2qevgmj153hq" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo1.png" id="24_pfmvf"]
+[ext_resource type="Texture2D" uid="uid://4wi2xrqvwuyt" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo2.png" id="25_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://ca78yy8lysllb" path="res://escenas/juegoWetLabSegundo/sprites/jwlContenta.png" id="26_ugl4q"]
 [ext_resource type="Texture2D" uid="uid://kkdu1g4v7on1" path="res://escenas/juegoWetLabSegundo/sprites/e1Contento.png" id="28_1bnyh"]
 [ext_resource type="Texture2D" uid="uid://ve8bc17avcj1" path="res://recursos/centrifugaSymbol.png" id="28_hpue7"]
@@ -36,12 +36,15 @@
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://cjptoohj1lu7m" path="res://escenas/juegoWetLabSegundo/sprites/e3Contento.png" id="30_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
-[ext_resource type="Texture2D" uid="uid://bxrcen0t0bk6h" path="res://recursos/happySymbol.png" id="33_dgc8e"]
 [ext_resource type="Script" uid="uid://cfxnwdp1bkgap" path="res://escenas/juegoWetLabSegundo/clientePreview.gd" id="34_efd47"]
-[ext_resource type="Texture2D" uid="uid://b0tydd5qssyya" path="res://recursos/Bocadillo3.png" id="35_s27qq"]
-[ext_resource type="Texture2D" uid="uid://ckms84rdjnws8" path="res://recursos/Bocadillo4.png" id="36_rkgp2"]
+[ext_resource type="Texture2D" uid="uid://d3un14da2hduw" path="res://escenas/juegoWetLabSegundo/sprites/jwlContentaSymbol.png" id="37_pfmvf"]
 [ext_resource type="Script" uid="uid://bvsl5722tyysk" path="res://escenas/juegoWetLabSegundo/countdown.gd" id="38_rkgp2"]
+[ext_resource type="Texture2D" uid="uid://ch7vysgj524yc" path="res://escenas/juegoWetLabSegundo/sprites/e1ContentoSymbol.png" id="39_hr5gt"]
 [ext_resource type="PackedScene" uid="uid://d0s4ip4e5rsra" path="res://escenas/Pausa.tscn" id="39_slht7"]
+[ext_resource type="Texture2D" uid="uid://oyxjjwa6f852" path="res://escenas/juegoWetLabSegundo/sprites/e2ContentoSymbol.png" id="40_b8n2b"]
+[ext_resource type="Texture2D" uid="uid://dmqr0jn1neuki" path="res://escenas/juegoWetLabSegundo/sprites/e3ContentoSymbol.png" id="41_nlxeg"]
+[ext_resource type="Texture2D" uid="uid://cu5kdtp7nyna5" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo3.png" id="42_pfmvf"]
+[ext_resource type="Texture2D" uid="uid://clvad6551rlwp" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo4.png" id="43_hr5gt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(1045, 1070)
@@ -55,11 +58,6 @@ size = Vector2(976.47, 970.588)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhyxh"]
 size = Vector2(988.235, 964.706)
 
-[sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
-font = ExtResource("2_c1jlx")
-font_size = 14
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="Theme" id="Theme_ygk6k"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vmmhc"]
@@ -68,11 +66,16 @@ font_size = 36
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3b7c1"]
-size = Vector2(148.157, 142)
+size = Vector2(395, 361.386)
 
 [sub_resource type="LabelSettings" id="LabelSettings_slht7"]
 font = ExtResource("2_c1jlx")
 font_size = 36
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
+font = ExtResource("2_c1jlx")
+font_size = 14
 font_color = Color(0, 0, 0, 1)
 
 [node name="Minijuego" type="Node2D"]
@@ -401,15 +404,15 @@ script = ExtResource("21_e2ryf")
 
 [node name="Bocadillo1" type="Sprite2D" parent="Clientes"]
 visible = false
-position = Vector2(590, 125.5)
-scale = Vector2(1.98271, 1.95868)
-texture = ExtResource("21_8kwkj")
+position = Vector2(603, 162)
+scale = Vector2(0.2, 0.198)
+texture = ExtResource("24_pfmvf")
 
 [node name="Bocadillo2" type="Sprite2D" parent="Clientes"]
 visible = false
-position = Vector2(578, 132)
-scale = Vector2(1.85916, 1.90244)
-texture = ExtResource("22_e2ryf")
+position = Vector2(603, 162)
+scale = Vector2(0.2, 0.198)
+texture = ExtResource("25_pfmvf")
 
 [node name="Cliente1" type="Sprite2D" parent="Clientes"]
 position = Vector2(266, 290.8)
@@ -444,7 +447,6 @@ autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente2/Area2D2"]
 position = Vector2(0.000732422, 41.1764)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_e2ryf")
 
 [node name="Cliente3" type="Sprite2D" parent="Clientes"]
@@ -463,7 +465,6 @@ autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente3/Area2D3"]
 position = Vector2(0, 44.1174)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_h466c")
 
 [node name="Cliente4" type="Sprite2D" parent="Clientes"]
@@ -482,11 +483,12 @@ autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clientes/Cliente4/Area2D4"]
 position = Vector2(0, 47.0586)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hhyxh")
 
 [node name="Pedido" type="Node2D" parent="Clientes"]
 visible = false
+position = Vector2(202, 71)
+scale = Vector2(0.7, 0.7)
 
 [node name="Pedido1" type="Sprite2D" parent="Clientes/Pedido"]
 position = Vector2(327, 105)
@@ -518,6 +520,207 @@ visible = false
 
 [node name="camara" type="Camera2D" parent="."]
 position = Vector2(576, 324)
+
+[node name="Seleccionado" type="Sprite2D" parent="camara"]
+position = Vector2(-440.25, -202)
+scale = Vector2(1.03659, 1.56061)
+texture = ExtResource("15_vmmhc")
+
+[node name="ProbetaSeleccionada" type="Node2D" parent="camara/Seleccionado"]
+visible = false
+position = Vector2(34.006, 18.5826)
+
+[node name="Probeta1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+position = Vector2(-30.8707, -19.8641)
+scale = Vector2(0.459765, 0.231069)
+texture = ExtResource("4_8oigj")
+
+[node name="Probeta2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+position = Vector2(-30.8707, -26.9127)
+scale = Vector2(0.459765, 0.231069)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 195)
+
+[node name="Probeta3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+position = Vector2(-30.8707, -34.602)
+scale = Vector2(0.459765, 0.231069)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 130)
+
+[node name="Probeta4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+position = Vector2(-30.8707, -42.2913)
+scale = Vector2(0.459765, 0.231069)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 65)
+
+[node name="ice" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+
+[node name="ice1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
+
+[node name="fire1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="Placa" type="Sprite2D" parent="camara/Seleccionado"]
+visible = false
+position = Vector2(-3.61764, -1.28155)
+scale = Vector2(0.355745, 0.372616)
+texture = ExtResource("31_hhyxh")
+
+[node name="Label" type="Label" parent="camara"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 385.004
+offset_top = -291.0
+offset_right = 508.004
+offset_bottom = -245.0
+theme = SubResource("Theme_ygk6k")
+text = "Holaaa"
+label_settings = SubResource("LabelSettings_vmmhc")
+
+[node name="Clientes" type="Node2D" parent="camara"]
+
+[node name="Cliente1" type="Sprite2D" parent="camara/Clientes"]
+position = Vector2(-187, -266)
+scale = Vector2(0.2, 0.202)
+texture = ExtResource("37_pfmvf")
+script = ExtResource("34_efd47")
+
+[node name="Area2D" type="Area2D" parent="camara/Clientes/Cliente1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente1/Area2D"]
+position = Vector2(-7.5, -2.47525)
+shape = SubResource("RectangleShape2D_3b7c1")
+
+[node name="Cliente2" type="Sprite2D" parent="camara/Clientes"]
+position = Vector2(-53, -268)
+scale = Vector2(0.2, 0.202)
+texture = ExtResource("39_hr5gt")
+script = ExtResource("34_efd47")
+
+[node name="Area2D2" type="Area2D" parent="camara/Clientes/Cliente2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente2/Area2D2"]
+shape = SubResource("RectangleShape2D_3b7c1")
+
+[node name="Cliente3" type="Sprite2D" parent="camara/Clientes"]
+position = Vector2(107, -268)
+scale = Vector2(0.2, 0.202)
+texture = ExtResource("40_b8n2b")
+script = ExtResource("34_efd47")
+
+[node name="Area2D3" type="Area2D" parent="camara/Clientes/Cliente3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente3/Area2D3"]
+shape = SubResource("RectangleShape2D_3b7c1")
+
+[node name="Cliente4" type="Sprite2D" parent="camara/Clientes"]
+position = Vector2(230, -267)
+scale = Vector2(0.2, 0.202)
+texture = ExtResource("41_nlxeg")
+script = ExtResource("34_efd47")
+
+[node name="Area2D4" type="Area2D" parent="camara/Clientes/Cliente4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente4/Area2D4"]
+shape = SubResource("RectangleShape2D_3b7c1")
+
+[node name="Bocadillo3" type="Sprite2D" parent="camara/Clientes"]
+visible = false
+position = Vector2(27, -183)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("42_pfmvf")
+
+[node name="Bocadillo4" type="Sprite2D" parent="camara/Clientes"]
+visible = false
+position = Vector2(26, -183)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("43_hr5gt")
+
+[node name="Pedido" type="Node2D" parent="camara/Clientes"]
+visible = false
+position = Vector2(-531, -253)
+
+[node name="Pedido1" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(327, 105)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="Pedido2" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(407, 110)
+scale = Vector2(0.492537, 0.426966)
+
+[node name="Pedido3" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(502, 113)
+scale = Vector2(0.253397, 0.254124)
+
+[node name="Centrifuga" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(822, 114)
+scale = Vector2(0.307163, 0.328859)
+texture = ExtResource("28_hpue7")
+
+[node name="Pedido4" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(611, 108)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="Pedido5" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(705, 106)
+scale = Vector2(0.492537, 0.44382)
+
+[node name="Label2" type="Label" parent="camara"]
+offset_left = 380.0
+offset_top = -248.0
+offset_right = 473.0
+offset_bottom = -200.0
+text = "Buenass"
+label_settings = SubResource("LabelSettings_slht7")
+script = ExtResource("38_rkgp2")
 
 [node name="Inventario" type="Sprite2D" parent="camara"]
 position = Vector2(233, 654)
@@ -960,207 +1163,6 @@ offset_top = -86.0
 offset_right = 145.0
 offset_bottom = 84.0
 
-[node name="Seleccionado" type="Sprite2D" parent="camara"]
-position = Vector2(-440.25, -202)
-scale = Vector2(1.03659, 1.56061)
-texture = ExtResource("15_vmmhc")
-
-[node name="ProbetaSeleccionada" type="Node2D" parent="camara/Seleccionado"]
-visible = false
-position = Vector2(34.006, 18.5826)
-
-[node name="Probeta1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -19.8641)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
-
-[node name="Probeta2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -26.9127)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
-
-[node name="Probeta3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -34.602)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
-
-[node name="Probeta4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -42.2913)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
-
-[node name="ice" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-
-[node name="ice1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
-visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
-
-[node name="ice2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
-visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
-
-[node name="ice3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
-visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="ice4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
-visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="fire" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-
-[node name="fire1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
-visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
-visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
-visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
-visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="Placa" type="Sprite2D" parent="camara/Seleccionado"]
-visible = false
-position = Vector2(-3.61764, -1.28155)
-scale = Vector2(0.355745, 0.372616)
-texture = ExtResource("31_hhyxh")
-
-[node name="Label" type="Label" parent="camara"]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-offset_left = 385.004
-offset_top = -291.0
-offset_right = 508.004
-offset_bottom = -245.0
-theme = SubResource("Theme_ygk6k")
-text = "Holaaa"
-label_settings = SubResource("LabelSettings_vmmhc")
-
-[node name="Clientes" type="Node2D" parent="camara"]
-
-[node name="Cliente1" type="Sprite2D" parent="camara/Clientes"]
-position = Vector2(-187, -266)
-scale = Vector2(0.431973, 0.43662)
-texture = ExtResource("33_dgc8e")
-script = ExtResource("34_efd47")
-
-[node name="Area2D" type="Area2D" parent="camara/Clientes/Cliente1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente1/Area2D"]
-shape = SubResource("RectangleShape2D_3b7c1")
-
-[node name="Cliente2" type="Sprite2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(-27, -268)
-scale = Vector2(0.431973, 0.43662)
-texture = ExtResource("33_dgc8e")
-script = ExtResource("34_efd47")
-
-[node name="Area2D2" type="Area2D" parent="camara/Clientes/Cliente2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente2/Area2D2"]
-shape = SubResource("RectangleShape2D_3b7c1")
-
-[node name="Cliente3" type="Sprite2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(133, -268)
-scale = Vector2(0.431973, 0.43662)
-texture = ExtResource("33_dgc8e")
-script = ExtResource("34_efd47")
-
-[node name="Area2D3" type="Area2D" parent="camara/Clientes/Cliente3"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente3/Area2D3"]
-shape = SubResource("RectangleShape2D_3b7c1")
-
-[node name="Cliente4" type="Sprite2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(283, -268)
-scale = Vector2(0.431973, 0.43662)
-texture = ExtResource("33_dgc8e")
-script = ExtResource("34_efd47")
-
-[node name="Area2D4" type="Area2D" parent="camara/Clientes/Cliente4"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camara/Clientes/Cliente4/Area2D4"]
-shape = SubResource("RectangleShape2D_3b7c1")
-
-[node name="Bocadillo3" type="Sprite2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(78, -133)
-texture = ExtResource("35_s27qq")
-
-[node name="Bocadillo4" type="Sprite2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(76, -145)
-texture = ExtResource("36_rkgp2")
-
-[node name="Pedido" type="Node2D" parent="camara/Clientes"]
-visible = false
-position = Vector2(-531, -253)
-
-[node name="Pedido1" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(327, 105)
-scale = Vector2(0.492537, 0.44382)
-
-[node name="Pedido2" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(407, 110)
-scale = Vector2(0.492537, 0.426966)
-
-[node name="Pedido3" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(502, 113)
-scale = Vector2(0.253397, 0.254124)
-
-[node name="Centrifuga" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(822, 114)
-scale = Vector2(0.307163, 0.328859)
-texture = ExtResource("28_hpue7")
-
-[node name="Pedido4" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(611, 108)
-scale = Vector2(0.492537, 0.44382)
-
-[node name="Pedido5" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(705, 106)
-scale = Vector2(0.492537, 0.44382)
-
-[node name="Label2" type="Label" parent="camara"]
-offset_left = 380.0
-offset_top = -248.0
-offset_right = 473.0
-offset_bottom = -200.0
-text = "Buenass"
-label_settings = SubResource("LabelSettings_slht7")
-script = ExtResource("38_rkgp2")
-
 [node name="Pausa" parent="camara" instance=ExtResource("39_slht7")]
 visible = false
 
@@ -1206,6 +1208,14 @@ one_shot = true
 [connection signal="input_event" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
 [connection signal="mouse_exited" from="Clientes/Cliente4/Area2D4" to="Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
+[connection signal="mouse_entered" from="camara/Clientes/Cliente1/Area2D" to="camara/Clientes/Cliente1" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Clientes/Cliente1/Area2D" to="camara/Clientes/Cliente1" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="camara/Clientes/Cliente2/Area2D2" to="camara/Clientes/Cliente2" method="_on_area_2d_2_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Clientes/Cliente2/Area2D2" to="camara/Clientes/Cliente2" method="_on_area_2d_2_mouse_exited"]
+[connection signal="mouse_entered" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
+[connection signal="mouse_entered" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
@@ -1215,12 +1225,4 @@ one_shot = true
 [connection signal="pressed" from="camara/Inventario/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
-[connection signal="mouse_entered" from="camara/Clientes/Cliente1/Area2D" to="camara/Clientes/Cliente1" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="camara/Clientes/Cliente1/Area2D" to="camara/Clientes/Cliente1" method="_on_area_2d_mouse_exited"]
-[connection signal="mouse_entered" from="camara/Clientes/Cliente2/Area2D2" to="camara/Clientes/Cliente2" method="_on_area_2d_2_mouse_entered"]
-[connection signal="mouse_exited" from="camara/Clientes/Cliente2/Area2D2" to="camara/Clientes/Cliente2" method="_on_area_2d_2_mouse_exited"]
-[connection signal="mouse_entered" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_entered"]
-[connection signal="mouse_exited" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
-[connection signal="mouse_entered" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
-[connection signal="mouse_exited" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
 [connection signal="timeout" from="Timer" to="camara/Label2" method="_on_timer_timeout"]
