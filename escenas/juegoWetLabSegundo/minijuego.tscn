@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://b3yoktoq2fsmr" path="res://escenas/juegoWetLabSegundo/boton.gd" id="5_b8n2b"]
 [ext_resource type="Texture2D" uid="uid://botw604kj2r4d" path="res://escenas/juegoWetLabSegundo/sprites/probeta.png" id="6_kgxuj"]
 [ext_resource type="Script" uid="uid://bva54ysvuohiy" path="res://escenas/juegoWetLabSegundo/ice.gd" id="7_lg1b8"]
+[ext_resource type="Texture2D" uid="uid://dia5hg47u0hc3" path="res://escenas/juegoWetLabSegundo/sprites/simbolohielo.png" id="7_nlxeg"]
+[ext_resource type="Texture2D" uid="uid://df7a14fq44l7s" path="res://escenas/juegoWetLabSegundo/sprites/simbolofuego.png" id="8_kgxuj"]
 [ext_resource type="Script" uid="uid://bnanng024g0d8" path="res://escenas/juegoWetLabSegundo/fregadero.gd" id="8_q1bm0"]
 [ext_resource type="Texture2D" uid="uid://d14i1t1co1lxx" path="res://escenas/juegoWetLabSegundo/sprites/nevera.png" id="9_kgxuj"]
 [ext_resource type="Script" uid="uid://ktpyslos1v7x" path="res://escenas/juegoWetLabSegundo/fire.gd" id="9_q8giw"]
@@ -31,10 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://4wi2xrqvwuyt" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo2.png" id="25_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://ca78yy8lysllb" path="res://escenas/juegoWetLabSegundo/sprites/jwlContenta.png" id="26_ugl4q"]
 [ext_resource type="Texture2D" uid="uid://kkdu1g4v7on1" path="res://escenas/juegoWetLabSegundo/sprites/e1Contento.png" id="28_1bnyh"]
-[ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
 [ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="29_s27qq"]
 [ext_resource type="Texture2D" uid="uid://c4t2pncb1354k" path="res://escenas/juegoWetLabSegundo/sprites/e2Contento.png" id="29_x7dpr"]
-[ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://cjptoohj1lu7m" path="res://escenas/juegoWetLabSegundo/sprites/e3Contento.png" id="30_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://b6ckk4wsrw0o5" path="res://escenas/juegoWetLabSegundo/sprites/simbolocentrifuga.png" id="32_nlxeg"]
@@ -245,26 +245,26 @@ scale = Vector2(2.64, 4.36)
 [node name="ice1" type="Sprite2D" parent="Probeta/ice"]
 visible = false
 position = Vector2(1.28746e-05, -4.81651)
-scale = Vector2(0.0316952, 0.0205818)
-texture = ExtResource("29_h466c")
+scale = Vector2(0.060303, 0.03)
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-4.21483, -15.7093)
-scale = Vector2(0.0316447, 0.0195779)
-texture = ExtResource("29_h466c")
+position = Vector2(-4.54544, -15.5963)
+scale = Vector2(0.060303, 0.03)
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-12.8788, -25.6881)
-scale = Vector2(0.0338802, 0.0211302)
-texture = ExtResource("29_h466c")
+position = Vector2(-13.2576, -25.6881)
+scale = Vector2(0.060303, 0.03)
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-10.04, -43.3994)
-scale = Vector2(0.0328833, 0.0204984)
-texture = ExtResource("29_h466c")
+position = Vector2(-10.2273, -43.3486)
+scale = Vector2(0.060303, 0.03)
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="Probeta"]
 position = Vector2(58, 132)
@@ -272,27 +272,27 @@ scale = Vector2(2.64, 4.36)
 
 [node name="fire1" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(8.33334, -5.9633)
-scale = Vector2(0.0397638, 0.0241512)
-texture = ExtResource("30_hhyxh")
+position = Vector2(-54.5454, -5.04587)
+scale = Vector2(0.0602956, 0.03)
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(-3.32002, -16.5919)
-scale = Vector2(0.0343606, 0.0219131)
-texture = ExtResource("30_hhyxh")
+position = Vector2(-42.0454, -15.8257)
+scale = Vector2(0.0602956, 0.03)
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(-13.6364, -26.1468)
-scale = Vector2(0.034877, 0.0223939)
-texture = ExtResource("30_hhyxh")
+position = Vector2(-35.6061, -26.6055)
+scale = Vector2(0.0602956, 0.03)
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
+position = Vector2(-40.9091, -44.4954)
+scale = Vector2(0.0602956, 0.03)
+texture = ExtResource("8_kgxuj")
 
 [node name="Ice" type="Sprite2D" parent="."]
 position = Vector2(2591, 343)
@@ -624,25 +624,25 @@ region_rect = Rect2(0, 0, 927, 440)
 visible = false
 position = Vector2(-1.92966, -5.12634)
 scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
 visible = false
 position = Vector2(-10.7762, -19.8642)
 scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
 visible = false
 position = Vector2(-26.0472, -33.9612)
 scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/ice"]
 visible = false
 position = Vector2(-34.7295, -46.7767)
 scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
 
@@ -650,25 +650,25 @@ texture = ExtResource("29_h466c")
 visible = false
 position = Vector2(19.2922, -5.12646)
 scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
 visible = false
 position = Vector2(10.4458, -19.8643)
 scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
 visible = false
 position = Vector2(-4.8252, -33.9612)
 scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada/fire"]
 visible = false
 position = Vector2(-13.5076, -46.7766)
 scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="Placa" type="Sprite2D" parent="camara/Seleccionado"]
 visible = false
@@ -839,25 +839,25 @@ position = Vector2(9.68708, 6.41352)
 visible = false
 position = Vector2(215.313, 69.3441)
 scale = Vector2(0.2, 0.126)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
 position = Vector2(165.313, -0.352926)
 scale = Vector2(0.2, 0.14)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
 position = Vector2(110.313, -57.9286)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
 position = Vector2(90.3129, -170.05)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta1"]
 position = Vector2(9.68708, 6.41352)
@@ -867,25 +867,25 @@ scale = Vector2(0.806259, 0.444164)
 visible = false
 position = Vector2(384.88, 156.123)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
 position = Vector2(329.067, -0.794317)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
 position = Vector2(254.649, -130.422)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
 position = Vector2(236.044, -376.031)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="Probeta2" type="Node2D" parent="camara/Inventario"]
 visible = false
@@ -933,25 +933,25 @@ position = Vector2(9.68708, 6.41352)
 visible = false
 position = Vector2(215.313, 69.3441)
 scale = Vector2(0.2, 0.126)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
 position = Vector2(165.313, -0.352926)
 scale = Vector2(0.2, 0.14)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
 position = Vector2(110.313, -57.9286)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
 position = Vector2(90.3129, -170.05)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta2"]
 position = Vector2(9.68708, 6.41352)
@@ -961,25 +961,25 @@ scale = Vector2(0.806259, 0.444164)
 visible = false
 position = Vector2(384.88, 156.123)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
 position = Vector2(329.067, -0.794317)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
 position = Vector2(254.649, -130.422)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
 position = Vector2(236.044, -376.031)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="Probeta3" type="Node2D" parent="camara/Inventario"]
 visible = false
@@ -1027,25 +1027,25 @@ position = Vector2(9.68708, 6.41352)
 visible = false
 position = Vector2(215.313, 69.3441)
 scale = Vector2(0.2, 0.126)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
 position = Vector2(165.313, -0.352926)
 scale = Vector2(0.2, 0.14)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
 position = Vector2(110.313, -57.9286)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
 position = Vector2(90.3129, -170.05)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta3"]
 position = Vector2(9.68708, 6.41352)
@@ -1055,25 +1055,25 @@ scale = Vector2(0.806259, 0.444164)
 visible = false
 position = Vector2(384.88, 156.123)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
 position = Vector2(329.067, -0.794317)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
 position = Vector2(254.649, -130.422)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
 position = Vector2(236.044, -376.031)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="Probeta4" type="Node2D" parent="camara/Inventario"]
 visible = false
@@ -1121,25 +1121,25 @@ position = Vector2(9.68708, 6.41352)
 visible = false
 position = Vector2(215.313, 69.3441)
 scale = Vector2(0.2, 0.126)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
 position = Vector2(165.313, -0.352926)
 scale = Vector2(0.2, 0.14)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
 position = Vector2(110.313, -57.9286)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
 position = Vector2(90.3129, -170.05)
 scale = Vector2(0.2, 0.135)
-texture = ExtResource("29_h466c")
+texture = ExtResource("7_nlxeg")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta4"]
 position = Vector2(9.68708, 6.41352)
@@ -1149,25 +1149,25 @@ scale = Vector2(0.806259, 0.444164)
 visible = false
 position = Vector2(384.88, 156.123)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
 position = Vector2(329.067, -0.794317)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
 position = Vector2(254.649, -130.422)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
 position = Vector2(236.044, -376.031)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("30_hhyxh")
+texture = ExtResource("8_kgxuj")
 
 [node name="Label" type="Label" parent="camara/Inventario"]
 offset_left = -460.0
