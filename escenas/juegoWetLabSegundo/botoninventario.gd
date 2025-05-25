@@ -9,5 +9,5 @@ func _on_button_pressed() -> void:
 		tween.tween_property(inventario, "position", Vector2(233,124), 0.5 ).set_trans(Tween.TRANS_LINEAR)
 		closed = false
 	else:
-		tween.tween_property(inventario, "position", Vector2(233,654), 0.5 ).set_trans(Tween.TRANS_LINEAR)
+		tween.tween_property(inventario, "position", Vector2(233,544), 0.5 ).set_trans(Tween.TRANS_LINEAR)
 		closed = true

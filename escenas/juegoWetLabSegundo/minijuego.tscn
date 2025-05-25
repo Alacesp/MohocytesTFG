@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=59 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -6,24 +6,27 @@
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_w666j"]
 [ext_resource type="Script" uid="uid://d01okbo2qmkmo" path="res://escenas/juegoWetLabSegundo/movimiento.gd" id="3_miokp"]
 [ext_resource type="Texture2D" uid="uid://dosidtl35ot4j" path="res://recursos/probeta.png" id="4_8oigj"]
-[ext_resource type="Texture2D" uid="uid://corb7y4lkit7f" path="res://recursos/ice.png" id="5_3wela"]
+[ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="4_hr5gt"]
+[ext_resource type="Script" uid="uid://b3yoktoq2fsmr" path="res://escenas/juegoWetLabSegundo/boton.gd" id="5_b8n2b"]
+[ext_resource type="Texture2D" uid="uid://botw604kj2r4d" path="res://escenas/juegoWetLabSegundo/sprites/probeta.png" id="6_kgxuj"]
 [ext_resource type="Texture2D" uid="uid://6l6p7nme8lth" path="res://recursos/fire.png" id="6_ljjqv"]
 [ext_resource type="Texture2D" uid="uid://qg8s74lnfekm" path="res://recursos/centrifugaAbierta.png" id="7_ky42u"]
 [ext_resource type="Script" uid="uid://bva54ysvuohiy" path="res://escenas/juegoWetLabSegundo/ice.gd" id="7_lg1b8"]
-[ext_resource type="Texture2D" uid="uid://bajor1wnbca8p" path="res://recursos/fregadero.png" id="7_v31oj"]
-[ext_resource type="Texture2D" uid="uid://dsv3adrnw361u" path="res://recursos/liquido3.png" id="8_fvu15"]
 [ext_resource type="Script" uid="uid://bnanng024g0d8" path="res://escenas/juegoWetLabSegundo/fregadero.gd" id="8_q1bm0"]
-[ext_resource type="Texture2D" uid="uid://b1xqr3ggreonw" path="res://recursos/liquido2.png" id="9_c1jlx"]
+[ext_resource type="Texture2D" uid="uid://d14i1t1co1lxx" path="res://escenas/juegoWetLabSegundo/sprites/nevera.png" id="9_kgxuj"]
 [ext_resource type="Script" uid="uid://ktpyslos1v7x" path="res://escenas/juegoWetLabSegundo/fire.gd" id="9_q8giw"]
 [ext_resource type="Script" uid="uid://dv363aabwdbeu" path="res://escenas/juegoWetLabSegundo/liquidos.gd" id="9_ygk6k"]
-[ext_resource type="Texture2D" uid="uid://b0jyey7hof46s" path="res://recursos/liquido1.png" id="10_ygk6k"]
-[ext_resource type="Texture2D" uid="uid://cns8ns0w4tflh" path="res://recursos/liquido6.png" id="11_vmmhc"]
-[ext_resource type="Texture2D" uid="uid://dwaedjdoqs5bf" path="res://recursos/liquido5.png" id="12_v31oj"]
 [ext_resource type="Script" uid="uid://bmjb001y3rali" path="res://escenas/juegoWetLabSegundo/centrifuga.gd" id="13_jp6cw"]
-[ext_resource type="Texture2D" uid="uid://0p7ws7jwi20q" path="res://recursos/liquido4.png" id="13_q1bm0"]
+[ext_resource type="Texture2D" uid="uid://camqm1adjkiin" path="res://escenas/juegoWetLabSegundo/sprites/fregadero.png" id="13_kgxuj"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="15_vmmhc"]
+[ext_resource type="Texture2D" uid="uid://b18jke3j5uqa7" path="res://escenas/juegoWetLabSegundo/sprites/rosa.png" id="18_kgxuj"]
 [ext_resource type="Script" uid="uid://b6b1sgnp70ypu" path="res://escenas/juegoWetLabSegundo/botoninventario.gd" id="19_2sue4"]
+[ext_resource type="Texture2D" uid="uid://dp8xoaj3yfw45" path="res://escenas/juegoWetLabSegundo/sprites/amarillo.png" id="19_55w5j"]
+[ext_resource type="Texture2D" uid="uid://dcsqxx1vjxpc6" path="res://escenas/juegoWetLabSegundo/sprites/rojo.png" id="20_1biit"]
 [ext_resource type="Script" uid="uid://b7hl0ohk33oei" path="res://escenas/juegoWetLabSegundo/ManejadorDeClientes.gd" id="21_e2ryf"]
+[ext_resource type="Texture2D" uid="uid://dyypwhfkfjwim" path="res://escenas/juegoWetLabSegundo/sprites/verde.png" id="21_yaqag"]
+[ext_resource type="Texture2D" uid="uid://ceaqhu7oh0uwr" path="res://escenas/juegoWetLabSegundo/sprites/morado.png" id="22_5x1td"]
+[ext_resource type="Texture2D" uid="uid://daj5beobmndky" path="res://escenas/juegoWetLabSegundo/sprites/azul.png" id="23_we5ts"]
 [ext_resource type="Script" uid="uid://b0cy6h8fnb002" path="res://escenas/juegoWetLabSegundo/cliente.gd" id="24_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://b2qevgmj153hq" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo1.png" id="24_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://4wi2xrqvwuyt" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo2.png" id="25_pfmvf"]
@@ -45,6 +48,7 @@
 [ext_resource type="Texture2D" uid="uid://dmqr0jn1neuki" path="res://escenas/juegoWetLabSegundo/sprites/e3ContentoSymbol.png" id="41_nlxeg"]
 [ext_resource type="Texture2D" uid="uid://cu5kdtp7nyna5" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo3.png" id="42_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://clvad6551rlwp" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo4.png" id="43_hr5gt"]
+[ext_resource type="Texture2D" uid="uid://38ovsd3ah75r" path="res://escenas/juegoWetLabSegundo/sprites/inventario.png" id="45_nlxeg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(1045, 1070)
@@ -75,7 +79,7 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
 font = ExtResource("2_c1jlx")
-font_size = 14
+font_size = 250
 font_color = Color(0, 0, 0, 1)
 
 [node name="Minijuego" type="Node2D"]
@@ -91,122 +95,149 @@ script = ExtResource("3_miokp")
 
 [node name="boton1" type="Sprite2D" parent="Botones"]
 position = Vector2(1055, 384)
-rotation = 1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
 
 [node name="Boton1" type="Button" parent="Botones/boton1"]
-offset_left = -60.0
-offset_top = -55.0
-offset_right = 58.0
-offset_bottom = 52.0
+offset_left = -240.0
+offset_top = -370.0
+offset_right = 255.0
+offset_bottom = 380.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton2" type="Sprite2D" parent="Botones"]
 position = Vector2(1245, 384)
-rotation = -1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
+flip_h = true
 
 [node name="boton2" type="Button" parent="Botones/boton2"]
-offset_left = -58.0
-offset_top = -49.0
-offset_right = 58.0
-offset_bottom = 51.0
+offset_left = -260.0
+offset_top = -395.0
+offset_right = 270.0
+offset_bottom = 425.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton3" type="Sprite2D" parent="Botones"]
 position = Vector2(2210, 384)
-rotation = 1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
 
 [node name="boton3" type="Button" parent="Botones/boton3"]
-offset_left = -56.0
-offset_top = -51.0
-offset_right = 59.0
-offset_bottom = 48.0
+offset_left = -250.0
+offset_top = -410.0
+offset_right = 270.0
+offset_bottom = 410.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton4" type="Sprite2D" parent="Botones"]
 position = Vector2(2390, 384)
-rotation = -1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
+flip_h = true
+flip_v = true
 
 [node name="boton4" type="Button" parent="Botones/boton4"]
-offset_left = -55.0
-offset_top = -52.0
-offset_right = 59.0
-offset_bottom = 52.0
+offset_left = -260.0
+offset_top = -405.0
+offset_right = 260.0
+offset_bottom = 405.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton5" type="Sprite2D" parent="Botones"]
 position = Vector2(3365, 384)
-rotation = 1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
 
 [node name="boton5" type="Button" parent="Botones/boton5"]
-offset_left = -57.0
-offset_top = -50.0
-offset_right = 55.0
-offset_bottom = 49.0
+offset_left = -250.0
+offset_top = -395.0
+offset_right = 260.0
+offset_bottom = 390.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton6" type="Sprite2D" parent="Botones"]
 position = Vector2(3587, 384)
-rotation = -1.5708
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
+flip_h = true
 
 [node name="boton6" type="Button" parent="Botones/boton6"]
-offset_left = -58.0
-offset_top = -52.0
-offset_right = 59.0
-offset_bottom = 54.0
+offset_left = -255.0
+offset_top = -395.0
+offset_right = 250.0
+offset_bottom = 395.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton7" type="Sprite2D" parent="Botones"]
 position = Vector2(4518, 392)
-rotation = 1.56913
-texture = ExtResource("2_w666j")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
 
 [node name="boton7" type="Button" parent="Botones/boton7"]
-offset_left = -58.0
-offset_top = -52.0
-offset_right = 59.0
-offset_bottom = 54.0
+offset_left = -245.0
+offset_top = -385.0
+offset_right = 255.0
+offset_bottom = 395.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="boton8" type="Sprite2D" parent="Botones"]
-position = Vector2(72, 392)
-rotation = -1.56951
-texture = ExtResource("2_w666j")
+position = Vector2(72, 384)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_hr5gt")
+flip_h = true
 
 [node name="boton8" type="Button" parent="Botones/boton8"]
-offset_left = -58.0
-offset_top = -52.0
-offset_right = 59.0
-offset_bottom = 54.0
+offset_left = -265.0
+offset_top = -405.0
+offset_right = 260.0
+offset_bottom = 405.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Probeta" type="Node2D" parent="."]
 position = Vector2(1705, 348)
 
 [node name="Probeta1" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, 55)
-texture = ExtResource("4_8oigj")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="Probeta"]
 position = Vector2(-12, 21)
-texture = ExtResource("4_8oigj")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 928, 896)
 
 [node name="Probeta3" type="Sprite2D" parent="Probeta"]
-position = Vector2(-12, -11)
-texture = ExtResource("4_8oigj")
+position = Vector2(-12, -2)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 928, 672)
 
 [node name="Probeta4" type="Sprite2D" parent="Probeta"]
-position = Vector2(-12, -44)
-texture = ExtResource("4_8oigj")
+position = Vector2(-12, -23)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 928, 464)
 
 [node name="probeta" type="Button" parent="Probeta"]
-offset_left = -120.0
-offset_top = -76.0
-offset_right = 94.0
-offset_bottom = 184.0
+offset_left = -104.0
+offset_top = -69.0
+offset_right = 80.0
+offset_bottom = 178.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ice" type="Node2D" parent="Probeta"]
 position = Vector2(58, 132)
@@ -214,26 +245,26 @@ scale = Vector2(2.64, 4.36)
 
 [node name="ice1" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(1.28746e-05, -4.81651)
+scale = Vector2(0.0316952, 0.0205818)
 texture = ExtResource("29_h466c")
 
 [node name="ice2" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(-4.21483, -15.7093)
+scale = Vector2(0.0316447, 0.0195779)
 texture = ExtResource("29_h466c")
 
 [node name="ice3" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(-12.8788, -25.6881)
+scale = Vector2(0.0338802, 0.0211302)
 texture = ExtResource("29_h466c")
 
 [node name="ice4" type="Sprite2D" parent="Probeta/ice"]
 visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(-10.04, -43.3994)
+scale = Vector2(0.0328833, 0.0204984)
 texture = ExtResource("29_h466c")
 
 [node name="fire" type="Node2D" parent="Probeta"]
@@ -242,20 +273,20 @@ scale = Vector2(2.64, 4.36)
 
 [node name="fire1" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(8.33334, -5.9633)
+scale = Vector2(0.0397638, 0.0241512)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire2" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(-3.32002, -16.5919)
+scale = Vector2(0.0343606, 0.0219131)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire3" type="Sprite2D" parent="Probeta/fire"]
 visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(-13.6364, -26.1468)
+scale = Vector2(0.034877, 0.0223939)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire4" type="Sprite2D" parent="Probeta/fire"]
@@ -265,21 +296,25 @@ scale = Vector2(0.0398496, 0.0270964)
 texture = ExtResource("30_hhyxh")
 
 [node name="Ice" type="Sprite2D" parent="."]
-position = Vector2(2634, 371)
-texture = ExtResource("5_3wela")
+position = Vector2(2591, 343)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_kgxuj")
 script = ExtResource("7_lg1b8")
 
 [node name="ice" type="Button" parent="Ice"]
-offset_left = -126.0
-offset_top = -114.0
-offset_right = 127.0
-offset_bottom = 113.0
+offset_left = -575.0
+offset_top = -505.0
+offset_right = 570.0
+offset_bottom = 620.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ProgressBar" type="ProgressBar" parent="Ice"]
-offset_left = -125.0
-offset_top = -163.0
-offset_right = 123.0
-offset_bottom = -136.0
+offset_left = -510.0
+offset_top = -700.0
+offset_right = -262.0
+offset_bottom = -673.0
+scale = Vector2(4, 4)
 
 [node name="Timer" type="Timer" parent="Ice"]
 wait_time = 0.5
@@ -306,15 +341,17 @@ wait_time = 0.5
 
 [node name="Fregadero" type="Sprite2D" parent="."]
 position = Vector2(2835, 517)
-scale = Vector2(1.46894, 1.41558)
-texture = ExtResource("7_v31oj")
+scale = Vector2(0.3, 0.29)
+texture = ExtResource("13_kgxuj")
 script = ExtResource("8_q1bm0")
 
 [node name="Button" type="Button" parent="Fregadero"]
-offset_left = -79.0
-offset_top = -76.0
-offset_right = 81.0
-offset_bottom = 78.0
+offset_left = -417.0
+offset_top = -369.0
+offset_right = 527.0
+offset_bottom = 379.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Centrifuga" type="Sprite2D" parent="."]
 position = Vector2(4068, 368)
@@ -341,63 +378,81 @@ script = ExtResource("9_ygk6k")
 
 [node name="Liquido3" type="Sprite2D" parent="Liquidos"]
 position = Vector2(1383, 379)
-texture = ExtResource("8_fvu15")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("18_kgxuj")
 
 [node name="liquido3" type="Button" parent="Liquidos/Liquido3"]
-offset_left = -70.0
-offset_top = -92.0
-offset_right = 66.0
-offset_bottom = 67.0
+offset_left = -165.0
+offset_top = -460.0
+offset_right = 135.0
+offset_bottom = 460.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Liquido2" type="Sprite2D" parent="Liquidos"]
-position = Vector2(1479, 384)
-texture = ExtResource("9_c1jlx")
+position = Vector2(1514, 348)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("19_55w5j")
 
 [node name="liquido2" type="Button" parent="Liquidos/Liquido2"]
-offset_left = -67.0
-offset_top = -91.0
-offset_right = 69.0
-offset_bottom = 89.0
+offset_left = -330.0
+offset_top = -555.0
+offset_right = 340.0
+offset_bottom = 560.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Liquido1" type="Sprite2D" parent="Liquidos"]
-position = Vector2(1385, 495)
-texture = ExtResource("10_ygk6k")
+position = Vector2(1429, 495)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("20_1biit")
 
 [node name="liquido1" type="Button" parent="Liquidos/Liquido1"]
-offset_left = -69.0
-offset_top = -92.0
-offset_right = 71.0
-offset_bottom = 93.0
+offset_left = -245.0
+offset_top = -425.0
+offset_right = 315.0
+offset_bottom = 430.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Liquido6" type="Sprite2D" parent="Liquidos"]
-position = Vector2(1920, 376)
-texture = ExtResource("11_vmmhc")
+position = Vector2(1892, 349)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("21_yaqag")
 
 [node name="liquido6" type="Button" parent="Liquidos/Liquido6"]
-offset_left = -69.0
-offset_top = -92.0
-offset_right = 69.0
-offset_bottom = 87.0
+offset_left = -310.0
+offset_top = -575.0
+offset_right = 290.0
+offset_bottom = 540.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Liquido5" type="Sprite2D" parent="Liquidos"]
 position = Vector2(2028, 415)
-texture = ExtResource("12_v31oj")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_5x1td")
 
 [node name="liquido5" type="Button" parent="Liquidos/Liquido5"]
-offset_left = -69.0
-offset_top = -89.0
-offset_right = 68.0
-offset_bottom = 91.0
+offset_left = -300.0
+offset_top = -425.0
+offset_right = 270.0
+offset_bottom = 430.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Liquido4" type="Sprite2D" parent="Liquidos"]
 position = Vector2(1945, 503)
-texture = ExtResource("13_q1bm0")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("23_we5ts")
 
 [node name="liquido4" type="Button" parent="Liquidos/Liquido4"]
-offset_left = -67.0
-offset_top = -89.0
-offset_right = 65.0
-offset_bottom = 90.0
+offset_left = -325.0
+offset_top = -545.0
+offset_right = 310.0
+offset_bottom = 550.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="Clientes" type="Node2D" parent="."]
 script = ExtResource("21_e2ryf")
@@ -640,6 +695,7 @@ position = Vector2(-7.5, -2.47525)
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente2" type="Sprite2D" parent="camara/Clientes"]
+visible = false
 position = Vector2(-53, -268)
 scale = Vector2(0.2, 0.202)
 texture = ExtResource("39_hr5gt")
@@ -651,6 +707,7 @@ script = ExtResource("34_efd47")
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente3" type="Sprite2D" parent="camara/Clientes"]
+visible = false
 position = Vector2(107, -268)
 scale = Vector2(0.2, 0.202)
 texture = ExtResource("40_b8n2b")
@@ -662,6 +719,7 @@ script = ExtResource("34_efd47")
 shape = SubResource("RectangleShape2D_3b7c1")
 
 [node name="Cliente4" type="Sprite2D" parent="camara/Clientes"]
+visible = false
 position = Vector2(230, -267)
 scale = Vector2(0.2, 0.202)
 texture = ExtResource("41_nlxeg")
@@ -723,13 +781,14 @@ label_settings = SubResource("LabelSettings_slht7")
 script = ExtResource("38_rkgp2")
 
 [node name="Inventario" type="Sprite2D" parent="camara"]
-position = Vector2(233, 654)
-scale = Vector2(2.27106, 6.5487)
-texture = ExtResource("15_vmmhc")
+position = Vector2(233, 544)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("45_nlxeg")
 
 [node name="Probeta1" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(-44.4726, -27.3337)
+position = Vector2(-505, -645)
+scale = Vector2(15, 24.7453)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta1"]
 position = Vector2(0.465202, -2.02232)
@@ -821,7 +880,8 @@ texture = ExtResource("30_hhyxh")
 
 [node name="Probeta2" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(42.2711, -28.708)
+position = Vector2(485, -650)
+scale = Vector2(15, 24.7453)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta2"]
 position = Vector2(0.786201, -1.4067)
@@ -913,7 +973,8 @@ texture = ExtResource("30_hhyxh")
 
 [node name="Probeta3" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(-47.5549, 8.55131)
+position = Vector2(-520, 285)
+scale = Vector2(15, 24.7453)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta3"]
 position = Vector2(0.786201, -0.342598)
@@ -1005,7 +1066,8 @@ texture = ExtResource("30_hhyxh")
 
 [node name="Probeta4" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(38.7485, 8.39861)
+position = Vector2(510, 275)
+scale = Vector2(15, 24.7453)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta4"]
 position = Vector2(0.60479, 0.115505)
@@ -1096,16 +1158,16 @@ scale = Vector2(0.0398496, 0.0270964)
 texture = ExtResource("30_hhyxh")
 
 [node name="Label" type="Label" parent="camara/Inventario"]
-offset_left = -44.0324
-offset_top = -63.9822
-offset_right = 12.9676
-offset_bottom = -40.9822
+offset_left = -460.0
+offset_top = -1410.0
+offset_right = 385.0
+offset_bottom = -1159.0
 text = "Inventario"
 label_settings = SubResource("LabelSettings_q1bm0")
 
 [node name="Botoninventario" type="Sprite2D" parent="camara/Inventario"]
-position = Vector2(38.7498, -56.1942)
-scale = Vector2(0.440325, 0.152703)
+position = Vector2(665, -1295)
+scale = Vector2(3, 3)
 texture = ExtResource("2_w666j")
 script = ExtResource("19_2sue4")
 
@@ -1117,8 +1179,8 @@ offset_bottom = 46.0
 
 [node name="Placa1" type="Sprite2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(-42.7113, -27.9445)
-scale = Vector2(0.218447, 0.104868)
+position = Vector2(-525, -650)
+scale = Vector2(2.29999, 1.687)
 texture = ExtResource("31_hhyxh")
 
 [node name="Placa1" type="Button" parent="camara/Inventario/Placa1"]
@@ -1129,8 +1191,8 @@ offset_bottom = 84.0
 
 [node name="Placa2" type="Sprite2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(41.3904, -28.2499)
-scale = Vector2(0.218447, 0.104868)
+position = Vector2(500, -635)
+scale = Vector2(2.29999, 1.687)
 texture = ExtResource("31_hhyxh")
 
 [node name="Placa2" type="Button" parent="camara/Inventario/Placa2"]
@@ -1141,8 +1203,8 @@ offset_bottom = 84.0
 
 [node name="Placa3" type="Sprite2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(-45.3533, 10.8418)
-scale = Vector2(0.218447, 0.104868)
+position = Vector2(-495, 320)
+scale = Vector2(2.30001, 1.687)
 texture = ExtResource("31_hhyxh")
 
 [node name="Placa3" type="Button" parent="camara/Inventario/Placa3"]
@@ -1153,11 +1215,446 @@ offset_bottom = 84.0
 
 [node name="Placa4" type="Sprite2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(40.95, 10.231)
-scale = Vector2(0.218447, 0.104868)
+position = Vector2(540, 340)
+scale = Vector2(2.30001, 1.687)
 texture = ExtResource("31_hhyxh")
 
 [node name="Placa4" type="Button" parent="camara/Inventario/Placa4"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Inventario2" type="Node2D" parent="camara"]
+visible = false
+position = Vector2(284, 546)
+
+[node name="fondo" type="Sprite2D" parent="camara/Inventario2"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("45_nlxeg")
+
+[node name="Probeta1" type="Node2D" parent="camara/Inventario2"]
+position = Vector2(-505, -645)
+
+[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(0.465202, -2.02232)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+
+[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(0.465202, -5.25322)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 195)
+
+[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(0.465202, -8.51422)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 130)
+
+[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(0.465202, -11.7752)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 65)
+
+[node name="probeta1" type="Button" parent="camara/Inventario2/Probeta1"]
+offset_left = -24.6581
+offset_top = -16.0337
+offset_right = 22.3419
+offset_bottom = 11.9663
+
+[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta1"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="Probeta2" type="Node2D" parent="camara/Inventario2"]
+position = Vector2(485, -650)
+
+[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(0.786201, -1.4067)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+
+[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(0.786201, -4.6376)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 195)
+
+[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(0.786201, -7.89859)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 130)
+
+[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(0.786201, -11.1596)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 65)
+
+[node name="probeta2" type="Button" parent="camara/Inventario2/Probeta2"]
+offset_left = -23.0
+offset_top = -15.0
+offset_right = 25.0
+offset_bottom = 12.0
+
+[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta2"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="Probeta3" type="Node2D" parent="camara/Inventario2"]
+position = Vector2(-520, 285)
+
+[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(0.786201, -0.342598)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+
+[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(0.786201, -3.5735)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 195)
+
+[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(0.786201, -6.8345)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 130)
+
+[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(0.786201, -10.0955)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 65)
+
+[node name="probeta3" type="Button" parent="camara/Inventario2/Probeta3"]
+offset_left = -23.3371
+offset_top = -14.354
+offset_right = 24.6629
+offset_bottom = 13.646
+
+[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta3"]
+position = Vector2(9.68708, 6.41352)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="Probeta4" type="Node2D" parent="camara/Inventario2"]
+position = Vector2(510, 275)
+
+[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(0.60479, 0.115505)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+
+[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(0.60479, -3.11539)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 195)
+
+[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(0.60479, -6.37639)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 130)
+
+[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(0.60479, -9.63739)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("4_8oigj")
+region_enabled = true
+region_rect = Rect2(0, 0, 213, 65)
+
+[node name="probeta4" type="Button" parent="camara/Inventario2/Probeta4"]
+offset_left = -19.5185
+offset_top = -13.8959
+offset_right = 22.4815
+offset_bottom = 14.1041
+
+[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(9.68708, 8.09323)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
+visible = false
+position = Vector2(-1.92966, -5.12634)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("29_h466c")
+
+[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
+visible = false
+position = Vector2(-10.7762, -19.8642)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("29_h466c")
+
+[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
+visible = false
+position = Vector2(-26.0472, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
+visible = false
+position = Vector2(-34.7295, -46.7767)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("29_h466c")
+
+[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta4"]
+position = Vector2(9.68708, 8.09323)
+scale = Vector2(0.806259, 0.444164)
+
+[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
+visible = false
+position = Vector2(19.2922, -5.12646)
+scale = Vector2(0.0456359, 0.0293472)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
+visible = false
+position = Vector2(10.4458, -19.8643)
+scale = Vector2(0.0397545, 0.0282597)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
+visible = false
+position = Vector2(-4.8252, -33.9612)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
+visible = false
+position = Vector2(-13.5076, -46.7766)
+scale = Vector2(0.0398496, 0.0270964)
+texture = ExtResource("30_hhyxh")
+
+[node name="Label" type="Label" parent="camara/Inventario2"]
+offset_left = -128.0
+offset_top = -293.0
+offset_right = 92.0
+offset_bottom = -226.0
+text = "Inventario"
+label_settings = SubResource("LabelSettings_q1bm0")
+
+[node name="Botoninventario" type="Sprite2D" parent="camara/Inventario2"]
+position = Vector2(665, -1295)
+texture = ExtResource("2_w666j")
+script = ExtResource("19_2sue4")
+
+[node name="Button" type="Button" parent="camara/Inventario2/Botoninventario"]
+offset_left = -53.0
+offset_top = -46.0
+offset_right = 62.0
+offset_bottom = 46.0
+
+[node name="Placa1" type="Sprite2D" parent="camara/Inventario2"]
+visible = false
+position = Vector2(-42.7113, -27.9445)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa1" type="Button" parent="camara/Inventario2/Placa1"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa2" type="Sprite2D" parent="camara/Inventario2"]
+visible = false
+position = Vector2(41.3904, -28.2499)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa2" type="Button" parent="camara/Inventario2/Placa2"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa3" type="Sprite2D" parent="camara/Inventario2"]
+visible = false
+position = Vector2(-45.3533, 10.8418)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa3" type="Button" parent="camara/Inventario2/Placa3"]
+offset_left = -153.0
+offset_top = -86.0
+offset_right = 145.0
+offset_bottom = 84.0
+
+[node name="Placa4" type="Sprite2D" parent="camara/Inventario2"]
+visible = false
+position = Vector2(40.95, 10.231)
+texture = ExtResource("31_hhyxh")
+
+[node name="Placa4" type="Button" parent="camara/Inventario2/Placa4"]
 offset_left = -153.0
 offset_top = -86.0
 offset_right = 145.0
@@ -1170,27 +1667,61 @@ visible = false
 wait_time = 180.0
 one_shot = true
 
+[connection signal="mouse_entered" from="Botones/boton1/Boton1" to="Botones/boton1/Boton1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton1/Boton1" to="Botones/boton1/Boton1" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton1/Boton1" to="Botones" method="_on_boton_1_pressed"]
+[connection signal="mouse_entered" from="Botones/boton2/boton2" to="Botones/boton2/boton2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton2/boton2" to="Botones/boton2/boton2" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton2/boton2" to="Botones" method="_on_boton_2_pressed"]
+[connection signal="mouse_entered" from="Botones/boton3/boton3" to="Botones/boton3/boton3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton3/boton3" to="Botones/boton3/boton3" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton3/boton3" to="Botones" method="_on_boton_3_pressed"]
+[connection signal="mouse_entered" from="Botones/boton4/boton4" to="Botones/boton4/boton4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton4/boton4" to="Botones/boton4/boton4" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton4/boton4" to="Botones" method="_on_boton_4_pressed"]
+[connection signal="mouse_entered" from="Botones/boton5/boton5" to="Botones/boton5/boton5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton5/boton5" to="Botones/boton5/boton5" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton5/boton5" to="Botones" method="_on_boton_5_pressed"]
+[connection signal="mouse_entered" from="Botones/boton6/boton6" to="Botones/boton6/boton6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton6/boton6" to="Botones/boton6/boton6" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton6/boton6" to="Botones" method="_on_boton_6_pressed"]
+[connection signal="mouse_entered" from="Botones/boton7/boton7" to="Botones/boton7/boton7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton7/boton7" to="Botones/boton7/boton7" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton7/boton7" to="Botones" method="_on_boton_7_pressed"]
+[connection signal="mouse_entered" from="Botones/boton8/boton8" to="Botones/boton8/boton8" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Botones/boton8/boton8" to="Botones/boton8/boton8" method="_on_mouse_exited"]
 [connection signal="pressed" from="Botones/boton8/boton8" to="Botones" method="_on_boton_8_pressed"]
+[connection signal="mouse_entered" from="Probeta/probeta" to="Probeta/probeta" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Probeta/probeta" to="Probeta/probeta" method="_on_mouse_exited"]
 [connection signal="pressed" from="Probeta/probeta" to="Liquidos" method="_on_probeta_pressed"]
+[connection signal="mouse_entered" from="Ice/ice" to="Ice/ice" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Ice/ice" to="Ice/ice" method="_on_mouse_exited"]
 [connection signal="pressed" from="Ice/ice" to="Ice" method="_on_ice_pressed"]
 [connection signal="timeout" from="Ice/Timer" to="Ice" method="_on_timer_timeout"]
 [connection signal="pressed" from="Fire/fire" to="Fire" method="_on_fire_pressed"]
 [connection signal="timeout" from="Fire/Timer" to="Fire" method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="Fregadero/Button" to="Fregadero/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Fregadero/Button" to="Fregadero/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Fregadero/Button" to="Fregadero" method="_on_button_pressed"]
 [connection signal="pressed" from="Centrifuga/centrifugadora" to="Centrifuga" method="_on_centrifugadora_pressed"]
 [connection signal="timeout" from="Centrifuga/Timer" to="Centrifuga" method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="Liquidos/Liquido3/liquido3" to="Liquidos/Liquido3/liquido3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido3/liquido3" to="Liquidos/Liquido3/liquido3" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido3/liquido3" to="Liquidos" method="_on_liquido_3_pressed"]
+[connection signal="mouse_entered" from="Liquidos/Liquido2/liquido2" to="Liquidos/Liquido2/liquido2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido2/liquido2" to="Liquidos/Liquido2/liquido2" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido2/liquido2" to="Liquidos" method="_on_liquido_2_pressed"]
+[connection signal="mouse_entered" from="Liquidos/Liquido1/liquido1" to="Liquidos/Liquido1/liquido1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido1/liquido1" to="Liquidos/Liquido1/liquido1" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido1/liquido1" to="Liquidos" method="_on_liquido_1_pressed"]
+[connection signal="mouse_entered" from="Liquidos/Liquido6/liquido6" to="Liquidos/Liquido6/liquido6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido6/liquido6" to="Liquidos/Liquido6/liquido6" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido6/liquido6" to="Liquidos" method="_on_liquido_6_pressed"]
+[connection signal="mouse_entered" from="Liquidos/Liquido5/liquido5" to="Liquidos/Liquido5/liquido5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido5/liquido5" to="Liquidos/Liquido5/liquido5" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido5/liquido5" to="Liquidos" method="_on_liquido_5_pressed"]
+[connection signal="mouse_entered" from="Liquidos/Liquido4/liquido4" to="Liquidos/Liquido4/liquido4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Liquidos/Liquido4/liquido4" to="Liquidos/Liquido4/liquido4" method="_on_mouse_exited"]
 [connection signal="pressed" from="Liquidos/Liquido4/liquido4" to="Liquidos" method="_on_liquido_4_pressed"]
 [connection signal="timeout" from="Clientes/Cliente1/Timer" to="Clientes" method="_on_timer_timeout"]
 [connection signal="input_event" from="Clientes/Cliente1/Area2D" to="Clientes/Cliente1" method="_on_area_2d_input_event"]
@@ -1225,4 +1756,13 @@ one_shot = true
 [connection signal="pressed" from="camara/Inventario/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Probeta4/probeta4" to="." method="_on_probeta_4_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Botoninventario/Button" to="camara/Inventario2/Botoninventario" method="_on_button_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Placa1/Placa1" to="." method="_on_placa_1_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
+[connection signal="pressed" from="camara/Inventario2/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
 [connection signal="timeout" from="Timer" to="camara/Label2" method="_on_timer_timeout"]
