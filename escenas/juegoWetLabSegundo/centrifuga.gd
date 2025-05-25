@@ -21,7 +21,7 @@ func _on_centrifugadora_pressed() -> void:
 		actualizar.actualizarSelected()
 		actualizar.actualizarInventario()
 		GlobalWetGame.centrifuga = null
-		self.texture = preload("res://recursos/centrifugaAbierta.png")
+		self.texture = preload("res://escenas/juegoWetLabSegundo/sprites/centrifugaAbierta.png")
 		$ProgressBar.value = 0
 		print(GlobalWetGame.centrifuga)
 		print(GlobalWetGame.selected)
@@ -34,7 +34,7 @@ func _on_centrifugadora_pressed() -> void:
 		print("se actualizan selected e inventario")
 		actualizar.actualizarSelected()
 		actualizar.actualizarInventario()
-		self.texture = preload("res://recursos/centrifugaCerrada.png")
+		self.texture = preload("res://escenas/juegoWetLabSegundo/sprites/centrifugaCerrada.png")
 		print(GlobalWetGame.centrifuga)
 		print(GlobalWetGame.selected)
 		completed = false

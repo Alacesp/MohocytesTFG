@@ -1,23 +1,22 @@
-[gd_scene load_steps=59 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=58 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_c1jlx"]
 [ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_w666j"]
 [ext_resource type="Script" uid="uid://d01okbo2qmkmo" path="res://escenas/juegoWetLabSegundo/movimiento.gd" id="3_miokp"]
-[ext_resource type="Texture2D" uid="uid://dosidtl35ot4j" path="res://recursos/probeta.png" id="4_8oigj"]
 [ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="4_hr5gt"]
 [ext_resource type="Script" uid="uid://b3yoktoq2fsmr" path="res://escenas/juegoWetLabSegundo/boton.gd" id="5_b8n2b"]
 [ext_resource type="Texture2D" uid="uid://botw604kj2r4d" path="res://escenas/juegoWetLabSegundo/sprites/probeta.png" id="6_kgxuj"]
-[ext_resource type="Texture2D" uid="uid://6l6p7nme8lth" path="res://recursos/fire.png" id="6_ljjqv"]
-[ext_resource type="Texture2D" uid="uid://qg8s74lnfekm" path="res://recursos/centrifugaAbierta.png" id="7_ky42u"]
 [ext_resource type="Script" uid="uid://bva54ysvuohiy" path="res://escenas/juegoWetLabSegundo/ice.gd" id="7_lg1b8"]
 [ext_resource type="Script" uid="uid://bnanng024g0d8" path="res://escenas/juegoWetLabSegundo/fregadero.gd" id="8_q1bm0"]
 [ext_resource type="Texture2D" uid="uid://d14i1t1co1lxx" path="res://escenas/juegoWetLabSegundo/sprites/nevera.png" id="9_kgxuj"]
 [ext_resource type="Script" uid="uid://ktpyslos1v7x" path="res://escenas/juegoWetLabSegundo/fire.gd" id="9_q8giw"]
 [ext_resource type="Script" uid="uid://dv363aabwdbeu" path="res://escenas/juegoWetLabSegundo/liquidos.gd" id="9_ygk6k"]
+[ext_resource type="Texture2D" uid="uid://bbokojb6sy78t" path="res://escenas/juegoWetLabSegundo/sprites/mecheroApagado.png" id="11_kgxuj"]
 [ext_resource type="Script" uid="uid://bmjb001y3rali" path="res://escenas/juegoWetLabSegundo/centrifuga.gd" id="13_jp6cw"]
 [ext_resource type="Texture2D" uid="uid://camqm1adjkiin" path="res://escenas/juegoWetLabSegundo/sprites/fregadero.png" id="13_kgxuj"]
+[ext_resource type="Texture2D" uid="uid://145p3c4fxrqo" path="res://escenas/juegoWetLabSegundo/sprites/centrifugaAbierta.png" id="15_kgxuj"]
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="15_vmmhc"]
 [ext_resource type="Texture2D" uid="uid://b18jke3j5uqa7" path="res://escenas/juegoWetLabSegundo/sprites/rosa.png" id="18_kgxuj"]
 [ext_resource type="Script" uid="uid://b6b1sgnp70ypu" path="res://escenas/juegoWetLabSegundo/botoninventario.gd" id="19_2sue4"]
@@ -32,13 +31,13 @@
 [ext_resource type="Texture2D" uid="uid://4wi2xrqvwuyt" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo2.png" id="25_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://ca78yy8lysllb" path="res://escenas/juegoWetLabSegundo/sprites/jwlContenta.png" id="26_ugl4q"]
 [ext_resource type="Texture2D" uid="uid://kkdu1g4v7on1" path="res://escenas/juegoWetLabSegundo/sprites/e1Contento.png" id="28_1bnyh"]
-[ext_resource type="Texture2D" uid="uid://ve8bc17avcj1" path="res://recursos/centrifugaSymbol.png" id="28_hpue7"]
 [ext_resource type="Texture2D" uid="uid://b3qyegm355by3" path="res://recursos/copoDeNieve.png" id="29_h466c"]
 [ext_resource type="PackedScene" uid="uid://bshe6637hi1oy" path="res://escenas/Cuadro_Texto.tscn" id="29_s27qq"]
 [ext_resource type="Texture2D" uid="uid://c4t2pncb1354k" path="res://escenas/juegoWetLabSegundo/sprites/e2Contento.png" id="29_x7dpr"]
 [ext_resource type="Texture2D" uid="uid://l6ve31dokgey" path="res://recursos/fuego.png" id="30_hhyxh"]
 [ext_resource type="Texture2D" uid="uid://cjptoohj1lu7m" path="res://escenas/juegoWetLabSegundo/sprites/e3Contento.png" id="30_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://y5k1y28tn5ph" path="res://recursos/placa.png" id="31_hhyxh"]
+[ext_resource type="Texture2D" uid="uid://b6ckk4wsrw0o5" path="res://escenas/juegoWetLabSegundo/sprites/simbolocentrifuga.png" id="32_nlxeg"]
 [ext_resource type="Script" uid="uid://cfxnwdp1bkgap" path="res://escenas/juegoWetLabSegundo/clientePreview.gd" id="34_efd47"]
 [ext_resource type="Texture2D" uid="uid://d3un14da2hduw" path="res://escenas/juegoWetLabSegundo/sprites/jwlContentaSymbol.png" id="37_pfmvf"]
 [ext_resource type="Script" uid="uid://bvsl5722tyysk" path="res://escenas/juegoWetLabSegundo/countdown.gd" id="38_rkgp2"]
@@ -320,27 +319,31 @@ scale = Vector2(4, 4)
 wait_time = 0.5
 
 [node name="Fire" type="Sprite2D" parent="."]
-position = Vector2(3067, 389)
-texture = ExtResource("6_ljjqv")
+position = Vector2(3190, 347)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_kgxuj")
 script = ExtResource("9_q8giw")
 
 [node name="fire" type="Button" parent="Fire"]
-offset_left = -126.0
-offset_top = -111.0
-offset_right = 124.0
-offset_bottom = 113.0
+offset_left = -345.0
+offset_top = -120.0
+offset_right = 290.0
+offset_bottom = 770.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ProgressBar" type="ProgressBar" parent="Fire"]
-offset_left = -128.0
-offset_top = -161.0
-offset_right = 120.0
-offset_bottom = -134.0
+offset_left = -509.999
+offset_top = -710.0
+offset_right = -261.999
+offset_bottom = -683.0
+scale = Vector2(4, 4)
 
 [node name="Timer" type="Timer" parent="Fire"]
 wait_time = 0.5
 
 [node name="Fregadero" type="Sprite2D" parent="."]
-position = Vector2(2835, 517)
+position = Vector2(2897, 517)
 scale = Vector2(0.3, 0.29)
 texture = ExtResource("13_kgxuj")
 script = ExtResource("8_q1bm0")
@@ -354,21 +357,25 @@ flat = true
 script = ExtResource("5_b8n2b")
 
 [node name="Centrifuga" type="Sprite2D" parent="."]
-position = Vector2(4068, 368)
-texture = ExtResource("7_ky42u")
+position = Vector2(4070, 317)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("15_kgxuj")
 script = ExtResource("13_jp6cw")
 
 [node name="centrifugadora" type="Button" parent="Centrifuga"]
-offset_left = -277.0
-offset_top = -165.0
-offset_right = 265.0
-offset_bottom = 166.0
+offset_left = -995.0
+offset_top = -635.0
+offset_right = 1010.0
+offset_bottom = 1390.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ProgressBar" type="ProgressBar" parent="Centrifuga"]
-offset_left = -280.0
-offset_top = -221.0
-offset_right = 283.0
-offset_bottom = -194.0
+offset_left = -1095.0
+offset_top = -760.0
+offset_right = -532.0
+offset_bottom = -733.0
+scale = Vector2(4, 4)
 
 [node name="Timer" type="Timer" parent="Centrifuga"]
 wait_time = 0.5
@@ -542,33 +549,33 @@ shape = SubResource("RectangleShape2D_hhyxh")
 
 [node name="Pedido" type="Node2D" parent="Clientes"]
 visible = false
-position = Vector2(202, 71)
-scale = Vector2(0.7, 0.7)
+position = Vector2(327, 97)
+scale = Vector2(0.5, 0.5)
 
 [node name="Pedido1" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(327, 105)
-scale = Vector2(0.492537, 0.44382)
+position = Vector2(66, 114)
+scale = Vector2(0.14, 0.14)
 
 [node name="Pedido2" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(407, 110)
-scale = Vector2(0.492537, 0.426966)
+position = Vector2(254, 112)
+scale = Vector2(0.14, 0.14)
 
 [node name="Pedido3" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(509, 114)
-scale = Vector2(0.239474, 0.252066)
+position = Vector2(470, 114)
+scale = Vector2(0.253397, 0.254124)
 
 [node name="Pedido4" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(593, 113)
-scale = Vector2(0.492537, 0.44382)
-
-[node name="Centrifuga" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(822, 114)
-scale = Vector2(0.307163, 0.328859)
-texture = ExtResource("28_hpue7")
+position = Vector2(630, 120)
+scale = Vector2(0.13, 0.13)
 
 [node name="Pedido5" type="Sprite2D" parent="Clientes/Pedido"]
-position = Vector2(686, 111)
-scale = Vector2(0.492537, 0.44382)
+position = Vector2(818, 112)
+scale = Vector2(0.13, 0.13)
+
+[node name="Centrifuga" type="Sprite2D" parent="Clientes/Pedido"]
+position = Vector2(1024, 114)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("32_nlxeg")
 
 [node name="CuadroTexto" parent="." instance=ExtResource("29_s27qq")]
 visible = false
@@ -587,29 +594,29 @@ position = Vector2(34.006, 18.5826)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
 position = Vector2(-30.8707, -19.8641)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
+scale = Vector2(0.1, 0.05)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -26.9127)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
+position = Vector2(-30.8707, -29.4768)
+scale = Vector2(0.1, 0.05)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 927, 856)
 
 [node name="Probeta3" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -34.602)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
+position = Vector2(-30.8707, -33.9615)
+scale = Vector2(0.1, 0.05)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 927, 672)
 
 [node name="Probeta4" type="Sprite2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
-position = Vector2(-30.8707, -42.2913)
-scale = Vector2(0.459765, 0.231069)
-texture = ExtResource("4_8oigj")
+position = Vector2(-30.8707, -39.7284)
+scale = Vector2(0.1, 0.05)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 927, 440)
 
 [node name="ice" type="Node2D" parent="camara/Seleccionado/ProbetaSeleccionada"]
 
@@ -744,32 +751,33 @@ texture = ExtResource("43_hr5gt")
 
 [node name="Pedido" type="Node2D" parent="camara/Clientes"]
 visible = false
-position = Vector2(-531, -253)
+position = Vector2(-253, -228)
+scale = Vector2(0.5, 0.5)
 
 [node name="Pedido1" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(327, 105)
-scale = Vector2(0.492537, 0.44382)
+position = Vector2(66, 114)
+scale = Vector2(0.14, 0.14)
 
 [node name="Pedido2" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(407, 110)
-scale = Vector2(0.492537, 0.426966)
+position = Vector2(254, 112)
+scale = Vector2(0.14, 0.14)
 
 [node name="Pedido3" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(502, 113)
+position = Vector2(470, 114)
 scale = Vector2(0.253397, 0.254124)
 
-[node name="Centrifuga" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(822, 114)
-scale = Vector2(0.307163, 0.328859)
-texture = ExtResource("28_hpue7")
-
 [node name="Pedido4" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(611, 108)
-scale = Vector2(0.492537, 0.44382)
+position = Vector2(630, 120)
+scale = Vector2(0.13, 0.13)
 
 [node name="Pedido5" type="Sprite2D" parent="camara/Clientes/Pedido"]
-position = Vector2(705, 106)
-scale = Vector2(0.492537, 0.44382)
+position = Vector2(818, 112)
+scale = Vector2(0.13, 0.13)
+
+[node name="Centrifuga" type="Sprite2D" parent="camara/Clientes/Pedido"]
+position = Vector2(1024, 114)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("32_nlxeg")
 
 [node name="Label2" type="Label" parent="camara"]
 offset_left = 380.0
@@ -788,66 +796,67 @@ texture = ExtResource("45_nlxeg")
 [node name="Probeta1" type="Node2D" parent="camara/Inventario"]
 visible = false
 position = Vector2(-505, -645)
-scale = Vector2(15, 24.7453)
+scale = Vector2(1, 1.65)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta1"]
-position = Vector2(0.465202, -2.02232)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -2.02246)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="camara/Inventario/Probeta1"]
-position = Vector2(0.465202, -5.25322)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -56.5679)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 927, 880)
 
 [node name="Probeta3" type="Sprite2D" parent="camara/Inventario/Probeta1"]
-position = Vector2(0.465202, -8.51422)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -89.9004)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 927, 664)
 
 [node name="Probeta4" type="Sprite2D" parent="camara/Inventario/Probeta1"]
-position = Vector2(0.465202, -11.7752)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -117.174)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 927, 488)
 
 [node name="probeta1" type="Button" parent="camara/Inventario/Probeta1"]
-offset_left = -24.6581
-offset_top = -16.0337
-offset_right = 22.3419
-offset_bottom = 11.9663
+offset_left = -300.0
+offset_top = -194.0
+offset_right = 300.0
+offset_bottom = 185.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ice" type="Node2D" parent="camara/Inventario/Probeta1"]
 position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
 
 [node name="ice1" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(215.313, 69.3441)
+scale = Vector2(0.2, 0.126)
 texture = ExtResource("29_h466c")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(165.313, -0.352926)
+scale = Vector2(0.2, 0.14)
 texture = ExtResource("29_h466c")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(110.313, -57.9286)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta1/ice"]
 visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(90.3129, -170.05)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta1"]
@@ -856,91 +865,92 @@ scale = Vector2(0.806259, 0.444164)
 
 [node name="fire1" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(384.88, 156.123)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(329.067, -0.794317)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(254.649, -130.422)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta1/fire"]
 visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(236.044, -376.031)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="Probeta2" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(485, -650)
-scale = Vector2(15, 24.7453)
+position = Vector2(475, -665)
+scale = Vector2(1, 1.65)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta2"]
-position = Vector2(0.786201, -1.4067)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -2.02246)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="camara/Inventario/Probeta2"]
-position = Vector2(0.786201, -4.6376)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -56.5679)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 927, 880)
 
 [node name="Probeta3" type="Sprite2D" parent="camara/Inventario/Probeta2"]
-position = Vector2(0.786201, -7.89859)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -89.9004)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 927, 664)
 
 [node name="Probeta4" type="Sprite2D" parent="camara/Inventario/Probeta2"]
-position = Vector2(0.786201, -11.1596)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -117.174)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 927, 488)
 
 [node name="probeta2" type="Button" parent="camara/Inventario/Probeta2"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 25.0
-offset_bottom = 12.0
+offset_left = -300.0
+offset_top = -194.0
+offset_right = 300.0
+offset_bottom = 185.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ice" type="Node2D" parent="camara/Inventario/Probeta2"]
 position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
 
 [node name="ice1" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(215.313, 69.3441)
+scale = Vector2(0.2, 0.126)
 texture = ExtResource("29_h466c")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(165.313, -0.352926)
+scale = Vector2(0.2, 0.14)
 texture = ExtResource("29_h466c")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(110.313, -57.9286)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta2/ice"]
 visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(90.3129, -170.05)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta2"]
@@ -949,91 +959,92 @@ scale = Vector2(0.806259, 0.444164)
 
 [node name="fire1" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(384.88, 156.123)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(329.067, -0.794317)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(254.649, -130.422)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta2/fire"]
 visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(236.044, -376.031)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="Probeta3" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(-520, 285)
-scale = Vector2(15, 24.7453)
+position = Vector2(-525, 305)
+scale = Vector2(1, 1.65)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta3"]
-position = Vector2(0.786201, -0.342598)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -2.02246)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="camara/Inventario/Probeta3"]
-position = Vector2(0.786201, -3.5735)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -56.5679)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 927, 880)
 
 [node name="Probeta3" type="Sprite2D" parent="camara/Inventario/Probeta3"]
-position = Vector2(0.786201, -6.8345)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -89.9004)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 927, 664)
 
 [node name="Probeta4" type="Sprite2D" parent="camara/Inventario/Probeta3"]
-position = Vector2(0.786201, -10.0955)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -117.174)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 927, 488)
 
 [node name="probeta3" type="Button" parent="camara/Inventario/Probeta3"]
-offset_left = -23.3371
-offset_top = -14.354
-offset_right = 24.6629
-offset_bottom = 13.646
+offset_left = -300.0
+offset_top = -194.0
+offset_right = 300.0
+offset_bottom = 185.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ice" type="Node2D" parent="camara/Inventario/Probeta3"]
 position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
 
 [node name="ice1" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(215.313, 69.3441)
+scale = Vector2(0.2, 0.126)
 texture = ExtResource("29_h466c")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(165.313, -0.352926)
+scale = Vector2(0.2, 0.14)
 texture = ExtResource("29_h466c")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(110.313, -57.9286)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta3/ice"]
 visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(90.3129, -170.05)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta3"]
@@ -1042,119 +1053,120 @@ scale = Vector2(0.806259, 0.444164)
 
 [node name="fire1" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(384.88, 156.123)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(329.067, -0.794317)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(254.649, -130.422)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta3/fire"]
 visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(236.044, -376.031)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="Probeta4" type="Node2D" parent="camara/Inventario"]
 visible = false
-position = Vector2(510, 275)
-scale = Vector2(15, 24.7453)
+position = Vector2(480, 315)
+scale = Vector2(1, 1.65)
 
 [node name="Probeta1" type="Sprite2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(0.60479, 0.115505)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -2.02246)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 
 [node name="Probeta2" type="Sprite2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(0.60479, -3.11539)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -56.5679)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
+region_rect = Rect2(0, 0, 927, 880)
 
 [node name="Probeta3" type="Sprite2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(0.60479, -6.37639)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -89.9004)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
+region_rect = Rect2(0, 0, 927, 664)
 
 [node name="Probeta4" type="Sprite2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(0.60479, -9.63739)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
+position = Vector2(0.465088, -117.174)
+scale = Vector2(0.6, 0.3)
+texture = ExtResource("6_kgxuj")
 region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
+region_rect = Rect2(0, 0, 927, 488)
 
 [node name="probeta4" type="Button" parent="camara/Inventario/Probeta4"]
-offset_left = -19.5185
-offset_top = -13.8959
-offset_right = 22.4815
-offset_bottom = 14.1041
+offset_left = -300.0
+offset_top = -194.0
+offset_right = 300.0
+offset_bottom = 185.0
+flat = true
+script = ExtResource("5_b8n2b")
 
 [node name="ice" type="Node2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(9.68708, 8.09323)
-scale = Vector2(0.806259, 0.444164)
+position = Vector2(9.68708, 6.41352)
 
 [node name="ice1" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(215.313, 69.3441)
+scale = Vector2(0.2, 0.126)
 texture = ExtResource("29_h466c")
 
 [node name="ice2" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(165.313, -0.352926)
+scale = Vector2(0.2, 0.14)
 texture = ExtResource("29_h466c")
 
 [node name="ice3" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(110.313, -57.9286)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="ice4" type="Sprite2D" parent="camara/Inventario/Probeta4/ice"]
 visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(90.3129, -170.05)
+scale = Vector2(0.2, 0.135)
 texture = ExtResource("29_h466c")
 
 [node name="fire" type="Node2D" parent="camara/Inventario/Probeta4"]
-position = Vector2(9.68708, 8.09323)
+position = Vector2(9.68708, 6.41352)
 scale = Vector2(0.806259, 0.444164)
 
 [node name="fire1" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
+position = Vector2(384.88, 156.123)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire2" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
+position = Vector2(329.067, -0.794317)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire3" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(254.649, -130.422)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="fire4" type="Sprite2D" parent="camara/Inventario/Probeta4/fire"]
 visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
+position = Vector2(236.044, -376.031)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("30_hhyxh")
 
 [node name="Label" type="Label" parent="camara/Inventario"]
@@ -1225,441 +1237,6 @@ offset_top = -86.0
 offset_right = 145.0
 offset_bottom = 84.0
 
-[node name="Inventario2" type="Node2D" parent="camara"]
-visible = false
-position = Vector2(284, 546)
-
-[node name="fondo" type="Sprite2D" parent="camara/Inventario2"]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("45_nlxeg")
-
-[node name="Probeta1" type="Node2D" parent="camara/Inventario2"]
-position = Vector2(-505, -645)
-
-[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(0.465202, -2.02232)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-
-[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(0.465202, -5.25322)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
-
-[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(0.465202, -8.51422)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
-
-[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(0.465202, -11.7752)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
-
-[node name="probeta1" type="Button" parent="camara/Inventario2/Probeta1"]
-offset_left = -24.6581
-offset_top = -16.0337
-offset_right = 22.3419
-offset_bottom = 11.9663
-
-[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
-visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
-
-[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
-visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
-
-[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
-visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta1/ice"]
-visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta1"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
-visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
-visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
-visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta1/fire"]
-visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="Probeta2" type="Node2D" parent="camara/Inventario2"]
-position = Vector2(485, -650)
-
-[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(0.786201, -1.4067)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-
-[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(0.786201, -4.6376)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
-
-[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(0.786201, -7.89859)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
-
-[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(0.786201, -11.1596)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
-
-[node name="probeta2" type="Button" parent="camara/Inventario2/Probeta2"]
-offset_left = -23.0
-offset_top = -15.0
-offset_right = 25.0
-offset_bottom = 12.0
-
-[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
-visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
-
-[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
-visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
-
-[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
-visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta2/ice"]
-visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta2"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
-visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
-visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
-visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta2/fire"]
-visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="Probeta3" type="Node2D" parent="camara/Inventario2"]
-position = Vector2(-520, 285)
-
-[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(0.786201, -0.342598)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-
-[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(0.786201, -3.5735)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
-
-[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(0.786201, -6.8345)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
-
-[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(0.786201, -10.0955)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
-
-[node name="probeta3" type="Button" parent="camara/Inventario2/Probeta3"]
-offset_left = -23.3371
-offset_top = -14.354
-offset_right = 24.6629
-offset_bottom = 13.646
-
-[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
-visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
-
-[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
-visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
-
-[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
-visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta3/ice"]
-visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta3"]
-position = Vector2(9.68708, 6.41352)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
-visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
-visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
-visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta3/fire"]
-visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="Probeta4" type="Node2D" parent="camara/Inventario2"]
-position = Vector2(510, 275)
-
-[node name="Probeta1" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(0.60479, 0.115505)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-
-[node name="Probeta2" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(0.60479, -3.11539)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 195)
-
-[node name="Probeta3" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(0.60479, -6.37639)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 130)
-
-[node name="Probeta4" type="Sprite2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(0.60479, -9.63739)
-scale = Vector2(0.2, 0.1)
-texture = ExtResource("4_8oigj")
-region_enabled = true
-region_rect = Rect2(0, 0, 213, 65)
-
-[node name="probeta4" type="Button" parent="camara/Inventario2/Probeta4"]
-offset_left = -19.5185
-offset_top = -13.8959
-offset_right = 22.4815
-offset_bottom = 14.1041
-
-[node name="ice" type="Node2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(9.68708, 8.09323)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="ice1" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
-visible = false
-position = Vector2(-1.92966, -5.12634)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("29_h466c")
-
-[node name="ice2" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
-visible = false
-position = Vector2(-10.7762, -19.8642)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("29_h466c")
-
-[node name="ice3" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
-visible = false
-position = Vector2(-26.0472, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="ice4" type="Sprite2D" parent="camara/Inventario2/Probeta4/ice"]
-visible = false
-position = Vector2(-34.7295, -46.7767)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("29_h466c")
-
-[node name="fire" type="Node2D" parent="camara/Inventario2/Probeta4"]
-position = Vector2(9.68708, 8.09323)
-scale = Vector2(0.806259, 0.444164)
-
-[node name="fire1" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
-visible = false
-position = Vector2(19.2922, -5.12646)
-scale = Vector2(0.0456359, 0.0293472)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire2" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
-visible = false
-position = Vector2(10.4458, -19.8643)
-scale = Vector2(0.0397545, 0.0282597)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire3" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
-visible = false
-position = Vector2(-4.8252, -33.9612)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="fire4" type="Sprite2D" parent="camara/Inventario2/Probeta4/fire"]
-visible = false
-position = Vector2(-13.5076, -46.7766)
-scale = Vector2(0.0398496, 0.0270964)
-texture = ExtResource("30_hhyxh")
-
-[node name="Label" type="Label" parent="camara/Inventario2"]
-offset_left = -128.0
-offset_top = -293.0
-offset_right = 92.0
-offset_bottom = -226.0
-text = "Inventario"
-label_settings = SubResource("LabelSettings_q1bm0")
-
-[node name="Botoninventario" type="Sprite2D" parent="camara/Inventario2"]
-position = Vector2(665, -1295)
-texture = ExtResource("2_w666j")
-script = ExtResource("19_2sue4")
-
-[node name="Button" type="Button" parent="camara/Inventario2/Botoninventario"]
-offset_left = -53.0
-offset_top = -46.0
-offset_right = 62.0
-offset_bottom = 46.0
-
-[node name="Placa1" type="Sprite2D" parent="camara/Inventario2"]
-visible = false
-position = Vector2(-42.7113, -27.9445)
-texture = ExtResource("31_hhyxh")
-
-[node name="Placa1" type="Button" parent="camara/Inventario2/Placa1"]
-offset_left = -153.0
-offset_top = -86.0
-offset_right = 145.0
-offset_bottom = 84.0
-
-[node name="Placa2" type="Sprite2D" parent="camara/Inventario2"]
-visible = false
-position = Vector2(41.3904, -28.2499)
-texture = ExtResource("31_hhyxh")
-
-[node name="Placa2" type="Button" parent="camara/Inventario2/Placa2"]
-offset_left = -153.0
-offset_top = -86.0
-offset_right = 145.0
-offset_bottom = 84.0
-
-[node name="Placa3" type="Sprite2D" parent="camara/Inventario2"]
-visible = false
-position = Vector2(-45.3533, 10.8418)
-texture = ExtResource("31_hhyxh")
-
-[node name="Placa3" type="Button" parent="camara/Inventario2/Placa3"]
-offset_left = -153.0
-offset_top = -86.0
-offset_right = 145.0
-offset_bottom = 84.0
-
-[node name="Placa4" type="Sprite2D" parent="camara/Inventario2"]
-visible = false
-position = Vector2(40.95, 10.231)
-texture = ExtResource("31_hhyxh")
-
-[node name="Placa4" type="Button" parent="camara/Inventario2/Placa4"]
-offset_left = -153.0
-offset_top = -86.0
-offset_right = 145.0
-offset_bottom = 84.0
-
 [node name="Pausa" parent="camara" instance=ExtResource("39_slht7")]
 visible = false
 
@@ -1698,11 +1275,15 @@ one_shot = true
 [connection signal="mouse_exited" from="Ice/ice" to="Ice/ice" method="_on_mouse_exited"]
 [connection signal="pressed" from="Ice/ice" to="Ice" method="_on_ice_pressed"]
 [connection signal="timeout" from="Ice/Timer" to="Ice" method="_on_timer_timeout"]
+[connection signal="mouse_entered" from="Fire/fire" to="Fire/fire" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Fire/fire" to="Fire/fire" method="_on_mouse_exited"]
 [connection signal="pressed" from="Fire/fire" to="Fire" method="_on_fire_pressed"]
 [connection signal="timeout" from="Fire/Timer" to="Fire" method="_on_timer_timeout"]
 [connection signal="mouse_entered" from="Fregadero/Button" to="Fregadero/Button" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Fregadero/Button" to="Fregadero/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Fregadero/Button" to="Fregadero" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Centrifuga/centrifugadora" to="Centrifuga/centrifugadora" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Centrifuga/centrifugadora" to="Centrifuga/centrifugadora" method="_on_mouse_exited"]
 [connection signal="pressed" from="Centrifuga/centrifugadora" to="Centrifuga" method="_on_centrifugadora_pressed"]
 [connection signal="timeout" from="Centrifuga/Timer" to="Centrifuga" method="_on_timer_timeout"]
 [connection signal="mouse_entered" from="Liquidos/Liquido3/liquido3" to="Liquidos/Liquido3/liquido3" method="_on_mouse_entered"]
@@ -1747,22 +1328,21 @@ one_shot = true
 [connection signal="mouse_exited" from="camara/Clientes/Cliente3/Area2D3" to="camara/Clientes/Cliente3" method="_on_area_2d_3_mouse_exited"]
 [connection signal="mouse_entered" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_entered"]
 [connection signal="mouse_exited" from="camara/Clientes/Cliente4/Area2D4" to="camara/Clientes/Cliente4" method="_on_area_2d_4_mouse_exited"]
+[connection signal="mouse_entered" from="camara/Inventario/Probeta1/probeta1" to="camara/Inventario/Probeta1/probeta1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Inventario/Probeta1/probeta1" to="camara/Inventario/Probeta1/probeta1" method="_on_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
+[connection signal="mouse_entered" from="camara/Inventario/Probeta2/probeta2" to="camara/Inventario/Probeta2/probeta2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Inventario/Probeta2/probeta2" to="camara/Inventario/Probeta2/probeta2" method="_on_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
+[connection signal="mouse_entered" from="camara/Inventario/Probeta3/probeta3" to="camara/Inventario/Probeta3/probeta3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Inventario/Probeta3/probeta3" to="camara/Inventario/Probeta3/probeta3" method="_on_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
+[connection signal="mouse_entered" from="camara/Inventario/Probeta4/probeta4" to="camara/Inventario/Probeta4/probeta4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="camara/Inventario/Probeta4/probeta4" to="camara/Inventario/Probeta4/probeta4" method="_on_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta4/probeta4" to="." method="_on_probeta_4_pressed"]
 [connection signal="pressed" from="camara/Inventario/Botoninventario/Button" to="camara/Inventario/Botoninventario" method="_on_button_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa1/Placa1" to="." method="_on_placa_1_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Probeta1/probeta1" to="." method="_on_probeta_1_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Probeta2/probeta2" to="." method="_on_probeta_2_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Probeta3/probeta3" to="." method="_on_probeta_3_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Probeta4/probeta4" to="." method="_on_probeta_4_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Botoninventario/Button" to="camara/Inventario2/Botoninventario" method="_on_button_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Placa1/Placa1" to="." method="_on_placa_1_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Placa3/Placa3" to="." method="_on_placa_3_pressed"]
-[connection signal="pressed" from="camara/Inventario2/Placa4/Placa4" to="." method="_on_placa_4_pressed"]
 [connection signal="timeout" from="Timer" to="camara/Label2" method="_on_timer_timeout"]
