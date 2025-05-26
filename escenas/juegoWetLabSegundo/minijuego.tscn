@@ -519,7 +519,7 @@ texture = ExtResource("29_x7dpr")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer3" type="Timer" parent="Clientes/Cliente3"]
-wait_time = 25.0
+wait_time = 40.0
 one_shot = true
 autostart = true
 

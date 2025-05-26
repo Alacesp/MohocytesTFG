@@ -106,7 +106,7 @@ func _on_timer_timeout() -> void:
 			$"../camara/Clientes/Cliente1".texture = preload("res://escenas/juegoWetLabSegundo/sprites/jwlContentaSymbol.png")
 			estado1 = "Serious"
 			$"Cliente1".texture = preload("res://escenas/juegoWetLabSegundo/sprites/jwlContenta.png")
-			$"Cliente1/Timer".start(20)
+			$"Cliente1/Timer".start(40)
 		"Serious":
 			estado1 = "Sad"
 			$"Cliente1/Timer".start(10)
