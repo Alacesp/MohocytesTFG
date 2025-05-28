@@ -592,10 +592,10 @@ ESQ1,>ES:ESP1,>ES:ENG1
 ESQ2,>ES:ESP2,>ES:ENG2
 ESQ3,>ES:ESP3,>ES:ENG3
 PREP1,¿En qué curso estás?,What grade are you on?
-PREP1R1,3º de la ESO,3rd of ESO
-PREP1R2,4º de la ESO,4th of ESO
-PREP1R3,1º de Bachillerato,1st of Bachillerato
-PREP1R4,2º de Bachillerato,2nd of Bachillerato
+PREP1R1,Tercero de la ESO,3rd of ESO
+PREP1R2,Cuarto de la ESO,4th of ESO
+PREP1R3,Primero de Bachillerato,1st of Bachillerato
+PREP1R4,Segundo de Bachillerato,2nd of Bachillerato
 PREP2,¿Estás en el itinerario de ciencias?,Are you in the science itinerary?
 PREP2R1,Sí,Yes
 PREP2R2,No,No

@@ -155,15 +155,16 @@ texture = ExtResource("4_hin7w")
 
 [node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
-offset_left = -104.0
-offset_top = -64.0
-offset_right = 105.0
-offset_bottom = 66.0
+offset_left = -87.0
+offset_top = -46.0
+offset_right = 85.0
+offset_bottom = 49.0
 theme = SubResource("Theme_bmy3h")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ddler")
 toggle_mode = true
 text = "Opcion 1"
 flat = true
+autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 
 [node name="Opcion2" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
@@ -172,14 +173,15 @@ texture = ExtResource("4_hin7w")
 
 [node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
-offset_left = -104.0
-offset_top = -65.0
-offset_right = 101.0
-offset_bottom = 66.0
+offset_left = -86.0
+offset_top = -50.0
+offset_right = 86.0
+offset_bottom = 51.0
 theme = SubResource("Theme_vrhwy")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y0qy6")
 text = "Opcion 2"
 flat = true
+autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 
 [node name="Opcion3" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
@@ -188,14 +190,15 @@ texture = ExtResource("4_hin7w")
 
 [node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3"]
 modulate = Color(0, 0, 0, 1)
-offset_left = -101.0
-offset_top = -64.0
-offset_right = 100.0
-offset_bottom = 64.0
+offset_left = -87.0
+offset_top = -49.0
+offset_right = 87.0
+offset_bottom = 49.0
 theme = SubResource("Theme_exlj0")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_glvnh")
 text = "Opcion 3"
 flat = true
+autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 
 [node name="Opcion4" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]
@@ -204,15 +207,16 @@ texture = ExtResource("4_hin7w")
 
 [node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4"]
 modulate = Color(0, 0, 0, 1)
-offset_left = -104.0
-offset_top = -63.0
-offset_right = 105.0
-offset_bottom = 63.0
+offset_left = -87.0
+offset_top = -49.0
+offset_right = 86.0
+offset_bottom = 49.0
 theme = SubResource("Theme_temv4")
 theme_override_fonts/font = ExtResource("3_3ipyj")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ves55")
 text = "Opcion 4"
 flat = true
+autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 
 [node name="Opcion5" type="Sprite2D" parent="Pregunta1/RespuestasPregunta1/HBoxContainer"]

@@ -109,7 +109,7 @@ func _input(event):
 					texto.encolar("W42")
 				else:
 					Global.jugado_w = true
-					get_tree().change_scene_to_file("res://juego_wiki/MainMenu.tscn")
+					get_tree().change_scene_to_file("res://juego_wiki2/minijuego.tscn")
 			elif Global.wiki == 3:
 				texto.encolar(">SD:1retratoJwContento")
 				texto.encolar("W43")

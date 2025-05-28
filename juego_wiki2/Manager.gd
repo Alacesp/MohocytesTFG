@@ -1,27 +1,30 @@
 extends Node2D
-
+@onready var arb = get_tree()
 var selected
-var pagina1 = 1
+var objetos = 0
+var pagina = 1
 
 func _process(delta: float) -> void:
-	if(pagina1 >= 9):
-		await ocultar($Objetos/Pagina1)
-		$Objetos/Pagina1.visible=false
-		$Objetos/Pagina2.visible=true
-		await mostrar($Objetos/Pagina2)
+	if(objetos >= 4 && pagina <= 4):
+		objetos= 0
+		await ocultar(get_node("Objetos/Pagina" + str(pagina)))
+		get_node("Objetos/Pagina" + str(pagina)).visible=false
+		print("Objetos/Pagina" + str(pagina+1))
+		get_node("Objetos/Pagina" + str(pagina+1)).visible=true
+		await mostrar(get_node("Objetos/Pagina" + str(pagina+1)))
+		pagina +=1
+		print(objetos)
+	elif (objetos >= 4 && pagina == 5):
+		arb.change_scene_to_file("res://escenas/SalaWiki/SalaWiki.tscn")
+		
 
-func tick(asset):
-	if(pagina1 <= 8):
-		if(get_node("Objetos/Pagina1/" + asset).get_class() == "Button"):
-			get_node("Objetos/Pagina1/" + asset + "/tick").visible = true
-		else:
-			get_node("Objetos/Pagina1/" + asset + "/" + asset +"/tick").visible = true
-		pagina1 += 1
+func tick(asset):#cambiar esto para solo sprites
+	if(get_node("Objetos/Pagina" + str(pagina) + "/" + asset).get_class() == "Button"):
+		get_node("Objetos/Pagina" + str(pagina) + "/" + asset + "/tick").visible = true
 	else:
-		if(get_node("Objetos/Pagina2/" + asset).get_class() == "Button"):
-			get_node("Objetos/Pagina2/" + asset + "/tick").visible = true
-		else:
-			get_node("Objetos/Pagina2/" + asset + "/" + asset +"/tick").visible = true
+		get_node("Objetos/Pagina" + str(pagina) + "/" + asset + "/" + asset +"/tick").visible = true
+	objetos += 1
+	print(objetos)
 
 func ocultar(pagina):
 	var children = pagina.get_children()
