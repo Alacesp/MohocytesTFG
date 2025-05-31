@@ -21,3 +21,7 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 				self.visible = false
 				get_node("../../Soluciones/" + self.name).visible = true
 				manager.tick(self.name)
+				manager.selected = null
+				manager.puntos += 300
+			elif manager.selected != null && manager.selected != self.name:
+				manager.puntos -= 100

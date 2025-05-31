@@ -3,8 +3,10 @@ extends Node2D
 var selected
 var objetos = 0
 var pagina = 1
+var puntos = 0
 
 func _process(delta: float) -> void:
+	$"./Label".text = str(puntos)
 	if(objetos >= 4 && pagina <= 4):
 		objetos= 0
 		await ocultar(get_node("Objetos/Pagina" + str(pagina)))

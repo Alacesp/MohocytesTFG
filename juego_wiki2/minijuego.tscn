@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://di5kxw6ai4p8m"]
+[gd_scene load_steps=47 format=3 uid="uid://di5kxw6ai4p8m"]
 
 [ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
 [ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/revelar.gd" id="2_2bt21"]
@@ -62,6 +62,11 @@ font = ExtResource("5_3dxnh")
 font_size = 31
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_sn77q"]
+font = ExtResource("5_3dxnh")
+font_size = 35
+font_color = Color(0, 0, 0, 1)
+
 [node name="Minijuego" type="Node2D"]
 script = ExtResource("1_1fb8j")
 
@@ -81,38 +86,20 @@ texture = ExtResource("3_srvkd")
 [node name="Pagina1" type="Node2D" parent="Objetos"]
 position = Vector2(-18, 97)
 
-[node name="asset1" type="Sprite2D" parent="Objetos/Pagina1"]
-position = Vector2(115, 9.00001)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("22_tkm5o")
-
-[node name="asset1" type="Button" parent="Objetos/Pagina1/asset1"]
-offset_left = -250.0
-offset_top = -270.0
-offset_right = 260.0
-offset_bottom = 220.0
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset1/asset1"]
-visible = false
-position = Vector2(250.08, 245)
-scale = Vector2(2.4992, 2.45)
-texture = ExtResource("11_eaw26")
-
 [node name="asset2" type="Sprite2D" parent="Objetos/Pagina1"]
 position = Vector2(117, 119)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_srvkd")
 
 [node name="asset2" type="Button" parent="Objetos/Pagina1/asset2"]
-offset_left = -270.0
-offset_top = -185.0
-offset_right = 295.0
-offset_bottom = 210.0
+offset_left = -275.0
+offset_top = -200.0
+offset_right = 290.0
+offset_bottom = 195.0
 theme_override_font_sizes/font_size = 100
-text = "Necesidad"
+text = "Impacto social"
 flat = true
+autowrap_mode = 2
 script = ExtResource("5_rci71")
 
 [node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset2/asset2"]
@@ -121,44 +108,67 @@ position = Vector2(290, 190)
 scale = Vector2(2, 2)
 texture = ExtResource("11_eaw26")
 
-[node name="asset3" type="Sprite2D" parent="Objetos/Pagina1"]
-position = Vector2(111, 258)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("8_ho118")
+[node name="asset12" type="Sprite2D" parent="Objetos/Pagina1"]
+position = Vector2(116, 11)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("11_ngwrj")
 
-[node name="asset3" type="Button" parent="Objetos/Pagina1/asset3"]
-offset_left = -630.0
-offset_top = -360.0
-offset_right = 630.0
-offset_bottom = 760.0
+[node name="asset12" type="Button" parent="Objetos/Pagina1/asset12"]
+offset_left = -1300.0
+offset_top = -1025.0
+offset_right = 1400.0
+offset_bottom = 1125.0
 flat = true
 script = ExtResource("5_rci71")
 
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset3/asset3"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset12/asset12"]
 visible = false
-position = Vector2(660, 570)
-scale = Vector2(6.1, 5.8)
+position = Vector2(136.5, 23.9993)
+scale = Vector2(14.125, 10.5)
 texture = ExtResource("11_eaw26")
 
-[node name="asset4" type="Sprite2D" parent="Objetos/Pagina1"]
-position = Vector2(117, 396)
+[node name="asset7" type="Sprite2D" parent="Objetos/Pagina1"]
+position = Vector2(113, 416)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_srvkd")
 
-[node name="asset4" type="Button" parent="Objetos/Pagina1/asset4"]
-offset_left = -295.0
-offset_top = -215.0
-offset_right = 315.0
-offset_bottom = 220.0
-theme_override_font_sizes/font_size = 100
-text = "Problema"
+[node name="asset7" type="Button" parent="Objetos/Pagina1/asset7"]
+offset_left = -310.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 80
+text = "Biología sintética"
 flat = true
+autowrap_mode = 2
 script = ExtResource("5_rci71")
 
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset4/asset4"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset7/asset7"]
 visible = false
-position = Vector2(285.5, 222.5)
-scale = Vector2(2.845, 2.225)
+position = Vector2(298, 205)
+scale = Vector2(2.97, 2.05)
+texture = ExtResource("11_eaw26")
+
+[node name="asset8" type="Sprite2D" parent="Objetos/Pagina1"]
+position = Vector2(116, 272)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_srvkd")
+
+[node name="asset8" type="Button" parent="Objetos/Pagina1/asset8"]
+offset_left = -310.0
+offset_top = -210.0
+offset_right = 305.0
+offset_bottom = 210.0
+theme_override_font_sizes/font_size = 100
+text = "Seres vivos"
+flat = true
+autowrap_mode = 2
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina1/asset8/asset8"]
+visible = false
+position = Vector2(290.5, 212.5)
+scale = Vector2(2.895, 2.125)
 texture = ExtResource("11_eaw26")
 
 [node name="Pagina2" type="Node2D" parent="Objetos"]
@@ -184,68 +194,65 @@ position = Vector2(818.58, 581.25)
 scale = Vector2(8.1842, 5.8125)
 texture = ExtResource("11_eaw26")
 
-[node name="asset6" type="Sprite2D" parent="Objetos/Pagina2"]
-position = Vector2(103, 513)
+[node name="asset18" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(102, 648)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_srvkd")
 
-[node name="asset6" type="Button" parent="Objetos/Pagina2/asset6"]
-offset_left = -310.0
-offset_top = -205.0
-offset_right = 320.0
-offset_bottom = 220.0
-theme_override_font_sizes/font_size = 75
-text = "Multidisciplinar"
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset6/asset6"]
-visible = false
-position = Vector2(303, 212.5)
-scale = Vector2(3.02, 2.125)
-texture = ExtResource("11_eaw26")
-
-[node name="asset7" type="Sprite2D" parent="Objetos/Pagina2"]
-position = Vector2(103, 644)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_srvkd")
-
-[node name="asset7" type="Button" parent="Objetos/Pagina2/asset7"]
-offset_left = -310.0
+[node name="asset18" type="Button" parent="Objetos/Pagina2/asset18"]
+offset_left = -305.0
 offset_top = -200.0
-offset_right = 300.0
-offset_bottom = 195.0
-theme_override_font_sizes/font_size = 80
-text = "Biología sintética"
+offset_right = 325.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 100
+text = "Divulgación"
 flat = true
-autowrap_mode = 2
 script = ExtResource("5_rci71")
 
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset7/asset7"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset18/asset18"]
 visible = false
-position = Vector2(298, 205)
-scale = Vector2(2.97, 2.05)
+position = Vector2(293, 202.5)
+scale = Vector2(2.92, 2.025)
 texture = ExtResource("11_eaw26")
 
-[node name="asset8" type="Sprite2D" parent="Objetos/Pagina2"]
-position = Vector2(101, 789)
+[node name="asset15" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(96, 774)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("13_6ffwi")
+
+[node name="asset15" type="Button" parent="Objetos/Pagina2/asset15"]
+offset_left = -486.0
+offset_top = -557.0
+offset_right = 557.0
+offset_bottom = 571.0
+flat = true
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset15/asset15"]
+visible = false
+position = Vector2(607.366, 585.643)
+scale = Vector2(6.07206, 5.85643)
+texture = ExtResource("11_eaw26")
+
+[node name="asset10" type="Sprite2D" parent="Objetos/Pagina2"]
+position = Vector2(101, 516)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_srvkd")
 
-[node name="asset8" type="Button" parent="Objetos/Pagina2/asset8"]
-offset_left = -310.0
-offset_top = -210.0
-offset_right = 305.0
-offset_bottom = 210.0
+[node name="asset10" type="Button" parent="Objetos/Pagina2/asset10"]
+offset_left = -300.0
+offset_top = -180.0
+offset_right = 310.0
+offset_bottom = 195.0
 theme_override_font_sizes/font_size = 100
-text = "Explicación"
+text = "Diseñar"
 flat = true
 script = ExtResource("5_rci71")
 
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset8/asset8"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina2/asset10/asset10"]
 visible = false
-position = Vector2(290.5, 212.5)
-scale = Vector2(2.895, 2.125)
+position = Vector2(298, 197.5)
+scale = Vector2(2.97, 1.975)
 texture = ExtResource("11_eaw26")
 
 [node name="Pagina3" type="Node2D" parent="Objetos"]
@@ -271,27 +278,6 @@ position = Vector2(1475, 900)
 scale = Vector2(12.625, 9.375)
 texture = ExtResource("11_eaw26")
 
-[node name="asset10" type="Sprite2D" parent="Objetos/Pagina3"]
-position = Vector2(101, 497)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_srvkd")
-
-[node name="asset10" type="Button" parent="Objetos/Pagina3/asset10"]
-offset_left = -300.0
-offset_top = -180.0
-offset_right = 310.0
-offset_bottom = 195.0
-theme_override_font_sizes/font_size = 100
-text = "Planificar"
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina3/asset10/asset10"]
-visible = false
-position = Vector2(298, 197.5)
-scale = Vector2(2.97, 1.975)
-texture = ExtResource("11_eaw26")
-
 [node name="asset11" type="Sprite2D" parent="Objetos/Pagina3"]
 position = Vector2(97, 628)
 scale = Vector2(0.2, 0.2)
@@ -313,50 +299,52 @@ position = Vector2(288, 197.5)
 scale = Vector2(2.87, 1.975)
 texture = ExtResource("11_eaw26")
 
-[node name="asset12" type="Sprite2D" parent="Objetos/Pagina3"]
-position = Vector2(98, 755)
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("11_ngwrj")
+[node name="asset1" type="Sprite2D" parent="Objetos/Pagina3"]
+position = Vector2(97, 510)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_tkm5o")
 
-[node name="asset12" type="Button" parent="Objetos/Pagina3/asset12"]
-offset_left = -1300.0
-offset_top = -1025.0
-offset_right = 1400.0
-offset_bottom = 1125.0
+[node name="asset1" type="Button" parent="Objetos/Pagina3/asset1"]
+offset_left = -250.0
+offset_top = -270.0
+offset_right = 260.0
+offset_bottom = 220.0
 flat = true
 script = ExtResource("5_rci71")
 
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina3/asset12/asset12"]
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina3/asset1/asset1"]
 visible = false
-position = Vector2(136.5, 23.9993)
-scale = Vector2(14.125, 10.5)
+position = Vector2(250.08, 245)
+scale = Vector2(2.4992, 2.45)
+texture = ExtResource("11_eaw26")
+
+[node name="asset4" type="Sprite2D" parent="Objetos/Pagina3"]
+position = Vector2(102, 782)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_srvkd")
+
+[node name="asset4" type="Button" parent="Objetos/Pagina3/asset4"]
+offset_left = -295.0
+offset_top = -215.0
+offset_right = 315.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 100
+text = "Problema"
+flat = true
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina3/asset4/asset4"]
+visible = false
+position = Vector2(285.5, 222.5)
+scale = Vector2(2.845, 2.225)
 texture = ExtResource("11_eaw26")
 
 [node name="Pagina4" type="Node2D" parent="Objetos"]
 visible = false
 position = Vector2(-1, -258)
 
-[node name="asset13" type="Sprite2D" parent="Objetos/Pagina4"]
-position = Vector2(104, 399)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("12_5q3mg")
-
-[node name="asset13" type="Button" parent="Objetos/Pagina4/asset13"]
-offset_left = -667.0
-offset_top = -1400.0
-offset_right = 767.0
-offset_bottom = 1333.0
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina4/asset13/asset13"]
-visible = false
-position = Vector2(508.667, 1283.33)
-scale = Vector2(11.9167, 12.8333)
-texture = ExtResource("11_eaw26")
-
 [node name="asset14" type="Sprite2D" parent="Objetos/Pagina4"]
-position = Vector2(99, 548)
+position = Vector2(101, 501)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_srvkd")
 
@@ -376,25 +364,6 @@ position = Vector2(298, 205)
 scale = Vector2(2.97, 2.05)
 texture = ExtResource("11_eaw26")
 
-[node name="asset15" type="Sprite2D" parent="Objetos/Pagina4"]
-position = Vector2(101, 645)
-scale = Vector2(0.07, 0.07)
-texture = ExtResource("13_6ffwi")
-
-[node name="asset15" type="Button" parent="Objetos/Pagina4/asset15"]
-offset_left = -486.0
-offset_top = -557.0
-offset_right = 557.0
-offset_bottom = 571.0
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina4/asset15/asset15"]
-visible = false
-position = Vector2(607.366, 585.643)
-scale = Vector2(6.07206, 5.85643)
-texture = ExtResource("11_eaw26")
-
 [node name="asset16" type="Sprite2D" parent="Objetos/Pagina4"]
 position = Vector2(114, 804)
 scale = Vector2(0.1, 0.1)
@@ -412,6 +381,46 @@ script = ExtResource("5_rci71")
 visible = false
 position = Vector2(660.08, 465)
 scale = Vector2(6.5992, 4.65)
+texture = ExtResource("11_eaw26")
+
+[node name="asset6" type="Sprite2D" parent="Objetos/Pagina4"]
+position = Vector2(101, 359)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_srvkd")
+
+[node name="asset6" type="Button" parent="Objetos/Pagina4/asset6"]
+offset_left = -310.0
+offset_top = -205.0
+offset_right = 320.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 75
+text = "Multidisciplinar"
+flat = true
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina4/asset6/asset6"]
+visible = false
+position = Vector2(303, 212.5)
+scale = Vector2(3.02, 2.125)
+texture = ExtResource("11_eaw26")
+
+[node name="asset3" type="Sprite2D" parent="Objetos/Pagina4"]
+position = Vector2(103, 640)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("8_ho118")
+
+[node name="asset3" type="Button" parent="Objetos/Pagina4/asset3"]
+offset_left = -630.0
+offset_top = -360.0
+offset_right = 630.0
+offset_bottom = 760.0
+flat = true
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina4/asset3/asset3"]
+visible = false
+position = Vector2(660, 570)
+scale = Vector2(6.1, 5.8)
 texture = ExtResource("11_eaw26")
 
 [node name="Pagina5" type="Node2D" parent="Objetos"]
@@ -435,27 +444,6 @@ script = ExtResource("5_rci71")
 visible = false
 position = Vector2(718.58, 618.75)
 scale = Vector2(7.1842, 6.1875)
-texture = ExtResource("11_eaw26")
-
-[node name="asset18" type="Sprite2D" parent="Objetos/Pagina5"]
-position = Vector2(97, 490)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_srvkd")
-
-[node name="asset18" type="Button" parent="Objetos/Pagina5/asset18"]
-offset_left = -305.0
-offset_top = -200.0
-offset_right = 325.0
-offset_bottom = 205.0
-theme_override_font_sizes/font_size = 100
-text = "Divulgación"
-flat = true
-script = ExtResource("5_rci71")
-
-[node name="tick" type="Sprite2D" parent="Objetos/Pagina5/asset18/asset18"]
-visible = false
-position = Vector2(293, 202.5)
-scale = Vector2(2.92, 2.025)
 texture = ExtResource("11_eaw26")
 
 [node name="asset19" type="Sprite2D" parent="Objetos/Pagina5"]
@@ -498,6 +486,25 @@ position = Vector2(981.08, 618.75)
 scale = Vector2(9.8092, 6.1875)
 texture = ExtResource("11_eaw26")
 
+[node name="asset13" type="Sprite2D" parent="Objetos/Pagina5"]
+position = Vector2(97, 495)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("12_5q3mg")
+
+[node name="asset13" type="Button" parent="Objetos/Pagina5/asset13"]
+offset_left = -667.0
+offset_top = -1400.0
+offset_right = 767.0
+offset_bottom = 1333.0
+flat = true
+script = ExtResource("5_rci71")
+
+[node name="tick" type="Sprite2D" parent="Objetos/Pagina5/asset13/asset13"]
+visible = false
+position = Vector2(508.667, 1283.33)
+scale = Vector2(11.9167, 12.8333)
+texture = ExtResource("11_eaw26")
+
 [node name="Paginas" type="Node2D" parent="."]
 
 [node name="Fondo" type="Sprite2D" parent="Paginas"]
@@ -528,7 +535,6 @@ script = ExtResource("2_2bt21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paginas/Pagina1/Huecos/asset1/Area2D"]
 position = Vector2(344.641, 562.461)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7chvb")
 
 [node name="asset2" type="Sprite2D" parent="Paginas/Pagina1/Huecos"]
@@ -558,7 +564,7 @@ offset_left = 311.0
 offset_top = 235.0
 offset_right = 653.0
 offset_bottom = 336.0
-text = "Los proyectos ayudan a solucionar una necesidad"
+text = "Los proyectos buscan generar un impacto social, ayudando a la gente y mejorando sus vidas."
 label_settings = SubResource("LabelSettings_7chvb")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -756,7 +762,7 @@ offset_left = 352.0
 offset_top = 329.0
 offset_right = 957.0
 offset_bottom = 587.0
-text = "La biología sintética es una parte de la ciencia que se dedica a diseñar y construir cosas nuevas usando partes de seres vivos, como si fueran piezas de LEGO. Los científicos pueden cambiar o crear genes (que están en el ADN) para que los organismos hagan cosas útiles, como fabricar medicinas, limpiar el medio ambiente o producir alimentos de forma más eficiente. Es como programar la naturaleza para ayudarnos en muchos problemas del mundo."
+text = "La biología sintética es una parte de la ciencia que, empleando los principios de la ingeniería, se dedica a diseñar y construir cosas nuevas usando partes de seres vivos, como si fueran partes de un puzzle. Los científicos pueden cambiar o crear genes (que están en el ADN) para que los organismos hagan cosas útiles, como fabricar medicinas, limpiar el medio ambiente o producir alimentos de forma más eficiente. Es como programar la naturaleza para ayudarnos en muchos problemas del mundo."
 label_settings = SubResource("LabelSettings_7chvb")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1160,7 +1166,7 @@ offset_left = 440.0
 offset_top = 50.0
 offset_right = 825.0
 offset_bottom = 156.0
-text = "¿Qué busca solucionar un proyecto?"
+text = "¿Qué busca generar un proyecto?"
 label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1287,7 +1293,7 @@ offset_left = 440.0
 offset_top = 50.0
 offset_right = 825.0
 offset_bottom = 156.0
-text = "¿Qué modificamos y usamos en nuestros laboratorios?"
+text = "Está compuesto por una doble helice"
 label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1299,7 +1305,7 @@ offset_left = 440.0
 offset_top = 50.0
 offset_right = 825.0
 offset_bottom = 156.0
-text = "Está compuesto por una doble helice"
+text = "¿Qué modificamos y usamos en nuestros laboratorios?"
 label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1375,66 +1381,74 @@ label_settings = SubResource("LabelSettings_2s7da")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="mouse_entered" from="Objetos/Pagina1/asset1/asset1" to="Objetos/Pagina1/asset1/asset1" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina1/asset1/asset1" to="Objetos/Pagina1/asset1/asset1" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina1/asset1/asset1" to="Objetos/Pagina1/asset1/asset1" method="_on_button_pressed"]
+[node name="Label" type="Label" parent="."]
+offset_left = 1024.0
+offset_top = 22.0
+offset_right = 1123.0
+offset_bottom = 58.0
+text = "radarada"
+label_settings = SubResource("LabelSettings_sn77q")
+
 [connection signal="mouse_entered" from="Objetos/Pagina1/asset2/asset2" to="Objetos/Pagina1/asset2/asset2" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina1/asset2/asset2" to="Objetos/Pagina1/asset2/asset2" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina1/asset2/asset2" to="Objetos/Pagina1/asset2/asset2" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina1/asset3/asset3" to="Objetos/Pagina1/asset3/asset3" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina1/asset3/asset3" to="Objetos/Pagina1/asset3/asset3" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina1/asset3/asset3" to="Objetos/Pagina1/asset3/asset3" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina1/asset4/asset4" to="Objetos/Pagina1/asset4/asset4" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina1/asset4/asset4" to="Objetos/Pagina1/asset4/asset4" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina1/asset4/asset4" to="Objetos/Pagina1/asset4/asset4" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina1/asset12/asset12" to="Objetos/Pagina1/asset12/asset12" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina1/asset12/asset12" to="Objetos/Pagina1/asset12/asset12" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina1/asset12/asset12" to="Objetos/Pagina1/asset12/asset12" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina1/asset7/asset7" to="Objetos/Pagina1/asset7/asset7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina1/asset7/asset7" to="Objetos/Pagina1/asset7/asset7" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina1/asset7/asset7" to="Objetos/Pagina1/asset7/asset7" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina1/asset8/asset8" to="Objetos/Pagina1/asset8/asset8" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina1/asset8/asset8" to="Objetos/Pagina1/asset8/asset8" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina1/asset8/asset8" to="Objetos/Pagina1/asset8/asset8" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina2/asset5/asset5" to="Objetos/Pagina2/asset5/asset5" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina2/asset5/asset5" to="Objetos/Pagina2/asset5/asset5" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina2/asset5/asset5" to="Objetos/Pagina2/asset5/asset5" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina2/asset6/asset6" to="Objetos/Pagina2/asset6/asset6" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina2/asset6/asset6" to="Objetos/Pagina2/asset6/asset6" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina2/asset6/asset6" to="Objetos/Pagina2/asset6/asset6" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina2/asset7/asset7" to="Objetos/Pagina2/asset7/asset7" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina2/asset7/asset7" to="Objetos/Pagina2/asset7/asset7" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina2/asset7/asset7" to="Objetos/Pagina2/asset7/asset7" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina2/asset8/asset8" to="Objetos/Pagina2/asset8/asset8" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina2/asset8/asset8" to="Objetos/Pagina2/asset8/asset8" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina2/asset8/asset8" to="Objetos/Pagina2/asset8/asset8" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina2/asset18/asset18" to="Objetos/Pagina2/asset18/asset18" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina2/asset18/asset18" to="Objetos/Pagina2/asset18/asset18" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina2/asset18/asset18" to="Objetos/Pagina2/asset18/asset18" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina2/asset15/asset15" to="Objetos/Pagina2/asset15/asset15" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina2/asset15/asset15" to="Objetos/Pagina2/asset15/asset15" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina2/asset15/asset15" to="Objetos/Pagina2/asset15/asset15" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina2/asset10/asset10" to="Objetos/Pagina2/asset10/asset10" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina2/asset10/asset10" to="Objetos/Pagina2/asset10/asset10" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina2/asset10/asset10" to="Objetos/Pagina2/asset10/asset10" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina3/asset9/asset9" to="Objetos/Pagina3/asset9/asset9" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina3/asset9/asset9" to="Objetos/Pagina3/asset9/asset9" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina3/asset9/asset9" to="Objetos/Pagina3/asset9/asset9" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina3/asset10/asset10" to="Objetos/Pagina3/asset10/asset10" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina3/asset10/asset10" to="Objetos/Pagina3/asset10/asset10" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina3/asset10/asset10" to="Objetos/Pagina3/asset10/asset10" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina3/asset11/asset11" to="Objetos/Pagina3/asset11/asset11" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina3/asset11/asset11" to="Objetos/Pagina3/asset11/asset11" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina3/asset11/asset11" to="Objetos/Pagina3/asset11/asset11" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina3/asset12/asset12" to="Objetos/Pagina3/asset12/asset12" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina3/asset12/asset12" to="Objetos/Pagina3/asset12/asset12" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina3/asset12/asset12" to="Objetos/Pagina3/asset12/asset12" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina4/asset13/asset13" to="Objetos/Pagina4/asset13/asset13" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina4/asset13/asset13" to="Objetos/Pagina4/asset13/asset13" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina4/asset13/asset13" to="Objetos/Pagina4/asset13/asset13" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina3/asset1/asset1" to="Objetos/Pagina3/asset1/asset1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina3/asset1/asset1" to="Objetos/Pagina3/asset1/asset1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina3/asset1/asset1" to="Objetos/Pagina3/asset1/asset1" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina3/asset4/asset4" to="Objetos/Pagina3/asset4/asset4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina3/asset4/asset4" to="Objetos/Pagina3/asset4/asset4" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina3/asset4/asset4" to="Objetos/Pagina3/asset4/asset4" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina4/asset14/asset14" to="Objetos/Pagina4/asset14/asset14" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina4/asset14/asset14" to="Objetos/Pagina4/asset14/asset14" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina4/asset14/asset14" to="Objetos/Pagina4/asset14/asset14" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina4/asset15/asset15" to="Objetos/Pagina4/asset15/asset15" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina4/asset15/asset15" to="Objetos/Pagina4/asset15/asset15" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina4/asset15/asset15" to="Objetos/Pagina4/asset15/asset15" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina4/asset16/asset16" to="Objetos/Pagina4/asset16/asset16" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina4/asset16/asset16" to="Objetos/Pagina4/asset16/asset16" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina4/asset16/asset16" to="Objetos/Pagina4/asset16/asset16" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina4/asset6/asset6" to="Objetos/Pagina4/asset6/asset6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina4/asset6/asset6" to="Objetos/Pagina4/asset6/asset6" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina4/asset6/asset6" to="Objetos/Pagina4/asset6/asset6" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina4/asset3/asset3" to="Objetos/Pagina4/asset3/asset3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina4/asset3/asset3" to="Objetos/Pagina4/asset3/asset3" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina4/asset3/asset3" to="Objetos/Pagina4/asset3/asset3" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina5/asset17/asset17" to="Objetos/Pagina5/asset17/asset17" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina5/asset17/asset17" to="Objetos/Pagina5/asset17/asset17" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina5/asset17/asset17" to="Objetos/Pagina5/asset17/asset17" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="Objetos/Pagina5/asset18/asset18" to="Objetos/Pagina5/asset18/asset18" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Objetos/Pagina5/asset18/asset18" to="Objetos/Pagina5/asset18/asset18" method="_on_mouse_exited"]
-[connection signal="pressed" from="Objetos/Pagina5/asset18/asset18" to="Objetos/Pagina5/asset18/asset18" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina5/asset19/asset19" to="Objetos/Pagina5/asset19/asset19" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina5/asset19/asset19" to="Objetos/Pagina5/asset19/asset19" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina5/asset19/asset19" to="Objetos/Pagina5/asset19/asset19" method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Objetos/Pagina5/asset20/asset20" to="Objetos/Pagina5/asset20/asset20" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina5/asset20/asset20" to="Objetos/Pagina5/asset20/asset20" method="_on_mouse_exited"]
 [connection signal="pressed" from="Objetos/Pagina5/asset20/asset20" to="Objetos/Pagina5/asset20/asset20" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Objetos/Pagina5/asset13/asset13" to="Objetos/Pagina5/asset13/asset13" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Objetos/Pagina5/asset13/asset13" to="Objetos/Pagina5/asset13/asset13" method="_on_mouse_exited"]
+[connection signal="pressed" from="Objetos/Pagina5/asset13/asset13" to="Objetos/Pagina5/asset13/asset13" method="_on_button_pressed"]
 [connection signal="input_event" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Paginas/Pagina1/Huecos/asset1/Area2D" to="Paginas/Pagina1/Huecos/asset1" method="_on_area_2d_mouse_exited"]
