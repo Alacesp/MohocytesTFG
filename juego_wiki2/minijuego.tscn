@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://di5kxw6ai4p8m"]
+[gd_scene load_steps=48 format=3 uid="uid://di5kxw6ai4p8m"]
 
 [ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
 [ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/revelar.gd" id="2_2bt21"]
@@ -40,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://d1yn2t87v6luj" path="res://juego_wiki2/imagenes/imagen8.png" id="31_sn77q"]
 [ext_resource type="Texture2D" uid="uid://b46lx2fuaqj6t" path="res://juego_wiki2/imagenes/imagen7.png" id="32_asvt0"]
 [ext_resource type="Texture2D" uid="uid://cu3ovcn5ycgp3" path="res://juego_wiki2/imagenes/imagen9.png" id="34_ylnhf"]
+[ext_resource type="Texture2D" uid="uid://dw0ven60pcc0o" path="res://escenas/juegoWetLabSegundo/sprites/copa.png" id="41_asvt0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mrw00"]
 font = ExtResource("5_3dxnh")
@@ -1388,6 +1389,11 @@ offset_right = 1123.0
 offset_bottom = 58.0
 text = "radarada"
 label_settings = SubResource("LabelSettings_sn77q")
+
+[node name="copa" type="Sprite2D" parent="."]
+position = Vector2(1005, 41)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("41_asvt0")
 
 [connection signal="mouse_entered" from="Objetos/Pagina1/asset2/asset2" to="Objetos/Pagina1/asset2/asset2" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Objetos/Pagina1/asset2/asset2" to="Objetos/Pagina1/asset2/asset2" method="_on_mouse_exited"]

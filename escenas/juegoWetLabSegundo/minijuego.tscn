@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=60 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
@@ -48,6 +48,8 @@
 [ext_resource type="Texture2D" uid="uid://cu5kdtp7nyna5" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo3.png" id="42_pfmvf"]
 [ext_resource type="Texture2D" uid="uid://clvad6551rlwp" path="res://escenas/juegoWetLabSegundo/sprites/bocadillo4.png" id="43_hr5gt"]
 [ext_resource type="Texture2D" uid="uid://38ovsd3ah75r" path="res://escenas/juegoWetLabSegundo/sprites/inventario.png" id="45_nlxeg"]
+[ext_resource type="Texture2D" uid="uid://dw0ven60pcc0o" path="res://escenas/juegoWetLabSegundo/sprites/copa.png" id="49_55w5j"]
+[ext_resource type="Texture2D" uid="uid://c13nteqvq1cql" path="res://escenas/juegoWetLabSegundo/sprites/reloj.png" id="50_1biit"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kwkj"]
 size = Vector2(1045, 1070)
@@ -1239,6 +1241,16 @@ offset_bottom = 84.0
 
 [node name="Pausa" parent="camara" instance=ExtResource("39_slht7")]
 visible = false
+
+[node name="copa" type="Sprite2D" parent="camara"]
+position = Vector2(344, -270)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("49_55w5j")
+
+[node name="reloj" type="Sprite2D" parent="camara"]
+position = Vector2(346, -230)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("50_1biit")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 180.0
