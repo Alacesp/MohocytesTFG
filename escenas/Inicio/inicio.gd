@@ -16,6 +16,14 @@ func _ready():
 			aparecer_personaje(derecha[pos], true)
 			await aparecer_personaje(izquierda[pos], false)
 		pos += 1
+		
+		
+
+		# Ahora sí puedes llamar a obtener_ranking()
+		var ranking = await DatabaseSingleton.obtenerRanking()
+		print(ranking)
+
+
 
 func aparecer_personaje(personaje, der):
 	if der:

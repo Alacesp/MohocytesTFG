@@ -201,7 +201,7 @@ func _pooled_request(task : FirestoreTask) -> void:
 		task._headers = PackedStringArray([_AUTHORIZATION_HEADER + auth.idtoken])
 
 	var	http_request = HTTPRequest.new()
-	http_request.timeout = 5
+	http_request.timeout = 10
 	Utilities.fix_http_request(http_request)
 	add_child(http_request)
 	http_request.request_completed.connect(
