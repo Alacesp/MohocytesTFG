@@ -19,79 +19,39 @@ func cargarRespuestasCuestionario(COLLECTION_ID, respuestas):
 		"Pregunta 8": respuestas[7],
 		"Pregunta 9": respuestas[8]
 	}
-	var task: FirestoreDocument = await collection.add(test_id, data)
+	await collection.add(test_id, data)
 
-
-
-#func obtenerRanking() -> Array:
-	#var collection = Firebase.Firestore.collection("Puntuaciones")
-	#for i in collection.size():
-		#print("a")
-	#var results = await collection.get_doc("1748413928.52_4251288011")
-	#var ranking = []
-	#var total = 0
-	#for key in results.keys():
-		#total += int(results[key])
-	#ranking.append({"puntos": total})
-	##for doc in results.documents:
-		##var data = doc.data
-		##var total = 0
-		##for key in data.keys():
-			##total += int(data[key])
-		##ranking.append({"nombre": doc.id, "puntos": total})
-	##ranking.sort_custom(Callable(self, "_sort_por_puntos_desc"))
-	#return ranking
-#
-#func _sort_por_puntos_desc(a, b):
-	#return b["puntos"] - a["puntos"]
-	#
-#func get_document_ids(collection_name: String) -> void:
-	#var query: FirestoreQuery = FirestoreQuery.new()
-	#query.from(collection_name)
-#
-	#var documents = await Firebase.Firestore.query(query)
-#
-	#if documents.size() == 0:
-		#print("No documents found.")
-		#return
-#
-	#for doc in documents:
-		#print("Document ID:", doc.doc_name)
-
-
-
-func obtenerRanking() -> Array:
-	var collection = Firebase.Firestore.collection("Puntuaciones")
-	var ranking = []
-	var ids = await get_document_ids("Puntuaciones")
-	for id in ids:
-		await addAlRanking(id, ranking)
-	ranking.sort_custom(Callable(self, "_sort_por_puntos_desc"))
-	return ranking
-	
-func addAlRanking(id, ranking)->Array:
-	var collection = Firebase.Firestore.collection("Puntuaciones")
-	var results = await collection.get_doc(id)
-	var total = 0
-	for key in results.keys():
-		total += int(results[key])
-	ranking.append({ "id": id, "puntos": total})
-	return ranking
+func cargarPuntuaciones(COLLECTION_ID):
+	var collection: FirestoreCollection = Firebase.Firestore.collection(COLLECTION_ID)
+	var data: Dictionary = {
+		"Drylab": Global.puntos_drylab,
+		"Human": Global.puntos_human,
+		"Redes": Global.puntos_redes,
+		"Wetlab": Global.puntos_wetlab,
+		"Wiki": Global.puntos_wiki,
+		"Total": Global.puntos_drylab + Global.puntos_human + \
+			Global.puntos_redes + Global.puntos_wetlab + Global.puntos_wiki
+	}
+	await collection.add(ranking_id, data)
 
 func _sort_por_puntos_desc(a, b):
-	return b["puntos"] - a["puntos"]
-	
-func get_document_ids(collection_name: String) -> Array:
-	var ids = []
-	var query: FirestoreQuery = FirestoreQuery.new()
-	query.from(collection_name)
+	if a["puntos"] > b["puntos"]:
+		return true
+	return false
 
+func ranking() -> Array:
+	print("Entra")
+	var ranking = []
+	var query : FirestoreQuery = FirestoreQuery.new().from("Puntuaciones")#.where("Total", FirestoreQuery.OPERATOR.GREATER_THAN, -10000).order_by("Total", FirestoreQuery.DIRECTION.DESCENDING)
+	print("lanza la query")
 	var documents = await Firebase.Firestore.query(query)
+	print("resultado")
 
 	if documents.size() == 0:
 		print("No documents found.")
 		return []
 
 	for doc in documents:
-		ids.append(doc.doc_name)
-	return ids
+		ranking.append({ "id": doc.doc_name, "puntos": doc.get("Total") })
+	ranking.sort_custom(Callable(self, "_sort_por_puntos_desc"))
+	return ranking

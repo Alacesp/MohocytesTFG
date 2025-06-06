@@ -8,13 +8,13 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_73ug7"]
 bg_color = Color(0.637131, 0.380937, 0.746412, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_kc06t"]
-font = ExtResource("2_sxtl4")
-font_size = 42
-
 [sub_resource type="LabelSettings" id="LabelSettings_cqh3r"]
 font = ExtResource("2_sxtl4")
 font_size = 80
+
+[sub_resource type="LabelSettings" id="LabelSettings_kc06t"]
+font = ExtResource("2_sxtl4")
+font_size = 42
 
 [sub_resource type="Theme" id="Theme_bcxhc"]
 default_font = ExtResource("2_sxtl4")
@@ -27,6 +27,55 @@ script = ExtResource("1_fra6l")
 offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_73ug7")
+
+[node name="Puntos2" type="Label" parent="."]
+offset_left = 110.0
+offset_top = 250.0
+offset_right = 111.0
+offset_bottom = 330.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos3" type="Label" parent="."]
+offset_left = 371.0
+offset_top = 271.0
+offset_right = 372.0
+offset_bottom = 351.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos4" type="Label" parent="."]
+offset_left = 595.0
+offset_top = 276.0
+offset_right = 596.0
+offset_bottom = 356.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos5" type="Label" parent="."]
+offset_left = 871.0
+offset_top = 262.0
+offset_right = 872.0
+offset_bottom = 342.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos6" type="Label" parent="."]
+offset_left = 309.0
+offset_top = 62.0
+offset_right = 310.0
+offset_bottom = 142.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos7" type="Label" parent="."]
+offset_left = 832.0
+offset_top = 58.0
+offset_right = 833.0
+offset_bottom = 138.0
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Puntos8" type="Label" parent="."]
+offset_left = 832.0
+offset_top = 58.0
+offset_right = 833.0
+offset_bottom = 138.0
+label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 offset_left = 13.0
