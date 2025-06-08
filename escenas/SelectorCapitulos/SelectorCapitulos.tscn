@@ -89,7 +89,7 @@ offset_left = -259.0
 offset_top = 18.0
 offset_right = 276.0
 offset_bottom = 138.0
-text = "Comienza descubriendo que hace Human Practices"
+text = "Empieza tu experiencia aprendiendo con Drylab"
 label_settings = SubResource("LabelSettings_ihucx")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -131,7 +131,7 @@ offset_left = -259.0
 offset_top = 18.0
 offset_right = 276.0
 offset_bottom = 138.0
-text = "Comienza descubriendo que hace Human Practices"
+text = "¡Te necesitan en Wetlab! Pulsa el botón para ver qué les pasa"
 label_settings = SubResource("LabelSettings_ihucx")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -172,7 +172,7 @@ offset_left = -259.0
 offset_top = 18.0
 offset_right = 276.0
 offset_bottom = 138.0
-text = "Comienza descubriendo que hace Human Practices"
+text = "Conoce al equipo de Redes Sociales"
 label_settings = SubResource("LabelSettings_ihucx")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -213,7 +213,7 @@ offset_left = -259.0
 offset_top = 18.0
 offset_right = 276.0
 offset_bottom = 138.0
-text = "Comienza descubriendo que hace Human Practices"
+text = "Plasma el proyecto en una página web con Wiki"
 label_settings = SubResource("LabelSettings_ihucx")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -275,5 +275,6 @@ offset_bottom = 390.0
 [connection signal="pressed" from="Wetlab/Sprite2D2/Button" to="." method="_on_button_wet_pressed"]
 [connection signal="pressed" from="Redes/Sprite2D2/Button" to="." method="_on_button_redes_pressed"]
 [connection signal="pressed" from="Wiki/Sprite2D2/Button" to="." method="_on_button_wiki_pressed"]
+[connection signal="pressed" from="Camera2D/botonSalida/Button" to="." method="_on_button_salida_pressed"]
 [connection signal="pressed" from="Camera2D/derecha/Button" to="Camera2D" method="_on_button_derecha_pressed"]
 [connection signal="pressed" from="Camera2D/izquierda/Button" to="Camera2D" method="_on_button_izquierda_pressed"]

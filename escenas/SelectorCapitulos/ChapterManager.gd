@@ -70,3 +70,7 @@ func _on_button_wiki_pressed() -> void:
 	Global.redes = 4
 	Global.jugado_r = true
 	arb.change_scene_to_file("res://escenas/SalaWiki/SalaWiki.tscn")
+
+
+func _on_button_salida_pressed() -> void:
+	arb.change_scene_to_file("res://escenas/Inicio/Inicio.tscn")
