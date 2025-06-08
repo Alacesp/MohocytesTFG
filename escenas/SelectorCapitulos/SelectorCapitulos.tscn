@@ -1,0 +1,279 @@
+[gd_scene load_steps=15 format=3 uid="uid://drarlyff3g8h2"]
+
+[ext_resource type="Script" uid="uid://ctcrx1feanrvr" path="res://escenas/SelectorCapitulos/ChapterManager.gd" id="1_i5wg7"]
+[ext_resource type="Texture2D" uid="uid://crbknns3p26u8" path="res://recursos/fondos/fondo.webp" id="1_ud17k"]
+[ext_resource type="Texture2D" uid="uid://0tdb7jhdl4we" path="res://recursos/personajes/jhuman.webp" id="2_i5wg7"]
+[ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="3_f0mue"]
+[ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_cqthi"]
+[ext_resource type="Texture2D" uid="uid://d2e620k736aks" path="res://recursos/personajes/jdl.webp" id="5_xfev2"]
+[ext_resource type="Texture2D" uid="uid://6dedwqt872qu" path="res://recursos/personajes/jwl.webp" id="6_1q8wu"]
+[ext_resource type="Texture2D" uid="uid://dwj6mylo1gq1g" path="res://recursos/personajes/jredes.webp" id="7_da63c"]
+[ext_resource type="Texture2D" uid="uid://bddqouslqxtgw" path="res://recursos/personajes/jw.webp" id="8_rdek5"]
+[ext_resource type="Script" uid="uid://c335avsecaoke" path="res://escenas/SelectorCapitulos/CameraManager.gd" id="9_ogtq4"]
+[ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_23kn3"]
+[ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="11_ifsa5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w6tdy"]
+font = ExtResource("3_f0mue")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_ihucx"]
+font = ExtResource("3_f0mue")
+font_size = 50
+
+[node name="SelectorCapitulos" type="Node2D"]
+script = ExtResource("1_i5wg7")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+texture = ExtResource("1_ud17k")
+centered = false
+
+[node name="Human" type="Node2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Human"]
+position = Vector2(1, -184)
+texture = ExtResource("2_i5wg7")
+
+[node name="Label" type="Label" parent="Human"]
+offset_left = -265.0
+offset_top = -86.0
+offset_right = 289.0
+offset_bottom = 14.0
+text = "Human Practices"
+label_settings = SubResource("LabelSettings_w6tdy")
+
+[node name="Label2" type="Label" parent="Human"]
+offset_left = -259.0
+offset_top = 18.0
+offset_right = 276.0
+offset_bottom = 138.0
+text = "Comienza descubriendo que hace Human Practices"
+label_settings = SubResource("LabelSettings_ihucx")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Human"]
+position = Vector2(3, 214)
+texture = ExtResource("4_cqthi")
+
+[node name="Button" type="Button" parent="Human/Sprite2D2"]
+offset_left = -98.0
+offset_top = -63.0
+offset_right = 97.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f0mue")
+theme_override_font_sizes/font_size = 40
+text = "Comenzar"
+flat = true
+
+[node name="Drylab" type="Node2D" parent="."]
+position = Vector2(1728, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Drylab"]
+position = Vector2(1, -184)
+texture = ExtResource("5_xfev2")
+
+[node name="Label" type="Label" parent="Drylab"]
+offset_left = -265.0
+offset_top = -86.0
+offset_right = 289.0
+offset_bottom = 14.0
+text = "DryLab"
+label_settings = SubResource("LabelSettings_w6tdy")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Drylab"]
+offset_left = -259.0
+offset_top = 18.0
+offset_right = 276.0
+offset_bottom = 138.0
+text = "Comienza descubriendo que hace Human Practices"
+label_settings = SubResource("LabelSettings_ihucx")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Drylab"]
+position = Vector2(3, 214)
+texture = ExtResource("4_cqthi")
+
+[node name="Button" type="Button" parent="Drylab/Sprite2D2"]
+offset_left = -98.0
+offset_top = -63.0
+offset_right = 97.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f0mue")
+theme_override_font_sizes/font_size = 40
+text = "Comenzar"
+flat = true
+
+[node name="Wetlab" type="Node2D" parent="."]
+position = Vector2(2880, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wetlab"]
+position = Vector2(1, -184)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_1q8wu")
+
+[node name="Label" type="Label" parent="Wetlab"]
+offset_left = -265.0
+offset_top = -86.0
+offset_right = 289.0
+offset_bottom = 14.0
+text = "WetLab"
+label_settings = SubResource("LabelSettings_w6tdy")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Wetlab"]
+offset_left = -259.0
+offset_top = 18.0
+offset_right = 276.0
+offset_bottom = 138.0
+text = "Comienza descubriendo que hace Human Practices"
+label_settings = SubResource("LabelSettings_ihucx")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Wetlab"]
+position = Vector2(3, 214)
+texture = ExtResource("4_cqthi")
+
+[node name="Button" type="Button" parent="Wetlab/Sprite2D2"]
+offset_left = -98.0
+offset_top = -63.0
+offset_right = 97.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f0mue")
+theme_override_font_sizes/font_size = 40
+text = "Comenzar"
+flat = true
+
+[node name="Redes" type="Node2D" parent="."]
+position = Vector2(4032, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Redes"]
+position = Vector2(1, -184)
+texture = ExtResource("7_da63c")
+
+[node name="Label" type="Label" parent="Redes"]
+offset_left = -265.0
+offset_top = -86.0
+offset_right = 289.0
+offset_bottom = 14.0
+text = "Redes Sociales"
+label_settings = SubResource("LabelSettings_w6tdy")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Redes"]
+offset_left = -259.0
+offset_top = 18.0
+offset_right = 276.0
+offset_bottom = 138.0
+text = "Comienza descubriendo que hace Human Practices"
+label_settings = SubResource("LabelSettings_ihucx")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Redes"]
+position = Vector2(3, 214)
+texture = ExtResource("4_cqthi")
+
+[node name="Button" type="Button" parent="Redes/Sprite2D2"]
+offset_left = -98.0
+offset_top = -63.0
+offset_right = 97.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f0mue")
+theme_override_font_sizes/font_size = 40
+text = "Comenzar"
+flat = true
+
+[node name="Wiki" type="Node2D" parent="."]
+position = Vector2(5184, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wiki"]
+position = Vector2(1, -184)
+texture = ExtResource("8_rdek5")
+
+[node name="Label" type="Label" parent="Wiki"]
+offset_left = -265.0
+offset_top = -86.0
+offset_right = 289.0
+offset_bottom = 14.0
+text = "Wiki"
+label_settings = SubResource("LabelSettings_w6tdy")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Wiki"]
+offset_left = -259.0
+offset_top = 18.0
+offset_right = 276.0
+offset_bottom = 138.0
+text = "Comienza descubriendo que hace Human Practices"
+label_settings = SubResource("LabelSettings_ihucx")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Wiki"]
+position = Vector2(3, 214)
+texture = ExtResource("4_cqthi")
+
+[node name="Button" type="Button" parent="Wiki/Sprite2D2"]
+offset_left = -98.0
+offset_top = -63.0
+offset_right = 97.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f0mue")
+theme_override_font_sizes/font_size = 40
+text = "Comenzar"
+flat = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("9_ogtq4")
+
+[node name="botonSalida" type="Sprite2D" parent="Camera2D"]
+position = Vector2(-467.5, -206)
+texture = ExtResource("10_23kn3")
+
+[node name="Button" type="Button" parent="Camera2D/botonSalida"]
+offset_left = -81.0
+offset_top = -82.0
+offset_right = 85.0
+offset_bottom = 82.0
+
+[node name="derecha" type="Sprite2D" parent="Camera2D"]
+position = Vector2(504.5, 15)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_ifsa5")
+
+[node name="Button" type="Button" parent="Camera2D/derecha"]
+offset_left = -270.0
+offset_top = -375.0
+offset_right = 270.0
+offset_bottom = 390.0
+
+[node name="izquierda" type="Sprite2D" parent="Camera2D"]
+position = Vector2(-507.5, 15)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_ifsa5")
+flip_h = true
+
+[node name="Button" type="Button" parent="Camera2D/izquierda"]
+offset_left = -270.0
+offset_top = -375.0
+offset_right = 270.0
+offset_bottom = 390.0
+
+[connection signal="pressed" from="Human/Sprite2D2/Button" to="." method="_on_button_human_pressed"]
+[connection signal="pressed" from="Drylab/Sprite2D2/Button" to="." method="_on_button_drylab_pressed"]
+[connection signal="pressed" from="Wetlab/Sprite2D2/Button" to="." method="_on_button_wet_pressed"]
+[connection signal="pressed" from="Redes/Sprite2D2/Button" to="." method="_on_button_redes_pressed"]
+[connection signal="pressed" from="Wiki/Sprite2D2/Button" to="." method="_on_button_wiki_pressed"]
+[connection signal="pressed" from="Camera2D/derecha/Button" to="Camera2D" method="_on_button_derecha_pressed"]
+[connection signal="pressed" from="Camera2D/izquierda/Button" to="Camera2D" method="_on_button_izquierda_pressed"]

@@ -79,8 +79,9 @@ func _input(event):
 				texto.encolar(">SD:1retratoJwlConfiada")
 				texto.encolar("R28")
 				await texto.esperar()
-				Global.redes += 1
+				#Global.redes += 1
 				Global.room += 1
+				print(Global.room)
 				Global.salida_redes = true
 			elif Global.redes == 4:
 				print("C")

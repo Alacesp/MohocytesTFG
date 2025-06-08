@@ -28,56 +28,77 @@ offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_73ug7")
 
-[node name="Puntos2" type="Label" parent="."]
-offset_left = 110.0
-offset_top = 250.0
-offset_right = 111.0
-offset_bottom = 330.0
+[node name="Resultados" type="Node2D" parent="."]
+visible = false
+
+[node name="Primero" type="Label" parent="Resultados"]
+offset_left = 117.0
+offset_top = 82.0
+offset_right = 188.0
+offset_bottom = 162.0
+text = "11111"
 label_settings = SubResource("LabelSettings_cqh3r")
 
-[node name="Puntos3" type="Label" parent="."]
-offset_left = 371.0
-offset_top = 271.0
-offset_right = 372.0
-offset_bottom = 351.0
+[node name="Segundo" type="Label" parent="Resultados"]
+offset_left = 95.0
+offset_top = 161.0
+offset_right = 223.0
+offset_bottom = 241.0
+text = "2222"
 label_settings = SubResource("LabelSettings_cqh3r")
 
-[node name="Puntos4" type="Label" parent="."]
-offset_left = 595.0
+[node name="Tercero" type="Label" parent="Resultados"]
+offset_left = 112.0
+offset_top = 244.0
+offset_right = 212.0
+offset_bottom = 324.0
+text = "333"
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Cuarto" type="Label" parent="Resultados"]
+offset_left = 118.0
+offset_top = 327.0
+offset_right = 213.0
+offset_bottom = 407.0
+text = "444"
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Quinto" type="Label" parent="Resultados"]
+offset_left = 113.0
+offset_top = 420.0
+offset_right = 248.0
+offset_bottom = 500.0
+text = "5555"
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Posicion" type="Label" parent="Resultados"]
+offset_left = 932.0
+offset_top = 166.0
+offset_right = 1014.0
+offset_bottom = 246.0
+text = "123"
+label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="Total" type="Label" parent="Resultados"]
+offset_left = 927.0
 offset_top = 276.0
-offset_right = 596.0
+offset_right = 1023.0
 offset_bottom = 356.0
+text = "456"
 label_settings = SubResource("LabelSettings_cqh3r")
 
-[node name="Puntos5" type="Label" parent="."]
-offset_left = 871.0
-offset_top = 262.0
-offset_right = 872.0
-offset_bottom = 342.0
+[node name="cargando" type="Label" parent="."]
+offset_left = 208.0
+offset_top = 141.0
+offset_right = 984.0
+offset_bottom = 304.0
+text = "Cargando resultados, espere un momento, por favor"
 label_settings = SubResource("LabelSettings_cqh3r")
-
-[node name="Puntos6" type="Label" parent="."]
-offset_left = 309.0
-offset_top = 62.0
-offset_right = 310.0
-offset_bottom = 142.0
-label_settings = SubResource("LabelSettings_cqh3r")
-
-[node name="Puntos7" type="Label" parent="."]
-offset_left = 832.0
-offset_top = 58.0
-offset_right = 833.0
-offset_bottom = 138.0
-label_settings = SubResource("LabelSettings_cqh3r")
-
-[node name="Puntos8" type="Label" parent="."]
-offset_left = 832.0
-offset_top = 58.0
-offset_right = 833.0
-offset_bottom = 138.0
-label_settings = SubResource("LabelSettings_cqh3r")
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
 offset_left = 13.0
 offset_top = 38.0
 offset_right = 1138.0
@@ -96,6 +117,7 @@ layout_mode = 2
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Iniciar" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(589, 525)
 scale = Vector2(1.42439, 1)
 texture = ExtResource("1_eb3lx")

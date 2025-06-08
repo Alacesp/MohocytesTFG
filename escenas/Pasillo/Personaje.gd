@@ -191,7 +191,10 @@ func _process(_delta):
 					texto.encolar("PAS18")
 				7:
 					Global.puerta = 6
-					get_tree().change_scene_to_file("res://escenas/Fin/Fin.tscn")
+					if Global.fullGame:
+						get_tree().change_scene_to_file("res://escenas/Formulario/Formulario.tscn")
+					else:
+						get_tree().change_scene_to_file("res://escenas/Fin/Creditos.tscn")
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("PortalDer") or area.is_in_group("PortalIzq"):

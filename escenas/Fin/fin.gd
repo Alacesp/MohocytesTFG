@@ -1,19 +1,24 @@
 extends Node2D
+var respuesta = []
+func _process(delta: float) -> void:
+	if !respuesta.is_empty():
+		$cargando.visible = false
+		$Resultados.visible = true
+		$CenterContainer.visible = true
+		$Iniciar.visible = true
 
 func _ready():
 	var puntos = Global.puntos_drylab + Global.puntos_wetlab + Global.puntos_human + Global.puntos_redes + Global.puntos_wiki
 	
-	
-	var respuesta = await returnRanking("1748417697.314_3681005533")
 	print(str(respuesta))
 	$CenterContainer/Puntos/Puntos.text = str(puntos)
-	$Puntos2.text = str(respuesta[0])
-	$Puntos3.text = str(respuesta[1])
-	$Puntos4.text = str(respuesta[2])
-	$Puntos5.text = str(respuesta[3])
-	$Puntos6.text = str(respuesta[4])
-	$Puntos7.text = str(respuesta[5])
-	$Puntos8.text = str(respuesta[6])
+	$Resultados/Primero.text = str(respuesta[0])
+	$Resultados/Segundo.text = str(respuesta[1])
+	$Resultados/Tercero.text = str(respuesta[2])
+	$Resultados/Cuarto.text = str(respuesta[3])
+	$Resultados/Quinto.text = str(respuesta[4])
+	$Resultados/Posicion.text = str(respuesta[5])
+	$Resultados/Total.text = str(respuesta[6])
 
 func returnRanking(id:String) -> Array:
 	var values = []

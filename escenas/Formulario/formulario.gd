@@ -105,4 +105,4 @@ func _on_button_pressed_acabar() -> void:
 	else:
 		DatabaseSingleton.cargarRespuestasCuestionario("PostTest", respuestas)
 		DatabaseSingleton.cargarPuntuaciones("Puntuaciones")
-		get_tree().change_scene_to_file("res://escenas/Fin/Creditos.tscn")
+		get_tree().change_scene_to_file("res://escenas/Fin/Fin.tscn")
