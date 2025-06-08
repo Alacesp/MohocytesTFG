@@ -17,6 +17,7 @@ func _process(delta: float) -> void:
 		pagina +=1
 		print(objetos)
 	elif (objetos >= 4 && pagina == 5):
+		Global.puntos_wiki = puntos
 		arb.change_scene_to_file("res://escenas/SalaWiki/SalaWiki.tscn")
 		
 

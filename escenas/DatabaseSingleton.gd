@@ -1,7 +1,7 @@
 extends Node
 
 var test_id
-var ranking_id
+var ranking_id=""
 
 func generate_simple_id() -> String:
 	return str(Time.get_unix_time_from_system()) + "_" + str(randi())
@@ -21,18 +21,18 @@ func cargarRespuestasCuestionario(COLLECTION_ID, respuestas):
 	}
 	await collection.add(test_id, data)
 
-func cargarPuntuaciones(COLLECTION_ID):
-	var collection: FirestoreCollection = Firebase.Firestore.collection(COLLECTION_ID)
+func cargarPuntuaciones():
+	var collection: FirestoreCollection = Firebase.Firestore.collection("Puntuaciones")
 	var data: Dictionary = {
 		"Drylab": Global.puntos_drylab,
+		"Wetlab": Global.puntos_wetlab,
 		"Human": Global.puntos_human,
 		"Redes": Global.puntos_redes,
-		"Wetlab": Global.puntos_wetlab,
 		"Wiki": Global.puntos_wiki,
-		"Total": Global.puntos_drylab + Global.puntos_human + \
-			Global.puntos_redes + Global.puntos_wetlab + Global.puntos_wiki
+		"Total": Global.puntos_drylab + Global.puntos_wetlab + Global.puntos_human \
+			+ Global.puntos_redes + Global.puntos_wiki
 	}
-	await collection.add(ranking_id, data)
+	var task: FirestoreDocument = await collection.add(ranking_id, data)
 
 func _sort_por_puntos_desc(a, b):
 	if a["puntos"] > b["puntos"]:
