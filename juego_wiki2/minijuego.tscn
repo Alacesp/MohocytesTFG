@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://di5kxw6ai4p8m"]
+[gd_scene load_steps=49 format=3 uid="uid://di5kxw6ai4p8m"]
 
 [ext_resource type="Script" uid="uid://dr4mf1vtemlis" path="res://juego_wiki2/Manager.gd" id="1_1fb8j"]
 [ext_resource type="Script" uid="uid://2bkbpvkirfdc" path="res://juego_wiki2/revelar.gd" id="2_2bt21"]
@@ -37,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://1lqwejedcoum" path="res://juego_wiki2/imagenes/preview1.png" id="22_tkm5o"]
 [ext_resource type="Texture2D" uid="uid://6jwpgul78yed" path="res://juego_wiki2/imagenes/imagen5.png" id="24_5q3mg"]
 [ext_resource type="Texture2D" uid="uid://wl75glqul7ot" path="res://juego_wiki2/imagenes/imagen6.png" id="27_52tfl"]
+[ext_resource type="Texture2D" uid="uid://dcgrivuyyb51w" path="res://juego_wiki2/imagenes/imagen4.png" id="28_ylnhf"]
 [ext_resource type="Texture2D" uid="uid://d1yn2t87v6luj" path="res://juego_wiki2/imagenes/imagen8.png" id="31_sn77q"]
 [ext_resource type="Texture2D" uid="uid://b46lx2fuaqj6t" path="res://juego_wiki2/imagenes/imagen7.png" id="32_asvt0"]
 [ext_resource type="Texture2D" uid="uid://cu3ovcn5ycgp3" path="res://juego_wiki2/imagenes/imagen9.png" id="34_ylnhf"]
@@ -619,7 +620,7 @@ shape = SubResource("RectangleShape2D_mrw00")
 
 [node name="asset3" type="Sprite2D" parent="Paginas/Pagina2/Soluciones"]
 visible = false
-position = Vector2(861, 409)
+position = Vector2(861, 392)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("16_rnru0")
 
@@ -845,7 +846,7 @@ shape = SubResource("RectangleShape2D_mrw00")
 visible = false
 position = Vector2(469, 291)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("10_h0eas")
+texture = ExtResource("28_ylnhf")
 
 [node name="asset10" type="Label" parent="Paginas/Pagina5/Soluciones"]
 visible = false
