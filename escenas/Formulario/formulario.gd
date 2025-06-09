@@ -43,16 +43,7 @@ var preguntas = [
 
 var result_8
 
-func _ready() -> void:
-	Global.preTest = false
-	Global.puntos_drylab = 1
-	Global.puntos_wetlab = 1
-	Global.puntos_human = 1
-	Global.puntos_redes = 1
-	Global.puntos_wiki = 1
-	DatabaseSingleton.ranking_id = DatabaseSingleton.generate_simple_id()
-	DatabaseSingleton.test_id = DatabaseSingleton.generate_simple_id()
-	
+func _ready() -> void:	
 	cargarPreguntas()
 
 func cargarPreguntas():
