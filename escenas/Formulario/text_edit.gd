@@ -2,6 +2,9 @@ extends TextEdit
 @onready var camara = $"../../../../../Camara"
 @onready var formulario = get_tree().get_current_scene()
 
+func _ready() -> void:
+	self.placeholder_text = tr("PREP9R1")
+
 func _on_mouse_entered():
 	get_parent().modulate.a = 0.85
 
