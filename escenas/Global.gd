@@ -1,7 +1,8 @@
 extends Node
 #¿Se ha empezado el juego desde el principio?
 var fullGame = true
-
+# Respuestas pretest
+var pretestAnswer = []
 #¿Se ha completado el Pretest?
 var preTest = true
 #Respuesta a pregunta del cuadro de texto

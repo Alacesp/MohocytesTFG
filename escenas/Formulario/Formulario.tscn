@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://d3blhv48qwysn" path="res://recursos/opciones.png" id="4_hin7w"]
 [ext_resource type="Script" uid="uid://drokm752xlkpn" path="res://escenas/Formulario/camaraFormulario.gd" id="5_55exj"]
 [ext_resource type="Script" uid="uid://1glouovi0kct" path="res://escenas/Formulario/button.gd" id="6_3ipyj"]
-[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="6_l1rek"]
 [ext_resource type="Script" uid="uid://c3h1uax8hk1d8" path="res://escenas/Formulario/text_edit.gd" id="7_hin7w"]
+[ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="9_55exj"]
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_55exj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_loxm8"]
@@ -136,7 +136,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP1"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -153,7 +153,7 @@ layout_mode = 2
 position = Vector2(319, 277)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1"]
+[node name="3" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -87.0
 offset_top = -46.0
@@ -162,7 +162,7 @@ offset_bottom = 49.0
 theme = SubResource("Theme_bmy3h")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ddler")
 toggle_mode = true
-text = "Opcion 1"
+text = "PREP1R1"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
@@ -171,7 +171,7 @@ script = ExtResource("6_3ipyj")
 position = Vector2(798, 282)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2"]
+[node name="4" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -86.0
 offset_top = -50.0
@@ -179,7 +179,7 @@ offset_right = 86.0
 offset_bottom = 51.0
 theme = SubResource("Theme_vrhwy")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y0qy6")
-text = "Opcion 2"
+text = "PREP1R2"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
@@ -188,7 +188,7 @@ script = ExtResource("6_3ipyj")
 position = Vector2(319, 423)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3"]
+[node name="1" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -87.0
 offset_top = -49.0
@@ -196,7 +196,7 @@ offset_right = 87.0
 offset_bottom = 49.0
 theme = SubResource("Theme_exlj0")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_glvnh")
-text = "Opcion 3"
+text = "PREP1R3"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
@@ -205,7 +205,7 @@ script = ExtResource("6_3ipyj")
 position = Vector2(803, 427)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4"]
+[node name="2" type="Button" parent="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -87.0
 offset_top = -49.0
@@ -214,7 +214,7 @@ offset_bottom = 49.0
 theme = SubResource("Theme_temv4")
 theme_override_fonts/font = ExtResource("3_3ipyj")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ves55")
-text = "Opcion 4"
+text = "PREP1R4"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
@@ -232,7 +232,6 @@ offset_right = 463.0
 offset_bottom = 106.0
 theme = SubResource("Theme_sy0dn")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_upbka")
-placeholder_text = "Otro..."
 script = ExtResource("7_hin7w")
 
 [node name="Pregunta2" type="Node2D" parent="."]
@@ -252,7 +251,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP2"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -271,7 +270,7 @@ layout_mode = 2
 position = Vector2(556.5, 296)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1"]
+[node name="1" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -63.0
@@ -279,7 +278,7 @@ offset_right = 104.0
 offset_bottom = 67.0
 theme = SubResource("Theme_qumqv")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1oham")
-text = "Opcion 1"
+text = "PREP2R1"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -288,7 +287,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(560.5, 484)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2"]
+[node name="0" type="Button" parent="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -68.0
@@ -296,7 +295,7 @@ offset_right = 100.0
 offset_bottom = 63.0
 theme = SubResource("Theme_vtdnq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5p4pd")
-text = "Opcion 2"
+text = "PREP2R2"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -318,7 +317,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP3"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -337,7 +336,7 @@ layout_mode = 2
 position = Vector2(556.5, 296)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1"]
+[node name="1" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -63.0
@@ -345,7 +344,7 @@ offset_right = 104.0
 offset_bottom = 67.0
 theme = SubResource("Theme_qumqv")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1oham")
-text = "Opcion 1"
+text = "PREP3R1"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -354,7 +353,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(560.5, 484)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2"]
+[node name="0" type="Button" parent="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -105.0
 offset_top = -68.0
@@ -362,7 +361,7 @@ offset_right = 100.0
 offset_bottom = 63.0
 theme = SubResource("Theme_vtdnq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5p4pd")
-text = "Opcion 2"
+text = "PREP3R2"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -384,82 +383,136 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP4"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="OptionButton1" type="OptionButton" parent="Pregunta4"]
-offset_left = 199.0
-offset_top = 287.0
-offset_right = 231.0
-offset_bottom = 307.0
-
-[node name="OptionButton2" type="OptionButton" parent="Pregunta4"]
-offset_left = 199.0
-offset_top = 363.0
-offset_right = 231.0
-offset_bottom = 383.0
-
-[node name="OptionButton3" type="OptionButton" parent="Pregunta4"]
-offset_left = 199.0
-offset_top = 430.0
-offset_right = 231.0
-offset_bottom = 450.0
-
-[node name="OptionButton4" type="OptionButton" parent="Pregunta4"]
-offset_left = 199.0
-offset_top = 505.0
-offset_right = 231.0
-offset_bottom = 525.0
-metadata/_edit_use_anchors_ = true
-
-[node name="OptionButton5" type="OptionButton" parent="Pregunta4"]
-offset_left = 199.0
-offset_top = 586.0
-offset_right = 231.0
-offset_bottom = 606.0
-
 [node name="Label1" type="Label" parent="Pregunta4"]
-offset_left = 554.0
-offset_top = 242.0
-offset_right = 604.0
-offset_bottom = 270.0
-text = "Holaa"
+offset_left = 536.0
+offset_top = 248.0
+offset_right = 636.0
+offset_bottom = 276.0
+text = "PREP4R6"
 label_settings = SubResource("LabelSettings_55exj")
+
+[node name="OptionButton1" type="OptionButton" parent="Pregunta4"]
+offset_left = 185.0
+offset_top = 280.0
+offset_right = 285.0
+offset_bottom = 311.0
+item_count = 5
+popup/item_0/text = "PREP4R1"
+popup/item_0/id = 0
+popup/item_1/text = "PREP4R2"
+popup/item_1/id = 1
+popup/item_2/text = "PREP4R3"
+popup/item_2/id = 2
+popup/item_3/text = "PREP4R4"
+popup/item_3/id = 3
+popup/item_4/text = "PREP4R5"
+popup/item_4/id = 4
 
 [node name="Label2" type="Label" parent="Pregunta4"]
-offset_left = 554.0
-offset_top = 321.0
-offset_right = 604.0
-offset_bottom = 349.0
-text = "Holaa"
+offset_left = 536.0
+offset_top = 315.0
+offset_right = 636.0
+offset_bottom = 343.0
+text = "PREP4R7"
 label_settings = SubResource("LabelSettings_55exj")
+
+[node name="OptionButton2" type="OptionButton" parent="Pregunta4"]
+offset_left = 185.0
+offset_top = 347.0
+offset_right = 285.0
+offset_bottom = 378.0
+item_count = 5
+popup/item_0/text = "PREP4R1"
+popup/item_0/id = 0
+popup/item_1/text = "PREP4R2"
+popup/item_1/id = 1
+popup/item_2/text = "PREP4R3"
+popup/item_2/id = 2
+popup/item_3/text = "PREP4R4"
+popup/item_3/id = 3
+popup/item_4/text = "PREP4R5"
+popup/item_4/id = 4
 
 [node name="Label3" type="Label" parent="Pregunta4"]
-offset_left = 555.0
-offset_top = 392.0
-offset_right = 605.0
-offset_bottom = 420.0
-text = "Holaa"
+offset_left = 536.0
+offset_top = 382.0
+offset_right = 636.0
+offset_bottom = 410.0
+text = "PREP4R8"
 label_settings = SubResource("LabelSettings_55exj")
+
+[node name="OptionButton3" type="OptionButton" parent="Pregunta4"]
+offset_left = 185.0
+offset_top = 414.0
+offset_right = 285.0
+offset_bottom = 445.0
+item_count = 5
+popup/item_0/text = "PREP4R1"
+popup/item_0/id = 0
+popup/item_1/text = "PREP4R2"
+popup/item_1/id = 1
+popup/item_2/text = "PREP4R3"
+popup/item_2/id = 2
+popup/item_3/text = "PREP4R4"
+popup/item_3/id = 3
+popup/item_4/text = "PREP4R5"
+popup/item_4/id = 4
 
 [node name="Label4" type="Label" parent="Pregunta4"]
-offset_left = 557.0
-offset_top = 463.0
-offset_right = 607.0
-offset_bottom = 491.0
-text = "Holaa"
+offset_left = 536.0
+offset_top = 449.0
+offset_right = 636.0
+offset_bottom = 477.0
+text = "PREP4R9"
 label_settings = SubResource("LabelSettings_55exj")
 
+[node name="OptionButton4" type="OptionButton" parent="Pregunta4"]
+offset_left = 185.0
+offset_top = 481.0
+offset_right = 285.0
+offset_bottom = 512.0
+item_count = 5
+popup/item_0/text = "PREP4R1"
+popup/item_0/id = 0
+popup/item_1/text = "PREP4R2"
+popup/item_1/id = 1
+popup/item_2/text = "PREP4R3"
+popup/item_2/id = 2
+popup/item_3/text = "PREP4R4"
+popup/item_3/id = 3
+popup/item_4/text = "PREP4R5"
+popup/item_4/id = 4
+
 [node name="Label5" type="Label" parent="Pregunta4"]
-offset_left = 553.0
-offset_top = 545.0
-offset_right = 603.0
-offset_bottom = 573.0
-text = "Holaa"
+offset_left = 536.0
+offset_top = 516.0
+offset_right = 636.0
+offset_bottom = 544.0
+text = "PREP4R10"
 label_settings = SubResource("LabelSettings_55exj")
+
+[node name="OptionButton5" type="OptionButton" parent="Pregunta4"]
+offset_left = 185.0
+offset_top = 548.0
+offset_right = 285.0
+offset_bottom = 579.0
+item_count = 5
+popup/item_0/text = "PREP4R1"
+popup/item_0/id = 0
+popup/item_1/text = "PREP4R2"
+popup/item_1/id = 1
+popup/item_2/text = "PREP4R3"
+popup/item_2/id = 2
+popup/item_3/text = "PREP4R4"
+popup/item_3/id = 3
+popup/item_4/text = "PREP4R5"
+popup/item_4/id = 4
 
 [node name="Pregunta5" type="Node2D" parent="."]
 position = Vector2(4608, 0)
@@ -478,42 +531,40 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP5"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="RespuestasPregunta5" type="CenterContainer" parent="Pregunta5"]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Pregunta5/RespuestasPregunta5"]
-layout_mode = 2
-
-[node name="Opcion1" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
-position = Vector2(329.5, 312)
+[node name="Opcion1" type="Sprite2D" parent="Pregunta5"]
+position = Vector2(349.5, 332)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1"]
+[node name="1" type="Button" parent="Pregunta5/Opcion1"]
 modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_left = 0.0878049
+anchor_top = 0.106061
+anchor_right = 0.107317
+anchor_bottom = 0.106061
 offset_left = -104.0
 offset_top = -64.0
-offset_right = 105.0
-offset_bottom = 66.0
+offset_right = 65.0
+offset_bottom = 36.0
 theme = SubResource("Theme_asemn")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nf1un")
-text = "Opcion 1"
+text = "PREP5R1"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Opcion2" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
-position = Vector2(808.5, 317)
+[node name="Opcion2" type="Sprite2D" parent="Pregunta5"]
+position = Vector2(828.5, 337)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2"]
+[node name="0" type="Button" parent="Pregunta5/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -65.0
@@ -521,17 +572,17 @@ offset_right = 101.0
 offset_bottom = 66.0
 theme = SubResource("Theme_y72qd")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3gpnw")
-text = "Opcion 2"
+text = "PREP5R2"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Opcion3" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
-position = Vector2(329.5, 458)
+[node name="Opcion3" type="Sprite2D" parent="Pregunta5"]
+position = Vector2(349.5, 478)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3"]
+[node name="0" type="Button" parent="Pregunta5/Opcion3"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -101.0
 offset_top = -64.0
@@ -539,17 +590,17 @@ offset_right = 100.0
 offset_bottom = 64.0
 theme = SubResource("Theme_tb2nu")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_trjhe")
-text = "Opcion 3"
+text = "PREP5R3"
 flat = true
 autowrap_mode = 2
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Opcion4" type="Sprite2D" parent="Pregunta5/RespuestasPregunta5/HBoxContainer"]
-position = Vector2(813.5, 462)
+[node name="Opcion4" type="Sprite2D" parent="Pregunta5"]
+position = Vector2(833.5, 482)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4"]
+[node name="0" type="Button" parent="Pregunta5/Opcion4"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -63.0
@@ -558,7 +609,7 @@ offset_bottom = 63.0
 theme = SubResource("Theme_ip0dh")
 theme_override_fonts/font = ExtResource("3_3ipyj")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ipuks")
-text = "Opcion 4"
+text = "PREP5R4"
 flat = true
 autowrap_mode = 3
 script = ExtResource("6_3ipyj")
@@ -581,7 +632,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP6"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -600,7 +651,7 @@ layout_mode = 2
 position = Vector2(561, 278)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1"]
+[node name="1" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -64.0
@@ -608,7 +659,7 @@ offset_right = 105.0
 offset_bottom = 66.0
 theme = SubResource("Theme_af31l")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vu4ar")
-text = "Opcion 1"
+text = "PREP6R1"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -617,7 +668,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(564, 418)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2"]
+[node name="0" type="Button" parent="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -65.0
@@ -625,7 +676,7 @@ offset_right = 101.0
 offset_bottom = 66.0
 theme = SubResource("Theme_5s57x")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ovfjj")
-text = "Opcion 2"
+text = "PREP6R2"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -663,7 +714,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP7"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -682,7 +733,7 @@ layout_mode = 2
 position = Vector2(561, 278)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1"]
+[node name="1" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -64.0
@@ -690,7 +741,7 @@ offset_right = 105.0
 offset_bottom = 66.0
 theme = SubResource("Theme_af31l")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vu4ar")
-text = "Opcion 1"
+text = "PREP7R1"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -699,7 +750,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(564, 418)
 texture = ExtResource("4_hin7w")
 
-[node name="Button" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2"]
+[node name="0" type="Button" parent="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2"]
 modulate = Color(0, 0, 0, 1)
 offset_left = -104.0
 offset_top = -65.0
@@ -707,7 +758,7 @@ offset_right = 101.0
 offset_bottom = 66.0
 theme = SubResource("Theme_5s57x")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ovfjj")
-text = "Opcion 2"
+text = "PREP7R2"
 flat = true
 script = ExtResource("6_3ipyj")
 metadata/_edit_use_anchors_ = true
@@ -745,7 +796,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP8"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -795,7 +846,7 @@ offset_left = 554.0
 offset_top = 242.0
 offset_right = 604.0
 offset_bottom = 270.0
-text = "Holaa"
+text = "PREP8R1"
 label_settings = SubResource("LabelSettings_55exj")
 
 [node name="Label2" type="Label" parent="Pregunta8"]
@@ -803,7 +854,7 @@ offset_left = 554.0
 offset_top = 321.0
 offset_right = 604.0
 offset_bottom = 349.0
-text = "Holaa"
+text = "PREP8R2"
 label_settings = SubResource("LabelSettings_55exj")
 
 [node name="Label3" type="Label" parent="Pregunta8"]
@@ -811,7 +862,7 @@ offset_left = 555.0
 offset_top = 392.0
 offset_right = 605.0
 offset_bottom = 420.0
-text = "Holaa"
+text = "PREP8R3"
 label_settings = SubResource("LabelSettings_55exj")
 
 [node name="Pregunta9" type="Node2D" parent="."]
@@ -831,7 +882,7 @@ offset_bottom = 109.0
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(800, 100)
 layout_mode = 2
-text = "Pregunta"
+text = "PREP9"
 label_settings = SubResource("LabelSettings_loxm8")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -845,8 +896,8 @@ offset_bottom = 40.0
 layout_mode = 2
 
 [node name="Opcion1" type="Sprite2D" parent="Pregunta9/RespuestasPregunta9/HBoxContainer"]
-position = Vector2(574, 349)
-scale = Vector2(0.425238, 1.24476)
+position = Vector2(595, 329)
+scale = Vector2(0.582857, 1)
 texture = ExtResource("2_s2ufo")
 
 [node name="TextEdit" type="TextEdit" parent="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1"]
@@ -870,29 +921,33 @@ script = ExtResource("5_55exj")
 
 [node name="Derecha" type="Sprite2D" parent="Camara"]
 position = Vector2(506, 256)
-rotation = 1.55865
-texture = ExtResource("6_l1rek")
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_55exj")
 
 [node name="Button" type="Button" parent="Camara/Derecha"]
-offset_left = -56.0
-offset_top = -53.0
-offset_right = 56.0
-offset_bottom = 48.0
+offset_left = -260.0
+offset_top = -406.667
+offset_right = 287.0
+offset_bottom = 413.333
+flat = true
+script = ExtResource("6_3ipyj")
 
 [node name="Izquierda" type="Sprite2D" parent="Camara"]
 position = Vector2(-498, 253)
-rotation = 1.55865
-texture = ExtResource("6_l1rek")
-flip_v = true
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_55exj")
+flip_h = true
 
 [node name="Button" type="Button" parent="Camara/Izquierda"]
-offset_left = -56.0
-offset_top = -53.0
-offset_right = 56.0
-offset_bottom = 48.0
+offset_left = -287.0
+offset_top = -387.0
+offset_right = 293.0
+offset_bottom = 380.0
+flat = true
+script = ExtResource("6_3ipyj")
 
 [node name="Acabar" type="Sprite2D" parent="."]
-position = Vector2(10131, 500)
+position = Vector2(10224, 563)
 texture = ExtResource("10_55exj")
 
 [node name="Button" type="Button" parent="Acabar"]
@@ -900,63 +955,65 @@ offset_left = -83.0
 offset_top = -83.0
 offset_right = 85.0
 offset_bottom = 85.0
+flat = true
+script = ExtResource("6_3ipyj")
 
-[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion1/3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion2/4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion3/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion4/2" method="_on_pressed"]
 [connection signal="focus_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_focus_entered"]
 [connection signal="focus_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" to="Pregunta1/RespuestasPregunta1/HBoxContainer/Opcion5/TextEdit" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion2/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion3/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" to="Pregunta5/RespuestasPregunta5/HBoxContainer/Opcion4/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion1/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" to="Pregunta2/RespuestasPregunta2/HBoxContainer/Opcion2/0" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion1/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" to="Pregunta3/RespuestasPregunta3/HBoxContainer/Opcion2/0" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/Opcion1/1" to="Pregunta5/Opcion1/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/Opcion1/1" to="Pregunta5/Opcion1/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/Opcion1/1" to="Pregunta5/Opcion1/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/Opcion2/0" to="Pregunta5/Opcion2/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/Opcion2/0" to="Pregunta5/Opcion2/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/Opcion2/0" to="Pregunta5/Opcion2/0" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/Opcion3/0" to="Pregunta5/Opcion3/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/Opcion3/0" to="Pregunta5/Opcion3/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/Opcion3/0" to="Pregunta5/Opcion3/0" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta5/Opcion4/0" to="Pregunta5/Opcion4/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta5/Opcion4/0" to="Pregunta5/Opcion4/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta5/Opcion4/0" to="Pregunta5/Opcion4/0" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion1/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion2/0" method="_on_pressed"]
 [connection signal="focus_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_focus_entered"]
 [connection signal="focus_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" to="Pregunta6/RespuestasPregunta6/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/Button" method="_on_pressed"]
-[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/Button" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion1/1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" method="_on_mouse_exited"]
+[connection signal="pressed" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion2/0" method="_on_pressed"]
 [connection signal="focus_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_focus_entered"]
 [connection signal="focus_exited" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" to="Pregunta7/RespuestasPregunta7/HBoxContainer/Opcion3/TextEdit" method="_on_mouse_entered"]
@@ -965,6 +1022,12 @@ offset_bottom = 85.0
 [connection signal="focus_exited" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" to="Pregunta9/RespuestasPregunta9/HBoxContainer/Opcion1/TextEdit" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Camara/Derecha/Button" to="Camara/Derecha/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camara/Derecha/Button" to="Camara/Derecha/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Camara/Derecha/Button" to="Camara" method="_on_button_pressed_Der"]
+[connection signal="mouse_entered" from="Camara/Izquierda/Button" to="Camara/Izquierda/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camara/Izquierda/Button" to="Camara/Izquierda/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Camara/Izquierda/Button" to="Camara" method="_on_button_pressed_Izq"]
+[connection signal="mouse_entered" from="Acabar/Button" to="Acabar/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Acabar/Button" to="Acabar/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Acabar/Button" to="." method="_on_button_pressed_acabar"]
