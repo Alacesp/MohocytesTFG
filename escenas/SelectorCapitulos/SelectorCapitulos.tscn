@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://drarlyff3g8h2"]
+[gd_scene load_steps=16 format=3 uid="uid://drarlyff3g8h2"]
 
 [ext_resource type="Script" uid="uid://ctcrx1feanrvr" path="res://escenas/SelectorCapitulos/ChapterManager.gd" id="1_i5wg7"]
 [ext_resource type="Texture2D" uid="uid://crbknns3p26u8" path="res://recursos/fondos/fondo.webp" id="1_ud17k"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://c335avsecaoke" path="res://escenas/SelectorCapitulos/CameraManager.gd" id="9_ogtq4"]
 [ext_resource type="Texture2D" uid="uid://882ywb0w002j" path="res://recursos/fondos/salida.webp" id="10_23kn3"]
 [ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="11_ifsa5"]
+[ext_resource type="Script" uid="uid://bqsf37aqqdql7" path="res://escenas/SelectorCapitulos/button.gd" id="12_f0mue"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_w6tdy"]
 font = ExtResource("3_f0mue")
@@ -48,7 +49,7 @@ offset_left = -259.0
 offset_top = 18.0
 offset_right = 276.0
 offset_bottom = 138.0
-text = "Comienza descubriendo que hace Human Practices"
+text = "Comienza descubriendo qué hace Human Practices"
 label_settings = SubResource("LabelSettings_ihucx")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -246,6 +247,8 @@ offset_left = -81.0
 offset_top = -82.0
 offset_right = 85.0
 offset_bottom = 82.0
+flat = true
+script = ExtResource("12_f0mue")
 
 [node name="derecha" type="Sprite2D" parent="Camera2D"]
 position = Vector2(504.5, 15)
@@ -257,6 +260,8 @@ offset_left = -270.0
 offset_top = -375.0
 offset_right = 270.0
 offset_bottom = 390.0
+flat = true
+script = ExtResource("12_f0mue")
 
 [node name="izquierda" type="Sprite2D" parent="Camera2D"]
 position = Vector2(-507.5, 15)
@@ -269,12 +274,20 @@ offset_left = -270.0
 offset_top = -375.0
 offset_right = 270.0
 offset_bottom = 390.0
+flat = true
+script = ExtResource("12_f0mue")
 
 [connection signal="pressed" from="Human/Sprite2D2/Button" to="." method="_on_button_human_pressed"]
 [connection signal="pressed" from="Drylab/Sprite2D2/Button" to="." method="_on_button_drylab_pressed"]
 [connection signal="pressed" from="Wetlab/Sprite2D2/Button" to="." method="_on_button_wet_pressed"]
 [connection signal="pressed" from="Redes/Sprite2D2/Button" to="." method="_on_button_redes_pressed"]
 [connection signal="pressed" from="Wiki/Sprite2D2/Button" to="." method="_on_button_wiki_pressed"]
+[connection signal="mouse_entered" from="Camera2D/botonSalida/Button" to="Camera2D/botonSalida/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/botonSalida/Button" to="Camera2D/botonSalida/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Camera2D/botonSalida/Button" to="." method="_on_button_salida_pressed"]
+[connection signal="mouse_entered" from="Camera2D/derecha/Button" to="Camera2D/derecha/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/derecha/Button" to="Camera2D/derecha/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Camera2D/derecha/Button" to="Camera2D" method="_on_button_derecha_pressed"]
+[connection signal="mouse_entered" from="Camera2D/izquierda/Button" to="Camera2D/izquierda/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/izquierda/Button" to="Camera2D/izquierda/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="Camera2D/izquierda/Button" to="Camera2D" method="_on_button_izquierda_pressed"]

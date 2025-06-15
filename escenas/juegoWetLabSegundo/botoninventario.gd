@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Button
 @onready
 var inventario = get_parent()
 var closed = true

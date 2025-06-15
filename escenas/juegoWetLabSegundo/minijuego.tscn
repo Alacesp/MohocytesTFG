@@ -1,9 +1,8 @@
-[gd_scene load_steps=60 format=3 uid="uid://cwwkv8x3i6jqq"]
+[gd_scene load_steps=58 format=3 uid="uid://cwwkv8x3i6jqq"]
 
 [ext_resource type="Texture2D" uid="uid://b766yx0ck4mxc" path="res://juego_wet/fondo.webp" id="1_2jyj3"]
 [ext_resource type="Script" uid="uid://cjo6wwqppyn1p" path="res://escenas/juegoWetLabSegundo/liquidosInventario.gd" id="1_kqs8n"]
 [ext_resource type="FontFile" uid="uid://0rvc0aipo277" path="res://recursos/Letters_for_Learners.ttf" id="2_c1jlx"]
-[ext_resource type="Texture2D" uid="uid://b1k0tivyrobuu" path="res://recursos/boton_arriba.png" id="2_w666j"]
 [ext_resource type="Script" uid="uid://d01okbo2qmkmo" path="res://escenas/juegoWetLabSegundo/movimiento.gd" id="3_miokp"]
 [ext_resource type="Texture2D" uid="uid://cyn0nf2sb5h7j" path="res://escenas/juegoWetLabSegundo/sprites/flecha.png" id="4_hr5gt"]
 [ext_resource type="Script" uid="uid://b3yoktoq2fsmr" path="res://escenas/juegoWetLabSegundo/boton.gd" id="5_b8n2b"]
@@ -76,11 +75,6 @@ size = Vector2(395, 361.386)
 [sub_resource type="LabelSettings" id="LabelSettings_slht7"]
 font = ExtResource("2_c1jlx")
 font_size = 36
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_q1bm0"]
-font = ExtResource("2_c1jlx")
-font_size = 250
 font_color = Color(0, 0, 0, 1)
 
 [node name="Minijuego" type="Node2D"]
@@ -521,7 +515,7 @@ texture = ExtResource("29_x7dpr")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer3" type="Timer" parent="Clientes/Cliente3"]
-wait_time = 40.0
+wait_time = 30.0
 one_shot = true
 autostart = true
 
@@ -539,7 +533,7 @@ texture = ExtResource("30_pfmvf")
 script = ExtResource("24_hhyxh")
 
 [node name="Timer4" type="Timer" parent="Clientes/Cliente4"]
-wait_time = 30.0
+wait_time = 40.0
 one_shot = true
 autostart = true
 
@@ -1171,25 +1165,19 @@ position = Vector2(236.044, -376.031)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_kgxuj")
 
-[node name="Label" type="Label" parent="camara/Inventario"]
-offset_left = -460.0
-offset_top = -1410.0
-offset_right = 385.0
-offset_bottom = -1159.0
+[node name="Button" type="Button" parent="camara/Inventario"]
+offset_left = -1105.0
+offset_top = -1520.0
+offset_right = 1115.0
+offset_bottom = -1075.0
+theme_override_colors/font_hover_color = Color(0.890196, 0.686275, 0.121569, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_c1jlx")
+theme_override_font_sizes/font_size = 300
 text = "Inventario"
-label_settings = SubResource("LabelSettings_q1bm0")
-
-[node name="Botoninventario" type="Sprite2D" parent="camara/Inventario"]
-position = Vector2(665, -1295)
-scale = Vector2(3, 3)
-texture = ExtResource("2_w666j")
+flat = true
 script = ExtResource("19_2sue4")
-
-[node name="Button" type="Button" parent="camara/Inventario/Botoninventario"]
-offset_left = -53.0
-offset_top = -46.0
-offset_right = 62.0
-offset_bottom = 46.0
 
 [node name="Placa1" type="Sprite2D" parent="camara/Inventario"]
 visible = false
@@ -1352,7 +1340,7 @@ one_shot = true
 [connection signal="mouse_entered" from="camara/Inventario/Probeta4/probeta4" to="camara/Inventario/Probeta4/probeta4" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="camara/Inventario/Probeta4/probeta4" to="camara/Inventario/Probeta4/probeta4" method="_on_mouse_exited"]
 [connection signal="pressed" from="camara/Inventario/Probeta4/probeta4" to="." method="_on_probeta_4_pressed"]
-[connection signal="pressed" from="camara/Inventario/Botoninventario/Button" to="camara/Inventario/Botoninventario" method="_on_button_pressed"]
+[connection signal="pressed" from="camara/Inventario/Button" to="camara/Inventario/Button" method="_on_button_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa1/Placa1" to="." method="_on_placa_1_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa2/Placa2" to="." method="_on_placa_2_pressed"]
 [connection signal="pressed" from="camara/Inventario/Placa3/Placa3" to="." method="_on_placa_3_pressed"]

@@ -86,9 +86,10 @@ func compararPedido():
 	var aciertos=0
 	if (GlobalWetGame.selected.size()<pedido.size()):
 		size = GlobalWetGame.selected.size()
+		aciertos -= 0.5 * (pedido.size() - GlobalWetGame.selected.size())
 	else:
 		size = pedido.size()
-		print("size")
+		aciertos -= 0.5 * (GlobalWetGame.selected.size() - pedido.size())
 	print(size)
 	for i in size:
 		print(GlobalWetGame.selected[i])
@@ -96,7 +97,9 @@ func compararPedido():
 		if (GlobalWetGame.selected[i]==pedido[i]):
 			aciertos += 1
 			print("acierto: +100")
-	return aciertos
+		else:
+			aciertos -= 0.5
+	return int (aciertos)
 
 func mostrarPedido():
 	for i in pedido.size():
