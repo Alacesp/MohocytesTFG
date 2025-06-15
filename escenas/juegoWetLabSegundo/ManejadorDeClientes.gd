@@ -30,7 +30,7 @@ func _process(delta: float) -> void:
 				print("Sad: -100")
 				
 		estado1 = "Happy"
-		$"Cliente1/Timer".start(5)
+		$"Cliente1/Timer".start(20)
 	if( $Cliente2.satisfied == true ):
 		$Cliente2.satisfied = false
 		$Cliente2.reroll = true
@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 				print("Sad: -100")
 		
 		estado2 = "Happy"
-		$"Cliente2/Timer2".start(5)
+		$"Cliente2/Timer2".start(20)
 	if( $Cliente3.satisfied == true ):
 		$Cliente3.satisfied = false
 		$Cliente3.reroll = true
@@ -74,7 +74,7 @@ func _process(delta: float) -> void:
 				print("Sad: -100")
 		
 		estado3 = "Happy"
-		$"Cliente3/Timer3".start(5)
+		$"Cliente3/Timer3".start(20)
 	if( $Cliente4.satisfied == true ):
 		$Cliente4.satisfied = false
 		$Cliente4.reroll = true
@@ -96,7 +96,7 @@ func _process(delta: float) -> void:
 				print("Sad: -100")
 		
 		estado4 = "Happy"
-		$"Cliente4/Timer4".start(5)
+		$"Cliente4/Timer4".start(20)
 
 func _on_timer_timeout() -> void:
 	match estado1:
