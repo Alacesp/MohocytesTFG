@@ -4,16 +4,16 @@ var respuestas = [0,0,0,0,0,0,0,0,""]
 var result_4
 var result_8
 
-func _ready() -> void:
-	Global.preTest = false
-	Global.pretestAnswer = ["borrarPre",0,0,0,0,0,0,0,""]
-	Global.puntos_drylab = 1
-	Global.puntos_wetlab = 1
-	Global.puntos_human = 1
-	Global.puntos_redes = 1
-	Global.puntos_wiki = 1
-	DatabaseSingleton.test_id = DatabaseSingleton.generate_simple_id()
-	DatabaseSingleton.ranking_id = DatabaseSingleton.generate_simple_id()
+#func _ready() -> void:
+	#Global.preTest = false
+	#Global.pretestAnswer = ["borrarPre",0,0,0,0,0,0,0,""]
+	#Global.puntos_drylab = 1
+	#Global.puntos_wetlab = 1
+	#Global.puntos_human = 1
+	#Global.puntos_redes = 1
+	#Global.puntos_wiki = 1
+	#DatabaseSingleton.test_id = DatabaseSingleton.generate_simple_id()
+	#DatabaseSingleton.ranking_id = DatabaseSingleton.generate_simple_id()
 
 func corregirDesplegables4():
 	var result_4 = 0
