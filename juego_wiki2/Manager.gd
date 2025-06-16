@@ -18,7 +18,9 @@ func _process(delta: float) -> void:
 		print(objetos)
 	elif (objetos >= 4 && pagina == 5):
 		Global.puntos_wiki = puntos
-		arb.change_scene_to_file("res://escenas/SalaWiki/SalaWiki.tscn")
+		get_node("Paginas").visible = false
+		get_node("Pagina9").visible = true
+		$Pagina9/Label4.text = str(puntos)
 		
 
 func tick(asset):#cambiar esto para solo sprites

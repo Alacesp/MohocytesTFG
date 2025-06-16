@@ -31,61 +31,91 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_73ug7")
 [node name="Resultados" type="Node2D" parent="."]
 visible = false
 
+[node name="texto" type="Label" parent="Resultados"]
+offset_left = 42.0
+offset_top = 20.0
+offset_right = 387.0
+offset_bottom = 194.0
+text = "Mejores 5 puntuaciones"
+label_settings = SubResource("LabelSettings_cqh3r")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="texto2" type="Label" parent="Resultados"]
+offset_left = 713.0
+offset_top = 10.0
+offset_right = 1058.0
+offset_bottom = 256.0
+text = "Has quedado en el puesto"
+label_settings = SubResource("LabelSettings_cqh3r")
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="Primero" type="Label" parent="Resultados"]
-offset_left = 117.0
-offset_top = 82.0
-offset_right = 188.0
-offset_bottom = 162.0
+offset_left = 167.0
+offset_top = 197.0
+offset_right = 238.0
+offset_bottom = 277.0
 text = "11111"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Segundo" type="Label" parent="Resultados"]
-offset_left = 95.0
-offset_top = 161.0
-offset_right = 223.0
-offset_bottom = 241.0
+offset_left = 145.0
+offset_top = 276.0
+offset_right = 273.0
+offset_bottom = 356.0
 text = "2222"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Tercero" type="Label" parent="Resultados"]
-offset_left = 112.0
-offset_top = 244.0
-offset_right = 212.0
-offset_bottom = 324.0
+offset_left = 162.0
+offset_top = 359.0
+offset_right = 262.0
+offset_bottom = 439.0
 text = "333"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Cuarto" type="Label" parent="Resultados"]
-offset_left = 118.0
-offset_top = 327.0
-offset_right = 213.0
-offset_bottom = 407.0
+offset_left = 168.0
+offset_top = 442.0
+offset_right = 263.0
+offset_bottom = 522.0
 text = "444"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Quinto" type="Label" parent="Resultados"]
-offset_left = 113.0
-offset_top = 420.0
-offset_right = 248.0
-offset_bottom = 500.0
+offset_left = 151.0
+offset_top = 517.0
+offset_right = 286.0
+offset_bottom = 597.0
 text = "5555"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Posicion" type="Label" parent="Resultados"]
-offset_left = 932.0
-offset_top = 166.0
-offset_right = 1014.0
-offset_bottom = 246.0
+offset_left = 851.0
+offset_top = 265.0
+offset_right = 933.0
+offset_bottom = 345.0
 text = "123"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Total" type="Label" parent="Resultados"]
-offset_left = 927.0
-offset_top = 276.0
-offset_right = 1023.0
-offset_bottom = 356.0
+offset_left = 846.0
+offset_top = 419.0
+offset_right = 942.0
+offset_bottom = 499.0
 text = "456"
 label_settings = SubResource("LabelSettings_cqh3r")
+
+[node name="texto3" type="Label" parent="Resultados"]
+offset_left = 837.0
+offset_top = 332.0
+offset_right = 946.0
+offset_bottom = 417.0
+text = "de"
+label_settings = SubResource("LabelSettings_cqh3r")
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="cargando" type="Label" parent="."]
 offset_left = 208.0
