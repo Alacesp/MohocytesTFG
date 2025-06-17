@@ -7,11 +7,11 @@ var result_8
 #func _ready() -> void:
 	#Global.preTest = false
 	#Global.pretestAnswer = ["borrarPre",0,0,0,0,0,0,0,""]
-	#Global.puntos_drylab = 1
+	#Global.puntos_drylab = 10
 	#Global.puntos_wetlab = 1
-	#Global.puntos_human = 1
+	#Global.puntos_human = 1000
 	#Global.puntos_redes = 1
-	#Global.puntos_wiki = 1
+	#Global.puntos_wiki = 100
 	#DatabaseSingleton.test_id = DatabaseSingleton.generate_simple_id()
 	#DatabaseSingleton.ranking_id = DatabaseSingleton.generate_simple_id()
 

@@ -10,7 +10,7 @@ bg_color = Color(0.637131, 0.380937, 0.746412, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_cqh3r"]
 font = ExtResource("2_sxtl4")
-font_size = 80
+font_size = 60
 
 [sub_resource type="LabelSettings" id="LabelSettings_kc06t"]
 font = ExtResource("2_sxtl4")
@@ -32,86 +32,86 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_73ug7")
 visible = false
 
 [node name="texto" type="Label" parent="Resultados"]
-offset_left = 42.0
-offset_top = 20.0
-offset_right = 387.0
-offset_bottom = 194.0
+offset_left = 366.0
+offset_top = 44.0
+offset_right = 711.0
+offset_bottom = 218.0
 text = "Mejores 5 puntuaciones"
 label_settings = SubResource("LabelSettings_cqh3r")
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="texto2" type="Label" parent="Resultados"]
-offset_left = 713.0
-offset_top = 10.0
-offset_right = 1058.0
-offset_bottom = 256.0
+offset_left = 777.0
+offset_top = 41.0
+offset_right = 1122.0
+offset_bottom = 287.0
 text = "Has quedado en el puesto"
 label_settings = SubResource("LabelSettings_cqh3r")
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Primero" type="Label" parent="Resultados"]
-offset_left = 167.0
-offset_top = 197.0
-offset_right = 238.0
-offset_bottom = 277.0
+offset_left = 491.0
+offset_top = 221.0
+offset_right = 562.0
+offset_bottom = 301.0
 text = "11111"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Segundo" type="Label" parent="Resultados"]
-offset_left = 145.0
-offset_top = 276.0
-offset_right = 273.0
-offset_bottom = 356.0
+offset_left = 469.0
+offset_top = 300.0
+offset_right = 597.0
+offset_bottom = 380.0
 text = "2222"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Tercero" type="Label" parent="Resultados"]
-offset_left = 162.0
-offset_top = 359.0
-offset_right = 262.0
-offset_bottom = 439.0
+offset_left = 486.0
+offset_top = 383.0
+offset_right = 586.0
+offset_bottom = 463.0
 text = "333"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Cuarto" type="Label" parent="Resultados"]
-offset_left = 168.0
-offset_top = 442.0
-offset_right = 263.0
-offset_bottom = 522.0
+offset_left = 492.0
+offset_top = 466.0
+offset_right = 587.0
+offset_bottom = 546.0
 text = "444"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Quinto" type="Label" parent="Resultados"]
-offset_left = 151.0
-offset_top = 517.0
-offset_right = 286.0
-offset_bottom = 597.0
+offset_left = 475.0
+offset_top = 541.0
+offset_right = 610.0
+offset_bottom = 621.0
 text = "5555"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Posicion" type="Label" parent="Resultados"]
-offset_left = 851.0
-offset_top = 265.0
-offset_right = 933.0
-offset_bottom = 345.0
+offset_left = 925.0
+offset_top = 177.0
+offset_right = 1007.0
+offset_bottom = 257.0
 text = "123"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Total" type="Label" parent="Resultados"]
-offset_left = 846.0
-offset_top = 419.0
-offset_right = 942.0
-offset_bottom = 499.0
+offset_left = 920.0
+offset_top = 331.0
+offset_right = 1016.0
+offset_bottom = 411.0
 text = "456"
 label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="texto3" type="Label" parent="Resultados"]
-offset_left = 837.0
-offset_top = 332.0
-offset_right = 946.0
-offset_bottom = 417.0
+offset_left = 896.0
+offset_top = 244.0
+offset_right = 1005.0
+offset_bottom = 329.0
 text = "de"
 label_settings = SubResource("LabelSettings_cqh3r")
 horizontal_alignment = 1
@@ -131,8 +131,8 @@ autowrap_mode = 2
 visible = false
 offset_left = 13.0
 offset_top = 38.0
-offset_right = 1138.0
-offset_bottom = 374.0
+offset_right = 364.0
+offset_bottom = 211.0
 
 [node name="Puntos" type="HBoxContainer" parent="CenterContainer"]
 layout_mode = 2
@@ -148,7 +148,7 @@ label_settings = SubResource("LabelSettings_cqh3r")
 
 [node name="Iniciar" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(589, 525)
+position = Vector2(958, 557)
 scale = Vector2(1.42439, 1)
 texture = ExtResource("1_eb3lx")
 
